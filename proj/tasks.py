@@ -24,11 +24,10 @@ def invoke_sync(param):
         LogType='None',
         Payload=json.dumps({ "messageType" : "work", "invokeType" : "RequestResponse" })
     )
-    print(param)
     res_json = json.loads(response['Payload'].read().decode("utf-8"))
     response['Payload'] = res_json
     print(response)
-    return res_json
+    return response
 
 @app.task
 def invoke_async(param):
@@ -39,7 +38,7 @@ def invoke_async(param):
         FunctionName='container_tester',
         InvocationType='Event',
         LogType='None',
-        Payload=json.dumps({ "messageType" : "work", "InvokeType" : "Event" })
+        Payload=json.dumps({ "messageType" : "work", "invokeType" : "Event" })
     )
 
-    print("Response Status Code : " + str(response['StatusCode']))
+    return "Response Status Code : " + str(response['StatusCode'])

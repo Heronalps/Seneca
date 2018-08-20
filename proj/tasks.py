@@ -30,7 +30,7 @@ def invoke_sync(param):
     return response
 
 @app.task
-def invoke_async(param):
+def invoke_async(uuid):
     session = boto3.Session(profile_name='racelab')
     client = session.client('lambda')
 
@@ -38,7 +38,7 @@ def invoke_async(param):
         FunctionName='container_tester',
         InvocationType='Event',
         LogType='None',
-        Payload=json.dumps({ "messageType" : "work", "invokeType" : "Event" })
+        Payload=json.dumps({ "messageType" : "work", "invokeType" : "Event", "uuid" : uuid })
     )
 
     return "Response Status Code : " + str(response['StatusCode'])

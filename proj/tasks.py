@@ -15,7 +15,7 @@ def xsum(numbers):
 
 @app.task
 def invoke_sync(param):
-    session = boto3.Session(profile_name='racelab')
+    session = boto3.Session(profile_name='default')
     client = session.client('lambda')
 
     response = client.invoke(
@@ -31,7 +31,7 @@ def invoke_sync(param):
 
 @app.task
 def invoke_async(uuid):
-    session = boto3.Session(profile_name='racelab')
+    session = boto3.Session(profile_name='default')
     client = session.client('lambda')
 
     response = client.invoke(

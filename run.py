@@ -5,7 +5,7 @@ from multiprocessing.dummy import Pool as ThreadPool
 from boto3.dynamodb.conditions import Key, Attr
 
 celery_sync = False
-lambda_sync = False
+lambda_sync = True
 invokeTime = 12
 
 dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
@@ -42,6 +42,7 @@ if (celery_sync and lambda_sync):
         total_time += time.time() - timestamp_start
         # print(result)
     print("Time spent : ", total_time)
+    print("Invocation times : ", invokeTime)
 
 elif (celery_sync and not lambda_sync):
     total_time = 0

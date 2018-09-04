@@ -1,6 +1,6 @@
 import json, boto3, time
 
-session = boto3.Session(profile_name='racelab')
+session = boto3.Session(profile_name='default')
 client = session.client('lambda')
 
 response = client.invoke(

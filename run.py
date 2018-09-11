@@ -1,6 +1,5 @@
 import time, argparse
-from duration import duration
-from CeleryLambda import CeleryLambda
+from src.CeleryLambda import CeleryLambda
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', '--celery_async', action="store_true", 
@@ -16,13 +15,6 @@ print("Lambda Async = %s" %args.lambda_async)
 print("Invoke Time = %d" %args.invoke_time)
 print("====================")
 
-timestamp_start = time.time()
+
 invocation = CeleryLambda(celery_async = args.celery_async, lambda_async = args.lambda_async, invoke_time = args.invoke_time)
 invocation.run()
-timestamp_end = time.time()
-print("Start timestamp : ", timestamp_start)
-print("End timestamp : ", timestamp_end)
-time.sleep(5)
-# Available Stat for Lambda: SampleCount, Average, Sum, Minimum, Maximum
-response = duration(timestamp_start, timestamp_end, Stat='Sum')
-print(response)

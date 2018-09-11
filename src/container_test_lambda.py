@@ -11,15 +11,13 @@ def lambda_handler(event, context):
     timestamp = time.time()
     if event['messageType'] == 'work':
         response = {
-            'Message' : "Container " + containerId + ": work is done with timestamp " + configTimestamp,
-            'Timestamp' : timestamp
+            'Message' : "Container " + containerId + ": work is done with timestamp " + configTimestamp
         }
 
     elif event['messageType'] == 'refreshConfig':
         configTimestamp2 = str(datetime.now())
         response = {
-            'Message' : "Container " + containerId + ": work is done with timestamp " + configTimestamp2,
-            'Timestamp' : timestamp
+            'Message' : "Container " + containerId + ": work is done with timestamp " + configTimestamp2
         }
     
     elif event['messageType'] == 'writeId':
@@ -29,9 +27,8 @@ def lambda_handler(event, context):
         with open(local_repo + "Id.txt", 'w') as f:
             f.write(containerId)
         response = {
-            'Message' : "Successfully write container id " + containerId + " to " + local_repo + "Id.txt",
-            'Timestamp' : timestamp
-            }
+            'Message' : "Successfully write container id " + containerId + " to " + local_repo + "Id.txt"
+        }
 
     elif event['messageType'] == 'retrieveId':
         try:
@@ -39,23 +36,26 @@ def lambda_handler(event, context):
                 container_id = f.read()
         except FileNotFoundError:
             response = {
-                'Message' : "The container id is not saved in this lambda " + containerId + " container.",
-                'Timestamp' : timestamp
+                'Message' : "The container id is not saved in this lambda " + containerId + " container."
             }
         if not response:
             response =  {
-                'Message' : "Retrieved Container id : " + container_id,
-                'Timestamp' : timestamp
+                'Message' : "Retrieved Container id : " + container_id
             }
-
+    
     if event['invokeType'] == 'Event':
-        writeToDynamoDB(json.dumps(response), event['uuid'])
+        response['requestId'] = context.aws_request_id
+        response['identifier'] = event['uuid']
+        writeResponse(json.dumps(response), event['uuid'])
+        
     elif event['invokeType'] == 'RequestResponse':
-        return json.dumps(response)
+        response['requestId'] = context.aws_request_id
+        print(response)
+        return response
 
-def writeToDynamoDB(response, uuid):
+def writeResponse(response, uuid):
     dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
-    table = dynamodb.Table('container_test_table')
+    table = dynamodb.Table('container_test_async_response')
     response = table.put_item(
        Item = {
             'identifier': uuid,

@@ -26,7 +26,7 @@ def invoke_sync(param):
     )
     res_json = json.loads(response['Payload'].read().decode("utf-8"))
     response['Payload'] = res_json
-    print(response)
+    
     return response
 
 @app.task

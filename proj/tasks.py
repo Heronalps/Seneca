@@ -14,7 +14,7 @@ def xsum(numbers):
     return sum(numbers)
 
 @app.task
-def invoke_sync(param):
+def invoke_sync(uuid):
     session = boto3.Session(profile_name='default')
     client = session.client('lambda')
 
@@ -22,11 +22,10 @@ def invoke_sync(param):
         FunctionName='container_tester',
         InvocationType='RequestResponse',
         LogType='None',
-        Payload=json.dumps({ "messageType" : "work", "invokeType" : "RequestResponse" })
+        Payload=json.dumps({ "messageType" : "refreshConfig", "invokeType" : "RequestResponse", "uuid" : uuid })
     )
     res_json = json.loads(response['Payload'].read().decode("utf-8"))
     response['Payload'] = res_json
-    
     return response
 
 @app.task
@@ -38,7 +37,7 @@ def invoke_async(uuid):
         FunctionName='container_tester',
         InvocationType='Event',
         LogType='None',
-        Payload=json.dumps({ "messageType" : "work", "invokeType" : "Event", "uuid" : uuid })
+        Payload=json.dumps({ "messageType" : "refreshConfig", "invokeType" : "Event", "uuid" : uuid })
     )
 
     return "Response Status Code : " + str(response['StatusCode'])

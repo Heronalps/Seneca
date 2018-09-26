@@ -32,7 +32,7 @@ def retrieve_metrics(identifiers):
     compute_charge = total_billed_duration * 0.001 * (memory_size / 1024)
     
     # cost = compute charge + request charge
-    cost = 0.00001667 * compute_charge + 0.2
+    cost = 0.00001667 * compute_charge
 
     metrics = {
         "total_duration" : total_duration, 

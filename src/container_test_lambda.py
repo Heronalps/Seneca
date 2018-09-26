@@ -42,20 +42,19 @@ def lambda_handler(event, context):
             response =  {
                 'Message' : "Retrieved Container id : " + container_id
             }
+            
+    response['identifier'] = event['uuid']
+    response['requestId'] = context.aws_request_id
+    writeResponse(json.dumps(response), event['uuid'])
     
-    if event['invokeType'] == 'Event':
-        response['requestId'] = context.aws_request_id
-        response['identifier'] = event['uuid']
-        writeResponse(json.dumps(response), event['uuid'])
-        
-    elif event['invokeType'] == 'RequestResponse':
-        response['requestId'] = context.aws_request_id
-        print(response)
-        return response
+    # Generate Log events
+    print(response)
+    return response
 
+        
 def writeResponse(response, uuid):
     dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
-    table = dynamodb.Table('container_test_async_response')
+    table = dynamodb.Table('container_test_response')
     response = table.put_item(
        Item = {
             'identifier': uuid,

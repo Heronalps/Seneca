@@ -93,11 +93,11 @@ class CeleryLambda:
             job = group(invoke_sync.s(self.identifiers[i]) for i in range(self.invoke_time))
             print("===Tasks start===")
             result = job.apply_async()
-            r = result.join()
+            # r = result.join()
             print("===Tasks end===")
-            for item in r:
-                print(item)
-            time.sleep(20)
+            # for item in r:
+            #     print(item)
+            time.sleep(30)
             self.show_metrics(self.identifiers)
             
 
@@ -110,11 +110,11 @@ class CeleryLambda:
             job = group(invoke_async.s(self.identifiers[i]) for i in range(self.invoke_time))
             print("===Tasks start===")
             result = job.apply_async()
-            r = result.join()
+            # r = result.join()
             print("===Tasks end===")
-            for item in r:
-                print(item)
-            time.sleep(20)
+            # for item in r:
+            #     print(item)
+            time.sleep(30)
             self.show_metrics(self.identifiers)
             # Pull the result from DynamoDB
             

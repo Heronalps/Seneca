@@ -6,10 +6,11 @@ args = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
 pool = ThreadPool(4)
 
-sync_results = pool.map(invoke_sync, args)
+sync_results = pool.map(invoke_sync.delay, args)
 pool.close()
 pool.join()
+print(sync_results)
 
-# for res in sync_results:
-#     time.sleep(3)
-#     print(res.get())
+for res in sync_results:
+    # time.sleep(3)
+    print(res.get())

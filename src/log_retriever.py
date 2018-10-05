@@ -1,7 +1,9 @@
-import boto3
+import boto3, json
 from helpers.DecimalEncoder import DecimalEncoder 
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
+s3 = boto3.resource('s3', region_name='us-west-2')
+metrics_bucket = 'container-test-metrics'
+response_bucket = 'container-test-response'
 
 def retrieve_metrics(identifiers):
     total_duration = 0
@@ -10,22 +12,18 @@ def retrieve_metrics(identifiers):
     memory_size = 0
     length = len(identifiers)
 
-    key = 'identifier'
-    metrics_table = dynamodb.Table('container_test_metrics')
-    
-
     for id in identifiers:
-        response = metrics_table.get_item(
-            Key = {key : id}
-        )
+        object = s3.Object(metrics_bucket, id)
+        response = object.get()['Body'].read().decode("utf-8")
+        metrics = json.loads(response)
         
         # print(response)
-        total_duration += float(response['Item']['duration'])
-        total_billed_duration += float(response['Item']['billed_duration'])
-        temp = int(response['Item']['max_memory_used'])
+        total_duration += float(metrics['duration'])
+        total_billed_duration += float(metrics['billed_duration'])
+        temp = int(metrics['max_memory_used'])
         if temp > max_memory_used:
             max_memory_used = temp
-        memory_size = int(response['Item']['memory_size'])
+        memory_size = int(metrics['memory_size'])
         
     
     duration_per_invocation = total_duration / length
@@ -47,15 +45,23 @@ def retrieve_metrics(identifiers):
     return metrics    
 
 def retrieve_response(identifiers):
-    response_table = dynamodb.Table('container_test_response')
-    key = 'identifier'
-    
     results = []
     for id in identifiers:
-        response = response_table.get_item(
-            Key = {key : id}
-        )
-        results.append(response['Item']['response'])
+        object = s3.Object(response_bucket, id)
+        response = object.get()['Body'].read().decode("utf-8")
+        results.append(response)
 
     return results
     
+# def iterate_bucket_items(bucket):
+#     """
+#     Generator that iterates over all objects in a given s3 bucket
+#     """
+
+#     client = boto3.client('s3')
+#     paginator = client.get_paginator('list_objects_v2')
+#     page_iterator = paginator.paginate(Bucket=bucket)
+
+#     for page in page_iterator:
+#         for item in page['Contents']:
+#             yield item

@@ -1,4 +1,5 @@
 *.DS_Store
 test.py
 .vscode/
+proj/__pycache__/*
 *.pyc

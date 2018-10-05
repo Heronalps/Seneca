@@ -45,19 +45,7 @@ def lambda_handler(event, context):
             
     response['identifier'] = event['uuid']
     response['requestId'] = context.aws_request_id
-    writeResponse(json.dumps(response), event['uuid'])
     
     # Generate Log events
     print(response)
     return response
-
-        
-def writeResponse(response, uuid):
-    dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
-    table = dynamodb.Table('container_test_response')
-    response = table.put_item(
-       Item = {
-            'identifier': uuid,
-            'response': response
-        }
-    )

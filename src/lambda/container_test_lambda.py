@@ -8,7 +8,6 @@ local_repo = os.path.join(os.path.sep, "tmp", os.path.basename('container'))
 
 def lambda_handler(event, context):
     response = ''
-    timestamp = time.time()
     if event['messageType'] == 'work':
         response = {
             'Message' : "Container " + containerId + ": work is done with timestamp " + configTimestamp

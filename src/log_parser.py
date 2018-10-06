@@ -1,15 +1,11 @@
 import json, boto3, time, re
 
 client = boto3.client('logs')
-s3 = boto3.resource('s3', region_name='us-west-2')
-metrics_bucket = 'container-test-metrics'
-response_bucket = 'container-test-response'
 
-def write_to_s3(bucket, key, data, metadata):
-    s3.Bucket(bucket).put_object(Key=key, Body=data, Metadata=metadata)
-
-def lambda_handler(event, context):
+def parse_log(log_group_name):
     requestId_identifier_hash = {}
+    response_hash = {}
+    metrics_hash = {}
     
     response = client.describe_log_streams(
         logGroupName = '/aws/lambda/container_tester',
@@ -21,9 +17,9 @@ def lambda_handler(event, context):
             logGroupName='/aws/lambda/container_tester',
             logStreamName= stream_name['logStreamName']
         )
-        print("===Log==")
-        print(logs)   
-        print("=====")
+        # print("===Log==")
+        # print(logs)   
+        # print("=====")
     
         for event in logs['events']:
             message = event['message']
@@ -34,8 +30,7 @@ def lambda_handler(event, context):
                 result = re.search(r'(?<=\'Message\':\s\')(.*?)(?=\')', message).group(0)
                 
                 requestId_identifier_hash[requestId] = identifier
-
-                write_to_s3(response_bucket, identifier, result, {})
+                response_hash[identifier] = result
 
             elif message.startswith('REPORT'):
                 requestId = re.search(r'(?<=RequestId:\s)(.*?)(?=\t)', message).group(0)
@@ -49,10 +44,12 @@ def lambda_handler(event, context):
                 memory_size = re.search(r'(?<=\tMemory\sSize:\s)(.*?)(?=\sMB)', message).group(0)
                 max_memory_used = re.search(r'(?<=\tMax\sMemory\sUsed:\s)(.*?)(?=\sMB)', message).group(0)
 
-                metrics = json.dumps({
+                metrics = {
                     'duration': duration,
                     'billed_duration': billed_duration,
                     'memory_size': memory_size,
                     'max_memory_used':max_memory_used
-                })
-                write_to_s3(metrics_bucket, identifier, metrics, {})
+                }
+                metrics_hash[identifier] = metrics
+    
+    return response_hash, metrics_hash

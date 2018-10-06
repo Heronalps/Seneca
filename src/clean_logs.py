@@ -62,7 +62,6 @@ def delete_old_streams(log_group):
             # Assume stream creation if we don't have a lastEventTimestamp
             stream_time = datetime.fromtimestamp(stream['creationTime'] / 1000, tz=tz.tzutc())
 
-        print_log_group(log_group, "Deleting stream: " + stream['logStreamName'])
         client.delete_log_stream(
             logGroupName=log_group['logGroupName'],
             logStreamName=stream['logStreamName']

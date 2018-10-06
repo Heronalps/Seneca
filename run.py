@@ -29,6 +29,6 @@ invocation = CeleryLambda(celery_async = args.celery_async, lambda_async = args.
 for _i in range(args.batch_time):
     clean_logs("/aws/lambda/container_tester")
     clean_logs("/aws/lambda/dynamodb_logger")
-    clean_objects("container-test-response")
-    clean_objects("container-test-metrics")
+    # clean_objects("container-test-response")
+    # clean_objects("container-test-metrics")
     invocation.run()

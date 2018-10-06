@@ -1,9 +1,8 @@
 from celery import group, signature
 import time, uuid, boto3, json, decimal, argparse, re
 from helpers.DecimalEncoder import DecimalEncoder 
-from proj.tasks import add, invoke_sync, invoke_async
+from proj.tasks import invoke_sync, invoke_async
 from multiprocessing.dummy import Pool as ThreadPool 
-from boto3.dynamodb.conditions import Key, Attr
 from src.log_retriever import retrieve_metrics, retrieve_response
 
 class CeleryLambda:

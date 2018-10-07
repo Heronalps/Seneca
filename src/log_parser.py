@@ -3,9 +3,9 @@ import json, boto3, time, re
 client = boto3.client('logs')
 
 def parse_log(log_group_name):
-    requestId_identifier_hash = {}
-    response_hash = {}
-    metrics_hash = {}
+    _requestId_identifier_hash = {}
+    group_response = []
+    group_metrics = []
     
     response = client.describe_log_streams(
         logGroupName = '/aws/lambda/container_tester',
@@ -25,16 +25,20 @@ def parse_log(log_group_name):
             message = event['message']
                 
             if message.startswith('{'):
-                identifier = re.search(r'(?<=\'identifier\':\s\')(.*?)(?=\')', message).group(0)
-                requestId = re.search(r'(?<=\'requestId\':\s\')(.*?)(?=\')', message).group(0)
+                _identifier = re.search(r'(?<=\'identifier\':\s\')(.*?)(?=\')', message).group(0)
+                _requestId = re.search(r'(?<=\'requestId\':\s\')(.*?)(?=\')', message).group(0)
                 result = re.search(r'(?<=\'Message\':\s\')(.*?)(?=\')', message).group(0)
                 
-                requestId_identifier_hash[requestId] = identifier
-                response_hash[identifier] = result
+                #requestId_identifier_hash[requestId] = identifier
+                group_response.append(result)
 
             elif message.startswith('REPORT'):
-                requestId = re.search(r'(?<=RequestId:\s)(.*?)(?=\t)', message).group(0)
-                identifier = requestId_identifier_hash[requestId]
+                _requestId = re.search(r'(?<=RequestId:\s)(.*?)(?=\t)', message).group(0)
+                
+                # Because the REPORT cloudwatch event is not necessarily after Message event,
+                # requestId and identifier mapping doesn't always work. So to root out mapping.
+
+                # identifier = requestId_identifier_hash[requestId]
                 
                 # Milliseconds
                 duration = re.search(r'(?<=\tDuration:\s)(.*?)(?=\sms)', message).group(0)
@@ -50,6 +54,6 @@ def parse_log(log_group_name):
                     'memory_size': memory_size,
                     'max_memory_used':max_memory_used
                 }
-                metrics_hash[identifier] = metrics
+                group_metrics.append(metrics)
     
-    return response_hash, metrics_hash
+    return group_response, group_metrics

@@ -9,10 +9,9 @@ def retrieve_result(identifiers):
     max_memory_used = 0
     memory_size = 0
     length = len(identifiers)
-    response_hash, metrics_hash = parse_log("/aws/lambda/container_tester")
+    group_response, group_metrics = parse_log("/aws/lambda/container_tester")
 
-    for id in identifiers:
-        metrics = metrics_hash[id]
+    for metrics in group_metrics:
         total_duration += float(metrics['duration'])
         total_billed_duration += float(metrics['billed_duration'])
         temp = int(metrics['max_memory_used'])
@@ -37,5 +36,5 @@ def retrieve_result(identifiers):
         "cost" : cost
     }
 
-    return response_hash, metrics
+    return group_response, metrics
     

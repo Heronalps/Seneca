@@ -16,6 +16,7 @@ app.conf.update(
     timezone='Europe/Oslo',
     enable_utc=True,
 )
+# app.conf.broker_heartbeat = 10
 
 if __name__ == '__main__':
     app.start()

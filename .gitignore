@@ -3,3 +3,5 @@ test.py
 .vscode/
 proj/__pycache__/*
 *.pyc
+*.json
+*.data

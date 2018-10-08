@@ -111,3 +111,26 @@ class CeleryLambda:
             _response_path, _metrics_path = self.show_result(self.identifiers, host_execu_time)
         
         # plot_dist(metrics_path, 'total_duration')
+
+    def sqs_trigger(self):
+        sqs = boto3.client('sqs')
+        invokeType = "Event" if self.lambda_async else "RequestResponse"
+        for _i in range(self.batch_number):
+            self.identifiers = []
+            clean_logs("/aws/lambda/container_tester_sqs")
+            start_time = time.time()
+            for j in range(self.invoke_time):
+                identifier = self.generateId(j)
+                self.identifiers.append(identifier)
+                body = {
+                    "messageType": "refreshConfig",
+                    "invokeType": invokeType,
+                    "uuid": identifier
+                }
+                _response = sqs.send_message(
+                    QueueUrl='https://sqs.us-west-2.amazonaws.com/603495292017/container-test-queue',
+                    MessageBody=json.dumps(body)
+                )
+            host_execu_time = 1000 * (time.time() - start_time)
+            time.sleep(20)
+            _response_path, _metrics_path = self.show_result(self.identifiers, host_execu_time)

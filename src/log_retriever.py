@@ -9,7 +9,7 @@ def retrieve_result(identifiers):
     max_memory_used = 0
     memory_size = 0
     length = len(identifiers)
-    group_response, group_metrics = parse_log("/aws/lambda/container_tester")
+    group_response, group_metrics = parse_log("/aws/lambda/container_tester_sqs")
 
     for metrics in group_metrics:
         total_duration += float(metrics['duration'])

@@ -19,12 +19,13 @@ print("Number of Invocation = %d" %args.invoke_time)
 print("Number of Batch = %d" %args.batch_number)
 print("====================")
 
-print("Warm up call to Lambda container")
-response = invoke_sync("warm-up-call")
-print (response) 
+# print("Warm up call to Lambda container")
+# response = invoke_sync("warm-up-call")
+# print (response) 
 
 invocation = CeleryLambda(celery_async = args.celery_async, 
                           lambda_async = args.lambda_async, 
                           invoke_time = args.invoke_time,
                           batch_number = args.batch_number)
-invocation.run()
+# invocation.run()
+invocation.sqs_trigger()

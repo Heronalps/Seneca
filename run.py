@@ -27,5 +27,5 @@ invocation = CeleryLambda(celery_async = args.celery_async,
                           lambda_async = args.lambda_async, 
                           invoke_time = args.invoke_time,
                           batch_number = args.batch_number)
-# invocation.run()
-invocation.sqs_trigger()
+invocation.run()
+# invocation.sqs_trigger()

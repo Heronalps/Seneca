@@ -1,6 +1,6 @@
 from celery import group, signature
 from datetime import datetime
-import time, uuid, boto3, json, decimal, argparse, re
+import time, uuid, boto3, json, decimal, argparse, re, pdb
 from helpers.DecimalEncoder import DecimalEncoder 
 from proj.tasks import invoke_sync, invoke_async
 from src.log_retriever import retrieve_result
@@ -59,6 +59,7 @@ class CeleryLambda:
         for _n in range(self.batch_number):
             self.identifiers = []
             clean_logs("/aws/lambda/container_tester")
+
             # clean_logs("/aws/lambda/dynamodb_logger")
             if (not self.celery_async and not self.lambda_async):
                 start_time = time.time()
@@ -107,7 +108,7 @@ class CeleryLambda:
                 host_execu_time = 1000 * (time.time() - start_time)
                 print("===Async Tasks end===")
             
-            time.sleep(45)
+            time.sleep(25)
             _response_path, _metrics_path = self.show_result(self.identifiers, host_execu_time)
         
         # plot_dist(metrics_path, 'total_duration')
@@ -132,5 +133,5 @@ class CeleryLambda:
                     MessageBody=json.dumps(body)
                 )
             host_execu_time = 1000 * (time.time() - start_time)
-            time.sleep(40)
+            time.sleep(25)
             _response_path, _metrics_path = self.show_result(self.identifiers, host_execu_time)

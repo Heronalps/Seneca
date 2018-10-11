@@ -8,14 +8,14 @@ def parse_log(log_group_name):
     group_metrics = []
     
     response = client.describe_log_streams(
-        logGroupName = '/aws/lambda/container_tester_sqs',
+        logGroupName = log_group_name,
         orderBy = 'LastEventTime',
         descending = True
     )
     for stream_name in response['logStreams']:
         logs = client.get_log_events(
-            logGroupName='/aws/lambda/container_tester_sqs',
-            logStreamName= stream_name['logStreamName']
+            logGroupName = log_group_name,
+            logStreamName = stream_name['logStreamName']
         )
         # print("===Log==")
         # print(logs)   

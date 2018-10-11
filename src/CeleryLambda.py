@@ -25,7 +25,7 @@ class CeleryLambda:
             print (response)
         
         print("===============================Metrics===============================")
-        print("Host Executione Time : %.4f milliseconds" %metrics['host_execu_time'])
+        print("Host Execution Time : %.4f milliseconds" %metrics['host_execu_time'])
         print("Total Time Spent on Lambda : %.4f milliseconds" %metrics['total_duration'])
         print("Invocation Times : %d times" %self.invoke_time)
         print("Time Spent per Invocation : %.4f milliseconds" %metrics['duration_per_invocation'])
@@ -132,5 +132,5 @@ class CeleryLambda:
                     MessageBody=json.dumps(body)
                 )
             host_execu_time = 1000 * (time.time() - start_time)
-            time.sleep(20)
+            time.sleep(40)
             _response_path, _metrics_path = self.show_result(self.identifiers, host_execu_time)

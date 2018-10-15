@@ -13,29 +13,54 @@ def plot_hist(path, field):
             data.append(hash[field])
             line = f.readline()
 
-    sample_size = str(len(data))
-    max_data = str(round(max(data), 3))
-    min_data = str(round(min(data), 3))
-    mean_data = str(round(mean(data), 3))
-    std_data = str(round(std(data), 3))
+    sample_size = len(data)
+    mean_data = round(mean(data), 3)
+    std_data = round(std(data), 3)
+    # Introduce confidence interval to toss outliners
+    upper_bound = mean_data + std_data * 3
+    lower_bound = mean_data - std_data * 3
+    for d in data:
+        if (d >= upper_bound or d <= lower_bound):
+            data.remove(d)
+
+    max_data = round(max(data), 3)
+    min_data = round(min(data), 3)
     
-    metrics = "sample size = " + sample_size + \
-              ", max = " + max_data + \
-              ", min = " + min_data + \
-              r'$,  \mu = ' + mean_data + \
-              r',\ \sigma = $' + std_data
+    metrics = "sample size = " + str(sample_size) + \
+              ", max = " + str(max_data) + \
+              ", min = " + str(min_data) + \
+              r'$,\ \mu = ' + str(mean_data) + \
+              r',\ \sigma = $' + str(std_data)
     # print(metrics)
     # An "interface" to matplotlib.axes.Axes.hist() method
-    n, _bins, _patches = plt.hist(x=data, bins='auto', color='#0504aa',
-                                alpha=0.7, rwidth=0.85)
-    plt.grid(axis='y', alpha=0.75)
-    plt.xlabel('Host Execution Time (millisec)')
-    plt.ylabel('Frequency')
-    plt.title('Histogram - Async Celery, Async Lambda, Invocation = 5\n' + metrics, fontsize=10)
+
+    _fig, ax = plt.subplots()
+
+    _n, _bins, _patches = ax.hist(x=data, bins=int(sample_size/2), color='#0504aa',
+                                alpha=0.7, rwidth=0.85, histtype="bar", density=True, 
+                                label="PDF")
+
+    _n, _bins, _patches = ax.hist(x=data, bins=int(sample_size/2), color='#0932ba',
+                                alpha=0.7, rwidth=0.85, histtype="step", cumulative=True, 
+                                label="empirical CDF", density=True)
     
-    maxfreq = n.max()
+    norm_dist_y = np.random.normal(mean_data, std_data, sample_size)
+    
+    _n, _bins, _patches = ax.hist(x=norm_dist_y, bins=int(sample_size/2), color='#FF5733',
+                                alpha=0.7, rwidth=0.85, histtype="step", cumulative=True, 
+                                label="artificial CDF", density=True)
+    
+    plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('Total Duration (millisec)')
+    plt.ylabel('Probability Density')
+    ax.legend(loc='upper left')
+    plt.title('Histogram - Sync Celery, Sync Lambda, Invocation = 100\n' + metrics, fontsize=10)
+    
+    # maxfreq = n.max()
     # Set a clean upper y-axis limit.
-    plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
+    # plt.ylim(ymax=np.ceil(maxfreq / 10) * 10 if maxfreq % 10 else maxfreq + 10)
+    
+    plt.xlim(0,400)
     
     plt.show() 
 
@@ -72,4 +97,4 @@ def std(data):
 # 'host_execu_time'
 
 if __name__ == '__main__':
-    plot_dist("../result/RC_metrics_CA5LA_20181006.data", 'host_execu_time')
+    plot_hist("../result/RC_metrics_CS100LS_20181007.data", 'total_duration')

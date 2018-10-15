@@ -45,9 +45,9 @@ class CeleryLambda:
         metrics_path = "./result/metrics_" + celery_label + str(self.invoke_time) + lambda_label + "_" + timestamp + ".data"
         response_json_str = json.dumps(group_response)
         metrics_json_str = json.dumps(metrics)
-        with open(response_path, 'a') as f:
+        with open(response_path, 'a+') as f:
             f.write(response_json_str + '\n')
-        with open(metrics_path, 'a') as f:
+        with open(metrics_path, 'a+') as f:
             f.write(metrics_json_str + '\n')
 
         return response_path, metrics_path

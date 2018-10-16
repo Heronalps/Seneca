@@ -1,4 +1,4 @@
-import time, os, sys, boto3, json, decimal, uuid
+import time, os, sys, boto3, json, decimal
 from datetime import datetime
 from boto3.dynamodb.conditions import Key, Attr
 
@@ -42,7 +42,6 @@ def lambda_handler(event, context):
                 'Message' : "Retrieved Container id : " + container_id
             }
             
-    response['identifier'] = event['uuid']
     response['requestId'] = context.aws_request_id
     
     # Generate Log events

@@ -1,7 +1,7 @@
-from celery import group, signature
 from proj.tasks import invoke_centaurus_worker
 from src.measurement import show_result
 from src.clean_logs import clean_logs
+from src.clean_dynamodb import clean_dynamodb
 import time, argparse, json
 
 parser = argparse.ArgumentParser()
@@ -37,12 +37,15 @@ payload = json.dumps({
 })
 lambda_name = "/aws/lambda/worker"
 
-clean_logs(lambda_name)
-print("===Centaurus jobs start===")
-start_time = time.time()
 for _ in range(args.batch_number):
+    print("===Centaurus jobs start===")
+    clean_logs(lambda_name)
+    clean_dynamodb('kmeansservice', 'job_id', 'task_id')
+    
+    start_time = time.time()
     invoke_centaurus_worker(payload)
-host_execu_time = 1000 * (time.time() - start_time)
-time.sleep(25)
-show_result(lambda_name, True, True, host_execu_time)
-print("===Centaurus jobs end===")
+    host_execu_time = 1000 * (time.time() - start_time)
+    time.sleep(25)
+
+    show_result(lambda_name, True, True, host_execu_time)
+    print("===Centaurus jobs end===")

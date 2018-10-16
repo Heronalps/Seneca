@@ -1,8 +1,35 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import json
 import seaborn as sns
+import json
 from statistics import stdev
+
+def plot_curve(field):
+    x_point = []
+    y_point = []
+    for num in range(6, 48, 6):
+        path = str("../result/metrics_CA%dLA_20181015.data" %num)
+        data = []
+        with open(path, 'r') as f:
+            line = f.readline()
+            while line:
+                hash = json.loads(line)
+                data.append(hash[field]/1000)
+                line = f.readline()
+        y_point.append(mean(data))
+        x_point.append(num)
+
+    print(x_point)
+    print(y_point)
+
+    _fig, _ax = plt.subplots()    
+    plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('Experiment Number')
+    plt.ylabel('Total Billed Duration (seconds)')
+    plt.title('Centaurus Metrics', fontsize=10)
+    plt.plot(x_point, y_point, 'bo-')
+    plt.show()
+    
 
 def plot_hist(path, field):
     data = []
@@ -64,22 +91,6 @@ def plot_hist(path, field):
     
     plt.show() 
 
-def plot_dist(path, field):
-    data = []
-    with open(path, "r") as f:
-        line = f.readline()
-        while line:
-            hash = json.loads(line)
-            data.append(hash[field])
-            line = f.readline()
-
-    sns.set_style('darkgrid')
-    plt.title("Kernel Distribution Estimate - CA5LA")
-    plt.xlabel('Host Execution Time (sec)')
-    plt.ylabel('Probability Density')
-    sns.distplot(data)
-    plt.show() 
-
 def mean(data):
     return float(sum(data) / len(data))
 
@@ -97,4 +108,4 @@ def std(data):
 # 'host_execu_time'
 
 if __name__ == '__main__':
-    plot_hist("../result/RC_metrics_CS100LS_20181007.data", 'total_duration')
+    plot_curve('total_duration')

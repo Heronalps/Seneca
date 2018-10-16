@@ -52,7 +52,7 @@ class CeleryLambda:
                 print("===Async Tasks end===")
             
             time.sleep(25)
-            _response_path, _metrics_path = show_result(self.lambda_name, self.celery_async, self.lambda_async, host_execu_time)
+            show_result(self.lambda_name, self.celery_async, self.lambda_async, host_execu_time)
             
         # plot_dist(metrics_path, 'total_duration')
 

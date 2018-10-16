@@ -26,7 +26,7 @@ def plot_curve(field):
     plt.grid(axis='y', alpha=0.75)
     plt.xlabel('Experiment Number')
     plt.ylabel('Total Billed Duration (seconds)')
-    plt.title('Centaurus Metrics', fontsize=10)
+    plt.title('Centaurus Metrics, EC2', fontsize=10)
     plt.plot(x_point, y_point, 'bo-')
     plt.show()
     

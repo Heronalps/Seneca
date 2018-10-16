@@ -3,7 +3,7 @@ from datetime import datetime
 import time, boto3, json, decimal, argparse, re, pdb
 from proj.tasks import invoke_sync, invoke_async
 from src.clean_logs import clean_logs
-from src.plot import plot_dist, plot_hist
+from src.plot import plot_hist
 from src.measurement import show_result
 
 class CeleryLambda:
@@ -46,8 +46,8 @@ class CeleryLambda:
                 start_time = time.time()
                 job = group(invoke_async.s() for i in range(self.invoke_time))
                 print("===Async Tasks start===")
-                job.apply_async()
-                # result.join()
+                result = job.apply_async()
+                result.join()
                 host_execu_time = 1000 * (time.time() - start_time)
                 print("===Async Tasks end===")
             

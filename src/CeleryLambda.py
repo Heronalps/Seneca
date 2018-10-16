@@ -1,7 +1,6 @@
 from celery import group, signature
 from datetime import datetime
 import time, boto3, json, decimal, argparse, re, pdb
-from helpers.DecimalEncoder import DecimalEncoder 
 from proj.tasks import invoke_sync, invoke_async
 from src.clean_logs import clean_logs
 from src.plot import plot_dist, plot_hist
@@ -54,7 +53,7 @@ class CeleryLambda:
             
             time.sleep(25)
             _response_path, _metrics_path = show_result(self.lambda_name, self.celery_async, self.lambda_async, host_execu_time)
-        
+            
         # plot_dist(metrics_path, 'total_duration')
 
     def sqs_trigger(self):

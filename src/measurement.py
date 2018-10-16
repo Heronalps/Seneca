@@ -10,7 +10,7 @@ from src.clean_logs import clean_logs
 # Ideally, this tool should only take lambda name and measure metrics 
 # without any requirement from lambda source code.
 #
-# Calling chain: show_result
+# Calling chain: show_result (Entrance of Measurement)
 #                    |
 #                    -> retrieve_result -> parse_log 
 
@@ -26,8 +26,7 @@ def show_result(lambda_name, celery_async, lambda_async, host_execu_time):
     # in order to root out these two parameters.
 
     group_response, metrics = retrieve_result(lambda_name)
-    invoke_time = len(group_response)
-
+    invoke_time = metrics["invoke_time"]
     # Print returned values from retrieve_result
     metrics["host_execu_time"] = host_execu_time
 
@@ -52,16 +51,18 @@ def show_result(lambda_name, celery_async, lambda_async, host_execu_time):
     timestamp = datetime.fromtimestamp(time.time()).strftime('%Y%m%d')
     celery_label = "CA" if celery_async else "CS"
     lambda_label = "LA" if lambda_async else "LS"
-    response_path = "./result/response_" + celery_label + str(invoke_time) + lambda_label + "_" + timestamp + ".data"
+    
+    # response_path = "./result/response_" + celery_label + str(invoke_time) + lambda_label + "_" + timestamp + ".data"
+    # response_json_str = json.dumps(group_response)
+    # with open(response_path, 'a+') as f:
+    #     f.write(response_json_str + '\n')
+    
     metrics_path = "./result/metrics_" + celery_label + str(invoke_time) + lambda_label + "_" + timestamp + ".data"
-    response_json_str = json.dumps(group_response)
     metrics_json_str = json.dumps(metrics)
-    with open(response_path, 'a+') as f:
-        f.write(response_json_str + '\n')
     with open(metrics_path, 'a+') as f:
         f.write(metrics_json_str + '\n')
 
-    return response_path, metrics_path
+    return metrics_path #, response_path
 
 # retrieve_result()
 # This function will retrieve result from parse_log and calculate metrics for batch invocation
@@ -73,7 +74,7 @@ def retrieve_result(lambda_name):
     max_memory_used = 0
     memory_size = 0
     group_response, group_metrics = parse_log(lambda_name)
-    length = len(group_response)
+    invoke_time = len(group_metrics)
 
     for metrics in group_metrics:
         total_duration += float(metrics['duration'])
@@ -83,7 +84,7 @@ def retrieve_result(lambda_name):
             max_memory_used = temp
         memory_size = int(metrics['memory_size'])
     
-    duration_per_invocation = total_duration / length
+    duration_per_invocation = total_duration / invoke_time
     compute_charge = total_billed_duration * 0.001 * (memory_size / 1024)
     
     # cost = compute charge + request charge
@@ -96,7 +97,8 @@ def retrieve_result(lambda_name):
         "memory_size" : memory_size, 
         "duration_per_invocation" : duration_per_invocation, 
         "compute_charge" : compute_charge,
-        "cost" : cost
+        "cost" : cost,
+        "invoke_time" : invoke_time
     }
 
     return group_response, metrics
@@ -125,12 +127,8 @@ def parse_log(log_group_name):
     
         for event in logs['events']:
             message = event['message']
-                
-            if message.startswith('{'):
-                result = re.search(r'(?<=\'Message\':\s\')(.*?)(?=\')', message).group(0)
-                group_response.append(result)
 
-            elif message.startswith('REPORT'):
+            if message.startswith('REPORT'):
                 
                 # Milliseconds
                 duration = re.search(r'(?<=\tDuration:\s)(.*?)(?=\sms)', message).group(0)
@@ -147,5 +145,11 @@ def parse_log(log_group_name):
                     'max_memory_used':max_memory_used
                 }
                 group_metrics.append(metrics)
+            
+            elif not message.startswith('START') and not message.startswith('END'):
+                temp_result = re.search(r'(?<=\'Message\':\s\')(.*?)(?=\')', message)
+                if temp_result:
+                    result = temp_result.group(0)
+                    group_response.append(result)
     
     return group_response, group_metrics    

@@ -4,11 +4,59 @@ import seaborn as sns
 import json
 from statistics import stdev
 
+def plot_curve_worker(field1, field2):
+    y_point_field1 = []
+    y_point_field2 = []
+    x_point = []
+    for num in range(2, 38, 2):
+        path = str("../result/cutoff/128M/worker%02d_metrics_CA90LA_20181016.data" %num)
+        data = []
+        with open(path, 'r') as f:
+            line = f.readline()
+            while line:
+                hash = json.loads(line)
+                data.append(hash[field1])
+                line = f.readline()
+        y_point_field1.append(mean(data))
+        x_point.append(num)
+
+    for num in range(2, 38, 2):
+        path = str("../result/cutoff/128M/worker%02d_metrics_CA90LA_20181016.data" %num)
+        data = []
+        with open(path, 'r') as f:
+            line = f.readline()
+            while line:
+                hash = json.loads(line)
+                data.append(hash[field2]/1000)
+                line = f.readline()
+        y_point_field2.append(mean(data))
+
+    fig, ax1 = plt.subplots()
+    color = "tab:red"
+    plt.grid(axis='y', alpha=0.75)
+    ax1.set_xlabel('Prefork Worker number')
+    ax1.set_ylabel('Host Execution Time (seconds)')
+    ax1.yaxis.label.set_color('red')
+    ax1.plot(x_point, y_point_field2, 'ro-')
+    ax1.tick_params(axis='y', labelcolor=color)
+
+    color = "tab:blue"
+    ax2 = ax1.twinx()
+    ax2.set_ylabel('Total Duration (millisecs)')
+    ax2.set_ylim(0, 350)
+    ax2.yaxis.label.set_color('blue')
+    ax2.plot(x_point, y_point_field1, 'bo-')
+    ax2.tick_params(axis='y', labelcolor=color)
+
+    fig.tight_layout()
+    plt.title('Prefork Worker Cut-off Curve, 128MB', fontsize=10)
+    plt.show()
+
 def plot_curve(field):
     x_point = []
     y_point = []
     for num in range(6, 48, 6):
-        path = str("../result/metrics_CA%dLA_20181015.data" %num)
+        path = str("../result/metrics_CA%dLA_20181016.data" %num)
         data = []
         with open(path, 'r') as f:
             line = f.readline()
@@ -22,7 +70,8 @@ def plot_curve(field):
     print(x_point)
     print(y_point)
 
-    _fig, _ax = plt.subplots()    
+    _fig, _ax = plt.subplots()
+    plt.ylim(0, 140)    
     plt.grid(axis='y', alpha=0.75)
     plt.xlabel('Experiment Number')
     plt.ylabel('Total Billed Duration (seconds)')
@@ -108,4 +157,4 @@ def std(data):
 # 'host_execu_time'
 
 if __name__ == '__main__':
-    plot_curve('total_duration')
+    plot_curve_worker('total_duration', 'host_execu_time')

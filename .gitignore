@@ -6,3 +6,8 @@ proj/__pycache__/*
 *.json
 *.data
 *.rdb
+.idea/
+.terraform/
+venv/
+*.tfstate
+*.backup

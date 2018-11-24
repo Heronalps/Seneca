@@ -22,7 +22,7 @@ def invoke(fn_name, payload):
     billed_duration = int(re.search(r'(?<=\tBilled\sDuration:\s)(.*?)(?=\sms)', log_string).group(0))
     memory_size = int(re.search(r'(?<=\tMemory\sSize:\s)(.*?)(?=\sMB)', log_string).group(0))
     max_memory_used = int(re.search(r'(?<=\tMax\sMemory\sUsed:\s)(.*?)(?=\sMB)', log_string).group(0))
-    compute_charge = billed_duration * 1e-3 * memory_size / 1024
+    compute_charge = billed_duration * 1e-3 * memory_size / 1024 # unit Gb-Sec
 
     metrics = {
         "billed_duration" : billed_duration,

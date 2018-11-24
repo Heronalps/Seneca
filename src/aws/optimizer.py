@@ -1,10 +1,11 @@
 import boto3, botocore, json, base64, re, math
 
-client = boto3.client("lambda")
+Config = botocore.config.Config(connect_timeout=300, read_timeout=300)
+client = boto3.client("lambda", config=Config)
 
-fn_name = "container_test_lambda"
+fn_name = "random_num_workload"
 aws_role = "arn:aws:iam::603495292017:role/lambda"
-payload = json.dumps({ "messageType" : "refreshConfig", "invokeType" : "RequestResponse" })
+payload = json.dumps({ "number" : "50" })
 
 def create_function(fn_name, aws_role):
     functions = client.list_functions()['Functions']
@@ -16,38 +17,51 @@ def create_function(fn_name, aws_role):
     
     if not created:
         print("Function has not been created yet!")
-        response = client.create_function(
+        client.create_function(
             FunctionName= fn_name,
             Runtime= "python3.6",
             Role= aws_role,
             Handler= "{0}.lambda_handler".format(fn_name),
             Code={ 'ZipFile' : open("{0}.zip".format(fn_name), 'rb').read()},
-            # Set default memory as maximum allocated memory
+            
+            # Set default allocated memory as much as possible 
             MemorySize= 3008
         )
         # print(response)
 
 def invoke(fn_name, payload):
     # Warm up the lambda container
-    client.invoke(
-        FunctionName = fn_name,
-        InvocationType = 'RequestResponse',
-        LogType = 'Tail',
-        Payload = payload
-    )
+    # client.invoke(
+    #     FunctionName = fn_name,
+    #     InvocationType = 'RequestResponse',
+    #     LogType = 'Tail',
+    #     Payload = payload
+    # )
     response = client.invoke(
         FunctionName = fn_name,
         InvocationType = 'RequestResponse',
         LogType = 'Tail',
         Payload = payload
     )
+    print (response)
     request_id = response['ResponseMetadata']['RequestId']
     log_string = base64.b64decode(response['LogResult']).decode('utf-8')
     billed_duration = int(re.search(r'(?<=\tBilled\sDuration:\s)(.*?)(?=\sms)', log_string).group(0))
     memory_size = int(re.search(r'(?<=\tMemory\sSize:\s)(.*?)(?=\sMB)', log_string).group(0))
     max_memory_used = int(re.search(r'(?<=\tMax\sMemory\sUsed:\s)(.*?)(?=\sMB)', log_string).group(0))
-
-    return billed_duration, memory_size, max_memory_used
+    
+    # The flag of the lower bound of lambda function
+    process_exit = True if re.search(r'Process exited before completing request', log_string) else False
+    compute_charge = billed_duration * 1e-3 * memory_size / 1024
+    
+    metrics = {
+        "billed_duration" : billed_duration,
+        "max_memory_used" : max_memory_used,
+        "memory_size" : memory_size,
+        "compute_charge" : compute_charge,
+        "process_exit" : process_exit
+    }
+    return metrics
 
 def update_config(fn_name, memory_size):
     print("update allocated memory to {0} MB".format(memory_size))
@@ -56,48 +70,38 @@ def update_config(fn_name, memory_size):
         MemorySize = memory_size
     )
 
-def compute():
-    billed_duration, memory_size, max_memory_used = invoke(fn_name, payload)
-    compute_charge = billed_duration * 1e-3 * memory_size / 1024
-    print("The compute charge is {0} GB-Sec".format(compute_charge))
-    return compute_charge, max_memory_used
+# This function optimizes the allocated memory of Lambda Function by binary search
+# and gradient descent. 
+
+def bs_optimize():
+    create_function(fn_name, aws_role)
+    # Baseline of compute charge and allocated memory
+
+# This function optimizes the allocated memory of Lambda by linear search
+# due to the fluctuation of the compute charge. It literally tries out 
+# allocated memory from the upper bound (3008 MB) to lower bound able to 
+# execute lambda function.
 
 def optimize():
     create_function(fn_name, aws_role)
-    # Baseline of compute charge and allocated memory
-    compute_charge, max_memory_used = compute()
-    # Binary search for optimized allocated memory
-    if max_memory_used <= 128:
-        start = 2
-    else:
-        end = math.ceil(max_memory_used / 64)
+    minimum_compute_charge = float("inf")
+    allocatted_memory = math.inf
 
-    end = round(3008 / 64)
+    for num in range(47, 1, -1):
+        update_config(fn_name, num * 64)
+        metrics = invoke(fn_name, payload)
+        if metrics['process_exit']:
+            break
 
-    while (start < end):
-        mid = math.floor((start + end) / 2)
-        update_config(fn_name, mid * 64)
-        temp, _ = compute()
-
-        if mid == 0:
-            left = temp
-        else:
-            update_config(fn_name, (mid - 1) * 64)
-            left, _ = compute()
-        
-        if mid == round(3008 / 64):
-            right = temp
-        else:
-            update_config(fn_name, (mid + 1) * 64)
-            right, _ = compute()
-
-        if (left < right):
-            end = mid - 1
-        else:
-            start = mid + 1
+        if metrics['compute_charge'] <= minimum_compute_charge:
+            minimum_compute_charge = metrics['compute_charge']
+            allocatted_memory = num * 64
     
-    update_config(fn_name, start * 64)
-    print("The optimized allocated memory is {0}MB".format(start * 64))
+    update_config(fn_name, allocatted_memory)
+    print ("The lambda function has been configured at {0} MB as allocated memory!".format(allocatted_memory))
+
+# Ideally, the user should specify a lambda deployment package and this script
+# will optimize the function configuration for you.
 
 if __name__ == "__main__":
     optimize()

@@ -11,3 +11,7 @@ proj/__pycache__/*
 venv/
 *.tfstate
 *.backup
+*.so
+*.c
+*.o
+build/

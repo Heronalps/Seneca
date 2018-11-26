@@ -21,7 +21,7 @@ def plot_curve(x_series, y_series, num):
     plt.grid(axis='y', alpha=0.75)
     plt.xlabel(x_series)
     plt.ylabel(y_series)
-    plt.title("{0} VS {1}".format(x_series, y_series), fontsize=10)
+    plt.title("{0} VS {1}".format(x_series, "Computing Power"), fontsize=10)
     plt.plot(x_point, y_point, 'b-')
     plt.show()
 

@@ -1,3 +1,7 @@
+# This lambda is for testing the allocated memory optimizer
+# It essentially dump 3D matrix data to memory, 
+# in order to investigate the convexity of Memory-compute charge curve
+
 import random
 random.seed()
 

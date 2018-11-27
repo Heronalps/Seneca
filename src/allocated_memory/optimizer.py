@@ -72,13 +72,6 @@ def update_config(fn_name, memory_size):
         MemorySize = memory_size
     )
 
-# This function optimizes the allocated memory of Lambda Function by binary search
-# and gradient descent. 
-
-def bs_optimize():
-    create_function(fn_name, aws_role)
-    # Baseline of compute charge and allocated memory
-
 # This function optimizes the allocated memory of Lambda by linear search
 # due to the fluctuation of the compute charge. It literally tries out 
 # allocated memory from the upper bound (3008 MB) to lower bound able to 
@@ -88,14 +81,16 @@ def optimize():
     create_function(fn_name, aws_role)
     minimum_compute_charge = float("inf")
     allocatted_memory = math.inf
-
+    
+    # Search from upper bound to lower bound
     for num in range(47, 1, -1):
         update_config(fn_name, num * 64)
         metrics = invoke(fn_name, payload)
         if metrics['process_exit']:
             break
-
-        if metrics['compute_charge'] <= minimum_compute_charge:
+        # If two allocated memory generate same compute charge, the higher wins for lower duration
+        
+        if metrics['compute_charge'] < minimum_compute_charge:
             minimum_compute_charge = metrics['compute_charge']
             allocatted_memory = num * 64
     

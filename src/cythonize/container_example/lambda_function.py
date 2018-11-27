@@ -1,4 +1,3 @@
-from datetime import datetime
 from dependencies import build_response
 
 

@@ -1,4 +1,9 @@
 from datetime import datetime
+import time, os, sys, boto3, json, decimal
+
+containerId = str(int(time.time()))[-6:]
+configTimestamp = str(datetime.now())
+local_repo = os.path.join(os.path.sep, "tmp", os.path.basename('container'))
 
 def build_response(event):
     response = {}

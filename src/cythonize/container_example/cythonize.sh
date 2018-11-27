@@ -10,4 +10,3 @@ aws lambda create-function \
 --role "arn:aws:iam::603495292017:role/lambda" \
 --handler "lambda_function.lambda_handler" \
 --zip-file "fileb://lambda.zip"
-

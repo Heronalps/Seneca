@@ -3,7 +3,7 @@ import boto3, botocore, json, base64, re, math
 Config = botocore.config.Config(connect_timeout=300, read_timeout=300)
 client = boto3.client("lambda", config=Config)
 
-client.meta.events._unique_id_handlers['retry-config-lambda']['handler']._checker.__dict__['_max_attempts'] = 0
+# client.meta.events._unique_id_handlers['retry-config-lambda']['handler']._checker.__dict__['_max_attempts'] = 0
 
 fn_name = "random_num_workload"
 aws_role = "arn:aws:iam::603495292017:role/lambda"
@@ -89,7 +89,7 @@ def optimize():
         if metrics['process_exit']:
             break
         # If two allocated memory generate same compute charge, the higher wins for lower duration
-        
+
         if metrics['compute_charge'] < minimum_compute_charge:
             minimum_compute_charge = metrics['compute_charge']
             allocatted_memory = num * 64

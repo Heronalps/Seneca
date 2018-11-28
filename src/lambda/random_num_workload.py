@@ -8,15 +8,23 @@ random.seed()
 def lambda_handler(event, context):
     message_map = {}
     total = int(event['number'])
+    
+    # Create two matrices with random elements, multiply them and save to a dict
     for n in range(1, total):
-        matrix = [[[0] * n for i in range(n)] for j in range(n)]
+        matrix_a = [[[0] * n for i in range(n)] for j in range(n)]
+        matrix_b = [[[0] * n for i in range(n)] for j in range(n)]
+        matrix_result = [[[0] * n for i in range(n)] for j in range(n)]
         for i in range(n):
             for j in range(n):
                 for k in range(n):
-                    matrix[i][j][k] = '{0} {1} {2} {3}...'.format(chr(random.randint(0, 255)),
-                                                                  chr(random.randint(0, 255)),
-                                                                  chr(random.randint(0, 255)),
-                                                                  chr(random.randint(0, 255)))
-        message_map[n] = matrix
-    print(message_map)
+                    matrix_a[i][j][k] = random.randint(0, 255)
+                    matrix_b[i][j][k] = random.randint(0, 255)
+        for i in range(n):
+            for j in range(n):
+                for k in range(n):
+                    for l in range(n):
+                        matrix_result[i][j][k] += matrix_a[i][j][l] * matrix_b[i][l][k]
+        
+        message_map[n] = matrix_result
+    # print(message_map)
     return {'total': total, 'status': 'Task completed!'}

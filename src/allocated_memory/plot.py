@@ -4,14 +4,14 @@ import json
 def plot_curve(x_series, y_series, num):
     x_point = []
     y_point = []
-    path = str("../../result/memory_optimizer/sampling{0}.data".format(num))
+    path = str("./sampling{0}.data".format(num))
     
     with open(path, 'r') as f:
         line = f.readline()
         while line:
             hash = json.loads(line)
             x_point.append(hash[x_series])
-            y_point.append(1 / hash[y_series])
+            y_point.append(1/ hash[y_series])
             line = f.readline()
     # print(x_point)
     # print(y_point)
@@ -26,4 +26,4 @@ def plot_curve(x_series, y_series, num):
     plt.show()
 
 if __name__ == '__main__':
-    plot_curve('memory_size', 'billed_duration', 2)
+    plot_curve('memory_size', 'billed_duration', 3)

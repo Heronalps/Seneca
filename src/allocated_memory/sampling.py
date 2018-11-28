@@ -1,7 +1,7 @@
 # This function samples the compute charge of lambda under different allocated memory
 
 import botocore, boto3, botocore, json, base64, re, math
-config = botocore.config.Config(connect_timeout=300, read_timeout=300)
+config = botocore.config.Config(connect_timeout=600, read_timeout=600)
 client = boto3.client("lambda", config=config)
 
 fn_name = "random_num_workload"
@@ -43,11 +43,11 @@ def update_config(fn_name, memory_size):
 def sampling(num):
     path = "./sampling{0}.data".format(num)
     
-    for i in range(4, 48):
+    for i in range(3, 48):
         update_config(fn_name, i * 64)
         metrics = invoke(fn_name, payload)
         with open(path, 'a+') as f:
             f.write(json.dumps(metrics) + '\n')
 
 if __name__ == "__main__":
-    sampling(2)
+    sampling(3)

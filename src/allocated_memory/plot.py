@@ -11,7 +11,7 @@ def plot_curve(x_series, y_series, num):
         while line:
             hash = json.loads(line)
             x_point.append(hash[x_series])
-            y_point.append(1/ hash[y_series])
+            y_point.append(1 / hash[y_series])
             line = f.readline()
     # print(x_point)
     # print(y_point)
@@ -21,9 +21,9 @@ def plot_curve(x_series, y_series, num):
     plt.grid(axis='y', alpha=0.75)
     plt.xlabel(x_series)
     plt.ylabel(y_series)
-    plt.title("{0} VS {1}".format(x_series, "Computing Power"), fontsize=10)
+    plt.title("{0} VS {1}".format(x_series, "computing power"), fontsize=10)
     plt.plot(x_point, y_point, 'b-')
     plt.show()
 
 if __name__ == '__main__':
-    plot_curve('memory_size', 'billed_duration', 3)
+    plot_curve('memory_size', 'billed_duration', 4)

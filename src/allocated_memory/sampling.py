@@ -50,4 +50,4 @@ def sampling(num):
             f.write(json.dumps(metrics) + '\n')
 
 if __name__ == "__main__":
-    sampling(3)
+    sampling(4)

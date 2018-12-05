@@ -1,13 +1,24 @@
-import boto3, botocore, json, base64, re, math
+import boto3, botocore, json, base64, re, math, collections
 
-Config = botocore.config.Config(connect_timeout=300, read_timeout=300)
+Config = botocore.config.Config(connect_timeout=900, read_timeout=900)
 client = boto3.client("lambda", config=Config)
 
 # client.meta.events._unique_id_handlers['retry-config-lambda']['handler']._checker.__dict__['_max_attempts'] = 0
 
 fn_name = "random_num_workload"
+# fn_name = "container_test_lambda"
 aws_role = "arn:aws:iam::603495292017:role/lambda"
+# The max length of queue used for monotonically increase decision
+queue_max_len = 5
+slope_increase = 1
+
+# This input could possibly impact the outocome of optimization, 
+# meaning the varying parameter could lead to different sweetspot in the real-world execution.
 payload = json.dumps({ "number" : "50" })
+# payload = json.dumps({
+#   "messageType": "refreshConfig",
+#   "invokeType": "RequestResponse"
+# })
 
 def create_function(fn_name, aws_role):
     functions = client.list_functions()['Functions']
@@ -15,6 +26,7 @@ def create_function(fn_name, aws_role):
     for func in functions:
         if func['FunctionName'] == fn_name:
             created = True
+            update_config(fn_name, 3008)
             print("Function {0} has been created!".format(fn_name))
     
     if not created:
@@ -45,7 +57,7 @@ def invoke(fn_name, payload):
         LogType = 'Tail',
         Payload = payload
     )
-    print (response)
+    
     request_id = response['ResponseMetadata']['RequestId']
     log_string = base64.b64decode(response['LogResult']).decode('utf-8')
     billed_duration = int(re.search(r'(?<=\tBilled\sDuration:\s)(.*?)(?=\sms)', log_string).group(0))
@@ -55,7 +67,11 @@ def invoke(fn_name, payload):
     # The flag of the lower bound of lambda function
     process_exit = True if re.search(r'Process exited before completing request', log_string) else False
     compute_charge = billed_duration * 1e-3 * memory_size / 1024
-    
+    print("======")
+    print (log_string)
+    print("======")
+    print(compute_charge)
+    print("======")
     metrics = {
         "billed_duration" : billed_duration,
         "max_memory_used" : max_memory_used,
@@ -79,26 +95,53 @@ def update_config(fn_name, memory_size):
 
 def optimize():
     create_function(fn_name, aws_role)
-    minimum_compute_charge = float("inf")
-    allocatted_memory = math.inf
-    
-    # Search from upper bound to lower bound
-    for num in range(47, 1, -1):
+    metrics = invoke(fn_name, payload)
+    starting_point = math.ceil(metrics['max_memory_used'] / 64)
+    if starting_point == 1: 
+        starting_point = starting_point + 1
+    minimum_compute_charge = 0.0
+    allocated_memory = 0
+    prev_memory = collections.deque(maxlen = queue_max_len)
+    prev_compute_charge = collections.deque(maxlen = queue_max_len)
+    optimization_cost = 0.0
+
+    # Search from starting point of lower bound to sweet spot
+    for num in range (starting_point, 47, 1): 
         update_config(fn_name, num * 64)
         metrics = invoke(fn_name, payload)
+        optimization_cost = optimization_cost + metrics['compute_charge'] * 0.00001667
         if metrics['process_exit']:
-            break
-        # If two allocated memory generate same compute charge, the higher wins for lower duration
+            continue
+        prev_compute_charge.append(metrics['compute_charge'])
+        prev_memory.append(num * 64)
 
-        if metrics['compute_charge'] < minimum_compute_charge:
-            minimum_compute_charge = metrics['compute_charge']
-            allocatted_memory = num * 64
-    
-    update_config(fn_name, allocatted_memory)
-    print ("The lambda function has been configured at {0} MB as allocated memory!".format(allocatted_memory))
+        if (isSweetspot(prev_compute_charge)):
+            allocated_memory = prev_memory.popleft()
+            break
+
+    update_config(fn_name, allocated_memory)
+    print ("The lambda function has been configured at {0} MB as allocated memory!".format(allocated_memory))
+    print ("The cost of optimizing lambda function is ${0} !".format(optimization_cost))
 
 # Ideally, the user should specify a lambda deployment package and this script
 # will optimize the function configuration for you.
 
+def isSweetspot(time_series):
+    if time_series.maxlen != len(time_series):
+        return False
+    
+    flag = True
+    prev = 0.0
+    for ts in time_series:
+        if ts <= prev:
+            flag = False
+        else:
+            prev = ts
+    slope = (time_series[-1] - time_series[0]) / time_series.maxlen
+    if slope < slope_increase:
+        flag = False
+    return flag
+
 if __name__ == "__main__":
     optimize()
+    # print(isSweetspot([1.0, 2.0, 3.0, 4.0, 3.9]))

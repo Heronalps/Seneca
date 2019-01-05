@@ -1,6 +1,9 @@
-import math, random, string
+import math, random, string, boto3, datetime, os
 import matplotlib.pyplot as plot
 from mpl_toolkits.mplot3d import Axes3D
+
+client = boto3.client('s3')
+local_repo = os.path.join(os.path.sep, "tmp")
 
 class point:
     def __init__(self, x, y, z):
@@ -86,12 +89,15 @@ def plot_output(bodies, outfile = None):
     ax.set_xlim([-max_range,max_range])    
     ax.set_ylim([-max_range,max_range])
     ax.set_zlim([-max_range,max_range])
-    ax.legend()        
+    ax.legend()  
+    plot.show()      
+    plot.savefig(outfile)
 
-    if outfile:
-        plot.savefig(outfile)
-    else:
-        plot.show()
+    response = client.put_object(
+        Body = outfile,
+        Bucket = 'n-body',
+        Key = "orbit_{0}.png".format(str(datetime.datetime.now().time()))
+    )
 
 def generate_bodies(n):
     bodies = []
@@ -135,9 +141,9 @@ The parameters:
     number_of_steps: The number of steps extrapolating orbit
 '''
 
-if __name__ == "__main__":
-    n = 10
-    number_of_steps = 1e5
+def lambda_handler(event, context):
+    n = event['N']
+    number_of_steps = event['number_of_steps']
 
     # Create N bodies with random location, mass and velocity
     bodies = generate_bodies(n)
@@ -151,5 +157,5 @@ if __name__ == "__main__":
     
     motions = run_simulation(bodies, number_of_steps = number_of_steps)
     
-    # TODO - Write to S3 bucket
-    plot_output(motions, outfile = 'orbits.png')
+    plot_output(motions, outfile = local_repo + 'orbits.png')
+    print ("Successfully upload to S3 n-body")

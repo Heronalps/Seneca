@@ -14,4 +14,6 @@ venv/
 *.so
 *.c
 *.o
+*.png
 build/
+graphs/

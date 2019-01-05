@@ -1,14 +1,14 @@
-import math, random, string, boto3, datetime, os
+import math, random, string, boto3, datetime, os, time
 import matplotlib.pyplot as plot
 from mpl_toolkits.mplot3d import Axes3D
 
-client = boto3.client('s3')
+s3 = boto3.resource('s3')
 local_repo = os.path.join(os.path.sep, "tmp")
 
 class point:
     def __init__(self, x, y, z):
         self.x = x
-        self.y = y
+        self.y = y 
         self.z = z
     def toString(self):
         print ("x : {0} y : {1} z : {2}".format(self.x, self.y, self.z))
@@ -89,16 +89,15 @@ def plot_output(bodies, outfile = None):
     ax.set_xlim([-max_range,max_range])    
     ax.set_ylim([-max_range,max_range])
     ax.set_zlim([-max_range,max_range])
-    ax.legend()  
-    plot.show()      
+    ax.legend()    
     plot.savefig(outfile)
 
-    response = client.put_object(
-        Body = outfile,
+    s3.meta.client.upload_file(
+        Filename = outfile,
         Bucket = 'n-body',
         Key = "orbit_{0}.png".format(str(datetime.datetime.now().time()))
     )
-
+    
 def generate_bodies(n):
     bodies = []
     for _ in range(n):
@@ -115,17 +114,17 @@ def generate_point(lower, upper):
                 random.randrange(lower, upper),
                 random.randrange(lower, upper))
     
-#planet data (location (m), mass (kg), velocity (m/s)
-sun = {"location":point(0,0,0), "mass":2e30, "velocity":point(0,0,0)}
-mercury = {"location":point(0,5.7e10,0), "mass":3.285e23, "velocity":point(47000,0,0)}
-venus = {"location":point(0,1.1e11,0), "mass":4.8e24, "velocity":point(35000,0,0)}
-earth = {"location":point(0,1.5e11,0), "mass":6e24, "velocity":point(30000,0,0)}
-mars = {"location":point(0,2.2e11,0), "mass":2.4e24, "velocity":point(24000,0,0)}
-jupiter = {"location":point(0,7.7e11,0), "mass":1e28, "velocity":point(13000,0,0)}
-saturn = {"location":point(0,1.4e12,0), "mass":5.7e26, "velocity":point(9000,0,0)}
-uranus = {"location":point(0,2.8e12,0), "mass":8.7e25, "velocity":point(6835,0,0)}
-neptune = {"location":point(0,4.5e12,0), "mass":1e26, "velocity":point(5477,0,0)}
-pluto = {"location":point(0,3.7e12,0), "mass":1.3e22, "velocity":point(4748,0,0)}
+# #planet data (location (m), mass (kg), velocity (m/s)
+# sun = {"location":point(0,0,0), "mass":2e30, "velocity":point(0,0,0)}
+# mercury = {"location":point(0,5.7e10,0), "mass":3.285e23, "velocity":point(47000,0,0)}
+# venus = {"location":point(0,1.1e11,0), "mass":4.8e24, "velocity":point(35000,0,0)}
+# earth = {"location":point(0,1.5e11,0), "mass":6e24, "velocity":point(30000,0,0)}
+# mars = {"location":point(0,2.2e11,0), "mass":2.4e24, "velocity":point(24000,0,0)}
+# jupiter = {"location":point(0,7.7e11,0), "mass":1e28, "velocity":point(13000,0,0)}
+# saturn = {"location":point(0,1.4e12,0), "mass":5.7e26, "velocity":point(9000,0,0)}
+# uranus = {"location":point(0,2.8e12,0), "mass":8.7e25, "velocity":point(6835,0,0)}
+# neptune = {"location":point(0,4.5e12,0), "mass":1e26, "velocity":point(5477,0,0)}
+# pluto = {"location":point(0,3.7e12,0), "mass":1.3e22, "velocity":point(4748,0,0)}
 
 # Upper and lower bounds
 UPPER_LOC = 1e13
@@ -142,9 +141,11 @@ The parameters:
 '''
 
 def lambda_handler(event, context):
-    n = event['N']
-    number_of_steps = event['number_of_steps']
-
+    n = int(event['N'])
+    number_of_steps = int(event['number_of_steps'])
+# if __name__ == "__main__":
+#     n = 5
+#     number_of_steps = 1000
     # Create N bodies with random location, mass and velocity
     bodies = generate_bodies(n)
 
@@ -157,5 +158,5 @@ def lambda_handler(event, context):
     
     motions = run_simulation(bodies, number_of_steps = number_of_steps)
     
-    plot_output(motions, outfile = local_repo + 'orbits.png')
+    plot_output(motions, outfile = local_repo + '/orbits.png')
     print ("Successfully upload to S3 n-body")

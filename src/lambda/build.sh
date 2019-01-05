@@ -14,7 +14,7 @@ rm -f lambda_function.zip
 zip -rj9 lambda_function.zip ./src/lambda/n-body.py 
 
 cd $path1
-zip -ur $current_path/lambda_function.zip matplotlib/
+zip -ur $current_path/lambda_function.zip matplotlib/ kiwisolver.cpython-36m-x86_64-linux-gnu.so
 
 cd $path2
 zip -ur $current_path/lambda_function.zip pyparsing.py six.py cycler.py pytz/ dateutil/

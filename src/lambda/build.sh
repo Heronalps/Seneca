@@ -9,14 +9,15 @@ pip install -r ./requirement.txt
 current_path=$PWD
 path1="$PWD/venv/lib64/python3.6/dist-packages"
 path2="$PWD/venv/lib/python3.6/dist-packages"
+path2="$PWD/venv/lib/python3.6/dist-packages"
 rm -f lambda_function.zip
 zip -rj9 lambda_function.zip ./src/lambda/n-body.py 
 
-# cd $path1
-# zip -ur $current_path/lambda_function.zip pandas/ sklearn/
+cd $path1
+zip -ur $current_path/lambda_function.zip matplotlib/
 
 cd $path2
-zip -ur $current_path/lambda_function.zip pyparsing.py six.py cycler.py pytz/ dateutil/ matplotlib/
+zip -ur $current_path/lambda_function.zip pyparsing.py six.py cycler.py pytz/ dateutil/
 
 cd $current_path
 echo 'Complete packaging lambda function'

@@ -14,43 +14,34 @@ def xsum(numbers):
     return sum(numbers)
 
 @app.task
-def invoke_sync():
+def invoke_lambda(function_name, sync=True, payload={}, decoder=None):
     session = boto3.Session(profile_name='default')
     client = session.client('lambda')
-
+    invocation_type = 'RequestResponse' if sync else 'Event'
     response = client.invoke(
-        FunctionName='container_tester',
-        InvocationType='RequestResponse',
+        FunctionName=function_name,
+        InvocationType=invocation_type,
         LogType='None',
-        Payload=json.dumps({ "messageType" : "refreshConfig", "invokeType" : "RequestResponse" })
+        Payload=json.dumps(payload)
     )
-    res_json = json.loads(response['Payload'].read().decode("utf-8"))
-    response['Payload'] = res_json
-    return response
+    if sync:
+        res_json = json.loads(response['Payload'].read().decode(decoder))
+        response['Payload'] = res_json
+        return response
+    else:
+        return "Response Status Code : " + str(response['StatusCode'])
 
 @app.task
-def invoke_async():
+def invoke_n_body_sync(N, number_of_steps):
     session = boto3.Session(profile_name='default')
     client = session.client('lambda')
-
     response = client.invoke(
-        FunctionName='container_tester',
-        InvocationType='Event',
-        LogType='None',
-        Payload=json.dumps({ "messageType" : "refreshConfig", "invokeType" : "Event" })
+        FunctionName = 'orbit',
+        InvocationType = 'RequestResponse',
+        Payload = json.dumps({
+            "N": N,
+            "number_of_steps": number_of_steps
+        })
     )
 
-    return "Response Status Code : " + str(response['StatusCode'])
-
-@app.task
-def invoke_centaurus_worker(payload):
-    session = boto3.Session(profile_name='default')
-    client = session.client('lambda')
-
-    response = client.invoke(
-        FunctionName = 'create_job',
-        InvocationType = "RequestResponse",
-        LogType = 'None',
-        Payload = payload
-    )
-    return response
+    # figure = json.loads(response['Payload'].read().decode(''))

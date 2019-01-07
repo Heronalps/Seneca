@@ -1,6 +1,5 @@
 import time, argparse
-from src.CeleryLambda import CeleryLambda
-from proj.tasks import invoke_sync, invoke_async
+from proj.tasks import invoke_lambda
 
 parser = argparse.ArgumentParser()
 parser.add_argument('lambda_name', type=str,

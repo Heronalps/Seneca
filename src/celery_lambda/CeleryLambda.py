@@ -1,10 +1,10 @@
 from celery import group, signature
 from datetime import datetime
 import time, boto3, json, decimal, argparse, re, pdb
-from proj.tasks import invoke_sync, invoke_async
-from src.clean_logs import clean_logs
-from src.plot import plot_hist
-from src.measurement import show_result
+from proj.tasks import invoke_lambda
+from src.celery_lambda.clean_logs import clean_logs
+from src.celery_lambda.plot import plot_hist
+from src.celery_lambda.measurement import show_result
 
 class CeleryLambda:
     def __init__(self, lambda_name, celery_async, lambda_async, invoke_time, batch_number):
@@ -12,17 +12,25 @@ class CeleryLambda:
         self.lambda_async = lambda_async
         self.invoke_time = invoke_time
         self.batch_number = batch_number
-        self.lambda_name = "/aws/lambda/" + lambda_name
+        self.lambda_path = "/aws/lambda/" + lambda_name
+        self.lambda_name = lambda_name
 
     def run(self):
+        sync_payload = {'messageType' : 'refreshConfig', 'invokeType' : 'RequestResponse'}
+        async_payload = {'messageType' : 'refreshConfig', 'invokeType' : 'Event'}
         for _n in range(self.batch_number):
-            clean_logs(self.lambda_name)
+            clean_logs(self.lambda_path)
 
             if (not self.celery_async and not self.lambda_async):
                 start_time = time.time()
                 for _num in range(self.invoke_time):
                     # print("Lambda is invoked %d time" %(num + 1))
-                    invoke_sync()
+                    invoke_lambda(
+                        function_name=self.lambda_name, 
+                        sync = True,
+                        payload = sync_payload,
+                        decoder='utf-8'
+                    )
                 host_execu_time = 1000 * (time.time() - start_time)
 
             elif (not self.celery_async and self.lambda_async):
@@ -30,12 +38,21 @@ class CeleryLambda:
                 start_time = time.time()
                 for _num in range(self.invoke_time):
                     # print("Lambda is invoked %d time" %(num + 1))
-                    invoke_async()
+                    invoke_lambda(
+                        function_name=self.lambda_name, 
+                        sync = False,
+                        payload = async_payload
+                    )
                 host_execu_time = 1000 * (time.time() - start_time)
 
             elif (self.celery_async and not self.lambda_async):
                 start_time = time.time()
-                job = group(invoke_sync.s() for i in range(self.invoke_time))
+                job = group(invoke_lambda.s(
+                                function_name = 'container_tester',
+                                sync = True,
+                                payload = sync_payload,
+                                decoder = 'utf-8'
+                                ) for i in range(self.invoke_time))
                 print("===Async Tasks start===")
                 job.apply_async()
                 # result.join()
@@ -44,7 +61,11 @@ class CeleryLambda:
                 
             elif (self.celery_async and self.lambda_async):
                 start_time = time.time()
-                job = group(invoke_async.s() for i in range(self.invoke_time))
+                job = group(invoke_lambda.s(
+                                function_name = 'container_tester',
+                                sync = False,
+                                payload = async_payload
+                                ) for i in range(self.invoke_time))
                 print("===Async Tasks start===")
                 result = job.apply_async()
                 result.join()
@@ -52,7 +73,7 @@ class CeleryLambda:
                 print("===Async Tasks end===")
             
             time.sleep(25)
-            show_result(self.lambda_name, self.celery_async, self.lambda_async, host_execu_time)
+            show_result(self.lambda_path, self.celery_async, self.lambda_async, host_execu_time)
             
         # plot_dist(metrics_path, 'total_duration')
 
@@ -61,7 +82,7 @@ class CeleryLambda:
         invokeType = "Event" if self.lambda_async else "RequestResponse"
         for _i in range(self.batch_number):
             self.identifiers = []
-            clean_logs(self.lambda_name)
+            clean_logs(self.lambda_path)
             start_time = time.time()
             for _j in range(self.invoke_time):
                 body = {
@@ -74,4 +95,4 @@ class CeleryLambda:
                 )
             host_execu_time = 1000 * (time.time() - start_time)
             time.sleep(25)
-            _response_path, _metrics_path = show_result(self.lambda_name, self.celery_async, self.lambda_async, host_execu_time)
+            _response_path, _metrics_path = show_result(self.lambda_path, self.celery_async, self.lambda_async, host_execu_time)

@@ -1,6 +1,6 @@
 import json, time, boto3, re
 from datetime import datetime
-from src.clean_logs import clean_logs
+from src.celery_lambda.clean_logs import clean_logs
 
 # Measurement module
 #

@@ -143,9 +143,11 @@ The parameters:
 def lambda_handler(event, context):
     n = int(event['N'])
     number_of_steps = int(event['number_of_steps'])
+
 # if __name__ == "__main__":
 #     n = 5
 #     number_of_steps = 1000
+
     # Create N bodies with random location, mass and velocity
     bodies = generate_bodies(n)
 

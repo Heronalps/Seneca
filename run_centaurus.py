@@ -1,7 +1,7 @@
-from proj.tasks import invoke_centaurus_worker
-from src.measurement import show_result
-from src.clean_logs import clean_logs
-from src.clean_dynamodb import clean_dynamodb
+from proj.tasks import invoke_lambda
+from src.celery_lambda.measurement import show_result
+from src.celery_lambda.clean_logs import clean_logs
+from src.celery_lambda.clean_dynamodb import clean_dynamodb
 import time, argparse, json
 
 parser = argparse.ArgumentParser()
@@ -16,7 +16,7 @@ print("Number of experiment = %d" %args.experiment_time)
 print("Number of Batch = %d" %args.batch_number)
 print("====================")
 
-payload = json.dumps({
+payload = {
     "n_init": 1,
     "n_exp": args.experiment_time,
     "max_k": 1,
@@ -34,7 +34,7 @@ payload = json.dumps({
     ],
     "scale": True,
     "s3_file_key": "normal.csv"
-})
+}
 lambda_name = "/aws/lambda/worker"
 
 for _ in range(args.batch_number):
@@ -43,7 +43,12 @@ for _ in range(args.batch_number):
     clean_dynamodb('kmeansservice', 'job_id', 'task_id')
     
     start_time = time.time()
-    invoke_centaurus_worker(payload)
+    invoke_lambda(
+        function_name = 'create_job',
+        sync = True,
+        payload = payload,
+        decoder = 'utf-8'
+    )
     host_execu_time = 1000 * (time.time() - start_time)
     time.sleep(25)
 

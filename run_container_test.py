@@ -25,11 +25,17 @@ print("====================")
 # print("Warm up call to Lambda container")
 # response = invoke_sync("warm-up-call")
 # print (response) 
+sync_payload = {'messageType' : 'refreshConfig', 'invokeType' : 'RequestResponse'}
+async_payload = {'messageType' : 'refreshConfig', 'invokeType' : 'Event'}
 
 invocation = CeleryLambda(lambda_name = args.lambda_name,
                           celery_async = args.celery_async, 
                           lambda_async = args.lambda_async, 
                           invoke_time = args.invoke_time,
-                          batch_number = args.batch_number)
+                          batch_number = args.batch_number,
+                          sync_payload= sync_payload,
+                          async_payload = async_payload, 
+                          decoder = 'utf-8')
+
 invocation.run()
 # invocation.sqs_trigger()

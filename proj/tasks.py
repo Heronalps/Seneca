@@ -12,7 +12,17 @@ def mul(x, y):
 @app.task
 def xsum(numbers):
     return sum(numbers)
+'''
+This function invokes lambda with specific payload
 
+Parameters:
+    fucntion_name : string
+    sync : boolean
+    payload: A Python map object (Not json serialized)
+    decoder : string
+Return:
+    response
+'''
 @app.task
 def invoke_lambda(function_name, sync=True, payload={}, decoder=None):
     session = boto3.Session(profile_name='default')
@@ -30,18 +40,3 @@ def invoke_lambda(function_name, sync=True, payload={}, decoder=None):
         return response
     else:
         return "Response Status Code : " + str(response['StatusCode'])
-
-@app.task
-def invoke_n_body_sync(N, number_of_steps):
-    session = boto3.Session(profile_name='default')
-    client = session.client('lambda')
-    response = client.invoke(
-        FunctionName = 'orbit',
-        InvocationType = 'RequestResponse',
-        Payload = json.dumps({
-            "N": N,
-            "number_of_steps": number_of_steps
-        })
-    )
-
-    # figure = json.loads(response['Payload'].read().decode(''))

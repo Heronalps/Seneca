@@ -44,7 +44,7 @@ echo "venv size $(du -sh $VIRTUAL_ENV | cut -f1)"
 ```
 cd /var/task/Celery_Lambda/venv/lib/python3.6/site-packages
 zip -9rq /var/task/lambda.zip *
-cd /var/task/Celery_Lambda/src/lambda/
+cd /var/task/Celery_Lambda/src/lambda_func/
 zip -9 /var/task/lambda.zip prophet.py
 ```
 ```

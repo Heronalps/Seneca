@@ -1,6 +1,6 @@
 from fbprophet import Prophet
 import pandas as pd
-import boto3, os,datetime
+import boto3, os, datetime
 from fbprophet.diagnostics import cross_validation
 from fbprophet.diagnostics import performance_metrics
 
@@ -80,7 +80,8 @@ def grid_search_worker(event, context={}):
         # Cross validation the model
         print ("=====Cross Validation=======")
         average_metric = cross_validation_worker(model, initial, period, horizon, metric)
-        return (average_metric, event)
+        print("======Return average metric and event=======")
+        return {'average_metric' : average_metric, 'event' : event}
     
     else:
         future = model.make_future_dataframe(periods=int(forecast))
@@ -92,7 +93,7 @@ def grid_search_worker(event, context={}):
         components.savefig(local_repo + '/components.png')
         upload_csv_s3(local_repo + '/components.png')
         return "Graphs are uploaded to S3"
-        
+
 # This function (run on Lambda) cross validate the chosen model
 
 '''

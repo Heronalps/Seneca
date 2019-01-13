@@ -6,6 +6,7 @@ import matplotlib.pyplot as plot
 from config import model_config, cross_validation_config
 from itertools import product
 from src.celery_lambda.clean_logs import clean_logs
+from src.lambda_func.prophet import grid_search_worker
 
 LAMBDA_NAME = 'prophet_worker'
 FORECAST = '360'
@@ -53,32 +54,33 @@ def grid_search_controller():
     for parameter in PARAMETERS:
         parameter_lists.append(getattr(model_config, parameter))
     search_space = product(*parameter_lists)
+    
     # Tune forecast horizon of the chosen model
     payload_list = create_event(search_space)
 
     max_metric = float('inf')
     chosen_model_event = None
 
-    # for payload in payload_list:
-    #     metric, curr_model = grid_search_worker(payload)
-    #     if metric < max_metric:
-    #         chosen_model = curr_model
+    for payload in payload_list:
+        map_item = grid_search_worker(payload)
+        if map_item['average_metric'] < max_metric:
+            print ("======Update chosen model event==========")
+            chosen_model_event = map_item['event']
     
-
-    job = group(invoke_lambda.s(
-                    function_name = LAMBDA_NAME,
-                    sync = True,
-                    payload = payload
-                    ) for payload in payload_list)
-    print("===Async Tasks start===")
-    result = job.apply_async()
-    result.join_native(timeout=None)
-    model_list = result.get()
-    print("===Async Tasks end===")
-    import pdb; pdb.set_trace();
-    for item in model_list:
-        if item[0] < max_metric:
-            chosen_model_event = item[1]
+    # job = group(invoke_lambda.s(
+    #                 function_name = LAMBDA_NAME,
+    #                 sync = True,
+    #                 payload = payload
+    #                 ) for payload in payload_list)
+    # print("===Async Tasks start===")
+    # result = job.apply_async()
+    # result.join_native(timeout=None)
+    # model_list = result.get()
+    # print("===Async Tasks end===")
+    # import pdb; pdb.set_trace();
+    # for item in model_list:
+    #     if item[0] < max_metric:
+    #         chosen_model_event = item[1]
     
     # Non-zero forecast period makes lambda upload graphs to s3
     chosen_model_event['forecast'] = FORECAST

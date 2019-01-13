@@ -1,5 +1,6 @@
 from .celery import app
 import json, boto3, time
+from botocore.client import Config
 
 @app.task
 def add(x, y):
@@ -26,7 +27,8 @@ Return:
 @app.task
 def invoke_lambda(function_name, sync=True, payload={}, decoder='utf-8'):
     session = boto3.Session(profile_name='default')
-    client = session.client('lambda')
+    config = Config(connect_timeout=900, read_timeout=900)
+    client = session.client('lambda', config=config)
     invocation_type = 'RequestResponse' if sync else 'Event'
     response = client.invoke(
         FunctionName=function_name,

@@ -1,5 +1,4 @@
 #All the lists of hyperparameter of model
-ABC = 1000
 GROWTH = ['logistic', 'linear'] # List of string ("logistic", "linear")
 CAP = [10, 100] # List of integer / float 
 FLOOR = [1, 5] # List of integer / float

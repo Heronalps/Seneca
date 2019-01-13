@@ -77,10 +77,11 @@ def grid_search_controller():
     result.join_native(timeout=None)
     model_list = result.get()
     print("===Async Tasks end===")
-    import pdb; pdb.set_trace();
+    # import pdb; pdb.set_trace();
     for item in model_list:
-        if item[0] < max_metric:
-            chosen_model_event = item[1]
+        payload = item['Payload']
+        if payload['average_metric'] < max_metric:
+            chosen_model_event = payload['event']
     
     # Non-zero forecast period makes lambda upload graphs to s3
     chosen_model_event['forecast'] = FORECAST

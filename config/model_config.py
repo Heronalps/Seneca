@@ -1,7 +1,7 @@
 #All the lists of hyperparameter of model
 GROWTH = ['logistic', 'linear'] # List of string ("logistic", "linear")
-CAP = [10, 100] # List of integer / float 
-FLOOR = [1, 5] # List of integer / float
+CAP = [100] # List of integer / float 
+FLOOR = [10] # List of integer / float
 
 CHANGEPOINT_PRIOR_SCALE = [0.05] # List of float within (0, 1) Default = 0.05
 
@@ -17,4 +17,4 @@ SEASONALITY_PRIOR_SCALE = [0.05] # List of float within (0, 1) Default = 0.5
 
 SEASONALITY_MODE = ['additive', 'multiplicative'] # List of ['additive', 'multiplicative']
 
-INTERVAL_WIDTH = [0.2, 0.9] # List of float within (0, 1) Default = 0.8
+INTERVAL_WIDTH = [0.9] # List of float within (0, 1) Default = 0.8

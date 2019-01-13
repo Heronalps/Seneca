@@ -87,7 +87,7 @@ def grid_search_worker(event, context={}):
         future = model.make_future_dataframe(periods=int(forecast))
         forecast = model.predict(future)
         time_series = model.plot(forecast)
-        components = model.plot_component(forecast)
+        components = model.plot_components(forecast)
         time_series.savefig(local_repo + '/time_series.png')
         upload_csv_s3(local_repo + '/time_series.png')
         components.savefig(local_repo + '/components.png')

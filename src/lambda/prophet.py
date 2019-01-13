@@ -1,11 +1,12 @@
 from fbprophet import Prophet
 import pandas as pd
-import boto3, os
+import boto3, os,datetime
 from fbprophet.diagnostics import cross_validation
 from fbprophet.diagnostics import performance_metrics
 
 local_repo = os.path.join(os.path.sep, "tmp", os.path.basename('csv'))
 client = boto3.client('s3')
+s3 = boto3.resource('s3')
 
 def read_csv_s3(file_name):
     if not os.path.exists(local_repo):
@@ -15,6 +16,13 @@ def read_csv_s3(file_name):
     client.download_file(bucket, file_name, path)
     df = pd.read_csv(path)
     return df
+
+def upload_csv_s3(outfile):
+    s3.meta.client.upload_file(
+        Filename = outfile,
+        Bucket = 'prophet-racelab',
+        Key = "prophet_{0}.png".format(str(datetime.datetime.now().time()))
+    )
 
 # This function trains the time series model based on hyperparameters and dataset.
 '''
@@ -44,10 +52,12 @@ def grid_search_worker(event, context={}):
     horizon = event['horizon']
     metric = event['metric']
 
+    forecast = event['forecast']
+
     # Read the dataset from S3 bucket
     df = read_csv_s3('example_wp_log_peyton_manning.csv')    
     # df = pd.read_csv("./example_wp_log_peyton_manning.csv")
-    
+
     # Fit the model
     df['cap'] = cap
     df['floor'] = floor
@@ -58,18 +68,31 @@ def grid_search_worker(event, context={}):
                     interval_width = interval_width)
 
     model.add_seasonality(name = 'yearly', 
-                          period=365, 
-                          fourier_order=fourier_order, 
-                          prior_scale=seasonality_prior_scale)
+                            period=365, 
+                            fourier_order=fourier_order, 
+                            prior_scale=seasonality_prior_scale)
     model.add_country_holidays(country_name = country_holidays)
 
+    print ("=====Fit the Model=======")
     model.fit(df)
     
-    # Cross validation the model
-
-    average_metric = cross_validation_worker(model, initial, period, horizon, metric)
-    return (average_metric, model)
-
+    if forecast == 0:
+        # Cross validation the model
+        print ("=====Cross Validation=======")
+        average_metric = cross_validation_worker(model, initial, period, horizon, metric)
+        return (average_metric, event)
+    
+    else:
+        future = model.make_future_dataframe(periods=int(forecast))
+        forecast = model.predict(future)
+        time_series = model.plot(forecast)
+        components = model.plot_component(forecast)
+        time_series.savefig(local_repo + '/time_series.png')
+        upload_csv_s3(local_repo + '/time_series.png')
+        components.savefig(local_repo + '/components.png')
+        upload_csv_s3(local_repo + '/components.png')
+        return "Graphs are uploaded to S3"
+        
 # This function (run on Lambda) cross validate the chosen model
 
 '''

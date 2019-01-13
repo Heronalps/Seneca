@@ -24,7 +24,7 @@ Return:
     response
 '''
 @app.task
-def invoke_lambda(function_name, sync=True, payload={}, decoder=None):
+def invoke_lambda(function_name, sync=True, payload={}, decoder='utf-8'):
     session = boto3.Session(profile_name='default')
     client = session.client('lambda')
     invocation_type = 'RequestResponse' if sync else 'Event'

@@ -14,7 +14,7 @@ venv/
 *.so
 *.c
 *.o
-# *.png
+*.png
 build/
 graphs/
 .ipynb_checkpoints/

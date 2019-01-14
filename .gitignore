@@ -1,4 +1,20 @@
 *.DS_Store
 test.py
 .vscode/
+proj/__pycache__/*
 *.pyc
+*.json
+*.data
+*.rdb
+.idea/
+.terraform/
+venv/
+*.tfstate
+*.backup
+*.so
+*.c
+*.o
+# *.png
+build/
+graphs/
+.ipynb_checkpoints/

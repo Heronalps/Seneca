@@ -1,5 +1,6 @@
 from .celery import app
 import json, boto3, time
+from botocore.client import Config
 
 @app.task
 def add(x, y):
@@ -12,32 +13,32 @@ def mul(x, y):
 @app.task
 def xsum(numbers):
     return sum(numbers)
+'''
+This function invokes lambda with specific payload
 
+Parameters:
+    fucntion_name : string
+    sync : boolean
+    payload: A Python map object (Not json serialized)
+    decoder : string
+Return:
+    response
+'''
 @app.task
-def invoke_sync(uuid):
+def invoke_lambda(function_name, sync=True, payload={}, decoder='utf-8'):
     session = boto3.Session(profile_name='default')
-    client = session.client('lambda')
-
+    config = Config(connect_timeout=900, read_timeout=900)
+    client = session.client('lambda', config=config)
+    invocation_type = 'RequestResponse' if sync else 'Event'
     response = client.invoke(
-        FunctionName='container_tester',
-        InvocationType='RequestResponse',
+        FunctionName=function_name,
+        InvocationType=invocation_type,
         LogType='None',
-        Payload=json.dumps({ "messageType" : "refreshConfig", "invokeType" : "RequestResponse", "uuid" : uuid })
+        Payload=json.dumps(payload)
     )
-    res_json = json.loads(response['Payload'].read().decode("utf-8"))
-    response['Payload'] = res_json
-    return response
-
-@app.task
-def invoke_async(uuid):
-    session = boto3.Session(profile_name='default')
-    client = session.client('lambda')
-
-    response = client.invoke(
-        FunctionName='container_tester',
-        InvocationType='Event',
-        LogType='None',
-        Payload=json.dumps({ "messageType" : "refreshConfig", "invokeType" : "Event", "uuid" : uuid })
-    )
-
-    return "Response Status Code : " + str(response['StatusCode'])
+    if sync:
+        res_json = json.loads(response['Payload'].read().decode(decoder))
+        response['Payload'] = res_json
+        return response
+    else:
+        return "Response Status Code : " + str(response['StatusCode'])

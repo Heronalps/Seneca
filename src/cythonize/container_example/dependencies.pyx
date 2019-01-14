@@ -1,14 +1,13 @@
-import time, os, sys, boto3, json, decimal, uuid
 from datetime import datetime
-from boto3.dynamodb.conditions import Key, Attr
+import time, os, sys, boto3, json, decimal
 
 containerId = str(int(time.time()))[-6:]
 configTimestamp = str(datetime.now())
 local_repo = os.path.join(os.path.sep, "tmp", os.path.basename('container'))
 
-def lambda_handler(event, context):
-    response = ''
-    timestamp = time.time()
+def build_response(event):
+    response = {}
+
     if event['messageType'] == 'work':
         response = {
             'Message' : "Container " + containerId + ": work is done with timestamp " + configTimestamp
@@ -42,22 +41,4 @@ def lambda_handler(event, context):
             response =  {
                 'Message' : "Retrieved Container id : " + container_id
             }
-            
-    response['identifier'] = event['uuid']
-    response['requestId'] = context.aws_request_id
-    writeResponse(json.dumps(response), event['uuid'])
-    
-    # Generate Log events
-    print(response)
     return response
-
-        
-def writeResponse(response, uuid):
-    dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
-    table = dynamodb.Table('container_test_response')
-    response = table.put_item(
-       Item = {
-            'identifier': uuid,
-            'response': response
-        }
-    )

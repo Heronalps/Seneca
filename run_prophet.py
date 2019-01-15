@@ -77,21 +77,21 @@ def grid_search_controller():
     result.join_native(timeout=None)
     model_list = result.get()
     print("===Async Tasks end===")
-    # import pdb; pdb.set_trace();
+    
     for item in model_list:
         payload = item['Payload']
         if payload['average_metric'] < max_metric:
             chosen_model_event = payload['event']
     
-    # # Non-zero forecast period makes lambda upload graphs to s3
-    # chosen_model_event['forecast'] = FORECAST
+    # Non-zero forecast period makes lambda upload graphs to s3
+    chosen_model_event['forecast'] = FORECAST
     
-    # # Invoke Lambda with forecast
+    # Invoke Lambda with forecast
 
-    # response = invoke_lambda(function_name = LAMBDA_NAME,
-    #                          sync=True,
-    #                          payload=chosen_model_event)
-    # print (response)
+    response = invoke_lambda(function_name = LAMBDA_NAME,
+                             sync=True,
+                             payload=chosen_model_event)
+    print (response)
 
 if __name__ == "__main__":
     grid_search_controller()

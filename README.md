@@ -31,8 +31,7 @@ docker run -it lambci/lambda:build-python3.6 bash
 python3 -m venv venv
 . venv/bin/activate
 pip install --upgrade pip
-pip install -r requirements.txt
-pip install fbprophet --no-cache
+pip install -r requirements.txt --no-cache
 ```
 ```
 pip uninstall -y matplotlib

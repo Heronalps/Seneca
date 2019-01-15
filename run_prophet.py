@@ -10,9 +10,9 @@ from src.lambda_func.prophet import grid_search_worker
 
 LAMBDA_NAME = 'prophet_worker'
 FORECAST = '360'
-PARAMETERS = ['GROWTH', 'CAP', 'FLOOR', 'CHANGEPOINT_PRIOR_SCALE', 'COUNTRY_HOLIDAYS', 
-              'HOLIDAYS_PRIOR_SCALE', 'FOURIER_ORDER', 'SEASONALITY_PRIOR_SCALE', 
-              'SEASONALITY_MODE', 'INTERVAL_WIDTH']
+PARAMETERS = ['GROWTH', 'CAP', 'FLOOR', 'CHANGEPOINT_PRIOR_SCALE', 'HOLIDAYS',
+              'COUNTRY_HOLIDAYS', 'HOLIDAYS_PRIOR_SCALE', 'FOURIER_ORDER', 'SEASONALITY_PRIOR_SCALE', 
+              'SEASONALITY_MODE', 'INTERVAL_WIDTH', 'LEFT_BOUND', 'RIGHT_BOUND']
 
 CV_SETTINGS = ['INITIAL', 'PERIOD', 'HORIZON', 'METRIC']
 
@@ -47,7 +47,7 @@ def create_event(search_space):
 '''
 
 def grid_search_controller():
-    clean_logs('/aws/lambda/' + LAMBDA_NAME)
+    # clean_logs('/aws/lambda/' + LAMBDA_NAME)
     # Search for model with Cartisan Product of hyperparameters
     parameter_lists = []
     
@@ -77,7 +77,7 @@ def grid_search_controller():
     result.join_native(timeout=None)
     model_list = result.get()
     print("===Async Tasks end===")
-    # import pdb; pdb.set_trace();
+    
     for item in model_list:
         payload = item['Payload']
         if payload['average_metric'] < max_metric:

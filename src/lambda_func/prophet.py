@@ -1,6 +1,6 @@
 from fbprophet import Prophet
 import pandas as pd
-import boto3, os, datetime
+import boto3, os, datetime, json
 from fbprophet.diagnostics import cross_validation
 from fbprophet.diagnostics import performance_metrics
 
@@ -38,12 +38,15 @@ def grid_search_worker(event, context={}):
     cap = event['cap'] 
     floor = event['floor'] 
     changepoint_prior_scale = event['changepoint_prior_scale'] 
+    holidays_dict = json.loads(event['holidays'])
     country_holidays = event['country_holidays'] 
     holidays_prior_scale = event['holidays_prior_scale'] 
     fourier_order= event['fourier_order'] 
     seasonality_prior_scale = event['seasonality_prior_scale'] 
     seasonality_mode = event['seasonality_mode'] 
     interval_width = event['interval_width'] 
+    left_bound = event['left_bound']
+    right_bound = event['right_bound']
     
     # Cross validation settings
     
@@ -58,20 +61,34 @@ def grid_search_worker(event, context={}):
     df = read_csv_s3('example_wp_log_peyton_manning.csv')    
     # df = pd.read_csv("./example_wp_log_peyton_manning.csv")
 
+    # Transfer holiday to data frame
+
+    holidays = pd.DataFrame({
+        'holiday': holidays_dict['holiday'],
+        'ds': pd.to_datetime(holidays_dict['ds']),
+        'lower_window': holidays_dict['lower_window'],
+        'upper_window': holidays_dict['upper_window'],
+    })
+
     # Fit the model
     df['cap'] = cap
     df['floor'] = floor
     model = Prophet(growth = growth, 
                     changepoint_prior_scale = changepoint_prior_scale,
+                    holidays = holidays,
                     holidays_prior_scale = holidays_prior_scale,
                     seasonality_mode = seasonality_mode,
                     interval_width = interval_width)
 
     model.add_seasonality(name = 'yearly', 
-                            period=365, 
-                            fourier_order=fourier_order, 
-                            prior_scale=seasonality_prior_scale)
+                          period=365, 
+                          fourier_order=fourier_order, 
+                          prior_scale=seasonality_prior_scale)
     model.add_country_holidays(country_name = country_holidays)
+
+    # Truncate the time series
+
+    df.loc[(df['ds'] <= left_bound) & (df['ds'] >= right_bound), 'y'] = None
 
     print ("=====Fit the Model=======")
     model.fit(df)

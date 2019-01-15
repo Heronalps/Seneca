@@ -75,7 +75,7 @@ def grid_search_worker(event, context={}):
     df['floor'] = floor
     model = Prophet(growth = growth, 
                     changepoint_prior_scale = changepoint_prior_scale,
-                    holidays = holidays,
+                    # holidays = holidays,
                     holidays_prior_scale = holidays_prior_scale,
                     seasonality_mode = seasonality_mode,
                     interval_width = interval_width)
@@ -88,7 +88,7 @@ def grid_search_worker(event, context={}):
 
     # Truncate the time series
 
-    df.loc[(df['ds'] <= left_bound) & (df['ds'] >= right_bound), 'y'] = None
+    # df.loc[(df['ds'] <= left_bound) & (df['ds'] >= right_bound), 'y'] = None
 
     print ("=====Fit the Model=======")
     model.fit(df)

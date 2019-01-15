@@ -31,10 +31,11 @@ docker run -it lambci/lambda:build-python3.6 bash
 python3 -m venv venv
 . venv/bin/activate
 pip install --upgrade pip
+pip install -r requirements.txt
 pip install fbprophet --no-cache
 ```
 ```
-pip uninstall -y matplolib
+pip uninstall -y matplotlib
 find "$VIRTUAL_ENV/lib/python3.6/site-packages" -name "test" | xargs rm -rf
 find "$VIRTUAL_ENV/lib/python3.6/site-packages" -name "tests" | xargs rm -rf
 rm -rf "$VIRTUAL_ENV/lib/python3.6/site-packages/pystan/stan/src"

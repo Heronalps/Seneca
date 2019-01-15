@@ -37,7 +37,6 @@ def grid_search_worker(event, context={}):
     growth = event['growth'] 
     cap = event['cap'] 
     floor = event['floor'] 
-    changepoints = event['changepoints']
     changepoint_prior_scale = event['changepoint_prior_scale'] 
     holidays_dict = json.loads(event['holidays'])
     country_holidays = event['country_holidays'] 
@@ -46,7 +45,6 @@ def grid_search_worker(event, context={}):
     seasonality_prior_scale = event['seasonality_prior_scale'] 
     seasonality_mode = event['seasonality_mode'] 
     interval_width = event['interval_width'] 
-    mcmc_samples = event['mcmc_samples']
     left_bound = event['left_bound']
     right_bound = event['right_bound']
     
@@ -80,8 +78,7 @@ def grid_search_worker(event, context={}):
                     holidays = holidays,
                     holidays_prior_scale = holidays_prior_scale,
                     seasonality_mode = seasonality_mode,
-                    interval_width = interval_width,
-                    mcmc_samples = mcmc_samples)
+                    interval_width = interval_width)
 
     model.add_seasonality(name = 'yearly', 
                           period=365, 
@@ -91,7 +88,7 @@ def grid_search_worker(event, context={}):
 
     # Truncate the time series
 
-    df.loc[(df['ds'] >= left_bound & df['ds'] <= right_bound), 'y'] = None
+    df.loc[(df['ds'] <= left_bound) & (df['ds'] >= right_bound), 'y'] = None
 
     print ("=====Fit the Model=======")
     model.fit(df)

@@ -1,4 +1,23 @@
+# Seneca
+A framework of auto-packaging, deployment, optimization and hyperparameter-tuning for Serverless function
+
 # User Guidance
+
+## CLI Installation
+
+* Install pipsi:
+```
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+```
+* Install seneca:
+```
+cd ./cli
+pipsi install .
+```
+* Usage
+```
+seneca --help
+```
 
 ## Prerequisite
 - Start Rabbitmq Server, run ``` sudo rabbitmq-server ```
@@ -15,40 +34,8 @@
 
 ## Prophet
 
-* Install Prophet in virtual environment
+* Auto packaging and deployment to Lambda
 ```
-python3 -m venv venv
-. venv/bin/activate
-pip install --upgrade pip
-pip install fbprophet --no-cache
-```
-
-* Run local container to build up lambda package
-```
-docker run -it lambci/lambda:build-python3.6 bash
-```
-```
-python3 -m venv venv
-. venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt --no-cache
-```
-```
-pip uninstall -y matplotlib
-find "$VIRTUAL_ENV/lib/python3.6/site-packages" -name "test" | xargs rm -rf
-find "$VIRTUAL_ENV/lib/python3.6/site-packages" -name "tests" | xargs rm -rf
-rm -rf "$VIRTUAL_ENV/lib/python3.6/site-packages/pystan/stan/src"
-rm -rf "$VIRTUAL_ENV/lib/python3.6/site-packages/pystan/stan/lib/stan_math/lib"
-echo "venv size $(du -sh $VIRTUAL_ENV | cut -f1)"
-```
-```
-cd /var/task/Celery_Lambda/venv/lib/python3.6/site-packages
-zip -9rq /var/task/lambda.zip *
-cd /var/task/Celery_Lambda/src/lambda_func/
-zip -9 /var/task/lambda.zip prophet.py
-```
-```
-# At MacOS terminal
-sudo docker ps # Get container ID
-docker cp <containerId>:/var/task/lambda.zip ~/Downloads
+cd ./src/lambda_func/prophet
+docker-compose up
 ```

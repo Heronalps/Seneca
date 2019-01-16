@@ -1,4 +1,23 @@
+# Seneca
+A framework of auto-packaging, deployment, optimization and hyperparameter-tuning for Serverless function
+
 # User Guidance
+
+## CLI Installation
+
+* Install pipsi:
+```
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+```
+* Install seneca:
+```
+cd ./cli
+pipsi install .
+```
+* Usage
+```
+seneca --help
+```
 
 ## Prerequisite
 - Start Rabbitmq Server, run ``` sudo rabbitmq-server ```

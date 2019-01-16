@@ -15,6 +15,12 @@ venv/
 *.c
 *.o
 *.png
-build/
 graphs/
 .ipynb_checkpoints/
+
+dist/
+build/
+*.egg-info/
+
+.tox/
+.coverage

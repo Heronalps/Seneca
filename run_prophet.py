@@ -6,7 +6,7 @@ import matplotlib.pyplot as plot
 from config import model_config, cross_validation_config
 from itertools import product
 from src.celery_lambda.clean_logs import clean_logs
-from src.lambda_func.prophet import grid_search_worker
+from src.lambda_func.prophet.prophet import grid_search_worker
 
 LAMBDA_NAME = 'prophet_worker'
 FORECAST = '360'

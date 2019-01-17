@@ -33,3 +33,14 @@ INTERVAL_WIDTH = [0.8] # List of float within (0, 1) Default = 0.8
 
 LEFT_BOUND = ['2007-12-10'] # List of left bound of time series
 RIGHT_BOUND = ['2016-01-20'] # list of right bound of time series
+
+
+# Four parameters of cross validation 
+
+INITIAL = '2190 days'
+PERIOD = '180 days'
+HORIZON = '365 days'
+
+# Available metrics: mse, rmse, mae, mape, coverage
+# mape is not scale-invariant
+METRIC = 'mse'

@@ -34,6 +34,15 @@ seneca --help
 
 ## Prophet
 
+* Install Prophet on masOS
+
+Since gcc hookup issue, please install Pystan ```BEFORE``` installing fbprophet, and they ```CANNOT``` be in one pip install command.
+
+```
+pip install numpy==1.15.4
+pip install pystan
+pip install fbprophet
+```
 * Auto packaging and deployment to Lambda
 ```
 cd ./src/lambda_func/prophet

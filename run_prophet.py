@@ -3,7 +3,7 @@
 from celery import group, signature
 from proj.tasks import invoke_lambda
 import matplotlib.pyplot as plot
-from config import model_config, cross_validation_config
+from config.prophet import config
 from itertools import product
 from src.celery_lambda.clean_logs import clean_logs
 from src.lambda_func.prophet.prophet import grid_search_worker
@@ -24,7 +24,7 @@ def create_event(search_space):
         for i, j in zip(PARAMETERS, list(item)):
             payload[i.lower()] = j
         for item in CV_SETTINGS:
-            payload[item.lower()] = getattr(cross_validation_config, item)
+            payload[item.lower()] = getattr(config, item)
         
         # Zero forecast period makes lambda cross validation
         payload['forecast'] = 0    
@@ -52,7 +52,7 @@ def grid_search_controller():
     parameter_lists = []
     
     for parameter in PARAMETERS:
-        parameter_lists.append(getattr(model_config, parameter))
+        parameter_lists.append(getattr(config, parameter))
     search_space = product(*parameter_lists)
     
     # Tune forecast horizon of the chosen model

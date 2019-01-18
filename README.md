@@ -11,8 +11,8 @@ curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | pyt
 ```
 * Install seneca:
 ```
-cd ./cli
-pipsi install .
+cd <rootdir-of-Seneca>
+pipsi install ./cli
 ```
 * Usage
 ```

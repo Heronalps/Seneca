@@ -1,7 +1,8 @@
 # The function (run on EC2 instance) creates celery tasks and retrieve result
 import sys, os, re, importlib
-dir_path = os.path.dirname(os.path.realpath(__file__))
-seneca_path = re.search('.*Seneca', dir_path).group(0)
+from helpers.parsers import parse_path
+
+seneca_path = parse_path(os.getcwd(), "Seneca")
 package_path = seneca_path + "/venv/lib/python3.6/site-packages"
 sys.path.insert(0, seneca_path)
 sys.path.insert(0, package_path)
@@ -84,7 +85,7 @@ def grid_search_controller(config_path):
 
     max_metric = float('inf')
     chosen_model_event = None
-    
+
     # for payload in payload_list:
     #     map_item = grid_search_worker(payload)
     #     if map_item['average_metric'] < max_metric:

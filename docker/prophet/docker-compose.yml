@@ -3,8 +3,11 @@ services:
   app:
     image: lambda-env:0.4
     volumes:
-      - ./:/var/task/prophet
+      - type: bind
+        source: "../../src/lambda_func/prophet"
+        target: "/var/task/prophet"
     environment:
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
       - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+    # command: ["ls", "./prophet"]

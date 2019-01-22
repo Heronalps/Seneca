@@ -31,6 +31,7 @@ Parameters:
 Returns:
     average metric of cross validation performance 
 '''
+
 def grid_search_worker(event, context={}):
     # Time series model settings
     parameter_list = event['parameters']

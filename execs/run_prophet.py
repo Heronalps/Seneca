@@ -1,5 +1,5 @@
 # The function (run on EC2 instance) creates celery tasks and retrieve result
-import sys, os, re, importlib
+import sys, os, re, importlib, time
 from helpers.parsers import parse_path
 
 seneca_path = parse_path(os.getcwd(), "Seneca")
@@ -12,7 +12,6 @@ from proj.tasks import invoke_lambda
 import matplotlib.pyplot as plot
 from itertools import product
 from src.celery_lambda.clean_logs import clean_logs
-from src.lambda_func.prophet.prophet import grid_search_worker
 
 # This function create json event based on each item in search space
 def create_event(config, PARAMETERS, CV_SETTINGS):
@@ -36,8 +35,7 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
             payload['data'][key.lower()] = getattr(config.Cross_Validation, key)
             
         # Zero forecast period makes lambda cross validation
-        payload['forecast'] = 0    
-        
+        payload['forecast'] = 0
         payload_list.append(payload)
 
     return payload_list
@@ -59,7 +57,6 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
 def grid_search_controller(config_path):
     
     # Dynamic importing config file from config_path
-
     path_prefix, filename = split_path(config_path)
     sys.path.insert(0, path_prefix)
     config = importlib.import_module(filename)
@@ -68,7 +65,7 @@ def grid_search_controller(config_path):
     LAMBDA_NAME = getattr(config.Cross_Validation, "LAMBDA_NAME")
     
     # Clean the log of specified lambda function
-    clean_logs('/aws/lambda/' + LAMBDA_NAME)
+    # clean_logs('/aws/lambda/' + LAMBDA_NAME)
 
     # Dynamic load parameters 
     PARAMETERS = []
@@ -85,6 +82,8 @@ def grid_search_controller(config_path):
 
     max_metric = float('inf')
     chosen_model_event = None
+    
+    # from src.lambda_func.prophet.prophet import grid_search_worker
 
     # for payload in payload_list:
     #     map_item = grid_search_worker(payload)
@@ -92,6 +91,9 @@ def grid_search_controller(config_path):
     #         print ("======Update chosen model event==========")
     #         chosen_model_event = map_item['event']
     
+    start = time.time()
+    print ("=====Time Stamp======")
+    print (start)
     job = group(invoke_lambda.s(
                     function_name = LAMBDA_NAME,
                     sync = True,
@@ -99,8 +101,10 @@ def grid_search_controller(config_path):
                     ) for payload in payload_list)
     print("===Async Tasks start===")
     result = job.apply_async()
-    result.join_native(timeout=None)
-    model_list = result.get()
+    result.save()
+    from celery.result import GroupResult
+    saved_result = GroupResult.restore(result.id)
+    model_list = saved_result.get()
     print("===Async Tasks end===")
     
     for item in model_list:
@@ -116,6 +120,8 @@ def grid_search_controller(config_path):
     response = invoke_lambda(function_name = LAMBDA_NAME,
                              sync=True,
                              payload=chosen_model_event)
+    print ("=======The Execution Time===========")
+    print (time.time() - start)
     print (response)
 
 def split_path(path):

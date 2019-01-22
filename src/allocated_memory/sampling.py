@@ -1,4 +1,5 @@
 # This function samples the compute charge of lambda under different allocated memory
+# It provides raw data to verify the disproportional increase of allocated memory and CPU power
 
 import botocore, boto3, botocore, json, base64, re, math
 config = botocore.config.Config(connect_timeout=600, read_timeout=600)

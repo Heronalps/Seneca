@@ -14,11 +14,11 @@ import click, subprocess
 @click.option('--config_path', '-c', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to hyperparameter config file',
-                                     default='./config/prophet/config.py')
+                                     default='./config/multi_regression/config.py')
 @click.option('--lambda_path', '-l', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to lambda handler',
-                                     default='./src/lambda_func/prophet/prophet.py')
+                                     default='./src/lambda_func/multi_regression/multi_regression.py')
 @click.option('--model', '-m', required=True, 
                                #prompt='Specified model',
                                help='The specified model',
@@ -44,15 +44,23 @@ def main(config_path, lambda_path, model, rebuild, optimize):
     commands = "mv {0} {1}; mv {1} {2};".format(lambda_path, 
                                                 model + '.py',
                                                 seneca_path + '/src/lambda_func/' + model)
+    
     p = subprocess.Popen(commands, shell=True)
     p.wait()
-    
-    if model == 'prophet':
-        if optimize or rebuild:
+
+    # Both optimization or rebuild need deployment
+    if optimize or rebuild:
             auto_deploy(model)
             if optimize:
                 auto_optimize(model)
+
+    if model == 'prophet':
         prophet(config_path, run_prophet)
+
+    elif model == 'multi_regression':
+        pass
+        # multi_regression(config_path, run_multi_regression)
+
 
 def auto_deploy(model):
     my_env = os.environ.copy()
@@ -62,10 +70,13 @@ def auto_deploy(model):
     p.wait()
 
 def auto_optimize(model):
-    payload = getattr(pl.Prophet, 'payload')
+    payload = getattr(getattr(pl, model), 'payload')
     optimizer = Optimizer(fn_name=model + '_worker', payload=payload)
     click.echo(optimizer.run())
 
 def prophet(config_path, run_prophet):
     click.echo("Run Hyperparameter Tuning on Prophet")
     click.echo(run_prophet.grid_search_controller(config_path))
+
+def multi_regression(config_path, run_multi_regression):
+    pass

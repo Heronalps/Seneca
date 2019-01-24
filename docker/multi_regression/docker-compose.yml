@@ -1,11 +1,11 @@
 version: '3.3'
 services:
   app:
-    image: lambda_prophet:0.1
+    image: lambda-multi_regression:0.1
     volumes:
       - type: bind
-        source: "../../src/lambda_func/prophet"
-        target: "/var/task/prophet"
+        source: "../../src/lambda_func/multi_regression"
+        target: "/var/task/multi_regression"
     environment:
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}

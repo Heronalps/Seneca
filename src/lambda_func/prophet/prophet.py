@@ -20,7 +20,7 @@ def read_csv_s3(file_name):
 def upload_csv_s3(outfile):
     s3.meta.client.upload_file(
         Filename = outfile,
-        Bucket = 'prophet-racelab',
+        Bucket = 'seneca-racelab',
         Key = "prophet_{0}.png".format(str(datetime.datetime.now().time()))
     )
 

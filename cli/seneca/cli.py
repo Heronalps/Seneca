@@ -5,7 +5,7 @@ sys.path.insert(0, '../')
 from helpers.parsers import parse_path
 seneca_path = parse_path(os.getcwd(), "Seneca")
 
-from execs import run_prophet
+from execs import run_prophet, run_multi_regression
 from payloads import payloads as pl
 from src.allocated_memory.optimizer import Optimizer
 import click, subprocess
@@ -58,8 +58,7 @@ def main(config_path, lambda_path, model, rebuild, optimize):
         prophet(config_path, run_prophet)
 
     elif model == 'multi_regression':
-        pass
-        # multi_regression(config_path, run_multi_regression)
+        multi_regression(config_path, run_multi_regression)
 
 
 def auto_deploy(model):
@@ -79,4 +78,6 @@ def prophet(config_path, run_prophet):
     click.echo(run_prophet.grid_search_controller(config_path))
 
 def multi_regression(config_path, run_multi_regression):
-    pass
+    click.echo("Run Hyperparameter Tuning on Multivariate Regression")
+    click.echo(run_multi_regression.grid_search_controller(config_path))
+

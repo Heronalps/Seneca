@@ -79,7 +79,7 @@ def merge_df(column, df_base, df_dict):
     return df_base
 
 
-def lambda_handler(event, context):
+def lambda_handler(event, context={}):
     variable_files = json.loads(event['variable_files'])
     target_file = event['target_file']
     df_dict = {}
@@ -111,16 +111,18 @@ def lambda_handler(event, context):
     regr.fit(df_train_X, df_train_Y)
     
     df_prediction_Y = regr.predict(df_test_X)
-    
+    mse = mean_squared_error(df_test_Y, df_prediction_Y)
     print("==============================================================")
     print("The coefficients of regression model is {0}".format(regr.coef_))
     print("==============================================================")
     print("The intercept of regression model is {0}".format(regr.intercept_))
     print("==============================================================")
-    print("The MSE of prediction is {0}".format(mean_squared_error(df_test_Y, df_prediction_Y)))
+    print("The MSE of prediction is {0}".format(mse))
     print("==============================================================")
     print("The R Square of regression is {0}".format(r2_score(df_test_Y, df_prediction_Y)))
     print("==============================================================")
+
+    return {"metric" : mse, "event" : event}
 
 # if __name__ == "__main__":
 #     lambda_handler(context, event)

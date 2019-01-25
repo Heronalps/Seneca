@@ -5,7 +5,7 @@ sys.path.insert(0, '../')
 from helpers.parsers import parse_path
 seneca_path = parse_path(os.getcwd(), "Seneca")
 
-from execs import run_prophet, run_multi_regression
+from execs import run_prophet, run_multi_regression, run_xgboost
 from payloads import payloads as pl
 from src.allocated_memory.optimizer import Optimizer
 import click, subprocess
@@ -14,16 +14,16 @@ import click, subprocess
 @click.option('--config_path', '-c', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to hyperparameter config file',
-                                     default='./config/multi_regression/config.py')
+                                     default='./config/xgboost/config.py')
 @click.option('--lambda_path', '-l', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to lambda handler',
-                                     default='./src/lambda_func/multi_regression/multi_regression.py')
+                                     default='./src/lambda_func/xgboost/xgboost.py')
 @click.option('--model', '-m', required=True, 
                                #prompt='Specified model',
                                help='The specified model',
                                type = click.Choice(['prophet',
-                                             'xgboost',
+                                             'XGBoost',
                                              'multi_regression',
                                              'centaurus',
                                              'random_forest',
@@ -60,6 +60,9 @@ def main(config_path, lambda_path, model, rebuild, optimize):
     elif model == 'multi_regression':
         multi_regression(config_path, run_multi_regression)
 
+    elif model == 'XGBoost':
+        xgboost(config_path, run_xgboost)
+
 
 def auto_deploy(model):
     my_env = os.environ.copy()
@@ -80,4 +83,8 @@ def prophet(config_path, run_prophet):
 def multi_regression(config_path, run_multi_regression):
     click.echo("Run Hyperparameter Tuning on Multivariate Regression")
     click.echo(run_multi_regression.grid_search_controller(config_path))
+
+def xgboost(config_path, run_xgboost):
+    click.echo("Run Hyperparameter Tuning on XGBoost")
+    click.echo(run_xgboost.grid_search_controller(config_path))
 

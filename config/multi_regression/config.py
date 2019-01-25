@@ -1,4 +1,4 @@
-import json
+# This is the configuration file of Multi-variate Regression 
 
 DATASETS = ["pizero_02.csv", "pizero_02_2.csv", "pizero_04.csv"]
 

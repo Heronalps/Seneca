@@ -24,6 +24,7 @@ if [[ "$exist" == false ]] ; then
     --code S3Bucket=seneca-racelab,S3Key=lambda_prophet.zip \
     --timeout 900
 fi
-
-aws lambda update-function-code --function-name prophet_worker\
- --s3-bucket seneca-racelab --s3-key lambda_prophet.zip
+if [[ "$exist" == true ]] ; then
+    aws lambda update-function-code --function-name prophet_worker\
+    --s3-bucket seneca-racelab --s3-key lambda_prophet.zip
+fi

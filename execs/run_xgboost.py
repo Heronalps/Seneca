@@ -1,6 +1,5 @@
-# The function (run on EC2 instance) creates celery tasks and retrieve result
-import sys, os, re, importlib, time, json, copy
-
+ # The function (run on EC2 instance) creates celery tasks and retrieve result
+import sys, os, re, importlib, time
 # Makes Seneca root directory available for importing
 sys.path.insert(0, "./")
 from helpers.parsers import parse_path
@@ -16,35 +15,34 @@ import matplotlib.pyplot as plot
 from itertools import product
 from src.celery_lambda.clean_logs import clean_logs
 
-# This function create all subsets of DATASETS
-def create_subset(DATASETS):
-    if not DATASETS:
-        return []
-    final_list = []
-    backtrack(DATASETS, 0, [], final_list)
-    return final_list
-
-def backtrack(DATASETS, start, temp, final_list):
-    for i in range(start, len(DATASETS)):
-        temp.append(DATASETS[i])
-        final_list.append(copy.deepcopy(temp))
-        backtrack(DATASETS, i + 1, temp, final_list)
-        del temp[-1]
-
 # This function create json event based on each item in search space
-def create_event(config, DATASETS, TARGETS):
+def create_event(config, PARAMETERS, CONFIG):
+    
+    # Search for model with Cartisan Product of hyperparameters
+    parameter_lists = []
+    for parameter in PARAMETERS:
+        parameter_lists.append(getattr(config.Hyperparameter, parameter))
+    search_space = product(*parameter_lists)
+
     payload_list = []
-    subsets = create_subset(DATASETS)    
-    for subset in subsets:
+    for item in search_space:
         payload = {}
-        payload["target_file"] = TARGETS
-        payload["variable_files"] = json.dumps(subset)
+        payload['parameters'] = [key.lower() for key in (PARAMETERS + CONFIG)]
+        payload['data'] = {}
+        # Transfer tuple to list, because zip() requires list as argument
+        for key, value in zip(PARAMETERS, list(item)):
+            payload['data'][key.lower()] = value
+            
+        for key in CONFIG:
+            payload['data'][key.lower()] = getattr(config.Config, key)
+            
         payload_list.append(payload)
+        print ("=====Payload=======")
+        print (payload)
 
     return payload_list
 
-
-# This function create search space of multi_regression and make async request to Lambda
+# This function create search space of prophet modeling and make async request to Lambda
 
 '''
     Paramters:
@@ -64,24 +62,28 @@ def grid_search_controller(config_path):
     config = importlib.import_module(filename)
     
     # Dynamic loading lambda name
-    LAMBDA_NAME = getattr(config, "LAMBDA_NAME")
+    LAMBDA_NAME = getattr(config.Config, "LAMBDA_NAME")
     
     # Clean the log of specified lambda function
     clean_logs('/aws/lambda/' + LAMBDA_NAME)
 
     # Dynamic load parameters 
-    DATASETS = []
-    TARGETS = getattr(config, 'TARGETS')
-    for key in getattr(config, 'DATASETS'):
-        DATASETS.append(key)
+    PARAMETERS = []
+    CONFIG = []
+    for key in dir(config.Hyperparameter):
+        if key.isupper():
+            PARAMETERS.append(key)
+    for key in dir(config.Config):
+        if key.isupper():
+            CONFIG.append(key)
 
     # Tune forecast horizon of the chosen model
-    payload_list = create_event(config, DATASETS, TARGETS)
+    payload_list = create_event(config, PARAMETERS, CONFIG)
 
     min_metric = float('inf')
     chosen_model_event = None
     
-    # from src.lambda_func.multi_regression.multi_regression import lambda_handler
+    # from src.lambda_func.xgboost.xgboost import lambda_handler
 
     # for payload in payload_list:
     #     map_item = lambda_handler(payload)
@@ -89,8 +91,7 @@ def grid_search_controller(config_path):
     #         print ("======Update chosen model event==========")
     #         chosen_model_event = map_item['event']
     #         min_metric = map_item['metric']
-    # print (chosen_model_event)
-
+    
     start = time.time()
     print ("=====Time Stamp======")
     print (start)
@@ -104,7 +105,12 @@ def grid_search_controller(config_path):
     result.save()
     from celery.result import GroupResult
     saved_result = GroupResult.restore(result.id)
-    model_list = saved_result.get()
+
+    while not saved_result.ready():
+        time.sleep(0.1)
+    model_list = saved_result.get(timeout=None)
+    
+    
     print("===Async Tasks end===")
     
     for item in model_list:
@@ -113,9 +119,10 @@ def grid_search_controller(config_path):
             chosen_model_event = payload['event']
             min_metric = payload['metric']
     
-    print (chosen_model_event)
     print ("=======The Execution Time===========")
     print (time.time() - start)
+    print (min_metric)
+    print (chosen_model_event)
 
 def split_path(path):
     # This regex captures filename after the last backslash
@@ -125,4 +132,5 @@ def split_path(path):
     return path_prefix, filename
 
 if __name__ == "__main__":
-    grid_search_controller("./config/multi_regression/config.py")
+    path = "/Users/michaelzhang/Downloads/Seneca/config/xgboost/config.py"
+    grid_search_controller(path)

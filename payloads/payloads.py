@@ -1,7 +1,10 @@
 import json
 
-class Prophet:
+class prophet:
     payload = json.dumps({'parameters': ['cap', 'changepoint_prior_scale', 'country_holidays', 'floor', 'fourier_order','growth', 'holidays', 'holidays_prior_scale', 'interval_width', 'left_bound', 'right_bound', 'seasonality_mode', 'seasonality_prior_scale', 'dataset', 'forecast', 'horizon', 'initial', 'lambda_name', 'metric', 'period'], 'data': {'cap': 100, 'changepoint_prior_scale': 0.05, 'country_holidays': 'US', 'floor': 10, 'fourier_order': 10, 'growth': 'logistic', 'holidays': '{"holiday": "superbowl", "ds": ["2010-02-07", "2014-02-02", "2016-02-07"], "lower_window": 0, "upper_window":1}', 'holidays_prior_scale': 10, 'interval_width': 0.8, 'left_bound': '2007-12-10', 'right_bound': '2016-01-20', 'seasonality_mode': 'additive', 'seasonality_prior_scale': 0.5, 'dataset': 'example_wp_log_peyton_manning.csv', 'forecast': '360', 'horizon': '365 days', 'initial': '2190 days', 'lambda_name': 'prophet_worker', 'metric': 'mse', 'period': '180 days'}, 'forecast': 0})
 
 class multi_regression:
     payload = json.dumps({"variable_files": "[\"pizero_02.csv\",\"pizero_02_2.csv\",\"pizero_04.csv\", \"pizero_05.csv\", \"pizero_06.csv\"]","target_file": "pizero_02_dht.csv"})
+
+class XGBoost:
+    payload = json.dumps({'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample', 'dataset', 'lambda_name'],'data': {'base_score': 10, 'booster': 'gbtree', 'colsample_bylevel': 0.2, 'colsample_bytree': 0.2, 'gamma': 0.1, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 1, 'min_child_weight': 2, 'n_estimators': 2, 'n_jobs': 2, 'random_state': 123, 'reg_alpha': 0.2, 'reg_lambda': 0.1, 'scale_pos_weight': 0.3, 'subsample': 0.1, 'dataset': 'data_2017.csv', 'lambda_name': 'xgboost_worker'}})

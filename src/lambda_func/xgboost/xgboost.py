@@ -19,9 +19,14 @@ def read_csv_s3(file_name):
     df = pd.read_csv(path)
     return df
 
-def lambda_handler(event, context):
-    file_name = event['file_name']
-    df = read_csv_s3(file_name)
+def lambda_handler(event, context={}):
+    # Load parameters
+    parameter_list = event['parameters']
+    parameters = {}
+    for key in parameter_list:
+        parameters[key] = event['data'][key]
+    
+    df = read_csv_s3(parameters['dataset'])
 
     y = df.block_Num
     X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
@@ -40,15 +45,18 @@ def lambda_handler(event, context):
     train_y = encoder.fit_transform(train_y)
     test_y = encoder.fit_transform(test_y)
 
-    my_model = XGBRegressor()
-    my_model.fit(train_X, train_y, verbose=False)
+    my_model = XGBRegressor(**parameters)
+    my_model.fit(train_X, train_y, verbose=True)
 
     predictions = my_model.predict(test_X)
 
     from sklearn.metrics import mean_absolute_error
-    print("Mean Absolute Error : " + str(mean_absolute_error(predictions, test_y)))
+    mse = mean_absolute_error(predictions, test_y)
+    print("Mean Absolute Error : " + str(mse))
     print("====================")
     print(np.unique(test_y, return_counts=True))
     print(np.unique(predictions.round(), return_counts=True))
     print("====================")
     print("Accuracy Score: " + str(accuracy_score(test_y, predictions.round(), normalize=True)))
+
+    return {'metric': mse, 'event': event}

@@ -1,5 +1,7 @@
 # The function (run on EC2 instance) creates celery tasks and retrieve result
 import sys, os, re, importlib, time
+# Makes Seneca root directory available for importing
+sys.path.insert(0, "./")
 from helpers.parsers import parse_path
 
 seneca_path = parse_path(os.getcwd(), "Seneca")
@@ -78,17 +80,17 @@ def grid_search_controller(config_path):
     # Tune forecast horizon of the chosen model
     payload_list = create_event(config, PARAMETERS, CV_SETTINGS)
 
-    max_metric = float('inf')
+    min_metric = float('inf')
     chosen_model_event = None
     
     # from src.lambda_func.prophet.prophet import grid_search_worker
 
     # for payload in payload_list:
     #     map_item = grid_search_worker(payload)
-    #     if map_item['average_metric'] < max_metric:
+    #     if map_item['average_metric'] < min_metric:
     #         print ("======Update chosen model event==========")
     #         chosen_model_event = map_item['event']
-    #         max_metric = map_item['average_metric']
+    #         min_metric = map_item['average_metric']
     
     start = time.time()
     print ("=====Time Stamp======")
@@ -108,9 +110,9 @@ def grid_search_controller(config_path):
     
     for item in model_list:
         payload = item['Payload']
-        if payload['average_metric'] < max_metric:
+        if payload['average_metric'] < min_metric:
             chosen_model_event = payload['event']
-            max_metric = payload['average_metric']
+            min_metric = payload['average_metric']
     
     # Non-zero forecast period makes lambda upload graphs to s3
     chosen_model_event['forecast'] = getattr(config.Cross_Validation, "FORECAST")

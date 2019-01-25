@@ -1,30 +1,32 @@
 #! /bin/bash
 source ./venv/bin/activate
 pushd $VIRTUAL_ENV/lib/python3.6/site-packages
-zip -9rq /var/task/lambda_multi_regression.zip *
+zip -9rq /var/task/lambda_xgboost.zip *
 popd
-zip -9j lambda_multi_regression.zip /var/task/multi_regression/multi_regression.py
+zip -9j lambda_xgboost.zip /var/task/xgboost/XGBoost.py
 
-aws s3api put-object --bucket seneca-racelab --key lambda_multi_regression.zip \
---body lambda_multi_regression.zip
+aws s3api put-object --bucket seneca-racelab --key lambda_xgboost.zip \
+--body lambda_xgboost.zip
 
 functions=`aws lambda list-functions`
 
 exist=false
 
 for function in $functions; do
-    if [[ "$function" = *multi_regression_worker* ]] ; then
+    if [[ "$function" = *xgboost_worker* ]] ; then
         exist=true
     fi
 done
 
 if [[ "$exist" == false ]] ; then
     aws lambda create-function \
-    --function-name multi_regression_worker --runtime python3.6 \
-    --role $AWS_ROLE --handler multi_regression.lambda_handler \
-    --code S3Bucket=seneca-racelab,S3Key=lambda_multi_regression.zip \
-    --timeout 900
+    --function-name XGBoost_worker --runtime python3.6 \
+    --role $AWS_ROLE --handler XGBoost.lambda_handler \
+    --code S3Bucket=seneca-racelab,S3Key=lambda_xgboost.zip \
+    --timeout 900 \
+    --layers arn:aws:lambda:us-west-2:420165488524:layer:AWSLambda-Python36-SciPy1x:2
 fi
-
-aws lambda update-function-code --function-name multi_regression_worker \
---s3-bucket seneca-racelab --s3-key lambda_multi_regression.zip
+if [[ "$exist" == true ]] ; then
+    aws lambda update-function-code --function-name xgboost_worker \
+    --s3-bucket seneca-racelab --s3-key lambda_xgboost.zip
+fi

@@ -96,7 +96,7 @@ class Optimizer():
         
         # If no sweetspot is found, the lambda function will be configured to 128MB
         # in order to save compute charge.
-        allocated_memory = 128
+        allocated_memory = starting_point * 64
         
         prev_memory = collections.deque(maxlen = self.QUEUE_MAX_LEN)
         prev_compute_charge = collections.deque(maxlen = self.QUEUE_MAX_LEN)

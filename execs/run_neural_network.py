@@ -32,9 +32,12 @@ def create_event(config, PARAMETERS, CONFIG):
         # Transfer tuple to list, because zip() requires list as argument
         for key, value in zip(PARAMETERS, list(item)):
             payload['data'][key.lower()] = value
-        
-        payload['dataset'] = getattr(config.Config, 'DATASET')    
+            
+        payload['dataset'] = getattr(config.Config, 'DATASET')
+            
         payload_list.append(payload)
+        print ("=====Payload=======")
+        print (payload)
 
     return payload_list
 
@@ -79,7 +82,7 @@ def grid_search_controller(config_path):
     min_metric = float('inf')
     chosen_model_event = None
     
-    from src.lambda_func.xgboost.XGBoost import lambda_handler
+    from src.lambda_func.neural_network.neural_network import lambda_handler
 
     for payload in payload_list:
         map_item = lambda_handler(payload)
@@ -128,5 +131,5 @@ def split_path(path):
     return path_prefix, filename
 
 if __name__ == "__main__":
-    path = "/Users/michaelzhang/Downloads/Seneca/config/xgboost/config.py"
+    path = "/Users/michaelzhang/Downloads/Seneca/config/neural_network/config.py"
     grid_search_controller(path)

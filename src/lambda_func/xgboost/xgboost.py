@@ -26,8 +26,8 @@ def lambda_handler(event, context={}):
     for key in parameter_list:
         parameters[key] = event['data'][key]
     
-    df = read_csv_s3(parameters['dataset'])
-
+    df = read_csv_s3(event['dataset'])
+    
     y = df.block_Num
     X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
 

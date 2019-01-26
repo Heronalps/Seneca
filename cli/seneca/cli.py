@@ -5,7 +5,7 @@ sys.path.insert(0, '../')
 from helpers.parsers import parse_path
 seneca_path = parse_path(os.getcwd(), "Seneca")
 
-from execs import run_prophet, run_multi_regression, run_xgboost
+from execs import run_prophet, run_multi_regression, run_xgboost, run_neural_network
 from payloads import payloads as pl
 from src.allocated_memory.optimizer import Optimizer
 import click, subprocess
@@ -14,11 +14,11 @@ import click, subprocess
 @click.option('--config_path', '-c', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to hyperparameter config file',
-                                     default='./config/xgboost/config.py')
+                                     default='./config/neural_network/config.py')
 @click.option('--lambda_path', '-l', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to lambda handler',
-                                     default='./src/lambda_func/xgboost/xgboost.py')
+                                     default='./src/lambda_func/neural_network/neural_network.py')
 @click.option('--model', '-m', required=True, 
                                #prompt='Specified model',
                                help='The specified model',
@@ -63,6 +63,8 @@ def main(config_path, lambda_path, model, rebuild, optimize):
     elif model == 'XGBoost':
         xgboost(config_path, run_xgboost)
 
+    elif model == 'neural_network':
+        neural_network(config_path, run_neural_network)
 
 def auto_deploy(model):
     my_env = os.environ.copy()
@@ -88,3 +90,6 @@ def xgboost(config_path, run_xgboost):
     click.echo("Run Hyperparameter Tuning on XGBoost")
     click.echo(run_xgboost.grid_search_controller(config_path))
 
+def neural_network(config_path, run_neural_network):
+    click.echo("Run Hyperparameter Tuning on neural network")
+    click.echo(run_neural_network.grid_search_controller(config_path))

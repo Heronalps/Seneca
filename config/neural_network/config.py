@@ -19,9 +19,7 @@ class Hyperparameter:
     BETA_2 = [0.999]
     EPSILON = [1e-8]
     N_ITER_NO_CHANGE = [10]
-    VERBOSE = [True]
-
-
+    VERBOSE = [False]
 
 class Config:
     # The Dataset filename 

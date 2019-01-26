@@ -11,8 +11,8 @@ curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | pyt
 ```
 * Install seneca:
 ```
-cd ./cli
-pipsi install .
+cd <rootdir-of-Seneca>
+pipsi install ./cli
 ```
 * Usage
 ```
@@ -34,6 +34,15 @@ seneca --help
 
 ## Prophet
 
+* Install Prophet on masOS
+
+Since gcc hookup issue, please install Pystan ```BEFORE``` installing fbprophet, and they ```CANNOT``` be in one pip install command.
+
+```
+pip install numpy==1.15.4
+pip install pystan
+pip install fbprophet
+```
 * Auto packaging and deployment to Lambda
 ```
 cd ./src/lambda_func/prophet

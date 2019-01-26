@@ -79,18 +79,22 @@ def grid_search_controller(config_path):
     # Tune forecast horizon of the chosen model
     payload_list = create_event(config, PARAMETERS, CONFIG)
 
-    min_metric = float('inf')
+    max_metric = float('-inf')
     chosen_model_event = None
-    
+    metrics = []
     from src.lambda_func.svc.svc import lambda_handler
 
     for payload in payload_list:
         map_item = lambda_handler(payload)
-        if map_item['metric'] < min_metric:
+        # Metric is Accuracy Score => Large than
+        metrics.append(map_item['metric'])
+        if map_item['metric'] > max_metric:
             print ("======Update chosen model event==========")
             chosen_model_event = map_item['event']
-            min_metric = map_item['metric']
-    
+            max_metric = map_item['metric']
+    print (max_metric)
+    print (chosen_model_event)
+    print (metrics)
     # start = time.time()
     # print ("=====Time Stamp======")
     # print (start)
@@ -114,13 +118,14 @@ def grid_search_controller(config_path):
     
     # for item in model_list:
     #     payload = item['Payload']
-    #     if payload['metric'] < min_metric:
+          # Metric is Accuracy Score => Large than
+    #     if payload['metric'] > max_metric:
     #         chosen_model_event = payload['event']
-    #         min_metric = payload['metric']
+    #         max_metric = payload['metric']
     
     # print ("=======The Execution Time===========")
     # print (time.time() - start)
-    # print (min_metric)
+    # print (max_metric)
     # print (chosen_model_event)
 
 def split_path(path):

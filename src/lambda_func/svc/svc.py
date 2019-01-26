@@ -10,6 +10,7 @@ client = boto3.client('s3')
 s3 = boto3.resource('s3')
 
 def read_csv_s3(file_name):
+    print ("Downloading dataset from S3")
     if not os.path.exists(local_repo):
         os.makedirs(local_repo)
     path = local_repo + '/' + file_name
@@ -38,9 +39,11 @@ def lambda_handler(event, context={}):
             parameters[key.upper()] = event['data'][key]
             continue
         parameters[key] = event['data'][key]
-    
-    df = read_csv_s3(event['dataset'])
-    # df = pd.read_csv("./datasets/neural_network/df_2017_reduced.csv")
+    print ('=====Parameters=======')
+    print (parameters)
+    # df = read_csv_s3(event['dataset'])
+    # df = pd.read_csv("./datasets/svc/df_2017_reduced_scaler.csv")
+    df = pd.read_csv("./datasets/neural_network/df_2017_reduced.csv")
     
     # Scamble and subset data frame into train + validation(80%) and test(10%)
     df = df.sample(frac=1).reset_index(drop=True)
@@ -49,7 +52,7 @@ def lambda_handler(event, context={}):
     df_train = df[ : int(len(df) * split_ratio)]
     df_test = df[int(len(df) * split_ratio) : ]
 
-    # kf = KFold(n_splits=10)
+    
     solver = svm.SVC(**parameters)
 
     # convert dataframe to ndarray, since kf.split returns nparray as index
@@ -58,7 +61,9 @@ def lambda_handler(event, context={}):
     feature_test = df_test.iloc[:, 0: -1].values
     target_test = df_test.iloc[:, -1].values
 
+    print ("Start training SVC")
     solver.fit(feature_train, target_train)
+    print ("Finish training SVC")
     y_pred = solver.predict(feature_test)
     accu_score = accuracy_score(y_pred, target_test)
     print("Accuracy Score : " + str(accu_score))

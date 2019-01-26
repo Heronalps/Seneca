@@ -11,3 +11,6 @@ class XGBoost:
 
 class neural_network:
     payload = json.dumps({'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 200, 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100, 2], 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_iter': 200, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_reduced.csv'})
+
+class svc:
+    payload = json.dumps({'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 1.0, 'cache_size': 5.0, 'coef0': 0.1, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_reduced.csv'})

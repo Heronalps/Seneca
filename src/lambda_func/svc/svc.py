@@ -33,10 +33,14 @@ def lambda_handler(event, context={}):
     parameter_list = event['parameters']
     parameters = {}
     for key in parameter_list:
+        # Special case for SVC C parameter - Error Penalty
+        if key == 'c':
+            parameters[key.upper()] = event['data'][key]
+            continue
         parameters[key] = event['data'][key]
     
-    # df = read_csv_s3(event['dataset'])
-    df = pd.read_csv("./datasets/neural_network/df_2017_reduced.csv")
+    df = read_csv_s3(event['dataset'])
+    # df = pd.read_csv("./datasets/neural_network/df_2017_reduced.csv")
     
     # Scamble and subset data frame into train + validation(80%) and test(10%)
     df = df.sample(frac=1).reset_index(drop=True)

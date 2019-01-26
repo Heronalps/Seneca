@@ -82,7 +82,7 @@ def grid_search_controller(config_path):
     min_metric = float('inf')
     chosen_model_event = None
     
-    from src.lambda_func.neural_network.neural_network import lambda_handler
+    from src.lambda_func.svc.svc import lambda_handler
 
     for payload in payload_list:
         map_item = lambda_handler(payload)

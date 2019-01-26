@@ -5,7 +5,7 @@ sys.path.insert(0, '../')
 from helpers.parsers import parse_path
 seneca_path = parse_path(os.getcwd(), "Seneca")
 
-from execs import run_prophet, run_multi_regression, run_xgboost, run_neural_network
+from execs import run_prophet, run_multi_regression, run_xgboost, run_neural_network, run_svc
 from payloads import payloads as pl
 from src.allocated_memory.optimizer import Optimizer
 import click, subprocess
@@ -14,19 +14,18 @@ import click, subprocess
 @click.option('--config_path', '-c', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to hyperparameter config file',
-                                     default='./config/neural_network/config.py')
+                                     default='./config/svc/config.py')
 @click.option('--lambda_path', '-l', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to lambda handler',
-                                     default='./src/lambda_func/neural_network/neural_network.py')
+                                     default='./src/lambda_func/svc/svc.py')
 @click.option('--model', '-m', required=True, 
                                #prompt='Specified model',
                                help='The specified model',
                                type = click.Choice(['prophet',
                                              'XGBoost',
                                              'multi_regression',
-                                             'centaurus',
-                                             'random_forest',
+                                             'svc',
                                              'neural_network']))
 @click.option('--rebuild', '-b', is_flag=True, default=False, 
                                  help='The lambda package will be rebuilt if true')
@@ -65,6 +64,9 @@ def main(config_path, lambda_path, model, rebuild, optimize):
 
     elif model == 'neural_network':
         neural_network(config_path, run_neural_network)
+    
+    elif model == 'svc':
+        svc(config_path, run_svc)
 
 def auto_deploy(model):
     my_env = os.environ.copy()
@@ -93,3 +95,7 @@ def xgboost(config_path, run_xgboost):
 def neural_network(config_path, run_neural_network):
     click.echo("Run Hyperparameter Tuning on neural network")
     click.echo(run_neural_network.grid_search_controller(config_path))
+
+def svc(config_path, run_svc):
+    click.echo("Run Hyperparameter Tuning on support vector classification")
+    click.echo(run_svc.grid_search_controller(config_path))

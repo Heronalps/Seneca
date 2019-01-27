@@ -82,49 +82,56 @@ def grid_search_controller(config_path):
 
     min_metric = float('inf')
     chosen_model_event = None
+    metrics = []
     
-    # from src.lambda_func.prophet.prophet import grid_search_worker
+    from src.lambda_func.prophet.prophet import grid_search_worker
 
-    # for payload in payload_list:
-    #     map_item = grid_search_worker(payload)
-    #     if map_item['average_metric'] < min_metric:
-    #         print ("======Update chosen model event==========")
-    #         chosen_model_event = map_item['event']
-    #         min_metric = map_item['average_metric']
+    for payload in payload_list:
+        map_item = grid_search_worker(payload)
+        metrics.append(map_item['average_metric'])
+        if map_item['average_metric'] < min_metric:
+            print ("======Update chosen model event==========")
+            chosen_model_event = map_item['event']
+            min_metric = map_item['average_metric']
+    print ("=======Metric=======")
+    print (min_metric)
+    print ("======Event=======")
+    print (chosen_model_event)
+    print ("======Metrics=======")
+    print (metrics)
+    # start = time.time()
+    # print ("=====Time Stamp======")
+    # print (start)
+    # job = group(invoke_lambda.s(
+    #                 function_name = LAMBDA_NAME,
+    #                 sync = True,
+    #                 payload = payload
+    #                 ) for payload in payload_list)
+    # print("===Async Tasks start===")
+    # result = job.apply_async()
+    # result.save()
+    # from celery.result import GroupResult
+    # saved_result = GroupResult.restore(result.id)
+    # model_list = saved_result.get()
+    # print("===Async Tasks end===")
     
-    start = time.time()
-    print ("=====Time Stamp======")
-    print (start)
-    job = group(invoke_lambda.s(
-                    function_name = LAMBDA_NAME,
-                    sync = True,
-                    payload = payload
-                    ) for payload in payload_list)
-    print("===Async Tasks start===")
-    result = job.apply_async()
-    result.save()
-    from celery.result import GroupResult
-    saved_result = GroupResult.restore(result.id)
-    model_list = saved_result.get()
-    print("===Async Tasks end===")
+    # for item in model_list:
+    #     payload = item['Payload']
+    #     if payload['average_metric'] < min_metric:
+    #         chosen_model_event = payload['event']
+    #         min_metric = payload['average_metric']
     
-    for item in model_list:
-        payload = item['Payload']
-        if payload['average_metric'] < min_metric:
-            chosen_model_event = payload['event']
-            min_metric = payload['average_metric']
+    # # Non-zero forecast period makes lambda upload graphs to s3
+    # chosen_model_event['forecast'] = getattr(config.Cross_Validation, "FORECAST")
     
-    # Non-zero forecast period makes lambda upload graphs to s3
-    chosen_model_event['forecast'] = getattr(config.Cross_Validation, "FORECAST")
-    
-    # Invoke Lambda with forecast
+    # # Invoke Lambda with forecast
 
-    response = invoke_lambda(function_name = LAMBDA_NAME,
-                             sync=True,
-                             payload=chosen_model_event)
-    print ("=======The Execution Time===========")
-    print (time.time() - start)
-    print (response)
+    # response = invoke_lambda(function_name = LAMBDA_NAME,
+    #                          sync=True,
+    #                          payload=chosen_model_event)
+    # print ("=======The Execution Time===========")
+    # print (time.time() - start)
+    # print (response)
 
 def split_path(path):
     # This regex captures filename after the last backslash

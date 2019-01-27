@@ -14,11 +14,11 @@ import click, subprocess
 @click.option('--config_path', '-c', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to hyperparameter config file',
-                                     default='./config/svc/config.py')
+                                     default='./config/prophet/config.py')
 @click.option('--lambda_path', '-l', required=True,
                                      #prompt='Path to hyperparameter config file',
                                      help='Path to lambda handler',
-                                     default='./src/lambda_func/svc/svc.py')
+                                     default='./src/lambda_func/prophet/prophet.py')
 @click.option('--model', '-m', required=True, 
                                #prompt='Specified model',
                                help='The specified model',
@@ -90,8 +90,8 @@ def multi_regression(config_path, run_multi_regression):
 
 def xgboost(config_path, run_xgboost):
     click.echo("Run Hyperparameter Tuning on XGBoost")
-    click.echo(run_xgboost.grid_search_controller(config_path))
-
+    run_xgboost.grid_search_controller(config_path)
+    
 def neural_network(config_path, run_neural_network):
     click.echo("Run Hyperparameter Tuning on neural network")
     click.echo(run_neural_network.grid_search_controller(config_path))

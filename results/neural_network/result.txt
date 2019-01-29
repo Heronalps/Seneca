@@ -5,6 +5,31 @@
 ===Max Metric===
 0.06514952161335723
 
+Accuracy Score : 0.06511743051130295
+
+  'precision', 'predicted', average, warn_for)
+              precision    recall  f1-score   support
+
+         41N       0.00      0.00      0.00      3794
+         64E       0.00      0.00      0.00    187497
+          80       0.00      0.00      0.00      5842
+         81W       0.07      1.00      0.12     14211
+         92E       0.00      0.00      0.00      6785
+
+   micro avg       0.07      0.07      0.07    218129
+   macro avg       0.01      0.20      0.02    218129
+weighted avg       0.00      0.07      0.01    218129
+
+Test dataset Distribution
+[['41N' 3794]
+ ['64E' 187497]
+ ['80' 5842]
+ ['81W' 14211]
+ ['92E' 6785]]
+Prediction dataset Distribution
+[['64E' '7']
+ ['81W' '218122']]
+
 
 # Optimal
 

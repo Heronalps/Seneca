@@ -12,6 +12,8 @@ average_metric 0.29742817421625595
 384 parameter settings
 
 Execution time = (384 settings / 8 celery workers) 
-                 * 60000 ms (unit lambda execution time) = 48 mins
+                 * 45400 ms (unit lambda execution time)
 
-Compute charge = 1664MB / (1024MB/GB) * 60s * 1.667e-5 * 384 =  $0.6241248
+Compute charge = 1664MB / (1024MB/GB) * 45.4s * 1.667e-5 * 384
+
+Duration: 45312.57 ms	Billed Duration: 45400 ms Memory Size: 1664 MB	Max Memory Used: 297 MB	

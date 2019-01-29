@@ -55,7 +55,7 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
 '''
 
 def grid_search_controller(config_path):
-    
+    import pdb; pdb.set_trace();
     # Dynamic importing config file from config_path
     path_prefix, filename = split_path(config_path)
     sys.path.insert(0, path_prefix)

@@ -1,24 +1,47 @@
 # Hyperparameters
 class Hyperparameter:
-    HIDDEN_LAYER_SIZES = [[100,2]]
-    ACTIVATION = ['relu'] # identity, logistic, tanh, relu
-    SOLVER = ['adam'] # lbfgs, sgd, adam
-    ALPHA = [0.0001]
+    # Default
+    # HIDDEN_LAYER_SIZES = [(100,)]
+    # ACTIVATION = ['relu'] # identity, logistic, tanh, relu
+    # SOLVER = ['adam'] # lbfgs, sgd, adam
+    # ALPHA = [0.0001]
+    # BATCH_SIZE = ['auto']
+    # LEARNING_RATE = ['constant'] # constant, invscaling, adaptive
+    # LEARNING_RATE_INIT = [0.001]
+    # POWER_T = [0.5]
+    # MAX_ITER = [20]
+    # SHUFFLE = [True]
+    # RANDOM_STATE = [123]
+    # TOL = [1e-4]
+    # MOMENTUM = [0.9]
+    # NESTEROVS_MOMENTUM = [True]
+    # EARLY_STOPPING = [False]
+    # VALIDATION_FRACTION = [0.1]
+    # BETA_1 = [0.9]
+    # BETA_2 = [0.999]
+    # EPSILON = [1e-8]
+    # N_ITER_NO_CHANGE = [10]
+    # VERBOSE = [False]
+    
+    HIDDEN_LAYER_SIZES = [(100,)]
+    ACTIVATION = ['identity', 'tanh','relu'] # identity, logistic, tanh, relu
+    SOLVER = ['lbfgs','sgd','adam'] # lbfgs, sgd, adam
+    ALPHA = [0.001, 0.00001]
     BATCH_SIZE = [200]
-    LEARNING_RATE = ['constant'] # constant, invscaling, adaptive
-    LEARNING_RATE_INIT = [0.001]
+    LEARNING_RATE = ['constant', 'invscaling', 'adaptive'] # constant, invscaling, adaptive
+    LEARNING_RATE_INIT = [0.01, 0.0001]
     POWER_T = [0.5]
-    MAX_ITER = [200]
+    MAX_ITER = [20]
     SHUFFLE = [True]
     RANDOM_STATE = [123]
-    TOL = [1e-4]
+    TOL = [1e-3, 1e-5]
     MOMENTUM = [0.9]
     EARLY_STOPPING = [False]
     VALIDATION_FRACTION = [0.1]
     BETA_1 = [0.9]
     BETA_2 = [0.999]
     EPSILON = [1e-8]
-    N_ITER_NO_CHANGE = [10]
+    N_ITER_NO_CHANGE = [5, 20]
     VERBOSE = [False]
 
 class Config:

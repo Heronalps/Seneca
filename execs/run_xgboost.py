@@ -81,26 +81,27 @@ def grid_search_controller(config_path):
     metrics = []
 
     from src.lambda_func.xgboost.XGBoost import lambda_handler
-    # from contextlib import redirect_stdout
+    from contextlib import redirect_stdout
 
-    # with open('./output.txt', 'w') as f:
-    #     with redirect_stdout(f):        
-    for payload in payload_list:
-        print ("======Payload========")
-        print (payload)
-        map_item = lambda_handler(payload)
-        metrics.append(map_item['metric'])
-        if map_item['metric'] < min_metric:
-            print ("======Update chosen model event==========")
-            chosen_model_event = map_item['event']
-            min_metric = map_item['metric']
-    
-    print ("======Metric========")
-    print (min_metric)
-    print ("======Event========")
-    print (chosen_model_event)
-    print ("======Metric List========")
-    print (metrics)
+    with open('./xgboost_output.txt', 'w') as f:
+        with redirect_stdout(f):        
+            for payload in payload_list:
+                print ("======Payload========")
+                print (payload)
+                map_item = lambda_handler(payload)
+                metrics.append(map_item['metric'])
+                # Using MSE as metric => smaller than
+                if map_item['metric'] < min_metric:
+                    print ("======Update chosen model event==========")
+                    chosen_model_event = map_item['event']
+                    min_metric = map_item['metric']
+            
+            print ("======Metric========")
+            print (min_metric)
+            print ("======Event========")
+            print (chosen_model_event)
+            print ("======Metric List========")
+            print (metrics)
 
     # start = time.time()
     # print ("=====Time Stamp======")

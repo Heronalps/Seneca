@@ -41,7 +41,7 @@ def lambda_handler(event, context={}):
     
     # Scamble and subset data frame into train + validation(80%) and test(10%)
     df = df.sample(frac=1).reset_index(drop=True)
-    split_ratio = 0.8
+    split_ratio = 0.0001
     print('Train and Test Split Ratio : ', split_ratio)
     df_train = df[ : int(len(df) * split_ratio)]
     df_test = df[int(len(df) * split_ratio) : ]
@@ -59,9 +59,6 @@ def lambda_handler(event, context={}):
     # The classification is random and could be skewed, because the training set is sampled.
     # Generally, it is down to 0.996 accuracy and ~1.0 f1-score for 5 fields.
     
-    # for train_indices, test_indices in kf.split(feature_train, target_train):
-    #     solver.fit(feature_train[train_indices], target_train[train_indices])
-    #     print(solver.score(feature_train[test_indices], target_train[test_indices]))
     solver.fit(feature_train, target_train)
     y_pred = solver.predict(feature_test)
     accu_score = accuracy_score(y_pred, target_test)

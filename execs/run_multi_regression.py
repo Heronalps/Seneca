@@ -80,42 +80,56 @@ def grid_search_controller(config_path):
 
     min_metric = float('inf')
     chosen_model_event = None
+    metrics = []
     
-    # from src.lambda_func.multi_regression.multi_regression import lambda_handler
+    from src.lambda_func.multi_regression.multi_regression import lambda_handler
+    from contextlib import redirect_stdout
 
-    # for payload in payload_list:
-    #     map_item = lambda_handler(payload)
-    #     if map_item['metric'] < min_metric:
-    #         print ("======Update chosen model event==========")
-    #         chosen_model_event = map_item['event']
-    #         min_metric = map_item['metric']
+    with open("output.txt", "w") as f:
+        with redirect_stdout(f):
+            for payload in payload_list:
+                print ("======Payload========")
+                print (payload)
+                map_item = lambda_handler(payload)
+                metrics.append(map_item['metric'])
+                if map_item['metric'] < min_metric:
+                    print ("======Update chosen model event==========")
+                    chosen_model_event = map_item['event']
+                    min_metric = map_item['metric']
+            print ("======Metric=======")
+            print (min_metric)
+            
+            print ("======Event=======")
+            print (chosen_model_event)
+
+            print ("======Metrics========")
+            print (metrics)
+
+    # start = time.time()
+    # print ("=====Time Stamp======")
+    # print (start)
+    # job = group(invoke_lambda.s(
+    #                 function_name = LAMBDA_NAME,
+    #                 sync = True,
+    #                 payload = payload
+    #                 ) for payload in payload_list)
+    # print("===Async Tasks start===")
+    # result = job.apply_async()
+    # result.save()
+    # from celery.result import GroupResult
+    # saved_result = GroupResult.restore(result.id)
+    # model_list = saved_result.get()
+    # print("===Async Tasks end===")
+    
+    # for item in model_list:
+    #     payload = item['Payload']
+    #     if payload['metric'] < min_metric:
+    #         chosen_model_event = payload['event']
+    #         min_metric = payload['metric']
+    
     # print (chosen_model_event)
-
-    start = time.time()
-    print ("=====Time Stamp======")
-    print (start)
-    job = group(invoke_lambda.s(
-                    function_name = LAMBDA_NAME,
-                    sync = True,
-                    payload = payload
-                    ) for payload in payload_list)
-    print("===Async Tasks start===")
-    result = job.apply_async()
-    result.save()
-    from celery.result import GroupResult
-    saved_result = GroupResult.restore(result.id)
-    model_list = saved_result.get()
-    print("===Async Tasks end===")
-    
-    for item in model_list:
-        payload = item['Payload']
-        if payload['metric'] < min_metric:
-            chosen_model_event = payload['event']
-            min_metric = payload['metric']
-    
-    print (chosen_model_event)
-    print ("=======The Execution Time===========")
-    print (time.time() - start)
+    # print ("=======The Execution Time===========")
+    # print (time.time() - start)
 
 def split_path(path):
     # This regex captures filename after the last backslash

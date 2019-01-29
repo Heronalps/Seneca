@@ -20,8 +20,8 @@ class Hyperparameter:
     # RANDOM_STATE = [0]
     
     MAX_DEPTH = [2, 4]
-    LEARNING_RATE = [0.01, 0.02]
-    N_ESTIMATORS = [200, 300]
+    LEARNING_RATE = [0.01]
+    N_ESTIMATORS = [300]
     # reg:linear, reg:logistic, binary:logistic, binary:logitraw, 
     # count:poisson, multi:softmax, multi:softprob, rank:pairwise
     OBJECTIVE= ['reg:linear', 'rank:pairwise'] 
@@ -30,13 +30,13 @@ class Hyperparameter:
     GAMMA = [0.01]
     MIN_CHILD_WEIGHT = [0.1, 2]
     MAX_DELTA_STEP = [2, 5]
-    SUBSAMPLE = [0.1, 0.9]
+    SUBSAMPLE = [1]
     COLSAMPLE_BYTREE = [0.1, 0.9]
     COLSAMPLE_BYLEVEL = [0.1, 0.9]
-    REG_ALPHA = [0.1, 0.9]
-    REG_LAMBDA = [0.1, 0.9]
+    REG_ALPHA = [0.1]
+    REG_LAMBDA = [0.1]
     SCALE_POS_WEIGHT = [0.1, 3]
-    BASE_SCORE = [0.1, 10]
+    BASE_SCORE = [1, 10]
     RANDOM_STATE = [123]
 
 class Config:

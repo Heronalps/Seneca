@@ -1,0 +1,40 @@
+# Default
+
+===Event===
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'nesterovs_momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_iter': 20, 'momentum': 0.9, 'nesterovs_momentum': True, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_reduced.csv'}
+===Max Metric===
+0.06514952161335723
+
+
+# Optimal
+
+Train and Test Split Ratio :  0.0001
+Accuracy Score : 0.8634386074295486
+              precision    recall  f1-score   support
+
+         41N       0.00      0.00      0.00      3794
+         64E       0.90      0.99      0.94    187497
+          80       0.00      0.00      0.00      5842
+         81W       0.27      0.21      0.23     14211
+         92E       0.00      0.00      0.00      6785
+
+   micro avg       0.86      0.86      0.86    218129
+   macro avg       0.23      0.24      0.23    218129
+weighted avg       0.79      0.86      0.82    218129
+
+Test dataset Distribution
+[['41N' 3794]
+ ['64E' 187497]
+ ['80' 5842]
+ ['81W' 14211]
+ ['92E' 6785]]
+Prediction dataset Distribution
+[['64E' '207116']
+ ['81W' '11013']]
+
+ ===Event===
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 1e-05, 'batch_size': 200, 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'learning_rate_init': 0.01, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 20, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'lbfgs', 'tol': 0.001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_reduced.csv'}
+
+Typical Execution:
+
+Duration: 116277.29 ms	Billed Duration: 116300 ms 	Memory Size: 1792 MB	Max Memory Used: 737 MB	

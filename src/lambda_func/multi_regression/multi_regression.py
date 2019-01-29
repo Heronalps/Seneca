@@ -85,13 +85,15 @@ def lambda_handler(event, context={}):
     df_dict = {}
     
     df_target = read_csv_s3(target_file)
+    # df_target = pd.read_csv("./datasets/multi_regression/" + target_file)
     df_target = convert_timestamp(df_target, TIMESTAMP_COLUMN)
     
     # Drop the last column of humidity without specifying the column name
     df_target.drop(df_target.columns[len(df_target.columns) - 1], axis=1, inplace=True)
 
     for file_name in variable_files:
-        df_temp = read_csv_s3(file_name)
+        # df_temp = read_csv_s3(file_name)
+        df_temp = pd.read_csv("./datasets/multi_regression/" + file_name)
         name = re.sub('\.csv', '', file_name)
         df_dict[name] = convert_timestamp(df_temp, TIMESTAMP_COLUMN)
 
@@ -123,6 +125,3 @@ def lambda_handler(event, context={}):
     print("==============================================================")
 
     return {"metric" : mse, "event" : event}
-
-# if __name__ == "__main__":
-#     lambda_handler(context, event)

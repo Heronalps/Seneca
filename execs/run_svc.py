@@ -36,8 +36,6 @@ def create_event(config, PARAMETERS, CONFIG):
         payload['dataset'] = getattr(config.Config, 'DATASET')
             
         payload_list.append(payload)
-        print ("=====Payload=======")
-        print (payload)
 
     return payload_list
 
@@ -64,7 +62,7 @@ def grid_search_controller(config_path):
     LAMBDA_NAME = getattr(config.Config, "LAMBDA_NAME")
     
     # Clean the log of specified lambda function
-    clean_logs('/aws/lambda/' + LAMBDA_NAME)
+    # clean_logs('/aws/lambda/' + LAMBDA_NAME)
 
     # Dynamic load parameters 
     PARAMETERS = []
@@ -83,18 +81,24 @@ def grid_search_controller(config_path):
     chosen_model_event = None
     metrics = []
     from src.lambda_func.svc.svc import lambda_handler
+    from contextlib import redirect_stdout
+    with open("./svc_output.txt", "w") as f:
+        with redirect_stdout(f):
+            for payload in payload_list:
+                map_item = lambda_handler(payload)
+                # Metric is Accuracy Score => Large than
+                metrics.append(map_item['metric'])
+                if map_item['metric'] > max_metric:
+                    print ("======Update chosen model event==========")
+                    chosen_model_event = map_item['event']
+                    max_metric = map_item['metric']
+            print ("====Max Accuracy Score=====")        
+            print (max_metric)
+            print ("====Event============")
+            print (chosen_model_event)
+            print ("====Metrics List=====")
+            print (metrics)
 
-    for payload in payload_list:
-        map_item = lambda_handler(payload)
-        # Metric is Accuracy Score => Large than
-        metrics.append(map_item['metric'])
-        if map_item['metric'] > max_metric:
-            print ("======Update chosen model event==========")
-            chosen_model_event = map_item['event']
-            max_metric = map_item['metric']
-    print (max_metric)
-    print (chosen_model_event)
-    print (metrics)
     # start = time.time()
     # print ("=====Time Stamp======")
     # print (start)

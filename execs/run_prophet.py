@@ -55,7 +55,7 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
 '''
 
 def grid_search_controller(config_path):
-    import pdb; pdb.set_trace();
+    
     # Dynamic importing config file from config_path
     path_prefix, filename = split_path(config_path)
     sys.path.insert(0, path_prefix)
@@ -85,20 +85,25 @@ def grid_search_controller(config_path):
     metrics = []
     
     from src.lambda_func.prophet.prophet import grid_search_worker
-
-    for payload in payload_list:
-        map_item = grid_search_worker(payload)
-        metrics.append(map_item['average_metric'])
-        if map_item['average_metric'] < min_metric:
-            print ("======Update chosen model event==========")
-            chosen_model_event = map_item['event']
-            min_metric = map_item['average_metric']
-    print ("=======Metric=======")
-    print (min_metric)
-    print ("======Event=======")
-    print (chosen_model_event)
-    print ("======Metrics=======")
-    print (metrics)
+    from contextlib import redirect_stdout
+    
+    with open("./prophet_output.txt", "w") as f:
+        with redirect_stdout(f):
+            for payload in payload_list:
+                map_item = grid_search_worker(payload)
+                
+                metrics.append(map_item['average_metric'])
+                if map_item['average_metric'] < min_metric:
+                    print ("======Update chosen model event==========")
+                    chosen_model_event = map_item['event']
+                    min_metric = map_item['average_metric']
+            
+            print ("=======Metric=======")
+            print (min_metric)
+            print ("======Event=======")
+            print (chosen_model_event)
+            print ("======Metrics=======")
+            print (metrics)
     # start = time.time()
     # print ("=====Time Stamp======")
     # print (start)

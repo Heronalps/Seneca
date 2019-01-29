@@ -10,7 +10,7 @@ Accuracy Score: 0.024210444278385725
 {'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma','learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 0.5, 'booster': 'gbtree', 'colsample_bylevel': 1, 'colsample_bytree': 1, 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 0, 'reg_alpha': 0, 'reg_lambda': 1, 'scale_pos_weight': 1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
 
 
-Optimal MSE
+Optimal Accuracy
 ======Payload========
 {'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 10, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'df_2017_further_reduced.csv'}
 Mean Absolute Error : 0.3653573201278676
@@ -20,6 +20,16 @@ Mean Absolute Error : 0.3653573201278676
 ====================
 Accuracy Score: 0.860710863754934
 
+Optimal MSE
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 10, 'booster': 'dart', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.36174198998448254
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([1., 2.], dtype=float32), array([212698,   5431]))
+====================
+Accuracy Score: 0.8595785062967327
 
 Typical Execution
 

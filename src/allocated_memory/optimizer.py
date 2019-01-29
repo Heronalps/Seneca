@@ -101,6 +101,7 @@ class Optimizer():
         prev_memory = collections.deque(maxlen = self.QUEUE_MAX_LEN)
         prev_compute_charge = collections.deque(maxlen = self.QUEUE_MAX_LEN)
         optimization_cost = 0.0
+        min_compute_charge = float('inf')
 
         # Search from starting point of lower bound to sweet spot
         for num in range (starting_point, 48, 1): 
@@ -111,12 +112,15 @@ class Optimizer():
                 continue
             print ("Current compute charge = {0}".format(metrics['compute_charge']))
             print ("Total compute charge = {0}".format(optimization_cost))
-
+            if metrics['compute_charge'] < min_compute_charge:
+                min_compute_charge = metrics['compute_charge']
+                allocated_memory = num * 64
             prev_compute_charge.append(metrics['compute_charge'])
             prev_memory.append(num * 64)
             
             if (self.isSweetspot(prev_compute_charge)):
-                allocated_memory = prev_memory.popleft()
+                if prev_memory[0] < min_compute_charge:
+                    allocated_memory = prev_memory.popleft() 
                 break
 
         self.update_config(self.fn_name, allocated_memory)

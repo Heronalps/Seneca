@@ -44,10 +44,12 @@ def grid_search_worker(event, context={}):
         parameters[key] = event['data'][key]
 
     forecast = event['forecast']
+    print ('=====Parameters=======')
+    print (parameters)
 
     # Read the dataset from S3 bucket
-    df = read_csv_s3(parameters['dataset'])    
-    # df = pd.read_csv("./datasets/prophet/example_wp_log_peyton_manning.csv")
+    # df = read_csv_s3(parameters['dataset'])    
+    df = pd.read_csv("./datasets/prophet/example_wp_log_peyton_manning.csv")
 
     # Transfer holiday to data frame
     if holidays_dict is not None:
@@ -90,7 +92,7 @@ def grid_search_worker(event, context={}):
                                                  parameters['period'], 
                                                  parameters['horizon'], 
                                                  parameters['metric'])
-        print("======Return average metric and event=======")
+        print ("Metric {0}: {1}".format(parameters['metric'], average_metric))
         return {'average_metric' : average_metric, 'event' : event}
     
     else:

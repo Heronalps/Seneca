@@ -493,3 +493,96 @@ Total compute charge = 0.0029202714375000005
 update allocated memory to 384 MB
 The lambda function has been configured at 384 MB as allocated memory!
 The cost of optimizing lambda function is $0.0029202714375000005 !
+
+
+Prophet
+
+======Starting Point==========
+3
+update allocated memory to 192 MB
+Current compute charge = 48.449999999999996
+Total compute charge = 0.0008076614999999999
+update allocated memory to 256 MB
+Current compute charge = 70.525
+Total compute charge = 0.0019833132500000003
+update allocated memory to 320 MB
+Current compute charge = 77.96875
+Total compute charge = 0.0032830523125000005
+update allocated memory to 384 MB
+Current compute charge = 60.224999999999994
+Total compute charge = 0.004287003062500001
+update allocated memory to 448 MB
+Current compute charge = 55.825
+Total compute charge = 0.0052176058125000015
+update allocated memory to 512 MB
+Current compute charge = 72.4
+Total compute charge = 0.006424513812500002
+update allocated memory to 576 MB
+Current compute charge = 70.0875
+Total compute charge = 0.007592872437500002
+update allocated memory to 640 MB
+Current compute charge = 78.1875
+Total compute charge = 0.008896258062500002
+update allocated memory to 704 MB
+Current compute charge = 81.95
+Total compute charge = 0.010262364562500003
+update allocated memory to 768 MB
+Current compute charge = 67.2
+Total compute charge = 0.011382588562500002
+update allocated memory to 832 MB
+Current compute charge = 70.28125
+Total compute charge = 0.012554177000000003
+update allocated memory to 896 MB
+Current compute charge = 67.025
+Total compute charge = 0.013671483750000003
+update allocated memory to 960 MB
+Current compute charge = 65.90625
+Total compute charge = 0.014770140937500002
+update allocated memory to 1024 MB
+Current compute charge = 69.0
+Total compute charge = 0.0159203709375
+update allocated memory to 1088 MB
+Current compute charge = 68.42500000000001
+Total compute charge = 0.0170610156875
+update allocated memory to 1152 MB
+Current compute charge = 73.35000000000001
+Total compute charge = 0.0182837601875
+update allocated memory to 1216 MB
+Current compute charge = 72.9125
+Total compute charge = 0.0194992115625
+update allocated memory to 1280 MB
+Current compute charge = 73.125
+Total compute charge = 0.0207182053125
+update allocated memory to 1344 MB
+Current compute charge = 73.7625
+Total compute charge = 0.021947826187500002
+update allocated memory to 1408 MB
+Current compute charge = 74.8
+Total compute charge = 0.023194742187500002
+update allocated memory to 1472 MB
+Current compute charge = 74.4625
+Total compute charge = 0.0244360320625
+update allocated memory to 1536 MB
+Current compute charge = 74.4
+Total compute charge = 0.0256762800625
+update allocated memory to 1600 MB
+Current compute charge = 74.84375
+Total compute charge = 0.026923925375
+update allocated memory to 1664 MB
+Current compute charge = 73.9375
+Total compute charge = 0.028156463500000003
+update allocated memory to 1728 MB
+Current compute charge = 75.09375
+Total compute charge = 0.029408276312500002
+update allocated memory to 1792 MB
+Current compute charge = 76.65
+Total compute charge = 0.030686031812500004
+update allocated memory to 1856 MB
+Current compute charge = 76.85
+Total compute charge = 0.031967121312500006
+update allocated memory to 1920 MB
+Current compute charge = 80.0625
+Total compute charge = 0.03330176318750001
+update allocated memory to 1664 MB
+The lambda function has been configured at 1664 MB as allocated memory!
+The cost of optimizing lambda function is $0.03330176318750001 !

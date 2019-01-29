@@ -1,0 +1,160 @@
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 1.0014550614713538
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([197875,  20254]))
+====================
+Accuracy Score: 0.01646731979700086
+======Update chosen model event==========
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9822503684720496
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([197499,  20630]))
+====================
+Accuracy Score: 0.014752738058671704
+======Update chosen model event==========
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 1.004748835585804
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([194965,  10004,  13160]))
+====================
+Accuracy Score: 0.015284533464142777
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 1.004748835585804
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([194965,  10004,  13160]))
+====================
+Accuracy Score: 0.015284533464142777
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9958125811494652
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([197153,  20976]))
+====================
+Accuracy Score: 0.013028987434041324
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9853607175998118
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([197576,  20553]))
+====================
+Accuracy Score: 0.015114909067570107
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9682473634843815
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([193185,  13831,  11113]))
+====================
+Accuracy Score: 0.01090639025530764
+======Update chosen model event==========
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 2, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9682473634843815
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([193185,  13831,  11113]))
+====================
+Accuracy Score: 0.01090639025530764
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9994785913555237
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([197889,  20240]))
+====================
+Accuracy Score: 0.017067881849731122
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9806699771689475
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([196905,  21224]))
+====================
+Accuracy Score: 0.01589426440317427
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 1.0726082501036578
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([195999,  11203,  10927]))
+====================
+Accuracy Score: 0.020973827414053153
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 1.0726082501036578
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([195999,  11203,  10927]))
+====================
+Accuracy Score: 0.020973827414053153
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9829632905504334
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([197468,  20661]))
+====================
+Accuracy Score: 0.01611890211755429
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9645434310702846
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([196449,  21680]))
+====================
+Accuracy Score: 0.014248449312104306
+======Update chosen model event==========
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9578220415180609
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([187398,  19997,  10734]))
+====================
+Accuracy Score: 0.030734106881707614
+======Update chosen model event==========
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 0.9578220415180609
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1., 2.], dtype=float32), array([187398,  19997,  10734]))
+====================
+Accuracy Score: 0.030734106881707614
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 0.1, 'subsample': 1}, 'dataset': 'data_2017.csv'}
+Downloading Dataset from S3
+Mean Absolute Error : 1.0014550614713538
+====================
+(array([0, 1, 2, 3, 4]), array([  3794, 187498,   5841,  14211,   6785]))
+(array([0., 1.], dtype=float32), array([197875,  20254]))
+====================
+Accuracy Score: 0.01646731979700086
+======Payload========
+{'parameters': ['base_score', 'booster', 'colsample_bylevel', 'colsample_bytree', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'reg_alpha', 'reg_lambda', 'scale_pos_weight', 'subsample'], 'data': {'base_score': 1, 'booster': 'gbtree', 'colsample_bylevel': 0.1, 'colsample_bytree': 0.1, 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 2, 'min_child_weight': 0.1, 'n_estimators': 300, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'scale_pos_weight': 3, 'subsample': 1}, 'dataset': 'data_2017.csv'}

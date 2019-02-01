@@ -23,7 +23,7 @@ class Hyperparameter:
     # N_ITER_NO_CHANGE = [10]
     # VERBOSE = [False]
     
-    HIDDEN_LAYER_SIZES = [(100,), (100, 100)]
+    HIDDEN_LAYER_SIZES = [(100,)]
     ACTIVATION = ['identity', 'tanh','relu'] # identity, logistic, tanh, relu
     SOLVER = ['lbfgs','sgd','adam'] # lbfgs, sgd, adam
     ALPHA = [0.0001]

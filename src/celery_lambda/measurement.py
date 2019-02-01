@@ -162,7 +162,7 @@ def parse_log(log_group_name):
                     group_response.append(result)
     ts = round(time.time())
 
-    with open("./cloudwatch/log_" + str(ts) + ".data", "w") as f:
+    with open("./cloudwatch/log_" + str(ts) + ".txt", "w") as f:
         for m in messages:
             f.write("%s\n" % m)
 

@@ -12,7 +12,7 @@ class Hyperparameter:
     # MAX_DELTA_STEP = [0]
     # SCALE_POS_WEIGHT = [1]
     # BASE_SCORE = [0.5]
-    # RANDOM_STATE = [0]
+    # RANDOM_STATE = [123]
     
     MAX_DEPTH = [2, 4]
     LEARNING_RATE = [0.1, 0.01]

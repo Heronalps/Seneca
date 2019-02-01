@@ -1,3 +1,14 @@
+=====Time Stamp======
+1549015711.4458745
+===Async Tasks start===
+===Async Tasks end===
+=======The Execution Time===========
+1048.543016910553
+0.04982846122325653
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.1, 'max_delta_step': 5, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+
+
 START RequestId: e1ad39b7-2b73-4b48-a761-e4f0806fc078 Version: $LATEST
 
 =======Event=========

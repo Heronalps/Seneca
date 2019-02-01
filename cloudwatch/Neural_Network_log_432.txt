@@ -1,3 +1,13 @@
+=====Time Stamp======
+1549017107.041519
+===Async Tasks start===
+===Async Tasks end===
+=======The Execution Time===========
+190.45112490653992
+0.8476050110537952
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 200, 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 5, 'power_t': 2, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv'}
+
+
 /var/task/sklearn/externals/joblib/_multiprocessing_helpers.py:38: UserWarning: [Errno 38] Function not implemented.  joblib will operate in serial mode
 
   warnings.warn('%s.  joblib will operate in serial mode' % (e,))

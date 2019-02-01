@@ -52,4 +52,4 @@ class Config:
     LAMBDA_NAME = 'neural_network_worker'
 
     # Test size
-    TEST_SIZE = 0.1
+    TEST_SIZE = 0.999

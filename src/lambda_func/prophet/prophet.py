@@ -48,8 +48,8 @@ def grid_search_worker(event, context={}):
     print (parameters)
 
     # Read the dataset from S3 bucket
-    # df = read_csv_s3(parameters['dataset'])    
-    df = pd.read_csv("./datasets/prophet/example_wp_log_peyton_manning.csv")
+    df = read_csv_s3(parameters['dataset'])    
+    # df = pd.read_csv("./datasets/prophet/example_wp_log_peyton_manning.csv")
 
     # Transfer holiday to data frame
     if holidays_dict is not None:

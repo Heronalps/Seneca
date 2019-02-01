@@ -160,6 +160,7 @@ def parse_log(log_group_name):
                 if temp_result:
                     result = temp_result.group(0)
                     group_response.append(result)
+    
     ts = round(time.time())
 
     with open("./cloudwatch/log_" + str(ts) + ".txt", "w") as f:

@@ -112,7 +112,7 @@ def retrieve_result(lambda_name):
 
 def parse_log(log_group_name):
     # Wait for last batch of log written into cloudwatch
-    time.sleep(10)
+    time.sleep(30)
     group_response = []
     group_metrics = []
     log_client = boto3.client('logs')

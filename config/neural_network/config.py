@@ -29,8 +29,8 @@ class Hyperparameter:
     ALPHA = [0.0001]
     BATCH_SIZE = [200]
     LEARNING_RATE = ['constant', 'invscaling', 'adaptive'] # constant, invscaling, adaptive
-    LEARNING_RATE_INIT = [0.001]
-    POWER_T = [0.5]
+    LEARNING_RATE_INIT = [0.001, 0.0001]
+    POWER_T = [0.1, 2]
     MAX_ITER = [20]
     SHUFFLE = [True]
     RANDOM_STATE = [123]

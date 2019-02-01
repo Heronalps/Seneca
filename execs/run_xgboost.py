@@ -81,7 +81,7 @@ def grid_search_controller(config_path):
     chosen_model_event = None
     metrics = []
 
-    import pdb; pdb.set_trace();
+    
     # from src.lambda_func.xgboost.XGBoost import lambda_handler
     # from contextlib import redirect_stdout
 

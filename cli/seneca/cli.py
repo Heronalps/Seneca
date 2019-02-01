@@ -39,12 +39,12 @@ def main(config_path, lambda_path, model, rebuild, optimize, repeat):
     
     # Rename lambda handler and move to corresponding folder /src/lambda_func/
 
-    commands = "mv {0} {1}; mv {1} {2};".format(lambda_path, 
-                                                model + '.py',
-                                                seneca_path + '/src/lambda_func/' + model)
+    # commands = "mv {0} {1}; mv {1} {2};".format(lambda_path, 
+    #                                             model + '.py',
+    #                                             seneca_path + '/src/lambda_func/' + model)
     
-    p = subprocess.Popen(commands, shell=True)
-    p.wait()
+    # p = subprocess.Popen(commands, shell=True)
+    # p.wait()
 
     # Both optimization or rebuild need deployment
     if optimize or rebuild:

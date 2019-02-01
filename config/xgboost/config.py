@@ -35,3 +35,6 @@ class Config:
 
     # Lambda Function Name
     LAMBDA_NAME = 'XGBoost_worker'
+
+    # Test size
+    TEST_SIZE = 0.1

@@ -28,14 +28,14 @@ def lambda_handler(event, context={}):
         parameters[key] = event['data'][key]
     print ("=======Event=========")
     print (event)
-    
+
     df = read_csv_s3(event['dataset'])
     # df = pd.read_csv("./datasets/xgboost/df_2017_further_reduced.csv")
     
     y = df.block_Num
     X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
 
-    train_X, test_X, train_y, test_y = train_test_split(X, y, random_state = 123, test_size=0.2)
+    train_X, test_X, train_y, test_y = train_test_split(X, y, random_state = 123, test_size=event['test_size'])
     
     # This Imputer uses the default strategy as mean
     my_imputer = SimpleImputer(missing_values=np.nan, strategy='mean')

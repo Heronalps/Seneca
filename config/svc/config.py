@@ -37,4 +37,4 @@ class Config:
     LAMBDA_NAME = 'svc_worker'
 
     # Test size
-    TEST_SIZE = 0.1
+    TEST_SIZE = 0.2

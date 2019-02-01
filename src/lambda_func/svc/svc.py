@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
 from sklearn import svm
 
 local_repo = os.path.join(os.path.sep, "tmp", os.path.basename('csv'))
@@ -45,19 +46,12 @@ def lambda_handler(event, context={}):
     # df = pd.read_csv("./datasets/neural_network/df_2017_reduced.csv")
     
     # Scamble and subset data frame into train + validation(80%) and test(10%)
-    df = df.sample(frac=1).reset_index(drop=True)
-    split_ratio = 0.8
-    print('Train and Test Split Ratio : ', split_ratio)
-    df_train = df[ : int(len(df) * split_ratio)]
-    df_test = df[int(len(df) * split_ratio) : ]
+    y = df.block_Num
+    X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
+
+    feature_train, feature_test, target_train, target_test = train_test_split(X, y, random_state = 123, test_size=0.2)
 
     solver = svm.SVC(**parameters)
-
-    # convert dataframe to ndarray, since kf.split returns nparray as index
-    feature_train = df_train.iloc[:, 0: -1].values
-    target_train = df_train.iloc[:, -1].values
-    feature_test = df_test.iloc[:, 0: -1].values
-    target_test = df_test.iloc[:, -1].values
 
     print ("Start training SVC")
     solver.fit(feature_train, target_train)

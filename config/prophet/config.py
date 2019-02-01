@@ -22,7 +22,7 @@ class Hyperparameter:
     COUNTRY_HOLIDAYS = ['US'] # List of countries
     HOLIDAYS_PRIOR_SCALE = [1, 5, 10] # List of float within (0, 10) Default = 10 
 
-    FOURIER_ORDER = [5, 10, 15, 20] # List of the fourier order of yearly seasonality
+    FOURIER_ORDER = [5, 10, 15, 20] # List of the fourier order of yearly seasonality. Deafult is 10
     SEASONALITY_PRIOR_SCALE = [0.1, 0.5] # List of float within (0, 1) Default = 0.5
 
     SEASONALITY_MODE = ['additive', 'multiplicative'] # List of ['additive', 'multiplicative']

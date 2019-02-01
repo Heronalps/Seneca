@@ -31,7 +31,7 @@ class Hyperparameter:
 
 class Config:
     # The Dataset filename 
-    DATASET = 'df_2017_reduced.csv'
+    DATASET = 'df_2017_further_reduced.csv'
 
     # Lambda Function Name
     LAMBDA_NAME = 'svc_worker'

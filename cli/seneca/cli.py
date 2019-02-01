@@ -12,11 +12,9 @@ import click, subprocess
 
 @click.command()
 @click.option('--config_path', '-c', required=True,
-                                     #prompt='Path to hyperparameter config file',
                                      help='Path to hyperparameter config file',
                                      default='./config/prophet/config.py')
 @click.option('--lambda_path', '-l', required=True,
-                                     #prompt='Path to hyperparameter config file',
                                      help='Path to lambda handler',
                                      default='./src/lambda_func/prophet/prophet.py')
 @click.option('--model', '-m', required=True, 
@@ -31,8 +29,9 @@ import click, subprocess
                                  help='The lambda package will be rebuilt if true')
 @click.option('--optimize', '-o', is_flag=True, default=False,
                                   help="The allocated memory will be optimized if true")
+@click.option('--repeat', '-r',  type = click.INT, help='The number of repetition')
 
-def main(config_path, lambda_path, model, rebuild, optimize):
+def main(config_path, lambda_path, model, rebuild, optimize, repeat):
     click.echo("=============Seneca==============")
     click.echo('The specified model is {0}'.format(model))
     click.echo('Config Path is at {0}'.format(config_path))
@@ -52,21 +51,24 @@ def main(config_path, lambda_path, model, rebuild, optimize):
             auto_deploy(model)
             if optimize:
                 auto_optimize(model)
+    print ("Repeat invocation {0} times!".format(repeat))
 
-    if model == 'prophet':
-        prophet(config_path, run_prophet)
+    for n in range(repeat):
+        print ("Calling {0} for {1} times!".format(model, n + 1))
+        if model == 'prophet':
+            prophet(config_path, run_prophet)
 
-    elif model == 'multi_regression':
-        multi_regression(config_path, run_multi_regression)
+        elif model == 'multi_regression':
+            multi_regression(config_path, run_multi_regression)
 
-    elif model == 'XGBoost':
-        xgboost(config_path, run_xgboost)
+        elif model == 'XGBoost':
+            xgboost(config_path, run_xgboost)
 
-    elif model == 'neural_network':
-        neural_network(config_path, run_neural_network)
-    
-    elif model == 'svc':
-        svc(config_path, run_svc)
+        elif model == 'neural_network':
+            neural_network(config_path, run_neural_network)
+        
+        elif model == 'svc':
+            svc(config_path, run_svc)
 
 def auto_deploy(model):
     my_env = os.environ.copy()

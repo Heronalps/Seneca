@@ -15,7 +15,7 @@ def read_csv_s3(file_name):
     if not os.path.exists(local_repo):
         os.makedirs(local_repo)
     path = local_repo + '/' + file_name
-    bucket = 'lrec-datasets'
+    bucket = 'seneca-racelab'
     client.download_file(bucket, file_name, path)
     df = pd.read_csv(path)
     return df
@@ -26,14 +26,16 @@ def lambda_handler(event, context={}):
     parameters = {}
     for key in parameter_list:
         parameters[key] = event['data'][key]
+    print ("=======Event=========")
+    print (event)
     
-    # df = read_csv_s3(event['dataset'])
-    df = pd.read_csv("./datasets/xgboost/df_2017_further_reduced.csv")
+    df = read_csv_s3(event['dataset'])
+    # df = pd.read_csv("./datasets/xgboost/df_2017_further_reduced.csv")
     
     y = df.block_Num
     X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
 
-    train_X, test_X, train_y, test_y = train_test_split(X, y, random_state = 123, test_size=0.9999)
+    train_X, test_X, train_y, test_y = train_test_split(X, y, random_state = 123, test_size=0.2)
     
     # This Imputer uses the default strategy as mean
     my_imputer = SimpleImputer(missing_values=np.nan, strategy='mean')

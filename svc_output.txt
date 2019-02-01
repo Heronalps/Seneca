@@ -1,0 +1,663 @@
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0005042402016960807
+              precision    recall  f1-score   support
+
+         64E       1.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.50      0.00      0.00     43630
+weighted avg       1.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 22]
+ ['92E' 43608]]
+======Update chosen model event==========
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0005042402016960807
+              precision    recall  f1-score   support
+
+         64E       1.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.50      0.00      0.00     43630
+weighted avg       1.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 22]
+ ['92E' 43608]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0005042402016960807
+              precision    recall  f1-score   support
+
+         64E       1.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.50      0.00      0.00     43630
+weighted avg       1.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 22]
+ ['92E' 43608]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0005042402016960807
+              precision    recall  f1-score   support
+
+         64E       1.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.50      0.00      0.00     43630
+weighted avg       1.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 22]
+ ['92E' 43608]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'linear', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'linear', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'linear', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'linear', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'auto', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 1.0
+              precision    recall  f1-score   support
+
+         64E       1.00      1.00      1.00     43630
+
+   micro avg       1.00      1.00      1.00     43630
+   macro avg       1.00      1.00      1.00     43630
+weighted avg       1.00      1.00      1.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 43630]]
+======Update chosen model event==========
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 1.0
+              precision    recall  f1-score   support
+
+         64E       1.00      1.00      1.00     43630
+
+   micro avg       1.00      1.00      1.00     43630
+   macro avg       1.00      1.00      1.00     43630
+weighted avg       1.00      1.00      1.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 1.0
+              precision    recall  f1-score   support
+
+         64E       1.00      1.00      1.00     43630
+
+   micro avg       1.00      1.00      1.00     43630
+   macro avg       1.00      1.00      1.00     43630
+weighted avg       1.00      1.00      1.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 1.0
+              precision    recall  f1-score   support
+
+         64E       1.00      1.00      1.00     43630
+
+   micro avg       1.00      1.00      1.00     43630
+   macro avg       1.00      1.00      1.00     43630
+weighted avg       1.00      1.00      1.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['64E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+         81W       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43619]
+ ['81W' 11]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+          80       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['80' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 2, 'gamma': 'scale', 'kernel': 'sigmoid', 'max_iter': 20, 'probability': True, 'random_state': 123, 'shrinking': True, 'tol': 0.0001, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC
+Finish training SVC
+Accuracy Score : 0.0
+              precision    recall  f1-score   support
+
+         64E       0.00      0.00      0.00     43630
+         92E       0.00      0.00      0.00         0
+
+   micro avg       0.00      0.00      0.00     43630
+   macro avg       0.00      0.00      0.00     43630
+weighted avg       0.00      0.00      0.00     43630
+
+Test dataset Distribution
+[['64E' 43630]]
+Prediction dataset Distribution
+[['92E' 43630]]
+=====Parameters=======
+{'C': 0.5, 'cache_size': 5.0, 'coef0': -0.5, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.01, 'verbose': False}
+Downloading dataset from S3
+Train and Test Split Ratio :  0.8
+Start training SVC

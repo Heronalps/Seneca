@@ -1,5 +1,5 @@
 import pandas as pd, numpy as np
-import re
+import re, sys, os
 from matplotlib import pyplot as plt
 
 def parse(file_path, pattern="Accuracy Score"):
@@ -33,7 +33,7 @@ def plot():
     plt.ylim(-0.1, 1)
     plt.title("Box Plot of Accuracy Score", fontsize=20)
     ax.set_xticklabels(['xgboost', 'svc', 'neural network'], fontsize=20)
-    fig.savefig('./box_plot_accuracy.png')
+    fig.savefig('./graphs/box_plot_accuracy.png')
     #plt.show()
 
     xgboost_mse = parse("./results/XGBoost/xgboost_output.txt", "Mean Absolute Error")
@@ -47,8 +47,10 @@ def plot():
     #plt.ylim(-0.1, 2)
     plt.title("Box Plot of Mean Square Error", fontsize=20)
     ax.set_xticklabels(['xgboost', 'prophet', 'multivariate regression'], fontsize=20)
-    fig.savefig("./box_plot_mse.png")
+    fig.savefig("./graphs/box_plot_mse.png")
     #plt.show()
 
 if __name__ == "__main__":
-    plot()
+    # print (os.getcwd())
+    scores = parse("./results/neural_network/neural_network_output.txt", "Accuracy Score")
+    print (min(scores))

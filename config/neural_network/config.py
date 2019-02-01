@@ -26,10 +26,10 @@ class Hyperparameter:
     HIDDEN_LAYER_SIZES = [(100,)]
     ACTIVATION = ['identity', 'tanh','relu'] # identity, logistic, tanh, relu
     SOLVER = ['lbfgs','sgd','adam'] # lbfgs, sgd, adam
-    ALPHA = [0.001, 0.00001]
+    ALPHA = [0.0001]
     BATCH_SIZE = [200]
     LEARNING_RATE = ['constant', 'invscaling', 'adaptive'] # constant, invscaling, adaptive
-    LEARNING_RATE_INIT = [0.01, 0.0001]
+    LEARNING_RATE_INIT = [0.001]
     POWER_T = [0.5]
     MAX_ITER = [20]
     SHUFFLE = [True]
@@ -46,7 +46,7 @@ class Hyperparameter:
 
 class Config:
     # The Dataset filename 
-    DATASET = 'df_2017_reduced.csv'
+    DATASET = 'df_2017_further_reduced.csv'
 
     # Lambda Function Name
     LAMBDA_NAME = 'neural_network_worker'

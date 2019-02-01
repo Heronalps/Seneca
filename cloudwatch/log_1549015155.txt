@@ -1,0 +1,2280 @@
+START RequestId: 2c54b9e5-a5c9-4637-8d2b-cdb3de2dcd62 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: 2c54b9e5-a5c9-4637-8d2b-cdb3de2dcd62
+
+REPORT RequestId: 2c54b9e5-a5c9-4637-8d2b-cdb3de2dcd62	Duration: 12588.35 ms	Billed Duration: 12600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 5230d370-de9f-412e-b838-49ed150dbf4a Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: 5230d370-de9f-412e-b838-49ed150dbf4a
+
+REPORT RequestId: 5230d370-de9f-412e-b838-49ed150dbf4a	Duration: 12592.23 ms	Billed Duration: 12600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: d092d4d1-3b76-4fd2-9b29-9a1093370061 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.4903425560494117
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([ 777, 6003,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0950626381724392
+
+END RequestId: d092d4d1-3b76-4fd2-9b29-9a1093370061
+
+REPORT RequestId: d092d4d1-3b76-4fd2-9b29-9a1093370061	Duration: 5086.72 ms	Billed Duration: 5100 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: d20ae5c1-ac29-47e0-bb45-2f4ed58741df Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.30572950453466585
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1129, 1560, 1451, 2645]))
+
+====================
+
+Accuracy Score: 0.7223286661753869
+
+END RequestId: d20ae5c1-ac29-47e0-bb45-2f4ed58741df
+
+REPORT RequestId: d20ae5c1-ac29-47e0-bb45-2f4ed58741df	Duration: 38868.32 ms	Billed Duration: 38900 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 2a9bc062-bc4f-45d2-9fc9-18a9bb61eb24 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: 2a9bc062-bc4f-45d2-9fc9-18a9bb61eb24
+
+REPORT RequestId: 2a9bc062-bc4f-45d2-9fc9-18a9bb61eb24	Duration: 38008.59 ms	Billed Duration: 38100 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 7440da40-57cd-448a-9f50-54b713e6ba75 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 7440da40-57cd-448a-9f50-54b713e6ba75
+
+REPORT RequestId: 7440da40-57cd-448a-9f50-54b713e6ba75	Duration: 12447.95 ms	Billed Duration: 12500 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 466e41ee-8e37-4a4b-893a-0d53e545ca45 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 466e41ee-8e37-4a4b-893a-0d53e545ca45
+
+REPORT RequestId: 466e41ee-8e37-4a4b-893a-0d53e545ca45	Duration: 12545.11 ms	Billed Duration: 12600 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: f9002c33-da7b-435d-9f04-90bd7aa421b4 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2455, 1860, 2470]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: f9002c33-da7b-435d-9f04-90bd7aa421b4
+
+REPORT RequestId: f9002c33-da7b-435d-9f04-90bd7aa421b4	Duration: 37857.21 ms	Billed Duration: 37900 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 4ef87afe-bfdd-4ca7-aebf-b0256ebad25b Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.30572938637954833
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1129, 1560, 1451, 2645]))
+
+====================
+
+Accuracy Score: 0.7223286661753869
+
+END RequestId: 4ef87afe-bfdd-4ca7-aebf-b0256ebad25b
+
+REPORT RequestId: 4ef87afe-bfdd-4ca7-aebf-b0256ebad25b	Duration: 12421.80 ms	Billed Duration: 12500 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 2c832ce1-6a3e-48eb-80ca-526f7fafd2be Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: 2c832ce1-6a3e-48eb-80ca-526f7fafd2be
+
+REPORT RequestId: 2c832ce1-6a3e-48eb-80ca-526f7fafd2be	Duration: 12347.12 ms	Billed Duration: 12400 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 8de49663-7ce1-4d24-b24a-1e52f02be5d0 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.490950160170099
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([ 785, 5995,    4,    1]))
+
+====================
+
+Accuracy Score: 0.09447310243183493
+
+END RequestId: 8de49663-7ce1-4d24-b24a-1e52f02be5d0
+
+REPORT RequestId: 8de49663-7ce1-4d24-b24a-1e52f02be5d0	Duration: 5061.59 ms	Billed Duration: 5100 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: d9957120-8bc0-4c36-89d8-90c52648ce3d Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.3306187613711431
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1205, 1180, 1622, 1592, 1186]))
+
+====================
+
+Accuracy Score: 0.8899042004421518
+
+END RequestId: d9957120-8bc0-4c36-89d8-90c52648ce3d
+
+REPORT RequestId: d9957120-8bc0-4c36-89d8-90c52648ce3d	Duration: 35161.88 ms	Billed Duration: 35200 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 799c0c08-18ca-48c2-95d8-6b12f2a1ebba Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: 799c0c08-18ca-48c2-95d8-6b12f2a1ebba
+
+REPORT RequestId: 799c0c08-18ca-48c2-95d8-6b12f2a1ebba	Duration: 35559.56 ms	Billed Duration: 35600 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: a12742ed-0ec5-4ec7-9e5c-7e36fc58036a Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: a12742ed-0ec5-4ec7-9e5c-7e36fc58036a
+
+REPORT RequestId: a12742ed-0ec5-4ec7-9e5c-7e36fc58036a	Duration: 12339.35 ms	Billed Duration: 12400 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 22da97ed-6a47-496e-b6f4-b38d76dafbf1 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0166409291958405
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-5., -2., -1., -0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   2,    2,   11,  213, 1390, 3296, 1771,   90,   10]))
+
+====================
+
+Accuracy Score: 0.2971260132645542
+
+END RequestId: 22da97ed-6a47-496e-b6f4-b38d76dafbf1
+
+REPORT RequestId: 22da97ed-6a47-496e-b6f4-b38d76dafbf1	Duration: 4259.84 ms	Billed Duration: 4300 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 8f9560c4-9b96-4dd0-ba08-6a69ca8acd02 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.760954962149207
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 782, 5998,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 8f9560c4-9b96-4dd0-ba08-6a69ca8acd02
+
+REPORT RequestId: 8f9560c4-9b96-4dd0-ba08-6a69ca8acd02	Duration: 4960.77 ms	Billed Duration: 5000 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 2734b39a-f088-460f-94d0-513a7dbddc47 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2455, 1860, 2470]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 2734b39a-f088-460f-94d0-513a7dbddc47
+
+REPORT RequestId: 2734b39a-f088-460f-94d0-513a7dbddc47	Duration: 35543.61 ms	Billed Duration: 35600 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 01d5dbb4-94c4-45e3-98d8-115a6103105e Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+START RequestId: 191c60d9-5218-458d-8331-5965d8865522 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: 191c60d9-5218-458d-8331-5965d8865522
+
+REPORT RequestId: 191c60d9-5218-458d-8331-5965d8865522	Duration: 14283.58 ms	Billed Duration: 14300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 38817103-03d9-403f-8c03-8fd48a547897 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0343299077772972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5.], dtype=float32), array([   7, 1131, 5250,  395,    1,    1]))
+
+====================
+
+Accuracy Score: 0.3162859248341931
+
+END RequestId: 38817103-03d9-403f-8c03-8fd48a547897
+
+REPORT RequestId: 38817103-03d9-403f-8c03-8fd48a547897	Duration: 4745.87 ms	Billed Duration: 4800 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: e4029922-5195-4f8f-a104-a81f5ed0c7fe Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.034331178113917
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5.], dtype=float32), array([   7, 1131, 5250,  395,    1,    1]))
+
+====================
+
+Accuracy Score: 0.3162859248341931
+
+END RequestId: e4029922-5195-4f8f-a104-a81f5ed0c7fe
+
+REPORT RequestId: e4029922-5195-4f8f-a104-a81f5ed0c7fe	Duration: 4684.07 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: aa2af4ce-aa17-49b0-8776-b2660d7a06cf Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0343924704398315
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5.], dtype=float32), array([   7, 1131, 5249,  396,    1,    1]))
+
+====================
+
+Accuracy Score: 0.31643330876934417
+
+END RequestId: aa2af4ce-aa17-49b0-8776-b2660d7a06cf
+
+REPORT RequestId: aa2af4ce-aa17-49b0-8776-b2660d7a06cf	Duration: 4660.81 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: ebf4158b-4fdb-40ec-ace3-01aa3d23c651 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: ebf4158b-4fdb-40ec-ace3-01aa3d23c651
+
+REPORT RequestId: ebf4158b-4fdb-40ec-ace3-01aa3d23c651	Duration: 42862.35 ms	Billed Duration: 42900 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: e7def47c-3548-4611-be14-daf0430e74c9 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.302308919470189
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1125, 1564, 1676, 2420]))
+
+====================
+
+Accuracy Score: 0.6876934414148858
+
+END RequestId: e7def47c-3548-4611-be14-daf0430e74c9
+
+REPORT RequestId: e7def47c-3548-4611-be14-daf0430e74c9	Duration: 43976.72 ms	Billed Duration: 44000 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 4e143e3b-6aa5-4b9a-9248-aad737cca7bf Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0097117616924716
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-6., -5., -2., -1., -0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   1,    1,    1,   61,  387, 1074, 2914, 2129,  207,   10]))
+
+====================
+
+Accuracy Score: 0.2853352984524687
+
+END RequestId: 4e143e3b-6aa5-4b9a-9248-aad737cca7bf
+
+REPORT RequestId: 4e143e3b-6aa5-4b9a-9248-aad737cca7bf	Duration: 4623.94 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: d1824a42-b80e-4d65-b8f2-3e15b01fb289 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2455, 1860, 2470]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: d1824a42-b80e-4d65-b8f2-3e15b01fb289
+
+REPORT RequestId: d1824a42-b80e-4d65-b8f2-3e15b01fb289	Duration: 42367.89 ms	Billed Duration: 42400 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: d05ef607-06c3-4150-b78f-40c367b9bcc3 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.32665869238276474
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1218, 1172, 1593, 1618, 1184]))
+
+====================
+
+Accuracy Score: 0.8941783345615328
+
+END RequestId: d05ef607-06c3-4150-b78f-40c367b9bcc3
+
+REPORT RequestId: d05ef607-06c3-4150-b78f-40c367b9bcc3	Duration: 13821.86 ms	Billed Duration: 13900 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 9426a961-ba9f-4467-a41d-23d9bf591d07 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: 9426a961-ba9f-4467-a41d-23d9bf591d07
+
+REPORT RequestId: 9426a961-ba9f-4467-a41d-23d9bf591d07	Duration: 14185.75 ms	Billed Duration: 14200 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: bc9abd37-22ad-4fd8-9b63-5fff145ea095 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: bc9abd37-22ad-4fd8-9b63-5fff145ea095
+
+REPORT RequestId: bc9abd37-22ad-4fd8-9b63-5fff145ea095	Duration: 44349.24 ms	Billed Duration: 44400 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 499e32ae-c752-4f6b-9398-4ca4b246f0ea Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: 499e32ae-c752-4f6b-9398-4ca4b246f0ea
+
+REPORT RequestId: 499e32ae-c752-4f6b-9398-4ca4b246f0ea	Duration: 42749.99 ms	Billed Duration: 42800 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 154833a5-489d-425e-87ed-b2648f3783a6 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.756102033459094
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 791, 5989,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 154833a5-489d-425e-87ed-b2648f3783a6
+
+REPORT RequestId: 154833a5-489d-425e-87ed-b2648f3783a6	Duration: 5630.74 ms	Billed Duration: 5700 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 007e64e9-a8c0-466a-973c-7a880d894a9a Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2455, 1860, 2470]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 007e64e9-a8c0-466a-973c-7a880d894a9a
+
+REPORT RequestId: 007e64e9-a8c0-466a-973c-7a880d894a9a	Duration: 43008.12 ms	Billed Duration: 43100 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 85771fef-7ad0-44b6-9493-42dd069ff1e9 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.3306184602029726
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1205, 1180, 1622, 1592, 1186]))
+
+====================
+
+Accuracy Score: 0.8899042004421518
+
+END RequestId: 85771fef-7ad0-44b6-9493-42dd069ff1e9
+
+REPORT RequestId: 85771fef-7ad0-44b6-9493-42dd069ff1e9	Duration: 13278.81 ms	Billed Duration: 13300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 6eedc049-030e-4c88-a970-639ea5036946 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.30230784471542765
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1125, 1564, 1676, 2420]))
+
+====================
+
+Accuracy Score: 0.6876934414148858
+
+END RequestId: 6eedc049-030e-4c88-a970-639ea5036946
+
+REPORT RequestId: 6eedc049-030e-4c88-a970-639ea5036946	Duration: 13219.19 ms	Billed Duration: 13300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: a5518c1e-aea8-4054-bb0e-9f80d37ee91c Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.4933763813258984
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-0.,  1.,  2.,  3.], dtype=float32), array([ 790, 5990,    4,    1]))
+
+====================
+
+Accuracy Score: 0.09403095062638173
+
+END RequestId: a5518c1e-aea8-4054-bb0e-9f80d37ee91c
+
+REPORT RequestId: a5518c1e-aea8-4054-bb0e-9f80d37ee91c	Duration: 5431.85 ms	Billed Duration: 5500 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 21671543-abae-4553-827e-c33be4e99a3e Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.32665834484859346
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1218, 1172, 1593, 1618, 1184]))
+
+====================
+
+Accuracy Score: 0.8941783345615328
+
+END RequestId: 21671543-abae-4553-827e-c33be4e99a3e
+
+REPORT RequestId: 21671543-abae-4553-827e-c33be4e99a3e	Duration: 40119.53 ms	Billed Duration: 40200 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: f6e9e5c9-9f96-4aa0-b1ed-0c42348e971d Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: f6e9e5c9-9f96-4aa0-b1ed-0c42348e971d
+
+REPORT RequestId: f6e9e5c9-9f96-4aa0-b1ed-0c42348e971d	Duration: 40331.17 ms	Billed Duration: 40400 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 90a6fd4b-d757-4cfc-9661-01e4c24c8b93 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.755725043682641
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 796, 5984,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 90a6fd4b-d757-4cfc-9661-01e4c24c8b93
+
+REPORT RequestId: 90a6fd4b-d757-4cfc-9661-01e4c24c8b93	Duration: 5426.54 ms	Billed Duration: 5500 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 3c07367b-545b-49b0-8eca-2c6724bb0b3b Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0170467330182662
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-5., -2., -1., -0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   2,    2,   11,  214, 1399, 3275, 1782,   90,   10]))
+
+====================
+
+Accuracy Score: 0.2969786293294031
+
+END RequestId: 3c07367b-545b-49b0-8eca-2c6724bb0b3b
+
+REPORT RequestId: 3c07367b-545b-49b0-8eca-2c6724bb0b3b	Duration: 4430.16 ms	Billed Duration: 4500 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: d02974d9-20be-46d3-bbed-836fea633863 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: d02974d9-20be-46d3-bbed-836fea633863
+
+REPORT RequestId: d02974d9-20be-46d3-bbed-836fea633863	Duration: 13181.26 ms	Billed Duration: 13200 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 018561a3-a215-4964-b93f-3038e060f064 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.3433028571115493
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([1385, 2435, 1627, 1338]))
+
+====================
+
+Accuracy Score: 0.012232866617538689
+
+END RequestId: 018561a3-a215-4964-b93f-3038e060f064
+
+REPORT RequestId: 018561a3-a215-4964-b93f-3038e060f064	Duration: 32216.36 ms	Billed Duration: 32300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: e72ac96b-0471-4b1f-a257-6bdf6eefdc0d Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.30230784471542765
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1125, 1564, 1676, 2420]))
+
+====================
+
+Accuracy Score: 0.6876934414148858
+
+END RequestId: e72ac96b-0471-4b1f-a257-6bdf6eefdc0d
+
+REPORT RequestId: e72ac96b-0471-4b1f-a257-6bdf6eefdc0d	Duration: 13859.29 ms	Billed Duration: 13900 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: bc6de370-749b-499a-a061-3fe939328898 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: bc6de370-749b-499a-a061-3fe939328898
+
+REPORT RequestId: bc6de370-749b-499a-a061-3fe939328898	Duration: 14082.79 ms	Billed Duration: 14100 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 6167b7e7-8aa6-4234-9dd6-5cd3eb058595 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.3306187613711431
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1205, 1180, 1622, 1592, 1186]))
+
+====================
+
+Accuracy Score: 0.8899042004421518
+
+END RequestId: 6167b7e7-8aa6-4234-9dd6-5cd3eb058595
+
+REPORT RequestId: 6167b7e7-8aa6-4234-9dd6-5cd3eb058595	Duration: 42596.49 ms	Billed Duration: 42600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 3d0483b0-d4bf-4ec6-8d41-5384106ec741 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.32665834484859346
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1218, 1172, 1593, 1618, 1184]))
+
+====================
+
+Accuracy Score: 0.8941783345615328
+
+END RequestId: 3d0483b0-d4bf-4ec6-8d41-5384106ec741
+
+REPORT RequestId: 3d0483b0-d4bf-4ec6-8d41-5384106ec741	Duration: 43017.02 ms	Billed Duration: 43100 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 7842a139-c9b2-4f31-8a0b-77eab352090b Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.756165550839136
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 791, 5989,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 7842a139-c9b2-4f31-8a0b-77eab352090b
+
+REPORT RequestId: 7842a139-c9b2-4f31-8a0b-77eab352090b	Duration: 5581.79 ms	Billed Duration: 5600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 4f8d993d-afa5-4a6f-a6c4-0300377e4def Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.756701952513299
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 789, 5991,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 4f8d993d-afa5-4a6f-a6c4-0300377e4def
+
+REPORT RequestId: 4f8d993d-afa5-4a6f-a6c4-0300377e4def	Duration: 5507.21 ms	Billed Duration: 5600 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 7e9d9491-fcd8-432c-8d36-da88805309c0 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.236291947220737
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([2012, 1940, 2285,  548]))
+
+====================
+
+Accuracy Score: 0.12940309506263817
+
+END RequestId: 7e9d9491-fcd8-432c-8d36-da88805309c0
+
+REPORT RequestId: 7e9d9491-fcd8-432c-8d36-da88805309c0	Duration: 32197.40 ms	Billed Duration: 32200 ms 	Memory Size: 1280 MB	Max Memory Used: 194 MB	
+
+START RequestId: 8518314e-94c7-445a-81bc-606c58b0a62f Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+START RequestId: 5808c6cc-5ed5-4d4f-9e6e-f3124a25b6d9 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: 5808c6cc-5ed5-4d4f-9e6e-f3124a25b6d9
+
+REPORT RequestId: 5808c6cc-5ed5-4d4f-9e6e-f3124a25b6d9	Duration: 14246.31 ms	Billed Duration: 14300 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 0499f8c6-8828-4257-94ae-94ed17bb5c4f Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.493160878551826
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-0.,  1.,  2.,  3.], dtype=float32), array([ 790, 5990,    4,    1]))
+
+====================
+
+Accuracy Score: 0.09403095062638173
+
+END RequestId: 0499f8c6-8828-4257-94ae-94ed17bb5c4f
+
+REPORT RequestId: 0499f8c6-8828-4257-94ae-94ed17bb5c4f	Duration: 5545.37 ms	Billed Duration: 5600 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 27fead3d-92e6-4445-b145-a5c2f02d0f51 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.4932984902320996
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([ 794, 5986,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0941783345615328
+
+END RequestId: 27fead3d-92e6-4445-b145-a5c2f02d0f51
+
+REPORT RequestId: 27fead3d-92e6-4445-b145-a5c2f02d0f51	Duration: 5624.53 ms	Billed Duration: 5700 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: 690766a6-a65e-4461-b63c-7a67b630a464 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0655897661417657
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5., 6., 7., 8.], dtype=float32), array([   4,  318, 5140, 1303,   16,    1,    1,    1,    1]))
+
+====================
+
+Accuracy Score: 0.2243183492999263
+
+END RequestId: 690766a6-a65e-4461-b63c-7a67b630a464
+
+REPORT RequestId: 690766a6-a65e-4461-b63c-7a67b630a464	Duration: 4695.48 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: e05e199a-b635-4791-b819-0e9e871bd732 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: e05e199a-b635-4791-b819-0e9e871bd732
+
+REPORT RequestId: e05e199a-b635-4791-b819-0e9e871bd732	Duration: 43882.27 ms	Billed Duration: 43900 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: 89335928-69b6-4138-83cc-985d3528db90 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 89335928-69b6-4138-83cc-985d3528db90
+
+REPORT RequestId: 89335928-69b6-4138-83cc-985d3528db90	Duration: 14317.42 ms	Billed Duration: 14400 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: 43240c70-2673-430b-96d4-7f579bde27a7 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.23657875292953
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([1654, 2297, 2286,  548]))
+
+====================
+
+Accuracy Score: 0.12940309506263817
+
+END RequestId: 43240c70-2673-430b-96d4-7f579bde27a7
+
+REPORT RequestId: 43240c70-2673-430b-96d4-7f579bde27a7	Duration: 11838.82 ms	Billed Duration: 11900 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: e09ffb5d-adcc-4b44-aec9-be56e7dc7c92 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.23657875292953
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([1654, 2297, 2286,  548]))
+
+====================
+
+Accuracy Score: 0.12940309506263817
+
+END RequestId: e09ffb5d-adcc-4b44-aec9-be56e7dc7c92
+
+REPORT RequestId: e09ffb5d-adcc-4b44-aec9-be56e7dc7c92	Duration: 11818.46 ms	Billed Duration: 11900 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: 502120f0-67aa-42aa-938d-7d26f92fae95 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0175492040203526
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-5., -2., -1.,  0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   2,    2,   11,  218, 1397, 3268, 1786,   91,   10]))
+
+====================
+
+Accuracy Score: 0.2969786293294031
+
+END RequestId: 502120f0-67aa-42aa-938d-7d26f92fae95
+
+REPORT RequestId: 502120f0-67aa-42aa-938d-7d26f92fae95	Duration: 4756.66 ms	Billed Duration: 4800 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: d20b03f2-6b4a-41bd-a5a9-eb934918f6cc Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.756502538581235
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 790, 5990,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: d20b03f2-6b4a-41bd-a5a9-eb934918f6cc
+
+REPORT RequestId: d20b03f2-6b4a-41bd-a5a9-eb934918f6cc	Duration: 5511.98 ms	Billed Duration: 5600 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: bb5f6cdb-7c49-4731-9c3b-f9b09325537f Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2455, 1860, 2470]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: bb5f6cdb-7c49-4731-9c3b-f9b09325537f
+
+REPORT RequestId: bb5f6cdb-7c49-4731-9c3b-f9b09325537f	Duration: 44129.38 ms	Billed Duration: 44200 ms 	Memory Size: 1280 MB	Max Memory Used: 196 MB	
+
+START RequestId: 90c65273-b2f0-40b9-a5b0-50124183aaa1 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.30572938637954833
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1129, 1560, 1451, 2645]))
+
+====================
+
+Accuracy Score: 0.7223286661753869
+
+END RequestId: 90c65273-b2f0-40b9-a5b0-50124183aaa1
+
+REPORT RequestId: 90c65273-b2f0-40b9-a5b0-50124183aaa1	Duration: 13355.68 ms	Billed Duration: 13400 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 1b330a29-a30e-4ff0-a41b-5ba8e825ce42 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.32665869238276474
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1218, 1172, 1593, 1618, 1184]))
+
+====================
+
+Accuracy Score: 0.8941783345615328
+
+END RequestId: 1b330a29-a30e-4ff0-a41b-5ba8e825ce42
+
+REPORT RequestId: 1b330a29-a30e-4ff0-a41b-5ba8e825ce42	Duration: 13230.07 ms	Billed Duration: 13300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: bed03148-c626-44ee-b1c0-49e2165d27d9 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.4929645221324208
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-0.,  1.,  2.,  3.], dtype=float32), array([ 791, 5989,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0941783345615328
+
+END RequestId: bed03148-c626-44ee-b1c0-49e2165d27d9
+
+REPORT RequestId: bed03148-c626-44ee-b1c0-49e2165d27d9	Duration: 5362.27 ms	Billed Duration: 5400 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 702fe54e-fd5c-42ee-85f9-ca999332751f Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.302308919470189
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1125, 1564, 1676, 2420]))
+
+====================
+
+Accuracy Score: 0.6876934414148858
+
+END RequestId: 702fe54e-fd5c-42ee-85f9-ca999332751f
+
+REPORT RequestId: 702fe54e-fd5c-42ee-85f9-ca999332751f	Duration: 40973.94 ms	Billed Duration: 41000 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 620f8b5c-167e-461c-9463-3877ba5ec385 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 620f8b5c-167e-461c-9463-3877ba5ec385
+
+REPORT RequestId: 620f8b5c-167e-461c-9463-3877ba5ec385	Duration: 5197.95 ms	Billed Duration: 5200 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 417f5808-4321-4ce0-afa0-7574d894a6ed Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 417f5808-4321-4ce0-afa0-7574d894a6ed
+
+REPORT RequestId: 417f5808-4321-4ce0-afa0-7574d894a6ed	Duration: 5256.03 ms	Billed Duration: 5300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 8d3e26e0-49d0-4b4b-bc83-a685ca3e14e7 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 8d3e26e0-49d0-4b4b-bc83-a685ca3e14e7
+
+REPORT RequestId: 8d3e26e0-49d0-4b4b-bc83-a685ca3e14e7	Duration: 13699.53 ms	Billed Duration: 13700 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 95df29e4-e85e-4e08-aace-c85923c44234 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 95df29e4-e85e-4e08-aace-c85923c44234
+
+REPORT RequestId: 95df29e4-e85e-4e08-aace-c85923c44234	Duration: 13711.53 ms	Billed Duration: 13800 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 4626e9d7-1e8f-496f-b305-b793c90ac723 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0089347354485738
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-6., -5., -2., -1.,  0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   1,    1,    1,   55,  387, 1073, 2921, 2131,  205,   10]))
+
+====================
+
+Accuracy Score: 0.2856300663227708
+
+END RequestId: 4626e9d7-1e8f-496f-b305-b793c90ac723
+
+REPORT RequestId: 4626e9d7-1e8f-496f-b305-b793c90ac723	Duration: 4455.39 ms	Billed Duration: 4500 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 6f0dc255-2908-4a35-824c-ea395daa5400 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0171676163165642
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-5., -2., -1.,  0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   2,    2,   11,  215, 1400, 3273, 1782,   90,   10]))
+
+====================
+
+Accuracy Score: 0.296683861459101
+
+END RequestId: 6f0dc255-2908-4a35-824c-ea395daa5400
+
+REPORT RequestId: 6f0dc255-2908-4a35-824c-ea395daa5400	Duration: 4359.81 ms	Billed Duration: 4400 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 4fb7fd84-49a8-42ff-8ecb-f0098454634b Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 4fb7fd84-49a8-42ff-8ecb-f0098454634b
+
+REPORT RequestId: 4fb7fd84-49a8-42ff-8ecb-f0098454634b	Duration: 13047.36 ms	Billed Duration: 13100 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 77c809cc-7fe7-4a57-ac4e-d951097a8159 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.983125244033802
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2455, 1860, 2470]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 77c809cc-7fe7-4a57-ac4e-d951097a8159
+
+REPORT RequestId: 77c809cc-7fe7-4a57-ac4e-d951097a8159	Duration: 39476.09 ms	Billed Duration: 39500 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: ace3fe43-0cde-45e5-965a-22804a4e7f9e Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503282533204985
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2465, 1849, 2471]))
+
+====================
+
+Accuracy Score: 0.20736919675755341
+
+END RequestId: ace3fe43-0cde-45e5-965a-22804a4e7f9e
+
+REPORT RequestId: ace3fe43-0cde-45e5-965a-22804a4e7f9e	Duration: 14583.67 ms	Billed Duration: 14600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: f1067b49-9178-4eb2-be6c-c968207384cd Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.4934600403395124
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-0.,  1.,  2.,  3.], dtype=float32), array([ 790, 5990,    4,    1]))
+
+====================
+
+Accuracy Score: 0.09403095062638173
+
+END RequestId: f1067b49-9178-4eb2-be6c-c968207384cd
+
+REPORT RequestId: f1067b49-9178-4eb2-be6c-c968207384cd	Duration: 5594.54 ms	Billed Duration: 5600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 205e5080-29dd-429f-8216-89155e0e8d68 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.493177241142002
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([ 793, 5987,    4,    1]))
+
+====================
+
+Accuracy Score: 0.09403095062638173
+
+END RequestId: 205e5080-29dd-429f-8216-89155e0e8d68
+
+REPORT RequestId: 205e5080-29dd-429f-8216-89155e0e8d68	Duration: 5506.74 ms	Billed Duration: 5600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 5ed0f536-0120-46a3-bb94-ba260cda79dd Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0343724840492912
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5.], dtype=float32), array([   7, 1134, 5246,  396,    1,    1]))
+
+====================
+
+Accuracy Score: 0.3162859248341931
+
+END RequestId: 5ed0f536-0120-46a3-bb94-ba260cda79dd
+
+REPORT RequestId: 5ed0f536-0120-46a3-bb94-ba260cda79dd	Duration: 4662.50 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 4be47aa5-5b71-4213-b5a4-bc6b740bf272 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0503799439969972
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2.], dtype=float32), array([2463, 1851, 2471]))
+
+====================
+
+Accuracy Score: 0.20722181282240235
+
+END RequestId: 4be47aa5-5b71-4213-b5a4-bc6b740bf272
+
+REPORT RequestId: 4be47aa5-5b71-4213-b5a4-bc6b740bf272	Duration: 43290.99 ms	Billed Duration: 43300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: c7dac049-78c5-44e9-bd86-cae2b5e2cb47 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: c7dac049-78c5-44e9-bd86-cae2b5e2cb47
+
+REPORT RequestId: c7dac049-78c5-44e9-bd86-cae2b5e2cb47	Duration: 14216.15 ms	Billed Duration: 14300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 95083747-d9d8-45f5-8b07-d667125f0a27 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.343309113130731
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([1385, 2435, 1627, 1338]))
+
+====================
+
+Accuracy Score: 0.012232866617538689
+
+END RequestId: 95083747-d9d8-45f5-8b07-d667125f0a27
+
+REPORT RequestId: 95083747-d9d8-45f5-8b07-d667125f0a27	Duration: 12235.46 ms	Billed Duration: 12300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: e2c8d61a-8250-4f91-811a-219b2c8bea54 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.343309113130731
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([1385, 2435, 1627, 1338]))
+
+====================
+
+Accuracy Score: 0.012232866617538689
+
+END RequestId: e2c8d61a-8250-4f91-811a-219b2c8bea54
+
+REPORT RequestId: e2c8d61a-8250-4f91-811a-219b2c8bea54	Duration: 12243.35 ms	Billed Duration: 12300 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 05110083-2c81-44a1-8037-bb52ca17a227 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.755953873653313
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 791, 5989,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 05110083-2c81-44a1-8037-bb52ca17a227
+
+REPORT RequestId: 05110083-2c81-44a1-8037-bb52ca17a227	Duration: 5546.15 ms	Billed Duration: 5600 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 4d30264a-8290-4e8b-92c8-77d103370ef6 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.757200374055102
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11., 12.], dtype=float32), array([ 789, 5991,    4,    1]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 4d30264a-8290-4e8b-92c8-77d103370ef6
+
+REPORT RequestId: 4d30264a-8290-4e8b-92c8-77d103370ef6	Duration: 5492.59 ms	Billed Duration: 5500 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: f4e29041-9b07-42be-b77e-1ee4731722d1 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.3433028571115493
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([1385, 2435, 1627, 1338]))
+
+====================
+
+Accuracy Score: 0.012232866617538689
+
+END RequestId: f4e29041-9b07-42be-b77e-1ee4731722d1
+
+REPORT RequestId: f4e29041-9b07-42be-b77e-1ee4731722d1	Duration: 34817.97 ms	Billed Duration: 34900 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: bb91c716-c8dc-4e83-a4f4-9f8edd617421 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.3306184602029726
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4.], dtype=float32), array([1205, 1180, 1622, 1592, 1186]))
+
+====================
+
+Accuracy Score: 0.8899042004421518
+
+END RequestId: bb91c716-c8dc-4e83-a4f4-9f8edd617421
+
+REPORT RequestId: bb91c716-c8dc-4e83-a4f4-9f8edd617421	Duration: 13970.84 ms	Billed Duration: 14000 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 91399440-0918-4630-88ab-55c2ce8163ed Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0646552809653427
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5., 6., 7., 8.], dtype=float32), array([   4,  316, 5141, 1304,   16,    1,    1,    1,    1]))
+
+====================
+
+Accuracy Score: 0.22461311717022844
+
+END RequestId: 91399440-0918-4630-88ab-55c2ce8163ed
+
+REPORT RequestId: 91399440-0918-4630-88ab-55c2ce8163ed	Duration: 4741.34 ms	Billed Duration: 4800 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 1fcbc8fe-bf9c-48e9-b1af-fda45e50c61f Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0655441342071303
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5., 6., 7., 8.], dtype=float32), array([   4,  318, 5140, 1303,   16,    1,    1,    1,    1]))
+
+====================
+
+Accuracy Score: 0.2243183492999263
+
+END RequestId: 1fcbc8fe-bf9c-48e9-b1af-fda45e50c61f
+
+REPORT RequestId: 1fcbc8fe-bf9c-48e9-b1af-fda45e50c61f	Duration: 4627.12 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: b3d150db-7038-4cdc-958d-ac0f9ec48b21 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0654954315176235
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3., 4., 5., 6., 7., 8.], dtype=float32), array([   4,  318, 5138, 1305,   16,    1,    1,    1,    1]))
+
+====================
+
+Accuracy Score: 0.2243183492999263
+
+END RequestId: b3d150db-7038-4cdc-958d-ac0f9ec48b21
+
+REPORT RequestId: b3d150db-7038-4cdc-958d-ac0f9ec48b21	Duration: 4623.95 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: 4cc801d6-bf23-4468-b678-349b5f9f3b71 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 1, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 0.30572950453466585
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([0., 1., 2., 3.], dtype=float32), array([1129, 1560, 1451, 2645]))
+
+====================
+
+Accuracy Score: 0.7223286661753869
+
+END RequestId: 4cc801d6-bf23-4468-b678-349b5f9f3b71
+
+REPORT RequestId: 4cc801d6-bf23-4468-b678-349b5f9f3b71	Duration: 44880.57 ms	Billed Duration: 44900 ms 	Memory Size: 1280 MB	Max Memory Used: 193 MB	
+
+START RequestId: f51c78e4-3c50-470b-98e8-d20fc6436d75 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: f51c78e4-3c50-470b-98e8-d20fc6436d75
+
+REPORT RequestId: f51c78e4-3c50-470b-98e8-d20fc6436d75	Duration: 5416.22 ms	Billed Duration: 5500 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 6b0638f9-4d51-4f7c-ba8a-bc34a52b7e6f Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 6b0638f9-4d51-4f7c-ba8a-bc34a52b7e6f
+
+REPORT RequestId: 6b0638f9-4d51-4f7c-ba8a-bc34a52b7e6f	Duration: 5408.99 ms	Billed Duration: 5500 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 26451b63-4824-436a-abb7-290595fa87c5 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 26451b63-4824-436a-abb7-290595fa87c5
+
+REPORT RequestId: 26451b63-4824-436a-abb7-290595fa87c5	Duration: 14290.30 ms	Billed Duration: 14300 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 9052b6e5-0b8d-4e4c-8052-7f17f6dab28f Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gbtree', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 7.98284117179314
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([ 9., 10., 11.], dtype=float32), array([2462, 1849, 2474]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: 9052b6e5-0b8d-4e4c-8052-7f17f6dab28f
+
+REPORT RequestId: 9052b6e5-0b8d-4e4c-8052-7f17f6dab28f	Duration: 14381.36 ms	Billed Duration: 14400 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: 0f5e61b2-635f-42ac-bbed-03721aacf350 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0112648858225513
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-6., -5., -2., -1.,  0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   1,    1,    1,   63,  391, 1066, 2920, 2125,  207,   10]))
+
+====================
+
+Accuracy Score: 0.2853352984524687
+
+END RequestId: 0f5e61b2-635f-42ac-bbed-03721aacf350
+
+REPORT RequestId: 0f5e61b2-635f-42ac-bbed-03721aacf350	Duration: 4688.91 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: ace33bb5-e366-48d4-a822-7216083c7e76 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'gblinear', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.0101570748330788
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([-6., -5., -2., -1.,  0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   1,    1,    1,   62,  388, 1076, 2913, 2127,  206,   10]))
+
+====================
+
+Accuracy Score: 0.2853352984524687
+
+END RequestId: ace33bb5-e366-48d4-a822-7216083c7e76
+
+REPORT RequestId: ace33bb5-e366-48d4-a822-7216083c7e76	Duration: 4641.50 ms	Billed Duration: 4700 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: d4eeaaa1-7403-498e-b150-fd6e53d63ba9 Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 2, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 0.1}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 3.9786321904260444
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([6.], dtype=float32), array([6785]))
+
+====================
+
+Accuracy Score: 0.0
+
+END RequestId: d4eeaaa1-7403-498e-b150-fd6e53d63ba9
+
+REPORT RequestId: d4eeaaa1-7403-498e-b150-fd6e53d63ba9	Duration: 14654.12 ms	Billed Duration: 14700 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+
+START RequestId: e0ffcd35-9af5-4bc7-a204-5c336fe4fbee Version: $LATEST
+
+=======Event=========
+
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0.01, 'learning_rate': 0.01, 'max_delta_step': 5, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 200, 'n_jobs': 4, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv'}
+
+Downloading Dataset from S3
+
+Mean Absolute Error : 1.236291947220737
+
+====================
+
+(array([0, 1, 2, 3, 4]), array([1317, 1397, 1302, 1362, 1407]))
+
+(array([2., 3., 4., 5.], dtype=float32), array([2012, 1940, 2285,  548]))
+
+====================
+
+Accuracy Score: 0.12940309506263817
+
+END RequestId: e0ffcd35-9af5-4bc7-a204-5c336fe4fbee
+
+REPORT RequestId: e0ffcd35-9af5-4bc7-a204-5c336fe4fbee	Duration: 31766.71 ms	Billed Duration: 31800 ms 	Memory Size: 1280 MB	Max Memory Used: 195 MB	
+

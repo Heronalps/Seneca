@@ -34,7 +34,7 @@ def create_event(config, PARAMETERS, CONFIG):
             payload['data'][key.lower()] = value
             
         payload['dataset'] = getattr(config.Config, 'DATASET')
-            
+        payload['test_size'] = getattr(config.Config, 'TEST_SIZE')    
         payload_list.append(payload)
 
     return payload_list

@@ -33,7 +33,8 @@ def create_event(config, PARAMETERS, CONFIG):
         for key, value in zip(PARAMETERS, list(item)):
             payload['data'][key.lower()] = value
         
-        payload['dataset'] = getattr(config.Config, 'DATASET')    
+        payload['dataset'] = getattr(config.Config, 'DATASET') 
+        payload['test_size'] = getattr(config.Config, 'TEST_SIZE')    
         payload_list.append(payload)
 
     return payload_list
@@ -80,6 +81,7 @@ def grid_search_controller(config_path):
     chosen_model_event = None
     metrics = []
 
+    import pdb; pdb.set_trace();
     # from src.lambda_func.xgboost.XGBoost import lambda_handler
     # from contextlib import redirect_stdout
 

@@ -19,9 +19,9 @@ class Hyperparameter:
     # BASE_SCORE = [0.5]
     # RANDOM_STATE = [0]
     
-    MAX_DEPTH = [2, 4]
+    MAX_DEPTH = [3]
     LEARNING_RATE = [0.01]
-    N_ESTIMATORS = [300]
+    N_ESTIMATORS = [200]
     # reg:linear, reg:logistic, binary:logistic, binary:logitraw, 
     # count:poisson, multi:softmax, multi:softprob, rank:pairwise
     OBJECTIVE= ['reg:linear', 'rank:pairwise'] 

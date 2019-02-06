@@ -37,8 +37,8 @@ class Hyperparameter:
 class Cross_Validation:
     # Four parameters of cross validation 
 
-    INITIAL = '2190 days'
-    PERIOD = '180 days'
+    INITIAL = '2555 days'
+    PERIOD = '365 days'
     HORIZON = '365 days'
 
     # Available metrics: mse, rmse, mae, mape, coverage

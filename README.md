@@ -30,7 +30,6 @@ seneca --help
 ## Centaurus 
 - The aws branch is a hybrid solution, which needs a PostgreSQL server
 
-## N-Body
 
 ## Prophet
 

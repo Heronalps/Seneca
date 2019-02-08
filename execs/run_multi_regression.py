@@ -65,15 +65,15 @@ def grid_search_controller(config_path):
     config = load(config_path)
     
     # Dynamic loading lambda name
-    LAMBDA_NAME = getattr(config, "LAMBDA_NAME")
+    LAMBDA_NAME = getattr(config.Hyperparameter, "LAMBDA_NAME")
     
     # Clean the log of specified lambda function
     clean_logs('/aws/lambda/' + LAMBDA_NAME)
 
     # Dynamic load parameters 
     DATASETS = []
-    TARGETS = getattr(config, 'TARGETS')
-    for key in getattr(config, 'DATASETS'):
+    TARGETS = getattr(config.Hyperparameter, 'TARGETS')
+    for key in getattr(config.Hyperparameter, 'DATASETS'):
         DATASETS.append(key)
 
     # Tune forecast horizon of the chosen model

@@ -1,7 +1,6 @@
 import os, sys, csv, re, importlib.util
 from itertools import product
 sys.path.insert(0, "./")
-print (sys.path)
 from helpers.parsers import split_path
 
 def parse_parameter_map(config_path, lambda_name):
@@ -20,26 +19,35 @@ def parse_parameter_map(config_path, lambda_name):
 
     # Tune forecast horizon of the chosen model
     create_event(config, PARAMETERS, lambda_name)
-    sys.path.pop(0)
+    
 
 
 def create_event(config, PARAMETERS, LAMBDA_NAME):
     # Search for model with Cartisan Product of hyperparameters
-    parameter_lists = []
-    for parameter in PARAMETERS:
-        parameter_lists.append(getattr(config.Hyperparameter, parameter))
-    search_space = product(*parameter_lists)
     
     payload_list = []
-
-    for item in search_space:
-        payload = {}
-        for key, value in zip(PARAMETERS, list(item)):
-            payload[key.lower()] = value
-        payload_list.append(payload)
+    if LAMBDA_NAME == 'multi_regression':
+        from execs.run_multi_regression import create_subset
+        subsets = create_subset(config.Hyperparameter.DATASETS)
+        for subset in subsets:
+            payload = {}
+            payload['variable_files'] = subset
+            payload_list.append(payload)
+            
+    else:
+        parameter_lists = []
+        for parameter in PARAMETERS:
+            parameter_lists.append(getattr(config.Hyperparameter, parameter))
+        search_space = product(*parameter_lists)
+        
+        for item in search_space:
+            payload = {}
+            for key, value in zip(PARAMETERS, list(item)):
+                payload[key.lower()] = value
+            payload_list.append(payload)
     
-    with open("./results/spreadsheets/parameter_mapping_" + LAMBDA_NAME + ".csv", "a") as f:
-
+    with open("./results/spreadsheets/parameter_mapping_" + LAMBDA_NAME + ".csv", "w") as f:
+        # import pdb; pdb.set_trace()
         first_dict = payload_list[0]
         w = csv.DictWriter(f, first_dict.keys())
         w.writeheader()
@@ -47,6 +55,6 @@ def create_event(config, PARAMETERS, LAMBDA_NAME):
             w.writerow(payload)
 
 if __name__ == "__main__":
-    models = ['prophet', 'neural_network', 'svc', 'xgboost']
+    models = ['multi_regression', 'prophet', 'neural_network', 'svc', 'xgboost']
     for model in models:
         parse_parameter_map("/Users/michaelzhang/Downloads/Seneca/config/{0}/config.py".format(model), model)

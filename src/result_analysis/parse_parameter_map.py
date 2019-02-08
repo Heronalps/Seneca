@@ -1,4 +1,4 @@
-import os, sys, csv, re, importlib
+import os, sys, csv, re, importlib.util
 from itertools import product
 sys.path.insert(0, "./")
 print (sys.path)
@@ -6,19 +6,21 @@ from helpers.parsers import split_path
 
 def parse_parameter_map(config_path, lambda_name):
     # Dynamic importing config file from config_path
-    path_prefix, filename = split_path(config_path)
-    sys.path.insert(0, path_prefix)
-    config = importlib.import_module(filename)
-
+    _path_prefix, filename = split_path(config_path)
+    spec = importlib.util.spec_from_file_location(filename, config_path)
+    config = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(config)
+    
     # Dynamic load parameters 
     PARAMETERS = []
-
+    
     for key in dir(config.Hyperparameter):
         if key.isupper():
             PARAMETERS.append(key)
 
     # Tune forecast horizon of the chosen model
     create_event(config, PARAMETERS, lambda_name)
+    sys.path.pop(0)
 
 
 def create_event(config, PARAMETERS, LAMBDA_NAME):
@@ -45,6 +47,6 @@ def create_event(config, PARAMETERS, LAMBDA_NAME):
             w.writerow(payload)
 
 if __name__ == "__main__":
-    models = ['neural_network', 'prophet', 'svc', 'xgboost']
+    models = ['prophet', 'neural_network', 'svc', 'xgboost']
     for model in models:
-        parse_parameter_map("~/config/{0}/config.py".format(model), model)
+        parse_parameter_map("/Users/michaelzhang/Downloads/Seneca/config/{0}/config.py".format(model), model)

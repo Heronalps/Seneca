@@ -4,6 +4,7 @@ import sys, os, re, importlib, time
 sys.path.insert(0, "./")
 from helpers.parsers import parse_path
 from helpers.parsers import split_path
+from helpers.module_loader import load
 
 seneca_path = parse_path(os.getcwd(), "Seneca")
 package_path = seneca_path + "/venv/lib/python3.6/site-packages"
@@ -58,10 +59,8 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
 def grid_search_controller(config_path):
     
     # Dynamic importing config file from config_path
-    path_prefix, filename = split_path(config_path)
-    sys.path.insert(0, path_prefix)
-    config = importlib.import_module(filename)
-    
+    config = load(config_path)
+
     # Dynamic loading lambda name
     LAMBDA_NAME = getattr(config.Cross_Validation, "LAMBDA_NAME")
     

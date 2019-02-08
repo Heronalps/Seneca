@@ -3,6 +3,7 @@ import sys, os, re, importlib, time
 # Makes Seneca root directory available for importing
 sys.path.insert(0, "./")
 from helpers.parsers import parse_path
+from helpers.parsers import split_path
 
 seneca_path = parse_path(os.getcwd(), "Seneca")
 package_path = seneca_path + "/venv/lib/python3.6/site-packages"
@@ -139,13 +140,6 @@ def grid_search_controller(config_path):
 
     from src.celery_lambda import measurement
     measurement.parse_log("/aws/lambda/XGBoost_worker")
-
-def split_path(path):
-    # This regex captures filename after the last backslash
-    filename = re.search("(?!\/)(?:.(?!\/))*(?=\.\w*$)", path).group(0)
-    path_prefix = re.search("(.*\/)(?!.*\/)", path).group(0)
-    
-    return path_prefix, filename
 
 if __name__ == "__main__":
     path = "/Users/michaelzhang/Downloads/Seneca/config/xgboost/config.py"

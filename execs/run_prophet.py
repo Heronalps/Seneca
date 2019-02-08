@@ -3,6 +3,7 @@ import sys, os, re, importlib, time
 # Makes Seneca root directory available for importing
 sys.path.insert(0, "./")
 from helpers.parsers import parse_path
+from helpers.parsers import split_path
 
 seneca_path = parse_path(os.getcwd(), "Seneca")
 package_path = seneca_path + "/venv/lib/python3.6/site-packages"
@@ -23,7 +24,7 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
     for parameter in PARAMETERS:
         parameter_lists.append(getattr(config.Hyperparameter, parameter))
     search_space = product(*parameter_lists)
-
+    
     payload_list = []
     for item in search_space:
         payload = {}
@@ -79,7 +80,7 @@ def grid_search_controller(config_path):
 
     # Tune forecast horizon of the chosen model
     payload_list = create_event(config, PARAMETERS, CV_SETTINGS)
-
+    
     min_metric = float('inf')
     chosen_model_event = None
     metrics = []
@@ -146,13 +147,6 @@ def grid_search_controller(config_path):
     # print ("=======The Execution Time===========")
     # print (time.time() - start)
     # print (response)
-
-def split_path(path):
-    # This regex captures filename after the last backslash
-    filename = re.search("(?!\/)(?:.(?!\/))*(?=\.\w*$)", path).group(0)
-    path_prefix = re.search("(.*\/)(?!.*\/)", path).group(0)
-    
-    return path_prefix, filename
 
 if __name__ == "__main__":
     path = "/Users/michaelzhang/Downloads/Seneca/config/prophet/config.py"

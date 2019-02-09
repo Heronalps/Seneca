@@ -34,13 +34,17 @@ def create_event(config, PARAMETERS, LAMBDA_NAME):
             
     else:
         parameter_lists = []
+        varied_parameters = []
         for parameter in PARAMETERS:
-            parameter_lists.append(getattr(config.Hyperparameter, parameter))
+            parameter_values = getattr(config.Hyperparameter, parameter)
+            if len(parameter_values) > 1:
+                parameter_lists.append(parameter_values)
+                varied_parameters.append(parameter)
         search_space = product(*parameter_lists)
         
         for item in search_space:
             payload = {}
-            for key, value in zip(PARAMETERS, list(item)):
+            for key, value in zip(varied_parameters, list(item)):
                 payload[key.lower()] = value
             payload_list.append(payload)
     

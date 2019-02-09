@@ -19,8 +19,6 @@ def parse_parameter_map(config_path, lambda_name):
 
     # Tune forecast horizon of the chosen model
     create_event(config, PARAMETERS, lambda_name)
-    
-
 
 def create_event(config, PARAMETERS, LAMBDA_NAME):
     # Search for model with Cartisan Product of hyperparameters

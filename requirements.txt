@@ -1,3 +1,3 @@
-celery
+celery[redis]
 boto3
 matplotlib

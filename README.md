@@ -22,6 +22,7 @@ seneca --help
 ## Execution
 - Start EC2 instance
 - Start Rabbitmq Server, run ``` sudo rabbitmq-server ```
+- Configure Rabbitmq,run ``` sh rabbitmq_config.sh ```
 - Start Redis Server, run ``` redis-server ```
 - Configure .aws/config & .aws/credentials
 - Direct to repo directory /Celery_Lambda, run ```nohup celery -A proj worker -l info --concurrency=10 & ```

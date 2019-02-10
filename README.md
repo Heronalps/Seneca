@@ -19,10 +19,16 @@ pipsi install ./cli
 seneca --help
 ```
 
-## Prerequisite
+## Execution
+- Start EC2 instance
 - Start Rabbitmq Server, run ``` sudo rabbitmq-server ```
 - Start Redis Server, run ``` redis-server ```
-- Direct to repo directory /Celery_Lambda, run ``` celery -A proj worker -l info ```
+- Direct to repo directory /Celery_Lambda, run ```nohup celery -A proj worker -l info --concurrency=10 & ```
+- Invoke Seneca ``` nohup seneca -m <model> -c ./config/<model>/config.py -l ./src/lambda_func/<model>/<model>.py -r 30 & ```
+- Kill background celery workers ``` kill $(ps aux | grep '[c]elery' | awk '{print $2}') ```
+- List celery queue ``` sudo rabbitmqctl list_queues celery -p myvhost ```
+- Purge celery queue ``` sudo rabbitmqctl purge_queue celery -p myvhost ```
+
 
 ## Container-Test
 - In another terminal at repo directory, run ``` python run_container_test.py ``` with 3 arguments, celery_async, lambda_async, invoke_time

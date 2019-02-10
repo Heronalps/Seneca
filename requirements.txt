@@ -1,0 +1,3 @@
+celery[redis]
+boto3
+matplotlib

@@ -1,0 +1,28 @@
+=============Seneca==============
+The specified model is multi_regression
+Config Path is at ./config/multi_regression/config.py
+Lambda Path is at ./src/lambda_func/multi_regression/multi_regression.py
+Repeat invocation 1 times!
+Calling multi_regression for 1 times!
+Run Hyperparameter Tuning on Multivariate Regression
+[/aws/lambda/multi_regression_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/multi_regression_worker
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]10698973bc5946b4ab1ce4f21326aaae
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]514c427a6b294310992c099bc36babbc
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]5dcc1bb6b04e4bcca622f1e62e23db84
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]656a89572df4425189c387ff69e428bc
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]66e9b18d4fb04da592ee8a7cc11ce526
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]82f2bf8e8ceb4a54977c88a7b068eee8
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]880c15f6b919450798f3b4f0be35cb89
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]9aeda8b5d39f4a1a98de1527758349fa
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]9c4b463d6c494bcaa51f5fbc882a91a1
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]de95fc62c6d84f1b9b0b0fcb929d6b96
+[/aws/lambda/multi_regression_worker] Deleted stream: 2019/02/10/[$LATEST]dfe0e3beca6e4f31bcd21f499fee044e
+Done
+=====Time Stamp======
+1549828810.2539752
+===Async Tasks start===
+===Async Tasks end===
+161.7280683517456
+{'target_file': 'pizero_02_dht.csv', 'variable_files': '["pizero_02.csv", "pizero_02_2.csv", "pizero_06.csv"]'}
+

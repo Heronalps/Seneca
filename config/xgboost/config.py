@@ -18,23 +18,23 @@ class Hyperparameter:
     # BASE_SCORE = [0.5]
     # RANDOM_STATE = [123]
     
-    MAX_DEPTH = [2, 4]
+    MAX_DEPTH = [3, 4]
     LEARNING_RATE = [0.1, 0.01]
-    N_ESTIMATORS = [300, 400]
+    N_ESTIMATORS = [100, 400]
     # reg:linear, reg:logistic, binary:logistic, binary:logitraw, 
     # count:poisson, multi:softmax, multi:softprob, rank:pairwise
     OBJECTIVE= ['reg:linear', 'rank:pairwise'] 
     BOOSTER = ['gbtree', 'gblinear', 'dart']
-    N_JOBS = [4]
-    GAMMA = [0.01]
-    MIN_CHILD_WEIGHT = [0.1, 2]
-    MAX_DELTA_STEP = [2, 5]
-    SCALE_POS_WEIGHT = [0.1, 2]
+    N_JOBS = [1]
+    GAMMA = [0]
+    MIN_CHILD_WEIGHT = [0.1, 1]
+    MAX_DELTA_STEP = [0, 5]
+    SCALE_POS_WEIGHT = [1, 2]
     # COLSAMPLE_BYTREE = [0.2, 0.5]
     # COLSAMPLE_BYLEVEL = [0.2, 0.5]
     # REG_ALPHA = [0.1, 0.9]
     # REG_LAMBDA = [0.1, 0.9]
-    BASE_SCORE = [1, 10]
+    BASE_SCORE = [0.5, 10]
     RANDOM_STATE = [123]
 
 class Config:

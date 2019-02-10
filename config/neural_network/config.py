@@ -27,21 +27,21 @@ class Hyperparameter:
     ACTIVATION = ['identity', 'tanh','relu'] # identity, logistic, tanh, relu
     SOLVER = ['lbfgs','sgd','adam'] # lbfgs, sgd, adam
     ALPHA = [0.0001]
-    BATCH_SIZE = [200]
+    BATCH_SIZE = ['auto']
     LEARNING_RATE = ['constant', 'invscaling', 'adaptive'] # constant, invscaling, adaptive
     LEARNING_RATE_INIT = [0.001, 0.0001]
-    POWER_T = [0.1, 2]
+    POWER_T = [0.1, 0.5]
     MAX_ITER = [20]
     SHUFFLE = [True]
     RANDOM_STATE = [123]
-    TOL = [1e-3, 1e-5]
+    TOL = [1e-4, 1e-5]
     MOMENTUM = [0.9]
     EARLY_STOPPING = [False]
     VALIDATION_FRACTION = [0.1]
     BETA_1 = [0.9]
     BETA_2 = [0.999]
     EPSILON = [1e-8]
-    N_ITER_NO_CHANGE = [5, 20]
+    N_ITER_NO_CHANGE = [10, 20]
     VERBOSE = [False]
 
 class Config:

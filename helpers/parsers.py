@@ -10,20 +10,11 @@ def split_path(path):
     
     return path_prefix, filename
 
-def parse_metric(file_path):
-    group_metrics = []
-    with open(file_path, 'r') as f:
-        message = f.readline()
-        while message:            
-            if message.startswith('REPORT'):
-                metrics = parse_single_metric(message)
-                group_metrics.append(metrics)
+'''
+This function parses string line of REPORT from cloudwatch log and returns dict of 4 metrics
+'''
 
-            message = f.readline()
-
-    return group_metrics
-
-def parse_single_metric(message):
+def parse_metrics(message):
     duration = re.search(r'(?<=\tDuration:\s)(.*?)(?=\sms)', message).group(0)
     billed_duration = re.search(r'(?<=\tBilled\sDuration:\s)(.*?)(?=\sms)', message).group(0)
 
@@ -32,10 +23,10 @@ def parse_single_metric(message):
     max_memory_used = re.search(r'(?<=\tMax\sMemory\sUsed:\s)(.*?)(?=\sMB)', message).group(0)
 
     metrics = {
-        'duration': duration,
-        'billed_duration': billed_duration,
-        'memory_size': memory_size,
-        'max_memory_used':max_memory_used
+        'Duration': duration,
+        'Billed Duration': billed_duration,
+        'Memory Size': memory_size,
+        'Max Memory Used':max_memory_used
     }
     return metrics
 
@@ -52,7 +43,7 @@ def parse_scores(file_path, pattern="Accuracy Score"):
         while line:
             count = count + 1
             # print ("count : {0}".format(count))
-            match = re.search(pattern + "\s*:* (\d*..*)", line)
+            match = re.search(pattern + "\s*:* (\d*\.+.*)", line)
             
             if match:
                 score = float(match.group(1))
@@ -62,11 +53,16 @@ def parse_scores(file_path, pattern="Accuracy Score"):
 
     return scores
 
+'''
+This function parses a single line and returns a dict of pattern and score
+'''
 
 def parse_score(line, pattern="Accuracy Score"):
     if line:
-        match = re.search(pattern + "\s*:* (\d*..*)", line)  
+        match = re.search(pattern + "\s*:* (\d*\.+.*)", line)  
         if match:
             score = float(match.group(1))
-      
+    
     return score
+        
+    

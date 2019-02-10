@@ -48,7 +48,7 @@ def create_event(config, PARAMETERS, LAMBDA_NAME):
                 payload[key.lower()] = value
             payload_list.append(payload)
     
-    with open("./results/spreadsheets/parameter_mapping_" + LAMBDA_NAME + ".csv", "w") as f:
+    with open("./results/spreadsheets/" + LAMBDA_NAME + "_parameter_mapping.csv", "w") as f:
         # import pdb; pdb.set_trace()
         first_dict = payload_list[0]
         w = csv.DictWriter(f, first_dict.keys())

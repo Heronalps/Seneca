@@ -4,12 +4,12 @@ from itertools import product
 sys.path.insert(0, "./")
 from helpers.parsers import split_path
 from helpers.parsers import parse_score
+from helpers.parsers import parse_metrics
 
 '''
 This function queries dataframe with a dictionary with columns' value
 '''
 def query_df(df, value_dict):
-    indices = []
     for key, value in value_dict.items():
         if key in df.columns:
             
@@ -26,7 +26,13 @@ def remove_column_same_value(df):
     df = df.drop(unique_count[unique_count == 1].index, axis = 1)
     return df
 
-def parse_log(model, folder_path, line_pattern, metric_pattern):
+'''
+This function parses score from log.
+metric_pattern = ['Metric mse', 'Accuracy Score']
+
+'''
+
+def parse_log_score(model, folder_path, metric_pattern):
     df = pd.read_csv('../results/spreadsheets/parameter_mapping_{0}.csv'.format(model))
     file_names = os.listdir(folder_path)
     count = 1
@@ -45,19 +51,54 @@ def parse_log(model, folder_path, line_pattern, metric_pattern):
                     # query the df with all values in dict
                     indices = query_df(df, parameter_dict)
 
-                elif line.startswith(line_pattern) and indices:
-                    mse = parse_score(line, pattern = metric_pattern)
+                elif line.startswith(metric_pattern) and indices:
+                    score = parse_score(line, pattern = metric_pattern)
                     for index in indices:
-                        df.loc[index, str(count)] = mse
+                        df.loc[index, str(count)] = score
 
                 line = f.readline()
 
         count = count + 1
         # import pdb; pdb.set_trace();       
-    df.to_csv("../results/spreadsheets/{0}.csv".format(model), index = False)
+    df.to_csv("../results/spreadsheets/{0}_{1}.csv".format(model, metric_pattern), index = False)
 
+'''
+This function parses metrics from log.
+metric_pattern = ['Duration','Billed Duration','Memory Size', 'Max Memory Used']
+'''
+
+def parse_log_metric(model, folder_path, metric_pattern):
+    df = pd.read_csv('../results/spreadsheets/parameter_mapping_{0}.csv'.format(model))
+    file_names = os.listdir(folder_path)
+    count = 1
+
+    # Remove columns that have all same values
+    df = remove_column_same_value(df)
+
+    for file_name in file_names:
+        with open(folder_path + file_name, "r") as f:
+            line = f.readline()
+            indices = []
+            while line:
+                if line.startswith('{'):
+                    parameter_dict = ast.literal_eval(line)
+
+                    # query the df with all values in dict
+                    indices = query_df(df, parameter_dict)
+
+                elif line.startswith('REPORT') and indices:
+                    metrics = parse_metrics(line)
+                    for index in indices:
+                        df.loc[index, str(count)] = metrics[metric_pattern]
+
+                line = f.readline()
+
+        count = count + 1
+        # import pdb; pdb.set_trace();       
+    df.to_csv("../results/spreadsheets/{0}_{1}.csv".format(model, metric_pattern), index = False)
 
 if __name__ == "__main__":
     model = 'prophet'
-    folder_path = '../cloudwatch/Prophet/'
-    parse_log(model, folder_path, 'Metric', "Metric mse")
+    folder_path = './cloudwatch/Prophet/'
+    parse_log_score(model, folder_path, "Metric mse")
+    parse_log_metric(model, folder_path, 'Max Memory Used')

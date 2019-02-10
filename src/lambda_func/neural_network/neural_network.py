@@ -36,6 +36,8 @@ def lambda_handler(event, context={}):
     parameters = {}
     for key in parameter_list:
         parameters[key] = event['data'][key]
+    print ('=====Parameters=======')
+    print (parameters)
     
     df = read_csv_s3(event['dataset'])
     # df = pd.read_csv("./datasets/neural_network/df_2017_reduced.csv")

@@ -23,6 +23,7 @@ seneca --help
 - Start EC2 instance
 - Start Rabbitmq Server, run ``` sudo rabbitmq-server ```
 - Start Redis Server, run ``` redis-server ```
+- Configure .aws/config & .aws/credentials
 - Direct to repo directory /Celery_Lambda, run ```nohup celery -A proj worker -l info --concurrency=10 & ```
 - Invoke Seneca ``` nohup seneca -m <model> -c ./config/<model>/config.py -l ./src/lambda_func/<model>/<model>.py -r 30 & ```
 - Kill background celery workers ``` kill $(ps aux | grep '[c]elery' | awk '{print $2}') ```

@@ -125,7 +125,8 @@ def grid_search_controller(config_path):
     model_list = saved_result.get(timeout=None)
 
     print("===Async Tasks end===")
-    
+    print (time.time() - start)
+
     for item in model_list:
         payload = item['Payload']
         if payload['metric'] < min_metric:
@@ -133,8 +134,6 @@ def grid_search_controller(config_path):
             min_metric = payload['metric']
     
     print (chosen_model_event)
-    print ("=======The Execution Time===========")
-    print (time.time() - start)
     
     from src.celery_lambda import measurement
     measurement.parse_log("/aws/lambda/multi_regression_worker")

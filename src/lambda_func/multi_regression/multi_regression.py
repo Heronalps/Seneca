@@ -53,7 +53,7 @@ def read_csv_s3(file_name):
     bucket = 'temp-predictor'
     client.download_file(bucket, file_name, path)
     df = pd.read_csv(path)
-    show_time_range(df, 'dt')
+    # show_time_range(df, 'dt')
     return df
 
 
@@ -82,6 +82,7 @@ def merge_df(column, df_base, df_dict):
 def lambda_handler(event, context={}):
     variable_files = json.loads(event['variable_files'])
     target_file = event['target_file']
+    print (variable_files)
     df_dict = {}
     
     df_target = read_csv_s3(target_file)

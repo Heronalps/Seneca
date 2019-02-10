@@ -26,8 +26,8 @@ def lambda_handler(event, context={}):
     parameters = {}
     for key in parameter_list:
         parameters[key] = event['data'][key]
-    print ("=======Event=========")
-    print (event)
+    print ('=====Parameters=======')
+    print (parameters)
 
     df = read_csv_s3(event['dataset'])
     # df = pd.read_csv("./datasets/xgboost/df_2017_further_reduced.csv")

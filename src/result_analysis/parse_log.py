@@ -97,8 +97,32 @@ def parse_log_metric(model, folder_path, metric_pattern):
         # import pdb; pdb.set_trace();       
     df.to_csv("../results/spreadsheets/{0}_{1}.csv".format(model, metric_pattern), index = False)
 
+'''
+This function parses execution time from nohup.out.
+'''
+
+def parse_log_execution_time(model, file_path):
+    count = 1
+    with open(file_path, "r") as f:
+        line = f.readline()
+        execution_times = {}
+        while line:
+            if line.startswith('===Async Tasks end==='):
+                temp = f.readline()
+                execution_times[count] = float(temp)
+                count = count + 1
+            line = f.readline()
+            
+    with open("./results/spreadsheets/{0}_execution_times.csv".format(model), "w") as f:
+        w = csv.DictWriter(f, execution_times.keys())
+        w.writeheader()
+        w.writerow(execution_times)
+
+
+
 if __name__ == "__main__":
     model = 'prophet'
     folder_path = './cloudwatch/Prophet/'
     parse_log_score(model, folder_path, "Metric mse")
     parse_log_metric(model, folder_path, 'Max Memory Used')
+    parse_log_execution_time('prophet', './cloudwatch/Prophet/prophet.out')

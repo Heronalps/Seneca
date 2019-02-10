@@ -119,6 +119,7 @@ def grid_search_controller(config_path):
     
     
     print("===Async Tasks end===")
+    print (time.time() - start)
     
     for item in model_list:
         payload = item['Payload']
@@ -127,8 +128,6 @@ def grid_search_controller(config_path):
             chosen_model_event = payload['event']
             max_metric = payload['metric']
     
-    print ("=======The Execution Time===========")
-    print (time.time() - start)
     print (max_metric)
     print (chosen_model_event)
 

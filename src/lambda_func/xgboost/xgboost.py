@@ -35,7 +35,7 @@ def lambda_handler(event, context={}):
     y = df.block_Num
     X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
 
-    train_X, test_X, train_y, test_y = train_test_split(X, y, random_state = 123, test_size=event['test_size'])
+    train_X, test_X, train_y, test_y = train_test_split(X, y, random_state = parameters['random_state'], test_size=event['test_size'])
     
     # This Imputer uses the default strategy as mean
     my_imputer = SimpleImputer(missing_values=np.nan, strategy='mean')

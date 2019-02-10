@@ -44,7 +44,7 @@ def lambda_handler(event, context={}):
     y = df.block_Num
     X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
 
-    feature_train, feature_test, target_train, target_test = train_test_split(X, y, random_state = 123, test_size=event['test_size'])
+    feature_train, feature_test, target_train, target_test = train_test_split(X, y, random_state = parameters['random_state'], test_size=event['test_size'])
 
     # kf = KFold(n_splits=10)
     solver = MLPClassifier(**parameters)

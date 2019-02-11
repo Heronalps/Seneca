@@ -834,3 +834,21 @@ Done
 0.8412675018422991
 {'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
 
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@ip-172-31-29-184 v4.2.1 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1023-aws-x86_64-with-Ubuntu-18.04-bionic 2019-02-11 01:27:19
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fc0229487b8
+- ** ---------- .> transport:   amqp://myuser:**@localhost:5672/myvhost
+- ** ---------- .> results:     redis://localhost/
+- *** --- * --- .> concurrency: 10 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+

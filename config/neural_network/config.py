@@ -33,7 +33,7 @@ class Hyperparameter:
     POWER_T = [0.1, 0.5]
     MAX_ITER = [20]
     SHUFFLE = [True]
-    RANDOM_STATE = [123]
+    RANDOM_STATE = [456]
     TOL = [1e-4, 1e-5]
     MOMENTUM = [0.9]
     EARLY_STOPPING = [False]

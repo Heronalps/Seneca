@@ -1,5 +1,5 @@
 {
-  "metric": 0.2001947362209371,
+  "metric": 0.21532792925571112,
   "event": {
     "parameters": [
       "c",
@@ -32,11 +32,11 @@
       "verbose": false
     },
     "dataset": "df_2017_downsampled.csv",
-    "test_size": 0.999
+    "test_size": 0.2
   }
 }
 
-START RequestId: 23aa48b1-b79b-4621-85a9-2d8866e892c2 Version: $LATEST
+START RequestId: 8c1f36fc-84c5-4acc-8fc5-54661bec3be8 Version: $LATEST
 =====Parameters=======
 {'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}
 Downloading dataset from S3
@@ -44,29 +44,30 @@ Start training SVC
 /var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
   % self.max_iter, ConvergenceWarning)
 Finish training SVC
-Accuracy Score : 0.2001947362209371
-/var/task/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
-  'precision', 'predicted', average, warn_for)
+Accuracy Score : 0.21532792925571112
               precision    recall  f1-score   support
 
-         41N       0.20      1.00      0.33      6776
-         64E       0.00      0.00      0.00      6779
-          80       1.00      0.00      0.00      6781
-         81W       0.00      0.00      0.00      6777
-         92E       0.00      0.00      0.00      6779
+         41N       1.00      0.03      0.05      1407
+         64E       0.83      0.00      0.01      1317
+          80       1.00      0.01      0.02      1362
+         81W       0.73      0.01      0.01      1302
+         92E       0.21      1.00      0.34      1397
 
-   micro avg       0.20      0.20      0.20     33892
-   macro avg       0.24      0.20      0.07     33892
-weighted avg       0.24      0.20      0.07     33892
+   micro avg       0.22      0.22      0.22      6785
+   macro avg       0.75      0.21      0.09      6785
+weighted avg       0.75      0.22      0.09      6785
 
 Test dataset Distribution
-[['41N' 6776]
- ['64E' 6779]
- ['80' 6781]
- ['81W' 6777]
- ['92E' 6779]]
+[['41N' 1407]
+ ['64E' 1317]
+ ['80' 1362]
+ ['81W' 1302]
+ ['92E' 1397]]
 Prediction dataset Distribution
-[['41N' 33883]
- ['80' 9]]
-END RequestId: 23aa48b1-b79b-4621-85a9-2d8866e892c2
-REPORT RequestId: 23aa48b1-b79b-4621-85a9-2d8866e892c2	Duration: 1001.36 ms	Billed Duration: 1100 ms 	Memory Size: 3008 MB	Max Memory Used: 203 MB	
+[['41N' 37]
+ ['64E' 6]
+ ['80' 16]
+ ['81W' 11]
+ ['92E' 6715]]
+END RequestId: 8c1f36fc-84c5-4acc-8fc5-54661bec3be8
+REPORT RequestId: 8c1f36fc-84c5-4acc-8fc5-54661bec3be8	Duration: 1136.12 ms	Billed Duration: 1200 ms 	Memory Size: 832 MB	Max Memory Used: 232 MB	

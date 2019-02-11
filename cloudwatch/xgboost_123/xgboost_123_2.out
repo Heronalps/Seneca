@@ -1,0 +1,577 @@
+=============Seneca==============
+The specified model is XGBoost
+Config Path is at ./config/xgboost/config.py
+Lambda Path is at ./src/lambda_func/xgboost/xgboost.py
+Repeat invocation 21 times!
+Calling XGBoost for 1 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]38305b31c04b45f9ba8c1d97e96ad403
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]5647c4f3ae3b4f1685f27972c1488dd4
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]5c0191086f0e48f7a4f028537c97ecc9
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]9f55855ac5334e1a8f3638b7c4f353ba
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]a177d6bedeab4a08b0a6467ac82d7850
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]b6a1c964146349a8a64d1680c0f45c04
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]bf2731947c8e4844afc1ce59ec24f54f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]d7e6aa5c9f3b48128d79152162ce991c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]dd70953b183d4003989b5b074df9cca9
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]e678d7015781473484444239b723e2b3
+Done
+=====Time Stamp======
+1549833643.761868
+===Async Tasks start===
+===Async Tasks end===
+1229.004997253418
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 2 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]12f55bedce2942a782a0d54c10a1dfdf
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]1fa725c4ec384623a1ba34722f65a442
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]3e62db3d658a4ecdb0e08c77c837c95f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]4fe5ca46c5e342dc8d362b747f99a6bd
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]60077d5940b54874b77e840fb58128ab
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]6118dbaf1bf44d01a55f526a093e0e2b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]c5f6842ab3d4423b954d1bf57437e2f4
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]caddedb6920b460c8dcaaff857640af7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]ce4eb67ff0a54403b47e139e4c755767
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]dbe422e5b5d24645820541c3c5c0cec6
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]f863f08dea82419c8fd08c085968a520
+Done
+=====Time Stamp======
+1549834906.3273215
+===Async Tasks start===
+===Async Tasks end===
+1224.7757949829102
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 3 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]12f55bedce2942a782a0d54c10a1dfdf
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]1fa725c4ec384623a1ba34722f65a442
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]3e62db3d658a4ecdb0e08c77c837c95f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]4fe5ca46c5e342dc8d362b747f99a6bd
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]60077d5940b54874b77e840fb58128ab
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]c5f6842ab3d4423b954d1bf57437e2f4
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]caddedb6920b460c8dcaaff857640af7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]ce4eb67ff0a54403b47e139e4c755767
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]dbe422e5b5d24645820541c3c5c0cec6
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]f863f08dea82419c8fd08c085968a520
+Done
+=====Time Stamp======
+1549836164.558658
+===Async Tasks start===
+===Async Tasks end===
+1218.9857947826385
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 4 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]12f55bedce2942a782a0d54c10a1dfdf
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]1fa725c4ec384623a1ba34722f65a442
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]3e62db3d658a4ecdb0e08c77c837c95f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]4fe5ca46c5e342dc8d362b747f99a6bd
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]60077d5940b54874b77e840fb58128ab
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]97142f378de94898a48a3516d44edf85
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]c5f6842ab3d4423b954d1bf57437e2f4
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]caddedb6920b460c8dcaaff857640af7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]ce4eb67ff0a54403b47e139e4c755767
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]dbe422e5b5d24645820541c3c5c0cec6
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]f863f08dea82419c8fd08c085968a520
+Done
+=====Time Stamp======
+1549837417.2815378
+===Async Tasks start===
+===Async Tasks end===
+1238.2369890213013
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 5 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]12f55bedce2942a782a0d54c10a1dfdf
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]3e62db3d658a4ecdb0e08c77c837c95f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]4fe5ca46c5e342dc8d362b747f99a6bd
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]60077d5940b54874b77e840fb58128ab
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]97142f378de94898a48a3516d44edf85
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]c5f6842ab3d4423b954d1bf57437e2f4
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]caddedb6920b460c8dcaaff857640af7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]ce4eb67ff0a54403b47e139e4c755767
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]dbe422e5b5d24645820541c3c5c0cec6
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]f863f08dea82419c8fd08c085968a520
+Done
+=====Time Stamp======
+1549838688.949779
+===Async Tasks start===
+===Async Tasks end===
+1226.9118530750275
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 6 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]12f55bedce2942a782a0d54c10a1dfdf
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]3e62db3d658a4ecdb0e08c77c837c95f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]4fe5ca46c5e342dc8d362b747f99a6bd
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]60077d5940b54874b77e840fb58128ab
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]97142f378de94898a48a3516d44edf85
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]c5f6842ab3d4423b954d1bf57437e2f4
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]caddedb6920b460c8dcaaff857640af7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]ce4eb67ff0a54403b47e139e4c755767
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]dbe422e5b5d24645820541c3c5c0cec6
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]f863f08dea82419c8fd08c085968a520
+Done
+=====Time Stamp======
+1549839949.2933786
+===Async Tasks start===
+===Async Tasks end===
+1232.0596458911896
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 7 times!
+Run Hyperparameter Tuning on XGBoost
+=============Seneca==============
+The specified model is XGBoost
+Config Path is at ./config/xgboost/config.py
+Lambda Path is at ./src/lambda_func/xgboost/xgboost.py
+Repeat invocation 15 times!
+Calling XGBoost for 1 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]0037f547222e4b7db8e736e89f04e6fd
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]0be1880dc3754539a9070372e2b08cba
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]12f55bedce2942a782a0d54c10a1dfdf
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]139c48720bc248df9a1021de284295ee
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]16f11441d27d445eb9f7f457b52bb6ee
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]27e11ff634f84f48b425aeb89cdb3fe6
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]3e62db3d658a4ecdb0e08c77c837c95f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]4fe5ca46c5e342dc8d362b747f99a6bd
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]60077d5940b54874b77e840fb58128ab
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]6ec9b8839bb543cf802e229dd20e0f73
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]76fd77b95cc142388ac77470ecc3d7a0
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]97142f378de94898a48a3516d44edf85
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]9c996b0ead784854989f7b47d7822608
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]afbbc95c24d4445899e14bd92f53f1ed
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]b62bbdc1220b4a718e673ecae4530c72
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]c5f6842ab3d4423b954d1bf57437e2f4
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]caddedb6920b460c8dcaaff857640af7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]ce4eb67ff0a54403b47e139e4c755767
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]cf254636a99948dab2bfe94bbc0f121d
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]dbe422e5b5d24645820541c3c5c0cec6
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]f814664ec1ba441ab1010ad90175b0ac
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]f863f08dea82419c8fd08c085968a520
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/10/[$LATEST]fc6702172ff54e48a9978824421798ae
+Done
+=====Time Stamp======
+1549846036.3780117
+===Async Tasks start===
+===Async Tasks end===
+1237.0811524391174
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 2 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d5933f8de87e463eb9d0321c5069900e
+Done
+=====Time Stamp======
+1549847306.757787
+===Async Tasks start===
+===Async Tasks end===
+1220.8590898513794
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 3 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d5933f8de87e463eb9d0321c5069900e
+Done
+=====Time Stamp======
+1549848560.9918528
+===Async Tasks start===
+===Async Tasks end===
+1215.7569231987
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 4 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5d563339f3b248a09b4224711e55cb09
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d5933f8de87e463eb9d0321c5069900e
+Done
+=====Time Stamp======
+1549849810.534502
+===Async Tasks start===
+===Async Tasks end===
+1219.1771247386932
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 5 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d5933f8de87e463eb9d0321c5069900e
+Done
+=====Time Stamp======
+1549851063.284675
+===Async Tasks start===
+===Async Tasks end===
+1220.8911509513855
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 6 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d5933f8de87e463eb9d0321c5069900e
+Done
+=====Time Stamp======
+1549852317.688639
+===Async Tasks start===
+===Async Tasks end===
+1217.4924824237823
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 7 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d5933f8de87e463eb9d0321c5069900e
+Done
+=====Time Stamp======
+1549853568.7820652
+===Async Tasks start===
+===Async Tasks end===
+1260.7754487991333
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 8 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d5933f8de87e463eb9d0321c5069900e
+Done
+=====Time Stamp======
+1549854863.0060256
+===Async Tasks start===
+===Async Tasks end===
+1271.2622060775757
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 9 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]04700b0df0f14301bfadf0b8769f4610
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]942fe978ff4444c59c802c20557d4ed5
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a8bae6cf1f134a78af1e17505655206b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]e78df9f84e394272893809430d584b4d
+Done
+=====Time Stamp======
+1549856168.4700322
+===Async Tasks start===
+Traceback (most recent call last):
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/connection.py", line 599, in send_packed_command
+    self._sock.sendall(item)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Seneca/venv/bin/seneca", line 10, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 764, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/seneca/cli.py", line 52, in main
+    xgboost(config_path, run_xgboost)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/seneca/cli.py", line 82, in xgboost
+    run_xgboost.grid_search_controller(config_path)
+  File "/home/ubuntu/Seneca/execs/run_xgboost.py", line 122, in grid_search_controller
+    while not saved_result.ready():
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 591, in ready
+    return all(result.ready() for result in self.results)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 591, in <genexpr>
+    return all(result.ready() for result in self.results)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 311, in ready
+    return self.state in self.backend.READY_STATES
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 471, in state
+    return self._get_task_meta()['status']
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 410, in _get_task_meta
+    return self._maybe_set_cache(self.backend.get_task_meta(self.id))
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 404, in _maybe_set_cache
+    self.on_ready(self)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/promises.py", line 163, in __call__
+    return self.throw()
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/promises.py", line 223, in throw
+    svpending.throw1(exc)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/synchronization.py", line 94, in throw
+    self.p.throw(*args, **kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/promises.py", line 160, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 123, in _on_fulfilled
+    self.backend.remove_pending_result(self)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/backends/async.py", line 175, in remove_pending_result
+    self.on_result_fulfilled(result)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/backends/async.py", line 183, in on_result_fulfilled
+    self.result_consumer.cancel_for(result.id)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/backends/redis.py", line 138, in cancel_for
+    self._pubsub.unsubscribe(key)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/client.py", line 3112, in unsubscribe
+    retval = self.execute_command('UNSUBSCRIBE', *args)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/client.py", line 3009, in execute_command
+    self._execute(connection, connection.send_command, *args)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/client.py", line 3013, in _execute
+    return command(*args)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/connection.py", line 612, in send_packed_command
+    (errno, errmsg))
+redis.exceptions.ConnectionError: Error 104 while writing to socket. Connection reset by peer.
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@ip-172-31-26-171 v4.2.1 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1032-aws-x86_64-with-Ubuntu-18.04-bionic 2019-02-11 00:46:28
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f23ec09b550
+- ** ---------- .> transport:   amqp://myuser:**@localhost:5672/myvhost
+- ** ---------- .> results:     redis://localhost/
+- *** --- * --- .> concurrency: 10 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+=============Seneca==============
+The specified model is XGBoost
+Config Path is at ./config/xgboost/config.py
+Lambda Path is at ./src/lambda_func/xgboost/xgboost.py
+Repeat invocation 6 times!
+Calling XGBoost for 1 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a8bae6cf1f134a78af1e17505655206b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]e78df9f84e394272893809430d584b4d
+Done
+=====Time Stamp======
+1549857706.0804722
+===Async Tasks start===
+===Async Tasks end===
+1267.8078563213348
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 2 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a8bae6cf1f134a78af1e17505655206b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]e78df9f84e394272893809430d584b4d
+Done
+=====Time Stamp======
+1549859007.335829
+===Async Tasks start===
+===Async Tasks end===
+1247.0317072868347
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 3 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a8bae6cf1f134a78af1e17505655206b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]e78df9f84e394272893809430d584b4d
+Done
+=====Time Stamp======
+1549860287.633747
+===Async Tasks start===
+===Async Tasks end===
+1243.6590824127197
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 4 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]5eef1661fc814ea59b49963c6a70fe2e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a51fe8775905419b93ffd37d36278f9f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a8bae6cf1f134a78af1e17505655206b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]e78df9f84e394272893809430d584b4d
+Done
+=====Time Stamp======
+1549861565.124464
+===Async Tasks start===
+===Async Tasks end===
+1263.3950490951538
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 5 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a51fe8775905419b93ffd37d36278f9f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a8bae6cf1f134a78af1e17505655206b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]e78df9f84e394272893809430d584b4d
+Done
+=====Time Stamp======
+1549862861.842221
+===Async Tasks start===
+===Async Tasks end===
+1244.5509259700775
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+Calling XGBoost for 6 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]230a2e5c8e924329a7ccef410597ae7e
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]390085ebd37248c890c6a6032b114ece
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]8dc055a4bd2b4df69760ddce77e5f5ce
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]974ae279750d407ba84d6a487b47c89c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a51fe8775905419b93ffd37d36278f9f
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]a8bae6cf1f134a78af1e17505655206b
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]b8162d960d954c63a0a14ee50713e050
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]bba326e9442140b78b989dcf42bf314c
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]c063598ee7ac4bf1879630fd743ad4d7
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]d672516954b04112b4c81e22a0054561
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/11/[$LATEST]e78df9f84e394272893809430d584b4d
+Done
+=====Time Stamp======
+1549864139.9139504
+===Async Tasks start===
+===Async Tasks end===
+1248.76513338089
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}

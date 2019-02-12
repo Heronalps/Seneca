@@ -1,0 +1,27 @@
+=============Seneca==============
+The specified model is XGBoost
+Config Path is at ./config/xgboost/config.py
+Lambda Path is at ./src/lambda_func/xgboost/xgboost.py
+Repeat invocation 1 times!
+Calling XGBoost for 1 times!
+Run Hyperparameter Tuning on XGBoost
+[/aws/lambda/XGBoost_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/XGBoost_worker
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]0a64134e8810402385f8f1df98d6ebdc
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]20cafe5f04a14904b1701d431f11d6f0
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]22e23e6ef74c4069a90f318be0cecbcc
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]27baca761d8a4f29bbf6577d35289bdb
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]67c38ecd1b314117aacb1e69a19867f8
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]699781b72a8f4a68bbc4732deb964930
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]6fb741558b614160a1311baa7ba7dae1
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]a247b05c6e5546e8b962228b0b16481d
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]d00d9f98509341fc946351ffc044f884
+[/aws/lambda/XGBoost_worker] Deleted stream: 2019/02/12/[$LATEST]f03f6a1b211f4636b6ee429bd38881a1
+Done
+=====Time Stamp======
+1549955937.136501
+===Async Tasks start===
+===Async Tasks end===
+1950.6320655345917
+0.06497307498400583
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 10, 'booster': 'dart', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 4, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}

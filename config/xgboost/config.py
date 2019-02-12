@@ -35,7 +35,7 @@ class Hyperparameter:
     # REG_ALPHA = [0.1, 0.9]
     # REG_LAMBDA = [0.1, 0.9]
     BASE_SCORE = [0.5, 10]
-    RANDOM_STATE = [123]
+    RANDOM_STATE = [456]
 
 class Config:
     # The Dataset filename 

@@ -22,7 +22,7 @@ The R Square of regression is 0.8730018246581779
 
 END RequestId: f52e14bd-a078-4949-9aef-6e46f7574f8d
 
-REPORT RequestId: f52e14bd-a078-4949-9aef-6e46f7574f8d	Duration: 4584.59 ms	Billed Duration: 4600 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: f52e14bd-a078-4949-9aef-6e46f7574f8d	Duration: 4584.59 ms	Billed Duration: 4600 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 708d7e9d-369b-4cb4-98a0-6f8b99943468 Version: $LATEST
 
@@ -48,7 +48,7 @@ The R Square of regression is 0.9097923438756138
 
 END RequestId: 708d7e9d-369b-4cb4-98a0-6f8b99943468
 
-REPORT RequestId: 708d7e9d-369b-4cb4-98a0-6f8b99943468	Duration: 7670.03 ms	Billed Duration: 7700 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 708d7e9d-369b-4cb4-98a0-6f8b99943468	Duration: 7670.03 ms	Billed Duration: 7700 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 92cf0d50-3747-4983-8e05-7603c18a2387 Version: $LATEST
 
@@ -74,7 +74,7 @@ The R Square of regression is 0.9096638711928577
 
 END RequestId: 92cf0d50-3747-4983-8e05-7603c18a2387
 
-REPORT RequestId: 92cf0d50-3747-4983-8e05-7603c18a2387	Duration: 7634.08 ms	Billed Duration: 7700 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 92cf0d50-3747-4983-8e05-7603c18a2387	Duration: 7634.08 ms	Billed Duration: 7700 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: f134d0d6-c51e-413f-947d-39f695b20487 Version: $LATEST
 
@@ -100,7 +100,7 @@ The R Square of regression is 0.9210340131518794
 
 END RequestId: f134d0d6-c51e-413f-947d-39f695b20487
 
-REPORT RequestId: f134d0d6-c51e-413f-947d-39f695b20487	Duration: 5529.61 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: f134d0d6-c51e-413f-947d-39f695b20487	Duration: 5529.61 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 1710e9f5-2d38-4dc4-a5ac-4f89b1aeca83 Version: $LATEST
 
@@ -128,7 +128,7 @@ The R Square of regression is 0.9067936186230557
 
 END RequestId: 1710e9f5-2d38-4dc4-a5ac-4f89b1aeca83
 
-REPORT RequestId: 1710e9f5-2d38-4dc4-a5ac-4f89b1aeca83	Duration: 8642.22 ms	Billed Duration: 8700 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 1710e9f5-2d38-4dc4-a5ac-4f89b1aeca83	Duration: 8642.22 ms	Billed Duration: 8700 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: a190e85f-2106-4ec6-9cd1-9f824516f7bd Version: $LATEST
 
@@ -154,7 +154,7 @@ The R Square of regression is 0.9206714012187553
 
 END RequestId: a190e85f-2106-4ec6-9cd1-9f824516f7bd
 
-REPORT RequestId: a190e85f-2106-4ec6-9cd1-9f824516f7bd	Duration: 5428.08 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: a190e85f-2106-4ec6-9cd1-9f824516f7bd	Duration: 5428.08 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: c00640f0-f2b4-40f8-a31f-0ea0ca562c63 Version: $LATEST
 
@@ -180,7 +180,7 @@ The R Square of regression is 0.9163353335438301
 
 END RequestId: c00640f0-f2b4-40f8-a31f-0ea0ca562c63
 
-REPORT RequestId: c00640f0-f2b4-40f8-a31f-0ea0ca562c63	Duration: 5534.53 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: c00640f0-f2b4-40f8-a31f-0ea0ca562c63	Duration: 5534.53 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: f44bfbff-ab54-4840-a943-8621d2991a4b Version: $LATEST
 
@@ -206,7 +206,7 @@ The R Square of regression is 0.8621441823655299
 
 END RequestId: f44bfbff-ab54-4840-a943-8621d2991a4b
 
-REPORT RequestId: f44bfbff-ab54-4840-a943-8621d2991a4b	Duration: 3424.29 ms	Billed Duration: 3500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: f44bfbff-ab54-4840-a943-8621d2991a4b	Duration: 3424.29 ms	Billed Duration: 3500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: a11fc557-cdbf-4c7d-8be2-1f1c27f89af8 Version: $LATEST
 
@@ -232,7 +232,7 @@ The R Square of regression is 0.8986863763124129
 
 END RequestId: a11fc557-cdbf-4c7d-8be2-1f1c27f89af8
 
-REPORT RequestId: a11fc557-cdbf-4c7d-8be2-1f1c27f89af8	Duration: 6720.73 ms	Billed Duration: 6800 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: a11fc557-cdbf-4c7d-8be2-1f1c27f89af8	Duration: 6720.73 ms	Billed Duration: 6800 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: d649b2e3-4eed-4a5e-80a0-26f88ba32233 Version: $LATEST
 
@@ -258,7 +258,7 @@ The R Square of regression is 0.9035670397608319
 
 END RequestId: d649b2e3-4eed-4a5e-80a0-26f88ba32233
 
-REPORT RequestId: d649b2e3-4eed-4a5e-80a0-26f88ba32233	Duration: 6657.73 ms	Billed Duration: 6700 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: d649b2e3-4eed-4a5e-80a0-26f88ba32233	Duration: 6657.73 ms	Billed Duration: 6700 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: aefdf639-7a7b-4bba-b743-a213617587fb Version: $LATEST
 
@@ -284,7 +284,7 @@ The R Square of regression is 0.9042116432862393
 
 END RequestId: aefdf639-7a7b-4bba-b743-a213617587fb
 
-REPORT RequestId: aefdf639-7a7b-4bba-b743-a213617587fb	Duration: 5825.12 ms	Billed Duration: 5900 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: aefdf639-7a7b-4bba-b743-a213617587fb	Duration: 5825.12 ms	Billed Duration: 5900 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: a921d647-7cfb-4f5a-8ec6-381860353d0e Version: $LATEST
 
@@ -310,7 +310,7 @@ The R Square of regression is 0.8976823373658279
 
 END RequestId: a921d647-7cfb-4f5a-8ec6-381860353d0e
 
-REPORT RequestId: a921d647-7cfb-4f5a-8ec6-381860353d0e	Duration: 6584.67 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: a921d647-7cfb-4f5a-8ec6-381860353d0e	Duration: 6584.67 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: e84aad99-d813-4f1f-9ba7-3c9172d5a380 Version: $LATEST
 
@@ -336,7 +336,7 @@ The R Square of regression is 0.9099365139661398
 
 END RequestId: e84aad99-d813-4f1f-9ba7-3c9172d5a380
 
-REPORT RequestId: e84aad99-d813-4f1f-9ba7-3c9172d5a380	Duration: 4443.87 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: e84aad99-d813-4f1f-9ba7-3c9172d5a380	Duration: 4443.87 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: f10a4b2d-123d-478d-8037-0c598fa006f9 Version: $LATEST
 
@@ -362,7 +362,7 @@ The R Square of regression is 0.9023694988063525
 
 END RequestId: f10a4b2d-123d-478d-8037-0c598fa006f9
 
-REPORT RequestId: f10a4b2d-123d-478d-8037-0c598fa006f9	Duration: 5470.97 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: f10a4b2d-123d-478d-8037-0c598fa006f9	Duration: 5470.97 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 33f0fe80-023c-4e91-a497-4bdcd8f23df5 Version: $LATEST
 
@@ -388,7 +388,7 @@ The R Square of regression is 0.8651264751171147
 
 END RequestId: 33f0fe80-023c-4e91-a497-4bdcd8f23df5
 
-REPORT RequestId: 33f0fe80-023c-4e91-a497-4bdcd8f23df5	Duration: 1964.83 ms	Billed Duration: 2000 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 33f0fe80-023c-4e91-a497-4bdcd8f23df5	Duration: 1964.83 ms	Billed Duration: 2000 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: cf660a97-b142-47bf-8ff9-b4fdaec893fa Version: $LATEST
 
@@ -414,7 +414,7 @@ The R Square of regression is 0.9081954596276203
 
 END RequestId: cf660a97-b142-47bf-8ff9-b4fdaec893fa
 
-REPORT RequestId: cf660a97-b142-47bf-8ff9-b4fdaec893fa	Duration: 7166.19 ms	Billed Duration: 7200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: cf660a97-b142-47bf-8ff9-b4fdaec893fa	Duration: 7166.19 ms	Billed Duration: 7200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 446a3bf8-c8da-436a-8231-4eab5594c86f Version: $LATEST
 
@@ -440,7 +440,7 @@ The R Square of regression is 0.9116105770171883
 
 END RequestId: 446a3bf8-c8da-436a-8231-4eab5594c86f
 
-REPORT RequestId: 446a3bf8-c8da-436a-8231-4eab5594c86f	Duration: 6123.37 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 446a3bf8-c8da-436a-8231-4eab5594c86f	Duration: 6123.37 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 215182a9-e5f7-4aff-bc2d-90bf57d31229 Version: $LATEST
 
@@ -466,7 +466,7 @@ The R Square of regression is 0.9152833006170561
 
 END RequestId: 215182a9-e5f7-4aff-bc2d-90bf57d31229
 
-REPORT RequestId: 215182a9-e5f7-4aff-bc2d-90bf57d31229	Duration: 5010.36 ms	Billed Duration: 5100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 215182a9-e5f7-4aff-bc2d-90bf57d31229	Duration: 5010.36 ms	Billed Duration: 5100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 6decfa80-c370-48ab-bcb8-1e39d0cb3168 Version: $LATEST
 
@@ -492,7 +492,7 @@ The R Square of regression is 0.8909961025127476
 
 END RequestId: 6decfa80-c370-48ab-bcb8-1e39d0cb3168
 
-REPORT RequestId: 6decfa80-c370-48ab-bcb8-1e39d0cb3168	Duration: 4080.06 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 6decfa80-c370-48ab-bcb8-1e39d0cb3168	Duration: 4080.06 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: a1880e81-6697-4d2e-860a-4c53ce5333f0 Version: $LATEST
 
@@ -518,7 +518,7 @@ The R Square of regression is 0.9157370141349201
 
 END RequestId: a1880e81-6697-4d2e-860a-4c53ce5333f0
 
-REPORT RequestId: a1880e81-6697-4d2e-860a-4c53ce5333f0	Duration: 5085.52 ms	Billed Duration: 5100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: a1880e81-6697-4d2e-860a-4c53ce5333f0	Duration: 5085.52 ms	Billed Duration: 5100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: e9972662-c00a-4e9b-9b7a-65b1d37ec9da Version: $LATEST
 
@@ -544,7 +544,7 @@ The R Square of regression is 0.8927572880939318
 
 END RequestId: e9972662-c00a-4e9b-9b7a-65b1d37ec9da
 
-REPORT RequestId: e9972662-c00a-4e9b-9b7a-65b1d37ec9da	Duration: 3027.07 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: e9972662-c00a-4e9b-9b7a-65b1d37ec9da	Duration: 3027.07 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 270afbc7-11c9-4131-b39a-9f29aafcc683 Version: $LATEST
 
@@ -570,7 +570,7 @@ The R Square of regression is 0.9154291584051552
 
 END RequestId: 270afbc7-11c9-4131-b39a-9f29aafcc683
 
-REPORT RequestId: 270afbc7-11c9-4131-b39a-9f29aafcc683	Duration: 5120.49 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 270afbc7-11c9-4131-b39a-9f29aafcc683	Duration: 5120.49 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: ad573657-8373-45ac-9076-0d62c8a2d427 Version: $LATEST
 
@@ -596,7 +596,7 @@ The R Square of regression is 0.7974004878709647
 
 END RequestId: ad573657-8373-45ac-9076-0d62c8a2d427
 
-REPORT RequestId: ad573657-8373-45ac-9076-0d62c8a2d427	Duration: 4120.31 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: ad573657-8373-45ac-9076-0d62c8a2d427	Duration: 4120.31 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 7042fcab-a75d-4f72-9a35-1ed075a7b757 Version: $LATEST
 
@@ -622,7 +622,7 @@ The R Square of regression is 0.7982278469104596
 
 END RequestId: 7042fcab-a75d-4f72-9a35-1ed075a7b757
 
-REPORT RequestId: 7042fcab-a75d-4f72-9a35-1ed075a7b757	Duration: 4085.01 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 7042fcab-a75d-4f72-9a35-1ed075a7b757	Duration: 4085.01 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 51066348-64f8-49d3-a573-695b3d33ff54 Version: $LATEST
 
@@ -648,7 +648,7 @@ The R Square of regression is 0.8060382274964701
 
 END RequestId: 51066348-64f8-49d3-a573-695b3d33ff54
 
-REPORT RequestId: 51066348-64f8-49d3-a573-695b3d33ff54	Duration: 3081.85 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 51066348-64f8-49d3-a573-695b3d33ff54	Duration: 3081.85 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 177c550d-fee2-4796-9dd9-adb96b2cba8f Version: $LATEST
 
@@ -674,7 +674,7 @@ The R Square of regression is 0.770335362055412
 
 END RequestId: 177c550d-fee2-4796-9dd9-adb96b2cba8f
 
-REPORT RequestId: 177c550d-fee2-4796-9dd9-adb96b2cba8f	Duration: 5136.75 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 177c550d-fee2-4796-9dd9-adb96b2cba8f	Duration: 5136.75 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: bf125fa6-a549-4839-b256-aebb11fc2fdb Version: $LATEST
 
@@ -700,7 +700,7 @@ The R Square of regression is 0.7698753992492213
 
 END RequestId: bf125fa6-a549-4839-b256-aebb11fc2fdb
 
-REPORT RequestId: bf125fa6-a549-4839-b256-aebb11fc2fdb	Duration: 5173.73 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: bf125fa6-a549-4839-b256-aebb11fc2fdb	Duration: 5173.73 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: a3ef9123-9a90-4087-b844-ef946bed4874 Version: $LATEST
 
@@ -726,7 +726,7 @@ The R Square of regression is 0.774300684336013
 
 END RequestId: a3ef9123-9a90-4087-b844-ef946bed4874
 
-REPORT RequestId: a3ef9123-9a90-4087-b844-ef946bed4874	Duration: 4107.70 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: a3ef9123-9a90-4087-b844-ef946bed4874	Duration: 4107.70 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: ed238b9f-cfc9-4523-a806-26d5af5f3e1b Version: $LATEST
 
@@ -752,7 +752,7 @@ The R Square of regression is 0.6363979717773832
 
 END RequestId: ed238b9f-cfc9-4523-a806-26d5af5f3e1b
 
-REPORT RequestId: ed238b9f-cfc9-4523-a806-26d5af5f3e1b	Duration: 4123.18 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: ed238b9f-cfc9-4523-a806-26d5af5f3e1b	Duration: 4123.18 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 315f3474-5127-47ad-8668-ad8811e86f5b Version: $LATEST
 
@@ -780,7 +780,7 @@ The R Square of regression is 0.90300489649403
 
 END RequestId: 315f3474-5127-47ad-8668-ad8811e86f5b
 
-REPORT RequestId: 315f3474-5127-47ad-8668-ad8811e86f5b	Duration: 9592.97 ms	Billed Duration: 9600 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 315f3474-5127-47ad-8668-ad8811e86f5b	Duration: 9592.97 ms	Billed Duration: 9600 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 0256144f-8c16-42a8-9ca0-b7a2a816c5e5 Version: $LATEST
 
@@ -806,7 +806,7 @@ The R Square of regression is 0.9146681967481647
 
 END RequestId: 0256144f-8c16-42a8-9ca0-b7a2a816c5e5
 
-REPORT RequestId: 0256144f-8c16-42a8-9ca0-b7a2a816c5e5	Duration: 7564.61 ms	Billed Duration: 7600 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 0256144f-8c16-42a8-9ca0-b7a2a816c5e5	Duration: 7564.61 ms	Billed Duration: 7600 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: d90cb8fa-90cf-4f3a-a6e0-3de9be75813f Version: $LATEST
 
@@ -832,7 +832,7 @@ The R Square of regression is 0.8917415447791941
 
 END RequestId: d90cb8fa-90cf-4f3a-a6e0-3de9be75813f
 
-REPORT RequestId: d90cb8fa-90cf-4f3a-a6e0-3de9be75813f	Duration: 5449.21 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: d90cb8fa-90cf-4f3a-a6e0-3de9be75813f	Duration: 5449.21 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: db393fdd-d277-4773-8896-0696494a0709 Version: $LATEST
 
@@ -858,7 +858,7 @@ The R Square of regression is 0.9205191611537291
 
 END RequestId: db393fdd-d277-4773-8896-0696494a0709
 
-REPORT RequestId: db393fdd-d277-4773-8896-0696494a0709	Duration: 5551.90 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: db393fdd-d277-4773-8896-0696494a0709	Duration: 5551.90 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: f6879a20-b18a-4332-adb2-fb650b7fd2c4 Version: $LATEST
 
@@ -884,7 +884,7 @@ The R Square of regression is 0.9105466963733633
 
 END RequestId: f6879a20-b18a-4332-adb2-fb650b7fd2c4
 
-REPORT RequestId: f6879a20-b18a-4332-adb2-fb650b7fd2c4	Duration: 7423.72 ms	Billed Duration: 7500 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: f6879a20-b18a-4332-adb2-fb650b7fd2c4	Duration: 7423.72 ms	Billed Duration: 7500 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 2e707985-b176-40ff-8045-2403ff4c9117 Version: $LATEST
 
@@ -910,7 +910,7 @@ The R Square of regression is 0.9133521704334939
 
 END RequestId: 2e707985-b176-40ff-8045-2403ff4c9117
 
-REPORT RequestId: 2e707985-b176-40ff-8045-2403ff4c9117	Duration: 6503.88 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 2e707985-b176-40ff-8045-2403ff4c9117	Duration: 6503.88 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 6ccf49db-be91-470d-9223-ca1cafd13444 Version: $LATEST
 
@@ -936,7 +936,7 @@ The R Square of regression is 0.9167146005998219
 
 END RequestId: 6ccf49db-be91-470d-9223-ca1cafd13444
 
-REPORT RequestId: 6ccf49db-be91-470d-9223-ca1cafd13444	Duration: 5397.12 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 6ccf49db-be91-470d-9223-ca1cafd13444	Duration: 5397.12 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: d9ee1776-07cb-4bbc-93cb-419658e9f811 Version: $LATEST
 
@@ -962,7 +962,7 @@ The R Square of regression is 0.8930294582590953
 
 END RequestId: d9ee1776-07cb-4bbc-93cb-419658e9f811
 
-REPORT RequestId: d9ee1776-07cb-4bbc-93cb-419658e9f811	Duration: 7468.84 ms	Billed Duration: 7500 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: d9ee1776-07cb-4bbc-93cb-419658e9f811	Duration: 7468.84 ms	Billed Duration: 7500 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 15863794-46d0-47d9-9b13-800a4fc41057 Version: $LATEST
 
@@ -988,7 +988,7 @@ The R Square of regression is 0.9063164766757676
 
 END RequestId: 15863794-46d0-47d9-9b13-800a4fc41057
 
-REPORT RequestId: 15863794-46d0-47d9-9b13-800a4fc41057	Duration: 5386.73 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 15863794-46d0-47d9-9b13-800a4fc41057	Duration: 5386.73 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: aef8647c-4184-46b4-94f5-af31e8e7875d Version: $LATEST
 
@@ -1014,7 +1014,7 @@ The R Square of regression is 0.8985777512890536
 
 END RequestId: aef8647c-4184-46b4-94f5-af31e8e7875d
 
-REPORT RequestId: aef8647c-4184-46b4-94f5-af31e8e7875d	Duration: 6468.24 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: aef8647c-4184-46b4-94f5-af31e8e7875d	Duration: 6468.24 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 060ac223-993c-4ca4-97dc-e16ae2c0f015 Version: $LATEST
 
@@ -1040,7 +1040,7 @@ The R Square of regression is 0.8792024882853413
 
 END RequestId: 060ac223-993c-4ca4-97dc-e16ae2c0f015
 
-REPORT RequestId: 060ac223-993c-4ca4-97dc-e16ae2c0f015	Duration: 5386.41 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 060ac223-993c-4ca4-97dc-e16ae2c0f015	Duration: 5386.41 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 9f2d4334-c4f6-4f10-bfe8-c0ef1f0bdc4f Version: $LATEST
 
@@ -1066,7 +1066,7 @@ The R Square of regression is 0.899147473445945
 
 END RequestId: 9f2d4334-c4f6-4f10-bfe8-c0ef1f0bdc4f
 
-REPORT RequestId: 9f2d4334-c4f6-4f10-bfe8-c0ef1f0bdc4f	Duration: 6510.98 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 9f2d4334-c4f6-4f10-bfe8-c0ef1f0bdc4f	Duration: 6510.98 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 3cae8e39-c459-4c8e-be55-7c7cee238d7d Version: $LATEST
 
@@ -1092,7 +1092,7 @@ The R Square of regression is 0.8973417767220282
 
 END RequestId: 3cae8e39-c459-4c8e-be55-7c7cee238d7d
 
-REPORT RequestId: 3cae8e39-c459-4c8e-be55-7c7cee238d7d	Duration: 6417.58 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 3cae8e39-c459-4c8e-be55-7c7cee238d7d	Duration: 6417.58 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 323b4836-8cf7-4c68-8952-4e06d2a1bb84 Version: $LATEST
 
@@ -1118,7 +1118,7 @@ The R Square of regression is 0.8727663366203909
 
 END RequestId: 323b4836-8cf7-4c68-8952-4e06d2a1bb84
 
-REPORT RequestId: 323b4836-8cf7-4c68-8952-4e06d2a1bb84	Duration: 4142.77 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 323b4836-8cf7-4c68-8952-4e06d2a1bb84	Duration: 4142.77 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: fc98ddc4-4566-4b32-a5bd-afddebfdd674 Version: $LATEST
 
@@ -1144,7 +1144,7 @@ The R Square of regression is 0.8908450907632639
 
 END RequestId: fc98ddc4-4566-4b32-a5bd-afddebfdd674
 
-REPORT RequestId: fc98ddc4-4566-4b32-a5bd-afddebfdd674	Duration: 4993.07 ms	Billed Duration: 5000 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: fc98ddc4-4566-4b32-a5bd-afddebfdd674	Duration: 4993.07 ms	Billed Duration: 5000 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 15c8c085-8e6b-4546-b9e3-7f9a64c770cd Version: $LATEST
 
@@ -1170,7 +1170,7 @@ The R Square of regression is 0.9180641409687914
 
 END RequestId: 15c8c085-8e6b-4546-b9e3-7f9a64c770cd
 
-REPORT RequestId: 15c8c085-8e6b-4546-b9e3-7f9a64c770cd	Duration: 5013.43 ms	Billed Duration: 5100 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 15c8c085-8e6b-4546-b9e3-7f9a64c770cd	Duration: 5013.43 ms	Billed Duration: 5100 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: dae931ec-2236-46eb-911c-78a83243fdf7 Version: $LATEST
 
@@ -1196,7 +1196,7 @@ The R Square of regression is 0.9123235336137763
 
 END RequestId: dae931ec-2236-46eb-911c-78a83243fdf7
 
-REPORT RequestId: dae931ec-2236-46eb-911c-78a83243fdf7	Duration: 6092.24 ms	Billed Duration: 6100 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: dae931ec-2236-46eb-911c-78a83243fdf7	Duration: 6092.24 ms	Billed Duration: 6100 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 840a5324-e156-41ac-95be-13cf253b2364 Version: $LATEST
 
@@ -1222,7 +1222,7 @@ The R Square of regression is 0.9117492573068734
 
 END RequestId: 840a5324-e156-41ac-95be-13cf253b2364
 
-REPORT RequestId: 840a5324-e156-41ac-95be-13cf253b2364	Duration: 6119.27 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 840a5324-e156-41ac-95be-13cf253b2364	Duration: 6119.27 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 4ebd3d29-929b-4735-ae20-44ec51897405 Version: $LATEST
 
@@ -1248,7 +1248,7 @@ The R Square of regression is 0.9181724201050575
 
 END RequestId: 4ebd3d29-929b-4735-ae20-44ec51897405
 
-REPORT RequestId: 4ebd3d29-929b-4735-ae20-44ec51897405	Duration: 4014.87 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 4ebd3d29-929b-4735-ae20-44ec51897405	Duration: 4014.87 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 50954cda-27df-4541-9a53-a6c574f889db Version: $LATEST
 
@@ -1274,7 +1274,7 @@ The R Square of regression is 0.9114548904997122
 
 END RequestId: 50954cda-27df-4541-9a53-a6c574f889db
 
-REPORT RequestId: 50954cda-27df-4541-9a53-a6c574f889db	Duration: 6142.30 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 50954cda-27df-4541-9a53-a6c574f889db	Duration: 6142.30 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 7f24d099-c136-42d9-9dc9-3b76ed8e549e Version: $LATEST
 
@@ -1300,7 +1300,7 @@ The R Square of regression is 0.7906557707894516
 
 END RequestId: 7f24d099-c136-42d9-9dc9-3b76ed8e549e
 
-REPORT RequestId: 7f24d099-c136-42d9-9dc9-3b76ed8e549e	Duration: 3049.76 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 7f24d099-c136-42d9-9dc9-3b76ed8e549e	Duration: 3049.76 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 36f0251c-65e1-4bc1-b037-8c32de4676e3 Version: $LATEST
 
@@ -1326,7 +1326,7 @@ The R Square of regression is 0.7715153641625441
 
 END RequestId: 36f0251c-65e1-4bc1-b037-8c32de4676e3
 
-REPORT RequestId: 36f0251c-65e1-4bc1-b037-8c32de4676e3	Duration: 5356.19 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 36f0251c-65e1-4bc1-b037-8c32de4676e3	Duration: 5356.19 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 75bb5373-c46d-4509-a1e0-c891b7e79037 Version: $LATEST
 
@@ -1352,7 +1352,7 @@ The R Square of regression is 0.767369140265666
 
 END RequestId: 75bb5373-c46d-4509-a1e0-c891b7e79037
 
-REPORT RequestId: 75bb5373-c46d-4509-a1e0-c891b7e79037	Duration: 4127.99 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 75bb5373-c46d-4509-a1e0-c891b7e79037	Duration: 4127.99 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 8b3c28af-80a4-4952-81a2-95e3f5acdaca Version: $LATEST
 
@@ -1378,7 +1378,7 @@ The R Square of regression is 0.7750445249390937
 
 END RequestId: 8b3c28af-80a4-4952-81a2-95e3f5acdaca
 
-REPORT RequestId: 8b3c28af-80a4-4952-81a2-95e3f5acdaca	Duration: 4108.36 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 8b3c28af-80a4-4952-81a2-95e3f5acdaca	Duration: 4108.36 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 4699a391-6589-4a88-901c-afd7c4494d6a Version: $LATEST
 
@@ -1404,7 +1404,7 @@ The R Square of regression is 0.795750470752246
 
 END RequestId: 4699a391-6589-4a88-901c-afd7c4494d6a
 
-REPORT RequestId: 4699a391-6589-4a88-901c-afd7c4494d6a	Duration: 4095.45 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 4699a391-6589-4a88-901c-afd7c4494d6a	Duration: 4095.45 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: eba5f853-7b53-4b4e-abb7-9886b1a5ef68 Version: $LATEST
 
@@ -1430,7 +1430,7 @@ The R Square of regression is 0.7751726915017283
 
 END RequestId: eba5f853-7b53-4b4e-abb7-9886b1a5ef68
 
-REPORT RequestId: eba5f853-7b53-4b4e-abb7-9886b1a5ef68	Duration: 4115.52 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: eba5f853-7b53-4b4e-abb7-9886b1a5ef68	Duration: 4115.52 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 88eb263f-bc91-427b-b444-b97d57a742c3 Version: $LATEST
 
@@ -1456,7 +1456,7 @@ The R Square of regression is 0.6371725353943429
 
 END RequestId: 88eb263f-bc91-427b-b444-b97d57a742c3
 
-REPORT RequestId: 88eb263f-bc91-427b-b444-b97d57a742c3	Duration: 4090.00 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 88eb263f-bc91-427b-b444-b97d57a742c3	Duration: 4090.00 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: 48272f3e-6db1-472e-a810-2981cb0bde4b Version: $LATEST
 
@@ -1482,7 +1482,7 @@ The R Square of regression is 0.6530209291658773
 
 END RequestId: 48272f3e-6db1-472e-a810-2981cb0bde4b
 
-REPORT RequestId: 48272f3e-6db1-472e-a810-2981cb0bde4b	Duration: 3059.60 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 377 MB	
+REPORT RequestId: 48272f3e-6db1-472e-a810-2981cb0bde4b	Duration: 3059.60 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 377 MB	
 
 START RequestId: df25ab0a-a66e-4924-94c9-44151c35d08e Version: $LATEST
 
@@ -1510,7 +1510,7 @@ The R Square of regression is 0.905876480514676
 
 END RequestId: df25ab0a-a66e-4924-94c9-44151c35d08e
 
-REPORT RequestId: df25ab0a-a66e-4924-94c9-44151c35d08e	Duration: 15205.61 ms	Billed Duration: 15300 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: df25ab0a-a66e-4924-94c9-44151c35d08e	Duration: 15205.61 ms	Billed Duration: 15300 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: cd996742-3d26-447e-96de-988f3048f98e Version: $LATEST
 
@@ -1536,7 +1536,7 @@ The R Square of regression is 0.9143572834979324
 
 END RequestId: cd996742-3d26-447e-96de-988f3048f98e
 
-REPORT RequestId: cd996742-3d26-447e-96de-988f3048f98e	Duration: 11328.34 ms	Billed Duration: 11400 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: cd996742-3d26-447e-96de-988f3048f98e	Duration: 11328.34 ms	Billed Duration: 11400 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 3fdf8890-0e0f-4be2-9d72-d6ac36885072 Version: $LATEST
 
@@ -1562,7 +1562,7 @@ The R Square of regression is 0.9092697726374191
 
 END RequestId: 3fdf8890-0e0f-4be2-9d72-d6ac36885072
 
-REPORT RequestId: 3fdf8890-0e0f-4be2-9d72-d6ac36885072	Duration: 13209.73 ms	Billed Duration: 13300 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 3fdf8890-0e0f-4be2-9d72-d6ac36885072	Duration: 13209.73 ms	Billed Duration: 13300 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 8f01ec4e-4820-4990-8be2-e76c6f0f2a78 Version: $LATEST
 
@@ -1588,7 +1588,7 @@ The R Square of regression is 0.8953834936300836
 
 END RequestId: 8f01ec4e-4820-4990-8be2-e76c6f0f2a78
 
-REPORT RequestId: 8f01ec4e-4820-4990-8be2-e76c6f0f2a78	Duration: 7661.91 ms	Billed Duration: 7700 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 8f01ec4e-4820-4990-8be2-e76c6f0f2a78	Duration: 7661.91 ms	Billed Duration: 7700 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 699afd6c-f3ed-4e51-9ff6-74ef3f6d45f0 Version: $LATEST
 
@@ -1614,7 +1614,7 @@ The R Square of regression is 0.8934355191404438
 
 END RequestId: 699afd6c-f3ed-4e51-9ff6-74ef3f6d45f0
 
-REPORT RequestId: 699afd6c-f3ed-4e51-9ff6-74ef3f6d45f0	Duration: 13267.70 ms	Billed Duration: 13300 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 699afd6c-f3ed-4e51-9ff6-74ef3f6d45f0	Duration: 13267.70 ms	Billed Duration: 13300 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 52fbbe27-f02c-48d4-b37a-899301159aa9 Version: $LATEST
 
@@ -1640,7 +1640,7 @@ The R Square of regression is 0.9032153716082304
 
 END RequestId: 52fbbe27-f02c-48d4-b37a-899301159aa9
 
-REPORT RequestId: 52fbbe27-f02c-48d4-b37a-899301159aa9	Duration: 9558.94 ms	Billed Duration: 9600 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 52fbbe27-f02c-48d4-b37a-899301159aa9	Duration: 9558.94 ms	Billed Duration: 9600 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: f42c84a8-546d-49af-a790-4f4ad7b1735b Version: $LATEST
 
@@ -1666,7 +1666,7 @@ The R Square of regression is 0.8988935717224834
 
 END RequestId: f42c84a8-546d-49af-a790-4f4ad7b1735b
 
-REPORT RequestId: f42c84a8-546d-49af-a790-4f4ad7b1735b	Duration: 11464.96 ms	Billed Duration: 11500 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: f42c84a8-546d-49af-a790-4f4ad7b1735b	Duration: 11464.96 ms	Billed Duration: 11500 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: e2ef5ba3-d1a9-47cd-9011-757caaa79767 Version: $LATEST
 
@@ -1692,7 +1692,7 @@ The R Square of regression is 0.9032062826378887
 
 END RequestId: e2ef5ba3-d1a9-47cd-9011-757caaa79767
 
-REPORT RequestId: e2ef5ba3-d1a9-47cd-9011-757caaa79767	Duration: 9609.87 ms	Billed Duration: 9700 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: e2ef5ba3-d1a9-47cd-9011-757caaa79767	Duration: 9609.87 ms	Billed Duration: 9700 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 74fb2f77-6b7d-4bb0-8a19-897418fb4044 Version: $LATEST
 
@@ -1718,7 +1718,7 @@ The R Square of regression is 0.9091131722029451
 
 END RequestId: 74fb2f77-6b7d-4bb0-8a19-897418fb4044
 
-REPORT RequestId: 74fb2f77-6b7d-4bb0-8a19-897418fb4044	Duration: 12641.11 ms	Billed Duration: 12700 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 74fb2f77-6b7d-4bb0-8a19-897418fb4044	Duration: 12641.11 ms	Billed Duration: 12700 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 89a90b07-6c61-41e8-9074-88f9d40940c4 Version: $LATEST
 
@@ -1744,7 +1744,7 @@ The R Square of regression is 0.9192954417750993
 
 END RequestId: 89a90b07-6c61-41e8-9074-88f9d40940c4
 
-REPORT RequestId: 89a90b07-6c61-41e8-9074-88f9d40940c4	Duration: 7095.33 ms	Billed Duration: 7100 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 89a90b07-6c61-41e8-9074-88f9d40940c4	Duration: 7095.33 ms	Billed Duration: 7100 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 8e106fc5-ba94-4b03-9727-c8a64484a7ce Version: $LATEST
 
@@ -1770,7 +1770,7 @@ The R Square of regression is 0.9158854677613858
 
 END RequestId: 8e106fc5-ba94-4b03-9727-c8a64484a7ce
 
-REPORT RequestId: 8e106fc5-ba94-4b03-9727-c8a64484a7ce	Duration: 8944.07 ms	Billed Duration: 9000 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 8e106fc5-ba94-4b03-9727-c8a64484a7ce	Duration: 8944.07 ms	Billed Duration: 9000 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 86c62107-85c8-42ad-b41a-2390dee0c27e Version: $LATEST
 
@@ -1796,7 +1796,7 @@ The R Square of regression is 0.9160799858689317
 
 END RequestId: 86c62107-85c8-42ad-b41a-2390dee0c27e
 
-REPORT RequestId: 86c62107-85c8-42ad-b41a-2390dee0c27e	Duration: 7084.97 ms	Billed Duration: 7100 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 86c62107-85c8-42ad-b41a-2390dee0c27e	Duration: 7084.97 ms	Billed Duration: 7100 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 10c9d5ae-54c0-41de-aa4e-0b074fdfa1fd Version: $LATEST
 
@@ -1822,7 +1822,7 @@ The R Square of regression is 0.7734955108324681
 
 END RequestId: 10c9d5ae-54c0-41de-aa4e-0b074fdfa1fd
 
-REPORT RequestId: 10c9d5ae-54c0-41de-aa4e-0b074fdfa1fd	Duration: 9044.78 ms	Billed Duration: 9100 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 10c9d5ae-54c0-41de-aa4e-0b074fdfa1fd	Duration: 9044.78 ms	Billed Duration: 9100 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 54fa9200-70a5-4c5c-bb4d-1a090770f3c0 Version: $LATEST
 
@@ -1848,7 +1848,7 @@ The R Square of regression is 0.7776919728931239
 
 END RequestId: 54fa9200-70a5-4c5c-bb4d-1a090770f3c0
 
-REPORT RequestId: 54fa9200-70a5-4c5c-bb4d-1a090770f3c0	Duration: 7197.87 ms	Billed Duration: 7200 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: 54fa9200-70a5-4c5c-bb4d-1a090770f3c0	Duration: 7197.87 ms	Billed Duration: 7200 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: dcb7ed5b-da88-4f7f-b4db-e56314c6b4e0 Version: $LATEST
 
@@ -1874,7 +1874,7 @@ The R Square of regression is 0.7700601341037623
 
 END RequestId: dcb7ed5b-da88-4f7f-b4db-e56314c6b4e0
 
-REPORT RequestId: dcb7ed5b-da88-4f7f-b4db-e56314c6b4e0	Duration: 9388.13 ms	Billed Duration: 9400 ms 	Memory Size: 1024 MB	Max Memory Used: 342 MB	
+REPORT RequestId: dcb7ed5b-da88-4f7f-b4db-e56314c6b4e0	Duration: 9388.13 ms	Billed Duration: 9400 ms 	Memory Size: 3008 MB	Max Memory Used: 342 MB	
 
 START RequestId: 1124077f-d51f-430b-8afa-de368de9e6c2 Version: $LATEST
 
@@ -1902,7 +1902,7 @@ The R Square of regression is 0.9064092395857314
 
 END RequestId: 1124077f-d51f-430b-8afa-de368de9e6c2
 
-REPORT RequestId: 1124077f-d51f-430b-8afa-de368de9e6c2	Duration: 11193.65 ms	Billed Duration: 11200 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 1124077f-d51f-430b-8afa-de368de9e6c2	Duration: 11193.65 ms	Billed Duration: 11200 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: ac98f3a8-6a8f-4108-b80e-b66934269e30 Version: $LATEST
 
@@ -1928,7 +1928,7 @@ The R Square of regression is 0.9172917409325752
 
 END RequestId: ac98f3a8-6a8f-4108-b80e-b66934269e30
 
-REPORT RequestId: ac98f3a8-6a8f-4108-b80e-b66934269e30	Duration: 8552.13 ms	Billed Duration: 8600 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: ac98f3a8-6a8f-4108-b80e-b66934269e30	Duration: 8552.13 ms	Billed Duration: 8600 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 339cf2f8-4b62-4a15-82cb-242695e72146 Version: $LATEST
 
@@ -1954,7 +1954,7 @@ The R Square of regression is 0.9139072536633978
 
 END RequestId: 339cf2f8-4b62-4a15-82cb-242695e72146
 
-REPORT RequestId: 339cf2f8-4b62-4a15-82cb-242695e72146	Duration: 9598.00 ms	Billed Duration: 9600 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 339cf2f8-4b62-4a15-82cb-242695e72146	Duration: 9598.00 ms	Billed Duration: 9600 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 3505cd91-248d-4755-8fd9-fffc2b0b9afe Version: $LATEST
 
@@ -1980,7 +1980,7 @@ The R Square of regression is 0.9145742623395605
 
 END RequestId: 3505cd91-248d-4755-8fd9-fffc2b0b9afe
 
-REPORT RequestId: 3505cd91-248d-4755-8fd9-fffc2b0b9afe	Duration: 8225.42 ms	Billed Duration: 8300 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 3505cd91-248d-4755-8fd9-fffc2b0b9afe	Duration: 8225.42 ms	Billed Duration: 8300 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: f91fdf50-ab48-4ed5-baa0-e16e0bfacec0 Version: $LATEST
 
@@ -2006,7 +2006,7 @@ The R Square of regression is 0.9095662148236721
 
 END RequestId: f91fdf50-ab48-4ed5-baa0-e16e0bfacec0
 
-REPORT RequestId: f91fdf50-ab48-4ed5-baa0-e16e0bfacec0	Duration: 9748.09 ms	Billed Duration: 9800 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: f91fdf50-ab48-4ed5-baa0-e16e0bfacec0	Duration: 9748.09 ms	Billed Duration: 9800 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 6a9daa87-aa1a-46ac-ab3e-c30b4cb9b70c Version: $LATEST
 
@@ -2034,7 +2034,7 @@ The R Square of regression is 0.8934004226686578
 
 END RequestId: 6a9daa87-aa1a-46ac-ab3e-c30b4cb9b70c
 
-REPORT RequestId: 6a9daa87-aa1a-46ac-ab3e-c30b4cb9b70c	Duration: 11038.71 ms	Billed Duration: 11100 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 6a9daa87-aa1a-46ac-ab3e-c30b4cb9b70c	Duration: 11038.71 ms	Billed Duration: 11100 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: e8c60914-e706-45ad-b002-e979aabe30cb Version: $LATEST
 
@@ -2060,7 +2060,7 @@ The R Square of regression is 0.8974754146375468
 
 END RequestId: e8c60914-e706-45ad-b002-e979aabe30cb
 
-REPORT RequestId: e8c60914-e706-45ad-b002-e979aabe30cb	Duration: 8249.81 ms	Billed Duration: 8300 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: e8c60914-e706-45ad-b002-e979aabe30cb	Duration: 8249.81 ms	Billed Duration: 8300 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: ef2b790b-995f-4f0e-8c0e-9fbe111e13d5 Version: $LATEST
 
@@ -2086,7 +2086,7 @@ The R Square of regression is 0.8828922475884563
 
 END RequestId: ef2b790b-995f-4f0e-8c0e-9fbe111e13d5
 
-REPORT RequestId: ef2b790b-995f-4f0e-8c0e-9fbe111e13d5	Duration: 5635.42 ms	Billed Duration: 5700 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: ef2b790b-995f-4f0e-8c0e-9fbe111e13d5	Duration: 5635.42 ms	Billed Duration: 5700 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 4a1f7dbc-bf70-4f64-b823-5608bfb89e4a Version: $LATEST
 
@@ -2112,7 +2112,7 @@ The R Square of regression is 0.9034397127209494
 
 END RequestId: 4a1f7dbc-bf70-4f64-b823-5608bfb89e4a
 
-REPORT RequestId: 4a1f7dbc-bf70-4f64-b823-5608bfb89e4a	Duration: 6951.85 ms	Billed Duration: 7000 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 4a1f7dbc-bf70-4f64-b823-5608bfb89e4a	Duration: 6951.85 ms	Billed Duration: 7000 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 9eff0b9d-3094-47d0-9279-b9930f84d04c Version: $LATEST
 
@@ -2138,7 +2138,7 @@ The R Square of regression is 0.9017533189080211
 
 END RequestId: 9eff0b9d-3094-47d0-9279-b9930f84d04c
 
-REPORT RequestId: 9eff0b9d-3094-47d0-9279-b9930f84d04c	Duration: 7304.70 ms	Billed Duration: 7400 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 9eff0b9d-3094-47d0-9279-b9930f84d04c	Duration: 7304.70 ms	Billed Duration: 7400 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 1e470189-49f9-4ec5-8e64-e7ec9484d4a9 Version: $LATEST
 
@@ -2164,7 +2164,7 @@ The R Square of regression is 0.8867196908447512
 
 END RequestId: 1e470189-49f9-4ec5-8e64-e7ec9484d4a9
 
-REPORT RequestId: 1e470189-49f9-4ec5-8e64-e7ec9484d4a9	Duration: 7782.48 ms	Billed Duration: 7800 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 1e470189-49f9-4ec5-8e64-e7ec9484d4a9	Duration: 7782.48 ms	Billed Duration: 7800 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: a33447e1-0efc-4afe-a331-dbe6c0eeb84e Version: $LATEST
 
@@ -2190,7 +2190,7 @@ The R Square of regression is 0.9161707899149094
 
 END RequestId: a33447e1-0efc-4afe-a331-dbe6c0eeb84e
 
-REPORT RequestId: a33447e1-0efc-4afe-a331-dbe6c0eeb84e	Duration: 7969.71 ms	Billed Duration: 8000 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: a33447e1-0efc-4afe-a331-dbe6c0eeb84e	Duration: 7969.71 ms	Billed Duration: 8000 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: e2aacab6-613f-455b-b410-45cb469eb9c8 Version: $LATEST
 
@@ -2216,7 +2216,7 @@ The R Square of regression is 0.9156053312422585
 
 END RequestId: e2aacab6-613f-455b-b410-45cb469eb9c8
 
-REPORT RequestId: e2aacab6-613f-455b-b410-45cb469eb9c8	Duration: 6459.86 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: e2aacab6-613f-455b-b410-45cb469eb9c8	Duration: 6459.86 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 40896a48-13e2-40f5-b6c0-25d8c7362b3a Version: $LATEST
 
@@ -2242,7 +2242,7 @@ The R Square of regression is 0.9128079233189472
 
 END RequestId: 40896a48-13e2-40f5-b6c0-25d8c7362b3a
 
-REPORT RequestId: 40896a48-13e2-40f5-b6c0-25d8c7362b3a	Duration: 7782.67 ms	Billed Duration: 7800 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 40896a48-13e2-40f5-b6c0-25d8c7362b3a	Duration: 7782.67 ms	Billed Duration: 7800 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 6aa6ca9a-eb75-42f4-b931-a40220f924ca Version: $LATEST
 
@@ -2268,7 +2268,7 @@ The R Square of regression is 0.9147096809668354
 
 END RequestId: 6aa6ca9a-eb75-42f4-b931-a40220f924ca
 
-REPORT RequestId: 6aa6ca9a-eb75-42f4-b931-a40220f924ca	Duration: 6499.74 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 6aa6ca9a-eb75-42f4-b931-a40220f924ca	Duration: 6499.74 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: f1308b0d-aa7b-4676-95cc-df0797900184 Version: $LATEST
 
@@ -2294,7 +2294,7 @@ The R Square of regression is 0.7602056260225691
 
 END RequestId: f1308b0d-aa7b-4676-95cc-df0797900184
 
-REPORT RequestId: f1308b0d-aa7b-4676-95cc-df0797900184	Duration: 7893.09 ms	Billed Duration: 7900 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: f1308b0d-aa7b-4676-95cc-df0797900184	Duration: 7893.09 ms	Billed Duration: 7900 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 4f658a2f-5d5c-4edb-8feb-bfeace0a56d3 Version: $LATEST
 
@@ -2320,7 +2320,7 @@ The R Square of regression is 0.7973116512093897
 
 END RequestId: 4f658a2f-5d5c-4edb-8feb-bfeace0a56d3
 
-REPORT RequestId: 4f658a2f-5d5c-4edb-8feb-bfeace0a56d3	Duration: 5232.49 ms	Billed Duration: 5300 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 4f658a2f-5d5c-4edb-8feb-bfeace0a56d3	Duration: 5232.49 ms	Billed Duration: 5300 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 23523783-5d09-415a-aa98-db4fd3625924 Version: $LATEST
 
@@ -2346,7 +2346,7 @@ The R Square of regression is 0.771079574924487
 
 END RequestId: 23523783-5d09-415a-aa98-db4fd3625924
 
-REPORT RequestId: 23523783-5d09-415a-aa98-db4fd3625924	Duration: 6656.23 ms	Billed Duration: 6700 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 23523783-5d09-415a-aa98-db4fd3625924	Duration: 6656.23 ms	Billed Duration: 6700 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 10c80826-1037-4b67-8ddd-ccf36cefe856 Version: $LATEST
 
@@ -2372,7 +2372,7 @@ The R Square of regression is 0.8051200155358599
 
 END RequestId: 10c80826-1037-4b67-8ddd-ccf36cefe856
 
-REPORT RequestId: 10c80826-1037-4b67-8ddd-ccf36cefe856	Duration: 3915.67 ms	Billed Duration: 4000 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 10c80826-1037-4b67-8ddd-ccf36cefe856	Duration: 3915.67 ms	Billed Duration: 4000 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 73108df8-fbe1-4009-bb71-9aa9b5fbbd70 Version: $LATEST
 
@@ -2398,7 +2398,7 @@ The R Square of regression is 0.6290411501708439
 
 END RequestId: 73108df8-fbe1-4009-bb71-9aa9b5fbbd70
 
-REPORT RequestId: 73108df8-fbe1-4009-bb71-9aa9b5fbbd70	Duration: 6570.70 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 328 MB	
+REPORT RequestId: 73108df8-fbe1-4009-bb71-9aa9b5fbbd70	Duration: 6570.70 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 328 MB	
 
 START RequestId: 95fbaf69-0c48-4911-936c-175e764feacd Version: $LATEST
 
@@ -2424,7 +2424,7 @@ The R Square of regression is 0.910332992621337
 
 END RequestId: 95fbaf69-0c48-4911-936c-175e764feacd
 
-REPORT RequestId: 95fbaf69-0c48-4911-936c-175e764feacd	Duration: 7560.71 ms	Billed Duration: 7600 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 95fbaf69-0c48-4911-936c-175e764feacd	Duration: 7560.71 ms	Billed Duration: 7600 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: ac5190e4-6290-4d69-a281-6af6a9682e04 Version: $LATEST
 
@@ -2450,7 +2450,7 @@ The R Square of regression is 0.9099215913125323
 
 END RequestId: ac5190e4-6290-4d69-a281-6af6a9682e04
 
-REPORT RequestId: ac5190e4-6290-4d69-a281-6af6a9682e04	Duration: 7536.58 ms	Billed Duration: 7600 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: ac5190e4-6290-4d69-a281-6af6a9682e04	Duration: 7536.58 ms	Billed Duration: 7600 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 684893b5-dcf0-4675-a7b1-c025064af931 Version: $LATEST
 
@@ -2476,7 +2476,7 @@ The R Square of regression is 0.910326994540523
 
 END RequestId: 684893b5-dcf0-4675-a7b1-c025064af931
 
-REPORT RequestId: 684893b5-dcf0-4675-a7b1-c025064af931	Duration: 7542.05 ms	Billed Duration: 7600 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 684893b5-dcf0-4675-a7b1-c025064af931	Duration: 7542.05 ms	Billed Duration: 7600 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 5e5a7e90-51c2-4815-82cb-6a64aa19dc16 Version: $LATEST
 
@@ -2502,7 +2502,7 @@ The R Square of regression is 0.873513987692578
 
 END RequestId: 5e5a7e90-51c2-4815-82cb-6a64aa19dc16
 
-REPORT RequestId: 5e5a7e90-51c2-4815-82cb-6a64aa19dc16	Duration: 4370.08 ms	Billed Duration: 4400 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 5e5a7e90-51c2-4815-82cb-6a64aa19dc16	Duration: 4370.08 ms	Billed Duration: 4400 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 50bbba7e-f3b6-4004-9638-58235a0ca9e6 Version: $LATEST
 
@@ -2528,7 +2528,7 @@ The R Square of regression is 0.914354047177462
 
 END RequestId: 50bbba7e-f3b6-4004-9638-58235a0ca9e6
 
-REPORT RequestId: 50bbba7e-f3b6-4004-9638-58235a0ca9e6	Duration: 6495.57 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 50bbba7e-f3b6-4004-9638-58235a0ca9e6	Duration: 6495.57 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 31c6c549-d88b-45f6-8226-0ec3f42ba7de Version: $LATEST
 
@@ -2554,7 +2554,7 @@ The R Square of regression is 0.9186580291193749
 
 END RequestId: 31c6c549-d88b-45f6-8226-0ec3f42ba7de
 
-REPORT RequestId: 31c6c549-d88b-45f6-8226-0ec3f42ba7de	Duration: 6438.46 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 31c6c549-d88b-45f6-8226-0ec3f42ba7de	Duration: 6438.46 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 937d3df5-2cc2-42c2-a6f6-8b18897f2c77 Version: $LATEST
 
@@ -2580,7 +2580,7 @@ The R Square of regression is 0.9171576396878364
 
 END RequestId: 937d3df5-2cc2-42c2-a6f6-8b18897f2c77
 
-REPORT RequestId: 937d3df5-2cc2-42c2-a6f6-8b18897f2c77	Duration: 5426.96 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 937d3df5-2cc2-42c2-a6f6-8b18897f2c77	Duration: 5426.96 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 00988785-1a96-4698-97e3-5cfbca2406d4 Version: $LATEST
 
@@ -2606,7 +2606,7 @@ The R Square of regression is 0.8566165884465361
 
 END RequestId: 00988785-1a96-4698-97e3-5cfbca2406d4
 
-REPORT RequestId: 00988785-1a96-4698-97e3-5cfbca2406d4	Duration: 4440.23 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 00988785-1a96-4698-97e3-5cfbca2406d4	Duration: 4440.23 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 5a50ab59-4edb-4c92-932b-6f393e08d6be Version: $LATEST
 
@@ -2632,7 +2632,7 @@ The R Square of regression is 0.8797990070173087
 
 END RequestId: 5a50ab59-4edb-4c92-932b-6f393e08d6be
 
-REPORT RequestId: 5a50ab59-4edb-4c92-932b-6f393e08d6be	Duration: 5504.41 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 5a50ab59-4edb-4c92-932b-6f393e08d6be	Duration: 5504.41 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: faf8e8f9-8bdc-4370-b499-071b38a4dfa3 Version: $LATEST
 
@@ -2658,7 +2658,7 @@ The R Square of regression is 0.9058270762793611
 
 END RequestId: faf8e8f9-8bdc-4370-b499-071b38a4dfa3
 
-REPORT RequestId: faf8e8f9-8bdc-4370-b499-071b38a4dfa3	Duration: 5478.58 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: faf8e8f9-8bdc-4370-b499-071b38a4dfa3	Duration: 5478.58 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 69e355d3-7ad9-4a73-9c0d-9ef4db85c5d0 Version: $LATEST
 
@@ -2684,7 +2684,7 @@ The R Square of regression is 0.8827090424121219
 
 END RequestId: 69e355d3-7ad9-4a73-9c0d-9ef4db85c5d0
 
-REPORT RequestId: 69e355d3-7ad9-4a73-9c0d-9ef4db85c5d0	Duration: 4432.77 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 69e355d3-7ad9-4a73-9c0d-9ef4db85c5d0	Duration: 4432.77 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 590918e5-c618-4c5f-a04e-ca17833ba5ea Version: $LATEST
 
@@ -2710,7 +2710,7 @@ The R Square of regression is 0.909787948455592
 
 END RequestId: 590918e5-c618-4c5f-a04e-ca17833ba5ea
 
-REPORT RequestId: 590918e5-c618-4c5f-a04e-ca17833ba5ea	Duration: 4482.74 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 590918e5-c618-4c5f-a04e-ca17833ba5ea	Duration: 4482.74 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: b2306726-d931-4be4-a917-8dc87a5603d3 Version: $LATEST
 
@@ -2736,7 +2736,7 @@ The R Square of regression is 0.9023916609887797
 
 END RequestId: b2306726-d931-4be4-a917-8dc87a5603d3
 
-REPORT RequestId: b2306726-d931-4be4-a917-8dc87a5603d3	Duration: 5573.95 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: b2306726-d931-4be4-a917-8dc87a5603d3	Duration: 5573.95 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 1e29ec2f-61ba-4b4c-9437-b07593dd7313 Version: $LATEST
 
@@ -2762,7 +2762,7 @@ The R Square of regression is 0.9068960369040671
 
 END RequestId: 1e29ec2f-61ba-4b4c-9437-b07593dd7313
 
-REPORT RequestId: 1e29ec2f-61ba-4b4c-9437-b07593dd7313	Duration: 5519.36 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 1e29ec2f-61ba-4b4c-9437-b07593dd7313	Duration: 5519.36 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 1d6c663a-1712-427f-9c9f-c309654cbbba Version: $LATEST
 
@@ -2788,7 +2788,7 @@ The R Square of regression is 0.9064987708184808
 
 END RequestId: 1d6c663a-1712-427f-9c9f-c309654cbbba
 
-REPORT RequestId: 1d6c663a-1712-427f-9c9f-c309654cbbba	Duration: 4473.00 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 1d6c663a-1712-427f-9c9f-c309654cbbba	Duration: 4473.00 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 673e6a9d-ab95-425e-94d8-e276e38baa67 Version: $LATEST
 
@@ -2814,7 +2814,7 @@ The R Square of regression is 0.8908543435833136
 
 END RequestId: 673e6a9d-ab95-425e-94d8-e276e38baa67
 
-REPORT RequestId: 673e6a9d-ab95-425e-94d8-e276e38baa67	Duration: 5147.30 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 673e6a9d-ab95-425e-94d8-e276e38baa67	Duration: 5147.30 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 9f59fb25-3acf-40fa-a4a1-ef5c6b7c6e00 Version: $LATEST
 
@@ -2840,7 +2840,7 @@ The R Square of regression is 0.9122205242561884
 
 END RequestId: 9f59fb25-3acf-40fa-a4a1-ef5c6b7c6e00
 
-REPORT RequestId: 9f59fb25-3acf-40fa-a4a1-ef5c6b7c6e00	Duration: 6153.82 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 9f59fb25-3acf-40fa-a4a1-ef5c6b7c6e00	Duration: 6153.82 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: b51f729c-32b2-445c-843e-6d284dcb86a5 Version: $LATEST
 
@@ -2866,7 +2866,7 @@ The R Square of regression is 0.9082452492357457
 
 END RequestId: b51f729c-32b2-445c-843e-6d284dcb86a5
 
-REPORT RequestId: b51f729c-32b2-445c-843e-6d284dcb86a5	Duration: 7184.02 ms	Billed Duration: 7200 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: b51f729c-32b2-445c-843e-6d284dcb86a5	Duration: 7184.02 ms	Billed Duration: 7200 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 67c021db-7d6e-41bd-a3b1-145d4cb63370 Version: $LATEST
 
@@ -2892,7 +2892,7 @@ The R Square of regression is 0.9187712105726497
 
 END RequestId: 67c021db-7d6e-41bd-a3b1-145d4cb63370
 
-REPORT RequestId: 67c021db-7d6e-41bd-a3b1-145d4cb63370	Duration: 4128.49 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 67c021db-7d6e-41bd-a3b1-145d4cb63370	Duration: 4128.49 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: c5608968-f2ee-4863-a5de-b049873ec8ba Version: $LATEST
 
@@ -2918,7 +2918,7 @@ The R Square of regression is 0.9160416630521755
 
 END RequestId: c5608968-f2ee-4863-a5de-b049873ec8ba
 
-REPORT RequestId: c5608968-f2ee-4863-a5de-b049873ec8ba	Duration: 5212.21 ms	Billed Duration: 5300 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: c5608968-f2ee-4863-a5de-b049873ec8ba	Duration: 5212.21 ms	Billed Duration: 5300 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: e9096309-468d-4161-967d-4bc4c4790316 Version: $LATEST
 
@@ -2944,7 +2944,7 @@ The R Square of regression is 0.9189756386691951
 
 END RequestId: e9096309-468d-4161-967d-4bc4c4790316
 
-REPORT RequestId: e9096309-468d-4161-967d-4bc4c4790316	Duration: 4076.74 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: e9096309-468d-4161-967d-4bc4c4790316	Duration: 4076.74 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: fdeb0064-e8a6-4f17-9909-834c2d1bf684 Version: $LATEST
 
@@ -2970,7 +2970,7 @@ The R Square of regression is 0.9152370939083617
 
 END RequestId: fdeb0064-e8a6-4f17-9909-834c2d1bf684
 
-REPORT RequestId: fdeb0064-e8a6-4f17-9909-834c2d1bf684	Duration: 4032.83 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: fdeb0064-e8a6-4f17-9909-834c2d1bf684	Duration: 4032.83 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 2bda9062-3469-4157-82f0-8b4192497c68 Version: $LATEST
 
@@ -2996,7 +2996,7 @@ The R Square of regression is 0.7984282869204229
 
 END RequestId: 2bda9062-3469-4157-82f0-8b4192497c68
 
-REPORT RequestId: 2bda9062-3469-4157-82f0-8b4192497c68	Duration: 2018.22 ms	Billed Duration: 2100 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 2bda9062-3469-4157-82f0-8b4192497c68	Duration: 2018.22 ms	Billed Duration: 2100 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: aefdfead-8fc1-45ca-8231-024135436c25 Version: $LATEST
 
@@ -3022,7 +3022,7 @@ The R Square of regression is 0.7587807132246631
 
 END RequestId: aefdfead-8fc1-45ca-8231-024135436c25
 
-REPORT RequestId: aefdfead-8fc1-45ca-8231-024135436c25	Duration: 6251.91 ms	Billed Duration: 6300 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: aefdfead-8fc1-45ca-8231-024135436c25	Duration: 6251.91 ms	Billed Duration: 6300 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 51711701-7704-498e-a660-05e9715daaf5 Version: $LATEST
 
@@ -3048,7 +3048,7 @@ The R Square of regression is 0.7603590069300574
 
 END RequestId: 51711701-7704-498e-a660-05e9715daaf5
 
-REPORT RequestId: 51711701-7704-498e-a660-05e9715daaf5	Duration: 5161.53 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 51711701-7704-498e-a660-05e9715daaf5	Duration: 5161.53 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 56cc0fa7-f427-458d-b3d9-2fbfddd1b757 Version: $LATEST
 
@@ -3074,7 +3074,7 @@ The R Square of regression is 0.8057865256228592
 
 END RequestId: 56cc0fa7-f427-458d-b3d9-2fbfddd1b757
 
-REPORT RequestId: 56cc0fa7-f427-458d-b3d9-2fbfddd1b757	Duration: 3248.70 ms	Billed Duration: 3300 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 56cc0fa7-f427-458d-b3d9-2fbfddd1b757	Duration: 3248.70 ms	Billed Duration: 3300 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: fb4f98ce-66df-4a85-9d10-3a795622adba Version: $LATEST
 
@@ -3100,7 +3100,7 @@ The R Square of regression is 0.7950609650023631
 
 END RequestId: fb4f98ce-66df-4a85-9d10-3a795622adba
 
-REPORT RequestId: fb4f98ce-66df-4a85-9d10-3a795622adba	Duration: 2019.37 ms	Billed Duration: 2100 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: fb4f98ce-66df-4a85-9d10-3a795622adba	Duration: 2019.37 ms	Billed Duration: 2100 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 1801e8c2-c24a-4682-bc53-24a054023088 Version: $LATEST
 
@@ -3126,7 +3126,7 @@ The R Square of regression is 0.7679462936970751
 
 END RequestId: 1801e8c2-c24a-4682-bc53-24a054023088
 
-REPORT RequestId: 1801e8c2-c24a-4682-bc53-24a054023088	Duration: 5182.91 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 1801e8c2-c24a-4682-bc53-24a054023088	Duration: 5182.91 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 20fdb0aa-bd18-4efe-bcb6-7304eced75ba Version: $LATEST
 
@@ -3152,7 +3152,7 @@ The R Square of regression is 0.6695011711093692
 
 END RequestId: 20fdb0aa-bd18-4efe-bcb6-7304eced75ba
 
-REPORT RequestId: 20fdb0aa-bd18-4efe-bcb6-7304eced75ba	Duration: 2063.17 ms	Billed Duration: 2100 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 20fdb0aa-bd18-4efe-bcb6-7304eced75ba	Duration: 2063.17 ms	Billed Duration: 2100 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: 8de20d74-d768-48ff-8d32-8584372a2e3d Version: $LATEST
 
@@ -3178,7 +3178,7 @@ The R Square of regression is 0.6485559267527896
 
 END RequestId: 8de20d74-d768-48ff-8d32-8584372a2e3d
 
-REPORT RequestId: 8de20d74-d768-48ff-8d32-8584372a2e3d	Duration: 3121.82 ms	Billed Duration: 3200 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: 8de20d74-d768-48ff-8d32-8584372a2e3d	Duration: 3121.82 ms	Billed Duration: 3200 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: db62b6bd-1c9e-40cf-993b-37b70bb78a5c Version: $LATEST
 
@@ -3204,7 +3204,7 @@ The R Square of regression is 0.654468713452698
 
 END RequestId: db62b6bd-1c9e-40cf-993b-37b70bb78a5c
 
-REPORT RequestId: db62b6bd-1c9e-40cf-993b-37b70bb78a5c	Duration: 2054.75 ms	Billed Duration: 2100 ms 	Memory Size: 1024 MB	Max Memory Used: 366 MB	
+REPORT RequestId: db62b6bd-1c9e-40cf-993b-37b70bb78a5c	Duration: 2054.75 ms	Billed Duration: 2100 ms 	Memory Size: 3008 MB	Max Memory Used: 366 MB	
 
 START RequestId: d10247d6-c411-400c-a286-35721632e8f7 Version: $LATEST
 
@@ -3230,7 +3230,7 @@ The R Square of regression is 0.8724283804609952
 
 END RequestId: d10247d6-c411-400c-a286-35721632e8f7
 
-REPORT RequestId: d10247d6-c411-400c-a286-35721632e8f7	Duration: 5960.93 ms	Billed Duration: 6000 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: d10247d6-c411-400c-a286-35721632e8f7	Duration: 5960.93 ms	Billed Duration: 6000 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 6201a553-ae0d-4767-a964-309171a28cc5 Version: $LATEST
 
@@ -3256,7 +3256,7 @@ The R Square of regression is 0.9104907527252353
 
 END RequestId: 6201a553-ae0d-4767-a964-309171a28cc5
 
-REPORT RequestId: 6201a553-ae0d-4767-a964-309171a28cc5	Duration: 13450.03 ms	Billed Duration: 13500 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 6201a553-ae0d-4767-a964-309171a28cc5	Duration: 13450.03 ms	Billed Duration: 13500 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: e8518f67-e968-4688-b728-b5451ad61382 Version: $LATEST
 
@@ -3284,7 +3284,7 @@ The R Square of regression is 0.910894156413019
 
 END RequestId: e8518f67-e968-4688-b728-b5451ad61382
 
-REPORT RequestId: e8518f67-e968-4688-b728-b5451ad61382	Duration: 13437.67 ms	Billed Duration: 13500 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: e8518f67-e968-4688-b728-b5451ad61382	Duration: 13437.67 ms	Billed Duration: 13500 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 439b0562-0f8f-4e3a-85d7-b44c1c3a1adc Version: $LATEST
 
@@ -3310,7 +3310,7 @@ The R Square of regression is 0.920534881393434
 
 END RequestId: 439b0562-0f8f-4e3a-85d7-b44c1c3a1adc
 
-REPORT RequestId: 439b0562-0f8f-4e3a-85d7-b44c1c3a1adc	Duration: 9770.69 ms	Billed Duration: 9800 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 439b0562-0f8f-4e3a-85d7-b44c1c3a1adc	Duration: 9770.69 ms	Billed Duration: 9800 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 3f02fc10-07cf-4375-8792-0769edc4342e Version: $LATEST
 
@@ -3336,7 +3336,7 @@ The R Square of regression is 0.9212953873656928
 
 END RequestId: 3f02fc10-07cf-4375-8792-0769edc4342e
 
-REPORT RequestId: 3f02fc10-07cf-4375-8792-0769edc4342e	Duration: 7895.84 ms	Billed Duration: 7900 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 3f02fc10-07cf-4375-8792-0769edc4342e	Duration: 7895.84 ms	Billed Duration: 7900 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 8cc7df19-abd9-4243-aae6-2cc963101e9f Version: $LATEST
 
@@ -3362,7 +3362,7 @@ The R Square of regression is 0.8986597118591664
 
 END RequestId: 8cc7df19-abd9-4243-aae6-2cc963101e9f
 
-REPORT RequestId: 8cc7df19-abd9-4243-aae6-2cc963101e9f	Duration: 12578.67 ms	Billed Duration: 12600 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 8cc7df19-abd9-4243-aae6-2cc963101e9f	Duration: 12578.67 ms	Billed Duration: 12600 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 2c5b580b-98ee-4d55-b4ef-2eceabeb48be Version: $LATEST
 
@@ -3388,7 +3388,7 @@ The R Square of regression is 0.9036937374136325
 
 END RequestId: 2c5b580b-98ee-4d55-b4ef-2eceabeb48be
 
-REPORT RequestId: 2c5b580b-98ee-4d55-b4ef-2eceabeb48be	Duration: 9793.19 ms	Billed Duration: 9800 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 2c5b580b-98ee-4d55-b4ef-2eceabeb48be	Duration: 9793.19 ms	Billed Duration: 9800 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 12ceab1d-0bd5-4b90-a4d2-0e5e8967726a Version: $LATEST
 
@@ -3414,7 +3414,7 @@ The R Square of regression is 0.9038584807029634
 
 END RequestId: 12ceab1d-0bd5-4b90-a4d2-0e5e8967726a
 
-REPORT RequestId: 12ceab1d-0bd5-4b90-a4d2-0e5e8967726a	Duration: 9846.94 ms	Billed Duration: 9900 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 12ceab1d-0bd5-4b90-a4d2-0e5e8967726a	Duration: 9846.94 ms	Billed Duration: 9900 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 070dcc96-e2ae-40ad-92bb-a204837b9bb6 Version: $LATEST
 
@@ -3440,7 +3440,7 @@ The R Square of regression is 0.9138003220039749
 
 END RequestId: 070dcc96-e2ae-40ad-92bb-a204837b9bb6
 
-REPORT RequestId: 070dcc96-e2ae-40ad-92bb-a204837b9bb6	Duration: 6059.37 ms	Billed Duration: 6100 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 070dcc96-e2ae-40ad-92bb-a204837b9bb6	Duration: 6059.37 ms	Billed Duration: 6100 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: f757cb31-d0a9-4357-b2e8-773ae700fcb2 Version: $LATEST
 
@@ -3466,7 +3466,7 @@ The R Square of regression is 0.9116600700775146
 
 END RequestId: f757cb31-d0a9-4357-b2e8-773ae700fcb2
 
-REPORT RequestId: f757cb31-d0a9-4357-b2e8-773ae700fcb2	Duration: 11636.32 ms	Billed Duration: 11700 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: f757cb31-d0a9-4357-b2e8-773ae700fcb2	Duration: 11636.32 ms	Billed Duration: 11700 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: bbb88f43-3e8e-4f0d-9f71-62a4fae5c138 Version: $LATEST
 
@@ -3492,7 +3492,7 @@ The R Square of regression is 0.9161311351957797
 
 END RequestId: bbb88f43-3e8e-4f0d-9f71-62a4fae5c138
 
-REPORT RequestId: bbb88f43-3e8e-4f0d-9f71-62a4fae5c138	Duration: 9067.97 ms	Billed Duration: 9100 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: bbb88f43-3e8e-4f0d-9f71-62a4fae5c138	Duration: 9067.97 ms	Billed Duration: 9100 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 1d5498f1-87db-4001-bb85-9470d096bbce Version: $LATEST
 
@@ -3518,7 +3518,7 @@ The R Square of regression is 0.9161102580620818
 
 END RequestId: 1d5498f1-87db-4001-bb85-9470d096bbce
 
-REPORT RequestId: 1d5498f1-87db-4001-bb85-9470d096bbce	Duration: 9137.78 ms	Billed Duration: 9200 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 1d5498f1-87db-4001-bb85-9470d096bbce	Duration: 9137.78 ms	Billed Duration: 9200 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: a1d8bbfd-7818-4443-bc80-e24622511918 Version: $LATEST
 
@@ -3544,7 +3544,7 @@ The R Square of regression is 0.9159158419055647
 
 END RequestId: a1d8bbfd-7818-4443-bc80-e24622511918
 
-REPORT RequestId: a1d8bbfd-7818-4443-bc80-e24622511918	Duration: 9053.57 ms	Billed Duration: 9100 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: a1d8bbfd-7818-4443-bc80-e24622511918	Duration: 9053.57 ms	Billed Duration: 9100 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 25bda81f-40a0-4659-806e-a73d1c29052c Version: $LATEST
 
@@ -3570,7 +3570,7 @@ The R Square of regression is 0.7599133084333622
 
 END RequestId: 25bda81f-40a0-4659-806e-a73d1c29052c
 
-REPORT RequestId: 25bda81f-40a0-4659-806e-a73d1c29052c	Duration: 11061.05 ms	Billed Duration: 11100 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 25bda81f-40a0-4659-806e-a73d1c29052c	Duration: 11061.05 ms	Billed Duration: 11100 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 8e302f78-cc34-4e1d-857e-9f69e4681ab8 Version: $LATEST
 
@@ -3596,7 +3596,7 @@ The R Square of regression is 0.8056094901328527
 
 END RequestId: 8e302f78-cc34-4e1d-857e-9f69e4681ab8
 
-REPORT RequestId: 8e302f78-cc34-4e1d-857e-9f69e4681ab8	Duration: 5457.89 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 8e302f78-cc34-4e1d-857e-9f69e4681ab8	Duration: 5457.89 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 8223f668-3b67-487c-95cd-c53c2e5c08a4 Version: $LATEST
 
@@ -3622,7 +3622,7 @@ The R Square of regression is 0.7771319947165938
 
 END RequestId: 8223f668-3b67-487c-95cd-c53c2e5c08a4
 
-REPORT RequestId: 8223f668-3b67-487c-95cd-c53c2e5c08a4	Duration: 5522.63 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 8223f668-3b67-487c-95cd-c53c2e5c08a4	Duration: 5522.63 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 6757eb2e-94c7-4030-b9c9-083396c0548a Version: $LATEST
 
@@ -3648,7 +3648,7 @@ The R Square of regression is 0.6368743233195722
 
 END RequestId: 6757eb2e-94c7-4030-b9c9-083396c0548a
 
-REPORT RequestId: 6757eb2e-94c7-4030-b9c9-083396c0548a	Duration: 7375.22 ms	Billed Duration: 7400 ms 	Memory Size: 1024 MB	Max Memory Used: 327 MB	
+REPORT RequestId: 6757eb2e-94c7-4030-b9c9-083396c0548a	Duration: 7375.22 ms	Billed Duration: 7400 ms 	Memory Size: 3008 MB	Max Memory Used: 327 MB	
 
 START RequestId: 2ca55753-17ff-4f44-a472-4075fbd72284 Version: $LATEST
 
@@ -3674,7 +3674,7 @@ The R Square of regression is 0.8881112389088205
 
 END RequestId: 2ca55753-17ff-4f44-a472-4075fbd72284
 
-REPORT RequestId: 2ca55753-17ff-4f44-a472-4075fbd72284	Duration: 6420.24 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 2ca55753-17ff-4f44-a472-4075fbd72284	Duration: 6420.24 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: d330494b-71ed-4136-a99e-496c76b59c99 Version: $LATEST
 
@@ -3702,7 +3702,7 @@ The R Square of regression is 0.9077161861308032
 
 END RequestId: d330494b-71ed-4136-a99e-496c76b59c99
 
-REPORT RequestId: d330494b-71ed-4136-a99e-496c76b59c99	Duration: 8477.19 ms	Billed Duration: 8500 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: d330494b-71ed-4136-a99e-496c76b59c99	Duration: 8477.19 ms	Billed Duration: 8500 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 95d9c3ef-8125-4408-9905-6473d45a4db4 Version: $LATEST
 
@@ -3728,7 +3728,7 @@ The R Square of regression is 0.9089350687028959
 
 END RequestId: 95d9c3ef-8125-4408-9905-6473d45a4db4
 
-REPORT RequestId: 95d9c3ef-8125-4408-9905-6473d45a4db4	Duration: 7314.47 ms	Billed Duration: 7400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 95d9c3ef-8125-4408-9905-6473d45a4db4	Duration: 7314.47 ms	Billed Duration: 7400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: b3679dd4-8a43-4fe0-8993-63fd026bf21e Version: $LATEST
 
@@ -3754,7 +3754,7 @@ The R Square of regression is 0.9185108768094884
 
 END RequestId: b3679dd4-8a43-4fe0-8993-63fd026bf21e
 
-REPORT RequestId: b3679dd4-8a43-4fe0-8993-63fd026bf21e	Duration: 6353.69 ms	Billed Duration: 6400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: b3679dd4-8a43-4fe0-8993-63fd026bf21e	Duration: 6353.69 ms	Billed Duration: 6400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 2a29439d-3960-4bad-911c-b77aa23868a4 Version: $LATEST
 
@@ -3780,7 +3780,7 @@ The R Square of regression is 0.9140010968333545
 
 END RequestId: 2a29439d-3960-4bad-911c-b77aa23868a4
 
-REPORT RequestId: 2a29439d-3960-4bad-911c-b77aa23868a4	Duration: 6350.12 ms	Billed Duration: 6400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 2a29439d-3960-4bad-911c-b77aa23868a4	Duration: 6350.12 ms	Billed Duration: 6400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 50808761-caa7-430b-9d25-2a93a0be4c09 Version: $LATEST
 
@@ -3806,7 +3806,7 @@ The R Square of regression is 0.8916955341178304
 
 END RequestId: 50808761-caa7-430b-9d25-2a93a0be4c09
 
-REPORT RequestId: 50808761-caa7-430b-9d25-2a93a0be4c09	Duration: 5314.86 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 50808761-caa7-430b-9d25-2a93a0be4c09	Duration: 5314.86 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 5ee1835c-cc3a-4627-86ef-146ba3c3fc33 Version: $LATEST
 
@@ -3832,7 +3832,7 @@ The R Square of regression is 0.9146926215235016
 
 END RequestId: 5ee1835c-cc3a-4627-86ef-146ba3c3fc33
 
-REPORT RequestId: 5ee1835c-cc3a-4627-86ef-146ba3c3fc33	Duration: 6306.20 ms	Billed Duration: 6400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 5ee1835c-cc3a-4627-86ef-146ba3c3fc33	Duration: 6306.20 ms	Billed Duration: 6400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 1df0696a-9e3d-4208-80df-3a392392b401 Version: $LATEST
 
@@ -3858,7 +3858,7 @@ The R Square of regression is 0.872688101407988
 
 END RequestId: 1df0696a-9e3d-4208-80df-3a392392b401
 
-REPORT RequestId: 1df0696a-9e3d-4208-80df-3a392392b401	Duration: 6447.64 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 1df0696a-9e3d-4208-80df-3a392392b401	Duration: 6447.64 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 9ec1a454-5194-4054-8d6e-f1b1c68c21d2 Version: $LATEST
 
@@ -3884,7 +3884,7 @@ The R Square of regression is 0.8980861415024711
 
 END RequestId: 9ec1a454-5194-4054-8d6e-f1b1c68c21d2
 
-REPORT RequestId: 9ec1a454-5194-4054-8d6e-f1b1c68c21d2	Duration: 6506.29 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 9ec1a454-5194-4054-8d6e-f1b1c68c21d2	Duration: 6506.29 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: a63cd9eb-ad6e-4e59-a7ba-fcc283918d69 Version: $LATEST
 
@@ -3910,7 +3910,7 @@ The R Square of regression is 0.8968062438791566
 
 END RequestId: a63cd9eb-ad6e-4e59-a7ba-fcc283918d69
 
-REPORT RequestId: a63cd9eb-ad6e-4e59-a7ba-fcc283918d69	Duration: 6426.54 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: a63cd9eb-ad6e-4e59-a7ba-fcc283918d69	Duration: 6426.54 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 05155524-4442-4f9a-84eb-1b0ef5f6e512 Version: $LATEST
 
@@ -3936,7 +3936,7 @@ The R Square of regression is 0.909273385947442
 
 END RequestId: 05155524-4442-4f9a-84eb-1b0ef5f6e512
 
-REPORT RequestId: 05155524-4442-4f9a-84eb-1b0ef5f6e512	Duration: 4324.96 ms	Billed Duration: 4400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 05155524-4442-4f9a-84eb-1b0ef5f6e512	Duration: 4324.96 ms	Billed Duration: 4400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: ecb5261e-8c07-4a73-830f-1db2bacb2176 Version: $LATEST
 
@@ -3962,7 +3962,7 @@ The R Square of regression is 0.9031339560709037
 
 END RequestId: ecb5261e-8c07-4a73-830f-1db2bacb2176
 
-REPORT RequestId: ecb5261e-8c07-4a73-830f-1db2bacb2176	Duration: 5363.35 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: ecb5261e-8c07-4a73-830f-1db2bacb2176	Duration: 5363.35 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 7a662df6-287f-4ab9-a7da-0102d8aa5fe7 Version: $LATEST
 
@@ -3988,7 +3988,7 @@ The R Square of regression is 0.8877290231282491
 
 END RequestId: 7a662df6-287f-4ab9-a7da-0102d8aa5fe7
 
-REPORT RequestId: 7a662df6-287f-4ab9-a7da-0102d8aa5fe7	Duration: 3273.43 ms	Billed Duration: 3300 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 7a662df6-287f-4ab9-a7da-0102d8aa5fe7	Duration: 3273.43 ms	Billed Duration: 3300 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 93b39c2e-96ad-4d8b-b2ad-7e1e618975db Version: $LATEST
 
@@ -4014,7 +4014,7 @@ The R Square of regression is 0.9062684982710294
 
 END RequestId: 93b39c2e-96ad-4d8b-b2ad-7e1e618975db
 
-REPORT RequestId: 93b39c2e-96ad-4d8b-b2ad-7e1e618975db	Duration: 4326.58 ms	Billed Duration: 4400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 93b39c2e-96ad-4d8b-b2ad-7e1e618975db	Duration: 4326.58 ms	Billed Duration: 4400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 4b82cc7e-915f-4942-98d5-85806d222ff2 Version: $LATEST
 
@@ -4040,7 +4040,7 @@ The R Square of regression is 0.9106076062213853
 
 END RequestId: 4b82cc7e-915f-4942-98d5-85806d222ff2
 
-REPORT RequestId: 4b82cc7e-915f-4942-98d5-85806d222ff2	Duration: 4367.36 ms	Billed Duration: 4400 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 4b82cc7e-915f-4942-98d5-85806d222ff2	Duration: 4367.36 ms	Billed Duration: 4400 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: ddb03181-1d0a-4c2a-9522-c5723e109e96 Version: $LATEST
 
@@ -4066,7 +4066,7 @@ The R Square of regression is 0.9124289572967141
 
 END RequestId: ddb03181-1d0a-4c2a-9522-c5723e109e96
 
-REPORT RequestId: ddb03181-1d0a-4c2a-9522-c5723e109e96	Duration: 6074.35 ms	Billed Duration: 6100 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: ddb03181-1d0a-4c2a-9522-c5723e109e96	Duration: 6074.35 ms	Billed Duration: 6100 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: de19f3df-61bc-4fd8-9b38-5530d100783e Version: $LATEST
 
@@ -4092,7 +4092,7 @@ The R Square of regression is 0.9187398836414005
 
 END RequestId: de19f3df-61bc-4fd8-9b38-5530d100783e
 
-REPORT RequestId: de19f3df-61bc-4fd8-9b38-5530d100783e	Duration: 5033.28 ms	Billed Duration: 5100 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: de19f3df-61bc-4fd8-9b38-5530d100783e	Duration: 5033.28 ms	Billed Duration: 5100 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 30e3486e-06a6-4da9-825a-7340b0e2ebe9 Version: $LATEST
 
@@ -4118,7 +4118,7 @@ The R Square of regression is 0.9159125579192285
 
 END RequestId: 30e3486e-06a6-4da9-825a-7340b0e2ebe9
 
-REPORT RequestId: 30e3486e-06a6-4da9-825a-7340b0e2ebe9	Duration: 4987.99 ms	Billed Duration: 5000 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 30e3486e-06a6-4da9-825a-7340b0e2ebe9	Duration: 4987.99 ms	Billed Duration: 5000 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: b651c802-0cca-4839-877a-9ccd1f814b68 Version: $LATEST
 
@@ -4144,7 +4144,7 @@ The R Square of regression is 0.9190487664442193
 
 END RequestId: b651c802-0cca-4839-877a-9ccd1f814b68
 
-REPORT RequestId: b651c802-0cca-4839-877a-9ccd1f814b68	Duration: 5112.59 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: b651c802-0cca-4839-877a-9ccd1f814b68	Duration: 5112.59 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 7b24863f-cdbb-404f-8a29-ab4bad950014 Version: $LATEST
 
@@ -4170,7 +4170,7 @@ The R Square of regression is 0.8926957504039857
 
 END RequestId: 7b24863f-cdbb-404f-8a29-ab4bad950014
 
-REPORT RequestId: 7b24863f-cdbb-404f-8a29-ab4bad950014	Duration: 3957.73 ms	Billed Duration: 4000 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 7b24863f-cdbb-404f-8a29-ab4bad950014	Duration: 3957.73 ms	Billed Duration: 4000 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: ab0d630e-1e33-43de-8f2e-22b43505a91a Version: $LATEST
 
@@ -4196,7 +4196,7 @@ The R Square of regression is 0.919371350663466
 
 END RequestId: ab0d630e-1e33-43de-8f2e-22b43505a91a
 
-REPORT RequestId: ab0d630e-1e33-43de-8f2e-22b43505a91a	Duration: 4983.39 ms	Billed Duration: 5000 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: ab0d630e-1e33-43de-8f2e-22b43505a91a	Duration: 4983.39 ms	Billed Duration: 5000 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: b6be1ff9-0881-4841-8ecb-3dc7a81a469b Version: $LATEST
 
@@ -4222,7 +4222,7 @@ The R Square of regression is 0.8933040803024951
 
 END RequestId: b6be1ff9-0881-4841-8ecb-3dc7a81a469b
 
-REPORT RequestId: b6be1ff9-0881-4841-8ecb-3dc7a81a469b	Duration: 2927.55 ms	Billed Duration: 3000 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: b6be1ff9-0881-4841-8ecb-3dc7a81a469b	Duration: 2927.55 ms	Billed Duration: 3000 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 07ed41ae-5752-4b30-9bbe-4a09d72061d7 Version: $LATEST
 
@@ -4248,7 +4248,7 @@ The R Square of regression is 0.9176169484052722
 
 END RequestId: 07ed41ae-5752-4b30-9bbe-4a09d72061d7
 
-REPORT RequestId: 07ed41ae-5752-4b30-9bbe-4a09d72061d7	Duration: 2935.97 ms	Billed Duration: 3000 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 07ed41ae-5752-4b30-9bbe-4a09d72061d7	Duration: 2935.97 ms	Billed Duration: 3000 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 26f59d59-0f6e-4118-9f5d-f4b5a4b57d31 Version: $LATEST
 
@@ -4274,7 +4274,7 @@ The R Square of regression is 0.7735228370026354
 
 END RequestId: 26f59d59-0f6e-4118-9f5d-f4b5a4b57d31
 
-REPORT RequestId: 26f59d59-0f6e-4118-9f5d-f4b5a4b57d31	Duration: 5108.91 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 26f59d59-0f6e-4118-9f5d-f4b5a4b57d31	Duration: 5108.91 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 98b5b9d5-2979-4d57-9661-f63f713e7104 Version: $LATEST
 
@@ -4300,7 +4300,7 @@ The R Square of regression is 0.7683634370044902
 
 END RequestId: 98b5b9d5-2979-4d57-9661-f63f713e7104
 
-REPORT RequestId: 98b5b9d5-2979-4d57-9661-f63f713e7104	Duration: 4041.85 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 98b5b9d5-2979-4d57-9661-f63f713e7104	Duration: 4041.85 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: cb5fc0be-396e-4486-aff6-cb59f9b740a1 Version: $LATEST
 
@@ -4326,7 +4326,7 @@ The R Square of regression is 0.7761115251739238
 
 END RequestId: cb5fc0be-396e-4486-aff6-cb59f9b740a1
 
-REPORT RequestId: cb5fc0be-396e-4486-aff6-cb59f9b740a1	Duration: 4124.20 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: cb5fc0be-396e-4486-aff6-cb59f9b740a1	Duration: 4124.20 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 05cf7ff0-c9fc-46b8-b767-2f3cc792f3c2 Version: $LATEST
 
@@ -4352,7 +4352,7 @@ The R Square of regression is 0.7659270580457219
 
 END RequestId: 05cf7ff0-c9fc-46b8-b767-2f3cc792f3c2
 
-REPORT RequestId: 05cf7ff0-c9fc-46b8-b767-2f3cc792f3c2	Duration: 4055.87 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 05cf7ff0-c9fc-46b8-b767-2f3cc792f3c2	Duration: 4055.87 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 057bcf15-545a-4970-a00e-58a9086daf04 Version: $LATEST
 
@@ -4378,7 +4378,7 @@ The R Square of regression is 0.7733745833817995
 
 END RequestId: 057bcf15-545a-4970-a00e-58a9086daf04
 
-REPORT RequestId: 057bcf15-545a-4970-a00e-58a9086daf04	Duration: 4060.62 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 057bcf15-545a-4970-a00e-58a9086daf04	Duration: 4060.62 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 6b97e12b-b8b2-460a-8962-ed8a0ba542f6 Version: $LATEST
 
@@ -4404,7 +4404,7 @@ The R Square of regression is 0.7755168867900325
 
 END RequestId: 6b97e12b-b8b2-460a-8962-ed8a0ba542f6
 
-REPORT RequestId: 6b97e12b-b8b2-460a-8962-ed8a0ba542f6	Duration: 3034.55 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: 6b97e12b-b8b2-460a-8962-ed8a0ba542f6	Duration: 3034.55 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: e1ed3442-c3ec-46e7-a5c9-91208e699b60 Version: $LATEST
 
@@ -4430,7 +4430,7 @@ The R Square of regression is 0.6469723599611017
 
 END RequestId: e1ed3442-c3ec-46e7-a5c9-91208e699b60
 
-REPORT RequestId: e1ed3442-c3ec-46e7-a5c9-91208e699b60	Duration: 3052.58 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 380 MB	
+REPORT RequestId: e1ed3442-c3ec-46e7-a5c9-91208e699b60	Duration: 3052.58 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 380 MB	
 
 START RequestId: 8738dfb6-85b6-4527-9476-9300d7cd72c3 Version: $LATEST
 
@@ -4456,7 +4456,7 @@ The R Square of regression is 0.8634630388409048
 
 END RequestId: 8738dfb6-85b6-4527-9476-9300d7cd72c3
 
-REPORT RequestId: 8738dfb6-85b6-4527-9476-9300d7cd72c3	Duration: 2450.74 ms	Billed Duration: 2500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 8738dfb6-85b6-4527-9476-9300d7cd72c3	Duration: 2450.74 ms	Billed Duration: 2500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 1c1fd07b-145a-4a2b-8bba-053ae1dbb81a Version: $LATEST
 
@@ -4484,7 +4484,7 @@ The R Square of regression is 0.9075326452717363
 
 END RequestId: 1c1fd07b-145a-4a2b-8bba-053ae1dbb81a
 
-REPORT RequestId: 1c1fd07b-145a-4a2b-8bba-053ae1dbb81a	Duration: 8839.35 ms	Billed Duration: 8900 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 1c1fd07b-145a-4a2b-8bba-053ae1dbb81a	Duration: 8839.35 ms	Billed Duration: 8900 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 0a8bc483-70c2-44f9-89fb-3abd65592d9c Version: $LATEST
 
@@ -4510,7 +4510,7 @@ The R Square of regression is 0.8906314312233218
 
 END RequestId: 0a8bc483-70c2-44f9-89fb-3abd65592d9c
 
-REPORT RequestId: 0a8bc483-70c2-44f9-89fb-3abd65592d9c	Duration: 5503.87 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 0a8bc483-70c2-44f9-89fb-3abd65592d9c	Duration: 5503.87 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 7254db6f-747a-4516-9d11-9397e7b82cae Version: $LATEST
 
@@ -4536,7 +4536,7 @@ The R Square of regression is 0.9136343386110529
 
 END RequestId: 7254db6f-747a-4516-9d11-9397e7b82cae
 
-REPORT RequestId: 7254db6f-747a-4516-9d11-9397e7b82cae	Duration: 6571.58 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 7254db6f-747a-4516-9d11-9397e7b82cae	Duration: 6571.58 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: e6215e73-9a50-4491-b901-ddf12e482c7f Version: $LATEST
 
@@ -4562,7 +4562,7 @@ The R Square of regression is 0.8876960889094954
 
 END RequestId: e6215e73-9a50-4491-b901-ddf12e482c7f
 
-REPORT RequestId: e6215e73-9a50-4491-b901-ddf12e482c7f	Duration: 6831.80 ms	Billed Duration: 6900 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: e6215e73-9a50-4491-b901-ddf12e482c7f	Duration: 6831.80 ms	Billed Duration: 6900 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: caa98b1f-2790-4a9e-8316-0cee7efec82f Version: $LATEST
 
@@ -4590,7 +4590,7 @@ The R Square of regression is 0.9109566935486075
 
 END RequestId: caa98b1f-2790-4a9e-8316-0cee7efec82f
 
-REPORT RequestId: caa98b1f-2790-4a9e-8316-0cee7efec82f	Duration: 7663.43 ms	Billed Duration: 7700 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: caa98b1f-2790-4a9e-8316-0cee7efec82f	Duration: 7663.43 ms	Billed Duration: 7700 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: aa1d0793-a8b1-47b2-9d05-8a6a250f4725 Version: $LATEST
 
@@ -4616,7 +4616,7 @@ The R Square of regression is 0.912812251669008
 
 END RequestId: aa1d0793-a8b1-47b2-9d05-8a6a250f4725
 
-REPORT RequestId: aa1d0793-a8b1-47b2-9d05-8a6a250f4725	Duration: 6590.70 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: aa1d0793-a8b1-47b2-9d05-8a6a250f4725	Duration: 6590.70 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: d00fe479-9bb1-44e1-9e6a-7f008acb377a Version: $LATEST
 
@@ -4642,7 +4642,7 @@ The R Square of regression is 0.9209978463368574
 
 END RequestId: d00fe479-9bb1-44e1-9e6a-7f008acb377a
 
-REPORT RequestId: d00fe479-9bb1-44e1-9e6a-7f008acb377a	Duration: 4458.49 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: d00fe479-9bb1-44e1-9e6a-7f008acb377a	Duration: 4458.49 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: a616dae0-010d-4fd7-a327-74f3e03a7412 Version: $LATEST
 
@@ -4668,7 +4668,7 @@ The R Square of regression is 0.8946169747364859
 
 END RequestId: a616dae0-010d-4fd7-a327-74f3e03a7412
 
-REPORT RequestId: a616dae0-010d-4fd7-a327-74f3e03a7412	Duration: 7776.05 ms	Billed Duration: 7800 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: a616dae0-010d-4fd7-a327-74f3e03a7412	Duration: 7776.05 ms	Billed Duration: 7800 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 978b0436-e0b4-43ef-92af-6b5c4748a199 Version: $LATEST
 
@@ -4694,7 +4694,7 @@ The R Square of regression is 0.8788493513030609
 
 END RequestId: 978b0436-e0b4-43ef-92af-6b5c4748a199
 
-REPORT RequestId: 978b0436-e0b4-43ef-92af-6b5c4748a199	Duration: 5528.17 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 978b0436-e0b4-43ef-92af-6b5c4748a199	Duration: 5528.17 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: f84e79d9-0d02-45bc-8499-bf7311cfcc3b Version: $LATEST
 
@@ -4720,7 +4720,7 @@ The R Square of regression is 0.8989664448548342
 
 END RequestId: f84e79d9-0d02-45bc-8499-bf7311cfcc3b
 
-REPORT RequestId: f84e79d9-0d02-45bc-8499-bf7311cfcc3b	Duration: 6702.35 ms	Billed Duration: 6800 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: f84e79d9-0d02-45bc-8499-bf7311cfcc3b	Duration: 6702.35 ms	Billed Duration: 6800 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: eb2a824f-be14-4922-9192-ab151725fba8 Version: $LATEST
 
@@ -4746,7 +4746,7 @@ The R Square of regression is 0.8936867758494624
 
 END RequestId: eb2a824f-be14-4922-9192-ab151725fba8
 
-REPORT RequestId: eb2a824f-be14-4922-9192-ab151725fba8	Duration: 7707.45 ms	Billed Duration: 7800 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: eb2a824f-be14-4922-9192-ab151725fba8	Duration: 7707.45 ms	Billed Duration: 7800 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 15b2d26d-ba17-45a0-9b11-108ea8d3de32 Version: $LATEST
 
@@ -4772,7 +4772,7 @@ The R Square of regression is 0.9026841295417358
 
 END RequestId: 15b2d26d-ba17-45a0-9b11-108ea8d3de32
 
-REPORT RequestId: 15b2d26d-ba17-45a0-9b11-108ea8d3de32	Duration: 5493.33 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 15b2d26d-ba17-45a0-9b11-108ea8d3de32	Duration: 5493.33 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 9ce8e331-4c29-4bbb-80df-b2ea271dcdc6 Version: $LATEST
 
@@ -4798,7 +4798,7 @@ The R Square of regression is 0.9061210008646792
 
 END RequestId: 9ce8e331-4c29-4bbb-80df-b2ea271dcdc6
 
-REPORT RequestId: 9ce8e331-4c29-4bbb-80df-b2ea271dcdc6	Duration: 4498.28 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 9ce8e331-4c29-4bbb-80df-b2ea271dcdc6	Duration: 4498.28 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: d21d8f53-e8a8-4cbc-b50d-3c40fd985e11 Version: $LATEST
 
@@ -4826,7 +4826,7 @@ The R Square of regression is 0.9057264024941809
 
 END RequestId: d21d8f53-e8a8-4cbc-b50d-3c40fd985e11
 
-REPORT RequestId: d21d8f53-e8a8-4cbc-b50d-3c40fd985e11	Duration: 8361.65 ms	Billed Duration: 8400 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: d21d8f53-e8a8-4cbc-b50d-3c40fd985e11	Duration: 8361.65 ms	Billed Duration: 8400 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: c959d828-a684-42ea-b7a7-c38816a6b882 Version: $LATEST
 
@@ -4852,7 +4852,7 @@ The R Square of regression is 0.8901633639287152
 
 END RequestId: c959d828-a684-42ea-b7a7-c38816a6b882
 
-REPORT RequestId: c959d828-a684-42ea-b7a7-c38816a6b882	Duration: 5117.79 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: c959d828-a684-42ea-b7a7-c38816a6b882	Duration: 5117.79 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 538a4766-678b-44b5-98e2-90b4fe636910 Version: $LATEST
 
@@ -4878,7 +4878,7 @@ The R Square of regression is 0.893709273175309
 
 END RequestId: 538a4766-678b-44b5-98e2-90b4fe636910
 
-REPORT RequestId: 538a4766-678b-44b5-98e2-90b4fe636910	Duration: 4089.47 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 538a4766-678b-44b5-98e2-90b4fe636910	Duration: 4089.47 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: bb1646a8-e577-4c59-a454-6a9cadf5dff0 Version: $LATEST
 
@@ -4904,7 +4904,7 @@ The R Square of regression is 0.8714309233009965
 
 END RequestId: bb1646a8-e577-4c59-a454-6a9cadf5dff0
 
-REPORT RequestId: bb1646a8-e577-4c59-a454-6a9cadf5dff0	Duration: 3053.57 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: bb1646a8-e577-4c59-a454-6a9cadf5dff0	Duration: 3053.57 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 72c71051-fad9-4dd0-b529-fc0fb5ba4609 Version: $LATEST
 
@@ -4930,7 +4930,7 @@ The R Square of regression is 0.9086314385249805
 
 END RequestId: 72c71051-fad9-4dd0-b529-fc0fb5ba4609
 
-REPORT RequestId: 72c71051-fad9-4dd0-b529-fc0fb5ba4609	Duration: 7377.55 ms	Billed Duration: 7400 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 72c71051-fad9-4dd0-b529-fc0fb5ba4609	Duration: 7377.55 ms	Billed Duration: 7400 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 10e2006a-fb91-44e8-848e-17a341df1d5b Version: $LATEST
 
@@ -4956,7 +4956,7 @@ The R Square of regression is 0.9150446041150034
 
 END RequestId: 10e2006a-fb91-44e8-848e-17a341df1d5b
 
-REPORT RequestId: 10e2006a-fb91-44e8-848e-17a341df1d5b	Duration: 5238.19 ms	Billed Duration: 5300 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 10e2006a-fb91-44e8-848e-17a341df1d5b	Duration: 5238.19 ms	Billed Duration: 5300 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 75c5e2e7-6fc8-4d78-b1ba-31010b4c32bb Version: $LATEST
 
@@ -4982,7 +4982,7 @@ The R Square of regression is 0.9179269650506143
 
 END RequestId: 75c5e2e7-6fc8-4d78-b1ba-31010b4c32bb
 
-REPORT RequestId: 75c5e2e7-6fc8-4d78-b1ba-31010b4c32bb	Duration: 3150.44 ms	Billed Duration: 3200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 75c5e2e7-6fc8-4d78-b1ba-31010b4c32bb	Duration: 3150.44 ms	Billed Duration: 3200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: f6813d2d-dce0-483f-b190-6454af752a3c Version: $LATEST
 
@@ -5008,7 +5008,7 @@ The R Square of regression is 0.7522798044482153
 
 END RequestId: f6813d2d-dce0-483f-b190-6454af752a3c
 
-REPORT RequestId: f6813d2d-dce0-483f-b190-6454af752a3c	Duration: 7478.88 ms	Billed Duration: 7500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: f6813d2d-dce0-483f-b190-6454af752a3c	Duration: 7478.88 ms	Billed Duration: 7500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: d65734bd-907e-4fab-8a37-b1cb8c963680 Version: $LATEST
 
@@ -5034,7 +5034,7 @@ The R Square of regression is 0.7708756030030047
 
 END RequestId: d65734bd-907e-4fab-8a37-b1cb8c963680
 
-REPORT RequestId: d65734bd-907e-4fab-8a37-b1cb8c963680	Duration: 5443.32 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: d65734bd-907e-4fab-8a37-b1cb8c963680	Duration: 5443.32 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 21a058d2-00dd-430d-9856-c756a257a4b4 Version: $LATEST
 
@@ -5060,7 +5060,7 @@ The R Square of regression is 0.776323040061707
 
 END RequestId: 21a058d2-00dd-430d-9856-c756a257a4b4
 
-REPORT RequestId: 21a058d2-00dd-430d-9856-c756a257a4b4	Duration: 4215.49 ms	Billed Duration: 4300 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 21a058d2-00dd-430d-9856-c756a257a4b4	Duration: 4215.49 ms	Billed Duration: 4300 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: a0bb61b7-528d-42f1-8151-99ee8facc4a0 Version: $LATEST
 
@@ -5086,7 +5086,7 @@ The R Square of regression is 0.7756640072592379
 
 END RequestId: a0bb61b7-528d-42f1-8151-99ee8facc4a0
 
-REPORT RequestId: a0bb61b7-528d-42f1-8151-99ee8facc4a0	Duration: 4383.02 ms	Billed Duration: 4400 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: a0bb61b7-528d-42f1-8151-99ee8facc4a0	Duration: 4383.02 ms	Billed Duration: 4400 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: e4308fc8-35e8-41e0-806e-5425206976d5 Version: $LATEST
 
@@ -5112,7 +5112,7 @@ The R Square of regression is 0.7641457965772039
 
 END RequestId: e4308fc8-35e8-41e0-806e-5425206976d5
 
-REPORT RequestId: e4308fc8-35e8-41e0-806e-5425206976d5	Duration: 4238.96 ms	Billed Duration: 4300 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: e4308fc8-35e8-41e0-806e-5425206976d5	Duration: 4238.96 ms	Billed Duration: 4300 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: b2392405-7d89-44da-aed4-6d169ea0d8dc Version: $LATEST
 
@@ -5138,7 +5138,7 @@ The R Square of regression is 0.665990353202661
 
 END RequestId: b2392405-7d89-44da-aed4-6d169ea0d8dc
 
-REPORT RequestId: b2392405-7d89-44da-aed4-6d169ea0d8dc	Duration: 2074.56 ms	Billed Duration: 2100 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: b2392405-7d89-44da-aed4-6d169ea0d8dc	Duration: 2074.56 ms	Billed Duration: 2100 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: d28f1738-7fb7-43ca-a8d6-502799773c59 Version: $LATEST
 
@@ -5164,7 +5164,7 @@ The R Square of regression is 0.6538206211396081
 
 END RequestId: d28f1738-7fb7-43ca-a8d6-502799773c59
 
-REPORT RequestId: d28f1738-7fb7-43ca-a8d6-502799773c59	Duration: 2061.63 ms	Billed Duration: 2100 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: d28f1738-7fb7-43ca-a8d6-502799773c59	Duration: 2061.63 ms	Billed Duration: 2100 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 14afa025-c8e7-4382-bee8-044f9273e660 Version: $LATEST
 
@@ -5190,7 +5190,7 @@ The R Square of regression is 0.8829713253363602
 
 END RequestId: 14afa025-c8e7-4382-bee8-044f9273e660
 
-REPORT RequestId: 14afa025-c8e7-4382-bee8-044f9273e660	Duration: 8080.82 ms	Billed Duration: 8100 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 14afa025-c8e7-4382-bee8-044f9273e660	Duration: 8080.82 ms	Billed Duration: 8100 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 375848a1-8329-4025-937d-9fcb29e3403a Version: $LATEST
 
@@ -5216,7 +5216,7 @@ The R Square of regression is 0.917970131760458
 
 END RequestId: 375848a1-8329-4025-937d-9fcb29e3403a
 
-REPORT RequestId: 375848a1-8329-4025-937d-9fcb29e3403a	Duration: 6565.45 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 375848a1-8329-4025-937d-9fcb29e3403a	Duration: 6565.45 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 978df3ba-2a2c-4d1a-871f-65627056f4df Version: $LATEST
 
@@ -5244,7 +5244,7 @@ The R Square of regression is 0.9065138656687965
 
 END RequestId: 978df3ba-2a2c-4d1a-871f-65627056f4df
 
-REPORT RequestId: 978df3ba-2a2c-4d1a-871f-65627056f4df	Duration: 8663.94 ms	Billed Duration: 8700 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 978df3ba-2a2c-4d1a-871f-65627056f4df	Duration: 8663.94 ms	Billed Duration: 8700 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: b8fefe20-e0b8-4e75-9b80-036dcfb89153 Version: $LATEST
 
@@ -5270,7 +5270,7 @@ The R Square of regression is 0.8909692807661164
 
 END RequestId: b8fefe20-e0b8-4e75-9b80-036dcfb89153
 
-REPORT RequestId: b8fefe20-e0b8-4e75-9b80-036dcfb89153	Duration: 5519.59 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: b8fefe20-e0b8-4e75-9b80-036dcfb89153	Duration: 5519.59 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: a412e32c-dfa9-4e50-bfd5-b80dd33f7626 Version: $LATEST
 
@@ -5296,7 +5296,7 @@ The R Square of regression is 0.8913228651362688
 
 END RequestId: a412e32c-dfa9-4e50-bfd5-b80dd33f7626
 
-REPORT RequestId: a412e32c-dfa9-4e50-bfd5-b80dd33f7626	Duration: 5558.94 ms	Billed Duration: 5600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: a412e32c-dfa9-4e50-bfd5-b80dd33f7626	Duration: 5558.94 ms	Billed Duration: 5600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 37cc8388-3358-424c-8abc-1e3e856542e0 Version: $LATEST
 
@@ -5322,7 +5322,7 @@ The R Square of regression is 0.8948637488539851
 
 END RequestId: 37cc8388-3358-424c-8abc-1e3e856542e0
 
-REPORT RequestId: 37cc8388-3358-424c-8abc-1e3e856542e0	Duration: 4395.30 ms	Billed Duration: 4400 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 37cc8388-3358-424c-8abc-1e3e856542e0	Duration: 4395.30 ms	Billed Duration: 4400 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: f8887c23-89a4-445e-8231-f17463486e60 Version: $LATEST
 
@@ -5348,7 +5348,7 @@ The R Square of regression is 0.9141134156220018
 
 END RequestId: f8887c23-89a4-445e-8231-f17463486e60
 
-REPORT RequestId: f8887c23-89a4-445e-8231-f17463486e60	Duration: 6651.93 ms	Billed Duration: 6700 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: f8887c23-89a4-445e-8231-f17463486e60	Duration: 6651.93 ms	Billed Duration: 6700 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: ce20e6c3-6c78-46c1-b43f-71302f646230 Version: $LATEST
 
@@ -5374,7 +5374,7 @@ The R Square of regression is 0.8796120858764261
 
 END RequestId: ce20e6c3-6c78-46c1-b43f-71302f646230
 
-REPORT RequestId: ce20e6c3-6c78-46c1-b43f-71302f646230	Duration: 5479.88 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: ce20e6c3-6c78-46c1-b43f-71302f646230	Duration: 5479.88 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: c8204c2b-8f06-44ab-9feb-a5c039fa39dd Version: $LATEST
 
@@ -5400,7 +5400,7 @@ The R Square of regression is 0.894869714306148
 
 END RequestId: c8204c2b-8f06-44ab-9feb-a5c039fa39dd
 
-REPORT RequestId: c8204c2b-8f06-44ab-9feb-a5c039fa39dd	Duration: 7642.57 ms	Billed Duration: 7700 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: c8204c2b-8f06-44ab-9feb-a5c039fa39dd	Duration: 7642.57 ms	Billed Duration: 7700 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: a69e85f2-09c1-49a3-802b-30e541e71b74 Version: $LATEST
 
@@ -5426,7 +5426,7 @@ The R Square of regression is 0.8933946346832704
 
 END RequestId: a69e85f2-09c1-49a3-802b-30e541e71b74
 
-REPORT RequestId: a69e85f2-09c1-49a3-802b-30e541e71b74	Duration: 7647.41 ms	Billed Duration: 7700 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: a69e85f2-09c1-49a3-802b-30e541e71b74	Duration: 7647.41 ms	Billed Duration: 7700 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: e0891e69-937e-4e8b-888e-4f25aa4b640a Version: $LATEST
 
@@ -5452,7 +5452,7 @@ The R Square of regression is 0.8624771881580304
 
 END RequestId: e0891e69-937e-4e8b-888e-4f25aa4b640a
 
-REPORT RequestId: e0891e69-937e-4e8b-888e-4f25aa4b640a	Duration: 3447.45 ms	Billed Duration: 3500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: e0891e69-937e-4e8b-888e-4f25aa4b640a	Duration: 3447.45 ms	Billed Duration: 3500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 01c2cca3-6481-4fe1-b29d-713618d42a36 Version: $LATEST
 
@@ -5478,7 +5478,7 @@ The R Square of regression is 0.8972154718323111
 
 END RequestId: 01c2cca3-6481-4fe1-b29d-713618d42a36
 
-REPORT RequestId: 01c2cca3-6481-4fe1-b29d-713618d42a36	Duration: 6536.91 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 01c2cca3-6481-4fe1-b29d-713618d42a36	Duration: 6536.91 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: dec5e7c2-9fc9-4a94-a457-475ad006dfbb Version: $LATEST
 
@@ -5504,7 +5504,7 @@ The R Square of regression is 0.8828361308342947
 
 END RequestId: dec5e7c2-9fc9-4a94-a457-475ad006dfbb
 
-REPORT RequestId: dec5e7c2-9fc9-4a94-a457-475ad006dfbb	Duration: 4459.31 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: dec5e7c2-9fc9-4a94-a457-475ad006dfbb	Duration: 4459.31 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 1eb80b11-7944-4907-8f76-d6d970184d03 Version: $LATEST
 
@@ -5530,7 +5530,7 @@ The R Square of regression is 0.888462894768446
 
 END RequestId: 1eb80b11-7944-4907-8f76-d6d970184d03
 
-REPORT RequestId: 1eb80b11-7944-4907-8f76-d6d970184d03	Duration: 3373.41 ms	Billed Duration: 3400 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 1eb80b11-7944-4907-8f76-d6d970184d03	Duration: 3373.41 ms	Billed Duration: 3400 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 7465d7c0-6f17-4565-bf21-c9ff8069c3e8 Version: $LATEST
 
@@ -5556,7 +5556,7 @@ The R Square of regression is 0.9135717917678642
 
 END RequestId: 7465d7c0-6f17-4565-bf21-c9ff8069c3e8
 
-REPORT RequestId: 7465d7c0-6f17-4565-bf21-c9ff8069c3e8	Duration: 4148.72 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 7465d7c0-6f17-4565-bf21-c9ff8069c3e8	Duration: 4148.72 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 89076651-8609-43a1-927f-b2b25d5bc17b Version: $LATEST
 
@@ -5582,7 +5582,7 @@ The R Square of regression is 0.9086918632346588
 
 END RequestId: 89076651-8609-43a1-927f-b2b25d5bc17b
 
-REPORT RequestId: 89076651-8609-43a1-927f-b2b25d5bc17b	Duration: 7268.12 ms	Billed Duration: 7300 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 89076651-8609-43a1-927f-b2b25d5bc17b	Duration: 7268.12 ms	Billed Duration: 7300 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: ebe11820-061a-4b69-b749-663fce6b0158 Version: $LATEST
 
@@ -5608,7 +5608,7 @@ The R Square of regression is 0.9114503634605208
 
 END RequestId: ebe11820-061a-4b69-b749-663fce6b0158
 
-REPORT RequestId: ebe11820-061a-4b69-b749-663fce6b0158	Duration: 6197.74 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: ebe11820-061a-4b69-b749-663fce6b0158	Duration: 6197.74 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: c56d1b27-d1bf-454e-ab67-b6ff32f62a59 Version: $LATEST
 
@@ -5634,7 +5634,7 @@ The R Square of regression is 0.912565712017245
 
 END RequestId: c56d1b27-d1bf-454e-ab67-b6ff32f62a59
 
-REPORT RequestId: c56d1b27-d1bf-454e-ab67-b6ff32f62a59	Duration: 6233.60 ms	Billed Duration: 6300 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: c56d1b27-d1bf-454e-ab67-b6ff32f62a59	Duration: 6233.60 ms	Billed Duration: 6300 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 2f572d4b-a27f-4e6f-9a98-bb7e70cadbdd Version: $LATEST
 
@@ -5660,7 +5660,7 @@ The R Square of regression is 0.9113263278506593
 
 END RequestId: 2f572d4b-a27f-4e6f-9a98-bb7e70cadbdd
 
-REPORT RequestId: 2f572d4b-a27f-4e6f-9a98-bb7e70cadbdd	Duration: 6192.63 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 2f572d4b-a27f-4e6f-9a98-bb7e70cadbdd	Duration: 6192.63 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 0a4ce08d-a886-45b7-b341-8226231d9502 Version: $LATEST
 
@@ -5686,7 +5686,7 @@ The R Square of regression is 0.8942173061280233
 
 END RequestId: 0a4ce08d-a886-45b7-b341-8226231d9502
 
-REPORT RequestId: 0a4ce08d-a886-45b7-b341-8226231d9502	Duration: 4080.71 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 0a4ce08d-a886-45b7-b341-8226231d9502	Duration: 4080.71 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 77b9c317-2d91-49ef-a7fb-7e7320485b3b Version: $LATEST
 
@@ -5712,7 +5712,7 @@ The R Square of regression is 0.9158583176492155
 
 END RequestId: 77b9c317-2d91-49ef-a7fb-7e7320485b3b
 
-REPORT RequestId: 77b9c317-2d91-49ef-a7fb-7e7320485b3b	Duration: 4072.76 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 77b9c317-2d91-49ef-a7fb-7e7320485b3b	Duration: 4072.76 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 8f9f5fea-67c7-41ad-96d3-b8742266f72c Version: $LATEST
 
@@ -5738,7 +5738,7 @@ The R Square of regression is 0.7906753793599881
 
 END RequestId: 8f9f5fea-67c7-41ad-96d3-b8742266f72c
 
-REPORT RequestId: 8f9f5fea-67c7-41ad-96d3-b8742266f72c	Duration: 5144.96 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 8f9f5fea-67c7-41ad-96d3-b8742266f72c	Duration: 5144.96 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 73167f24-bd74-4993-8f37-2d0bb179b5b2 Version: $LATEST
 
@@ -5764,7 +5764,7 @@ The R Square of regression is 0.7716172622350574
 
 END RequestId: 73167f24-bd74-4993-8f37-2d0bb179b5b2
 
-REPORT RequestId: 73167f24-bd74-4993-8f37-2d0bb179b5b2	Duration: 5163.88 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 73167f24-bd74-4993-8f37-2d0bb179b5b2	Duration: 5163.88 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: d5ab2a08-cbf3-4649-93e5-db98bf3875d9 Version: $LATEST
 
@@ -5790,7 +5790,7 @@ The R Square of regression is 0.7686550300630369
 
 END RequestId: d5ab2a08-cbf3-4649-93e5-db98bf3875d9
 
-REPORT RequestId: d5ab2a08-cbf3-4649-93e5-db98bf3875d9	Duration: 5202.05 ms	Billed Duration: 5300 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: d5ab2a08-cbf3-4649-93e5-db98bf3875d9	Duration: 5202.05 ms	Billed Duration: 5300 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 3a4d18d3-a198-4875-8bd7-cf042b5465f4 Version: $LATEST
 
@@ -5816,7 +5816,7 @@ The R Square of regression is 0.7751757106488307
 
 END RequestId: 3a4d18d3-a198-4875-8bd7-cf042b5465f4
 
-REPORT RequestId: 3a4d18d3-a198-4875-8bd7-cf042b5465f4	Duration: 3118.37 ms	Billed Duration: 3200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 3a4d18d3-a198-4875-8bd7-cf042b5465f4	Duration: 3118.37 ms	Billed Duration: 3200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 79175dca-2bb8-4a9d-8fff-e3ddfbf371a5 Version: $LATEST
 
@@ -5842,7 +5842,7 @@ The R Square of regression is 0.7691334783746571
 
 END RequestId: 79175dca-2bb8-4a9d-8fff-e3ddfbf371a5
 
-REPORT RequestId: 79175dca-2bb8-4a9d-8fff-e3ddfbf371a5	Duration: 5190.40 ms	Billed Duration: 5200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 79175dca-2bb8-4a9d-8fff-e3ddfbf371a5	Duration: 5190.40 ms	Billed Duration: 5200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: f65ebfcc-1b09-4554-b83b-b49883d73d3f Version: $LATEST
 
@@ -5868,7 +5868,7 @@ The R Square of regression is 0.6382558057084047
 
 END RequestId: f65ebfcc-1b09-4554-b83b-b49883d73d3f
 
-REPORT RequestId: f65ebfcc-1b09-4554-b83b-b49883d73d3f	Duration: 4163.17 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: f65ebfcc-1b09-4554-b83b-b49883d73d3f	Duration: 4163.17 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 4796d5ed-7465-49a5-a0c5-b0cfd3e11cb5 Version: $LATEST
 
@@ -5894,7 +5894,7 @@ The R Square of regression is 0.646882563842629
 
 END RequestId: 4796d5ed-7465-49a5-a0c5-b0cfd3e11cb5
 
-REPORT RequestId: 4796d5ed-7465-49a5-a0c5-b0cfd3e11cb5	Duration: 3110.73 ms	Billed Duration: 3200 ms 	Memory Size: 1024 MB	Max Memory Used: 378 MB	
+REPORT RequestId: 4796d5ed-7465-49a5-a0c5-b0cfd3e11cb5	Duration: 3110.73 ms	Billed Duration: 3200 ms 	Memory Size: 3008 MB	Max Memory Used: 378 MB	
 
 START RequestId: 3d00c3e1-3cf2-42cd-a36f-98e6720ef560 Version: $LATEST
 
@@ -5920,7 +5920,7 @@ The R Square of regression is 0.8731552931322731
 
 END RequestId: 3d00c3e1-3cf2-42cd-a36f-98e6720ef560
 
-REPORT RequestId: 3d00c3e1-3cf2-42cd-a36f-98e6720ef560	Duration: 5400.37 ms	Billed Duration: 5500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 3d00c3e1-3cf2-42cd-a36f-98e6720ef560	Duration: 5400.37 ms	Billed Duration: 5500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: bb266c2d-909a-4fd2-ad26-1727ebd33ea9 Version: $LATEST
 
@@ -5946,7 +5946,7 @@ The R Square of regression is 0.8881744370458187
 
 END RequestId: bb266c2d-909a-4fd2-ad26-1727ebd33ea9
 
-REPORT RequestId: bb266c2d-909a-4fd2-ad26-1727ebd33ea9	Duration: 6328.99 ms	Billed Duration: 6400 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: bb266c2d-909a-4fd2-ad26-1727ebd33ea9	Duration: 6328.99 ms	Billed Duration: 6400 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: f9182d12-882e-47cb-a762-7c6331670adc Version: $LATEST
 
@@ -5972,7 +5972,7 @@ The R Square of regression is 0.8873836957653699
 
 END RequestId: f9182d12-882e-47cb-a762-7c6331670adc
 
-REPORT RequestId: f9182d12-882e-47cb-a762-7c6331670adc	Duration: 6567.00 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: f9182d12-882e-47cb-a762-7c6331670adc	Duration: 6567.00 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: da67f709-8d03-4d8d-b9ad-2d777d21dd26 Version: $LATEST
 
@@ -5998,7 +5998,7 @@ The R Square of regression is 0.9145869676373188
 
 END RequestId: da67f709-8d03-4d8d-b9ad-2d777d21dd26
 
-REPORT RequestId: da67f709-8d03-4d8d-b9ad-2d777d21dd26	Duration: 6417.19 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: da67f709-8d03-4d8d-b9ad-2d777d21dd26	Duration: 6417.19 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 0241f8aa-34b4-4823-ba7a-b9da6fc45c1a Version: $LATEST
 
@@ -6024,7 +6024,7 @@ The R Square of regression is 0.909751794017405
 
 END RequestId: 0241f8aa-34b4-4823-ba7a-b9da6fc45c1a
 
-REPORT RequestId: 0241f8aa-34b4-4823-ba7a-b9da6fc45c1a	Duration: 7378.55 ms	Billed Duration: 7400 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 0241f8aa-34b4-4823-ba7a-b9da6fc45c1a	Duration: 7378.55 ms	Billed Duration: 7400 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 43bf6016-ee83-4f5e-8bd8-a7c137b6101d Version: $LATEST
 
@@ -6050,7 +6050,7 @@ The R Square of regression is 0.9141443188957505
 
 END RequestId: 43bf6016-ee83-4f5e-8bd8-a7c137b6101d
 
-REPORT RequestId: 43bf6016-ee83-4f5e-8bd8-a7c137b6101d	Duration: 6305.92 ms	Billed Duration: 6400 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 43bf6016-ee83-4f5e-8bd8-a7c137b6101d	Duration: 6305.92 ms	Billed Duration: 6400 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 8d761381-b967-4764-85dd-949ae6343685 Version: $LATEST
 
@@ -6076,7 +6076,7 @@ The R Square of regression is 0.9169588730077164
 
 END RequestId: 8d761381-b967-4764-85dd-949ae6343685
 
-REPORT RequestId: 8d761381-b967-4764-85dd-949ae6343685	Duration: 5286.04 ms	Billed Duration: 5300 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 8d761381-b967-4764-85dd-949ae6343685	Duration: 5286.04 ms	Billed Duration: 5300 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: f1b7b381-a8ae-4d7e-8b32-1ee220156fa6 Version: $LATEST
 
@@ -6102,7 +6102,7 @@ The R Square of regression is 0.9206968341724424
 
 END RequestId: f1b7b381-a8ae-4d7e-8b32-1ee220156fa6
 
-REPORT RequestId: f1b7b381-a8ae-4d7e-8b32-1ee220156fa6	Duration: 5326.66 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: f1b7b381-a8ae-4d7e-8b32-1ee220156fa6	Duration: 5326.66 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 43d40bdd-6a9c-436c-a3de-a7f1474b3c87 Version: $LATEST
 
@@ -6128,7 +6128,7 @@ The R Square of regression is 0.8979663604440469
 
 END RequestId: 43d40bdd-6a9c-436c-a3de-a7f1474b3c87
 
-REPORT RequestId: 43d40bdd-6a9c-436c-a3de-a7f1474b3c87	Duration: 6554.44 ms	Billed Duration: 6600 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 43d40bdd-6a9c-436c-a3de-a7f1474b3c87	Duration: 6554.44 ms	Billed Duration: 6600 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: f52c44be-d99f-48df-9d8a-abeb390f5202 Version: $LATEST
 
@@ -6154,7 +6154,7 @@ The R Square of regression is 0.8823609295995541
 
 END RequestId: f52c44be-d99f-48df-9d8a-abeb390f5202
 
-REPORT RequestId: f52c44be-d99f-48df-9d8a-abeb390f5202	Duration: 4425.48 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: f52c44be-d99f-48df-9d8a-abeb390f5202	Duration: 4425.48 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: d092f06e-623d-4e97-b40b-1743603b9c58 Version: $LATEST
 
@@ -6180,7 +6180,7 @@ The R Square of regression is 0.9028268708440379
 
 END RequestId: d092f06e-623d-4e97-b40b-1743603b9c58
 
-REPORT RequestId: d092f06e-623d-4e97-b40b-1743603b9c58	Duration: 5689.15 ms	Billed Duration: 5700 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: d092f06e-623d-4e97-b40b-1743603b9c58	Duration: 5689.15 ms	Billed Duration: 5700 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: b6b4b415-b1cf-4e9b-9a27-d4b45e9bf2d2 Version: $LATEST
 
@@ -6206,7 +6206,7 @@ The R Square of regression is 0.90677814905218
 
 END RequestId: b6b4b415-b1cf-4e9b-9a27-d4b45e9bf2d2
 
-REPORT RequestId: b6b4b415-b1cf-4e9b-9a27-d4b45e9bf2d2	Duration: 5359.90 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: b6b4b415-b1cf-4e9b-9a27-d4b45e9bf2d2	Duration: 5359.90 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 32b62e2b-225d-4519-bc74-165ab0d44b13 Version: $LATEST
 
@@ -6232,7 +6232,7 @@ The R Square of regression is 0.8829894196019702
 
 END RequestId: 32b62e2b-225d-4519-bc74-165ab0d44b13
 
-REPORT RequestId: 32b62e2b-225d-4519-bc74-165ab0d44b13	Duration: 4299.81 ms	Billed Duration: 4300 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 32b62e2b-225d-4519-bc74-165ab0d44b13	Duration: 4299.81 ms	Billed Duration: 4300 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 023cb1dc-6590-426e-ae6d-cc3f55ae56b9 Version: $LATEST
 
@@ -6258,7 +6258,7 @@ The R Square of regression is 0.9095289224753447
 
 END RequestId: 023cb1dc-6590-426e-ae6d-cc3f55ae56b9
 
-REPORT RequestId: 023cb1dc-6590-426e-ae6d-cc3f55ae56b9	Duration: 4412.41 ms	Billed Duration: 4500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 023cb1dc-6590-426e-ae6d-cc3f55ae56b9	Duration: 4412.41 ms	Billed Duration: 4500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: fa6e2d04-7287-4eb8-9315-e552aba9072b Version: $LATEST
 
@@ -6284,7 +6284,7 @@ The R Square of regression is 0.905715320225964
 
 END RequestId: fa6e2d04-7287-4eb8-9315-e552aba9072b
 
-REPORT RequestId: fa6e2d04-7287-4eb8-9315-e552aba9072b	Duration: 4687.74 ms	Billed Duration: 4700 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: fa6e2d04-7287-4eb8-9315-e552aba9072b	Duration: 4687.74 ms	Billed Duration: 4700 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: a9b2e018-e21f-4935-babf-f80696677ffa Version: $LATEST
 
@@ -6310,7 +6310,7 @@ The R Square of regression is 0.8706411313299617
 
 END RequestId: a9b2e018-e21f-4935-babf-f80696677ffa
 
-REPORT RequestId: a9b2e018-e21f-4935-babf-f80696677ffa	Duration: 2923.70 ms	Billed Duration: 3000 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: a9b2e018-e21f-4935-babf-f80696677ffa	Duration: 2923.70 ms	Billed Duration: 3000 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 6c22c993-3592-44e7-a9ab-7e0ca4be8b18 Version: $LATEST
 
@@ -6336,7 +6336,7 @@ The R Square of regression is 0.9076304699843091
 
 END RequestId: 6c22c993-3592-44e7-a9ab-7e0ca4be8b18
 
-REPORT RequestId: 6c22c993-3592-44e7-a9ab-7e0ca4be8b18	Duration: 7011.38 ms	Billed Duration: 7100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 6c22c993-3592-44e7-a9ab-7e0ca4be8b18	Duration: 7011.38 ms	Billed Duration: 7100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 23333b7e-0a45-4a83-9431-a5909cbb96ca Version: $LATEST
 
@@ -6362,7 +6362,7 @@ The R Square of regression is 0.8927766367226687
 
 END RequestId: 23333b7e-0a45-4a83-9431-a5909cbb96ca
 
-REPORT RequestId: 23333b7e-0a45-4a83-9431-a5909cbb96ca	Duration: 4133.07 ms	Billed Duration: 4200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 23333b7e-0a45-4a83-9431-a5909cbb96ca	Duration: 4133.07 ms	Billed Duration: 4200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 5bb22550-5e23-4dca-b097-7ae855a1ded6 Version: $LATEST
 
@@ -6388,7 +6388,7 @@ The R Square of regression is 0.9114087671935771
 
 END RequestId: 5bb22550-5e23-4dca-b097-7ae855a1ded6
 
-REPORT RequestId: 5bb22550-5e23-4dca-b097-7ae855a1ded6	Duration: 6408.15 ms	Billed Duration: 6500 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 5bb22550-5e23-4dca-b097-7ae855a1ded6	Duration: 6408.15 ms	Billed Duration: 6500 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 3667431d-7eb3-48f3-97c0-3e8233d11964 Version: $LATEST
 
@@ -6414,7 +6414,7 @@ The R Square of regression is 0.8907600909483209
 
 END RequestId: 3667431d-7eb3-48f3-97c0-3e8233d11964
 
-REPORT RequestId: 3667431d-7eb3-48f3-97c0-3e8233d11964	Duration: 5319.25 ms	Billed Duration: 5400 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 3667431d-7eb3-48f3-97c0-3e8233d11964	Duration: 5319.25 ms	Billed Duration: 5400 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: ffe8ec2e-4f07-42d2-9b31-2a102b6159b8 Version: $LATEST
 
@@ -6440,7 +6440,7 @@ The R Square of regression is 0.9130019085415223
 
 END RequestId: ffe8ec2e-4f07-42d2-9b31-2a102b6159b8
 
-REPORT RequestId: ffe8ec2e-4f07-42d2-9b31-2a102b6159b8	Duration: 6111.64 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: ffe8ec2e-4f07-42d2-9b31-2a102b6159b8	Duration: 6111.64 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: bb0895bc-0bef-4b57-bd5e-c63b1e76f772 Version: $LATEST
 
@@ -6466,7 +6466,7 @@ The R Square of regression is 0.9155174283985077
 
 END RequestId: bb0895bc-0bef-4b57-bd5e-c63b1e76f772
 
-REPORT RequestId: bb0895bc-0bef-4b57-bd5e-c63b1e76f772	Duration: 4035.86 ms	Billed Duration: 4100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: bb0895bc-0bef-4b57-bd5e-c63b1e76f772	Duration: 4035.86 ms	Billed Duration: 4100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: b8ac75f2-2dee-4d2b-a450-8c8de4d5bdc3 Version: $LATEST
 
@@ -6492,7 +6492,7 @@ The R Square of regression is 0.9183542066008925
 
 END RequestId: b8ac75f2-2dee-4d2b-a450-8c8de4d5bdc3
 
-REPORT RequestId: b8ac75f2-2dee-4d2b-a450-8c8de4d5bdc3	Duration: 3958.00 ms	Billed Duration: 4000 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: b8ac75f2-2dee-4d2b-a450-8c8de4d5bdc3	Duration: 3958.00 ms	Billed Duration: 4000 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: fa928d4c-d0d2-4154-801b-c7d6f5890797 Version: $LATEST
 
@@ -6518,7 +6518,7 @@ The R Square of regression is 0.7593927848529248
 
 END RequestId: fa928d4c-d0d2-4154-801b-c7d6f5890797
 
-REPORT RequestId: fa928d4c-d0d2-4154-801b-c7d6f5890797	Duration: 6096.85 ms	Billed Duration: 6100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: fa928d4c-d0d2-4154-801b-c7d6f5890797	Duration: 6096.85 ms	Billed Duration: 6100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 96cbc06d-649e-41db-8eaa-5f4e7e6dc690 Version: $LATEST
 
@@ -6544,7 +6544,7 @@ The R Square of regression is 0.7574977808163499
 
 END RequestId: 96cbc06d-649e-41db-8eaa-5f4e7e6dc690
 
-REPORT RequestId: 96cbc06d-649e-41db-8eaa-5f4e7e6dc690	Duration: 6132.15 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 96cbc06d-649e-41db-8eaa-5f4e7e6dc690	Duration: 6132.15 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: c507e216-eca6-4061-96cc-8f657b40b060 Version: $LATEST
 
@@ -6570,7 +6570,7 @@ The R Square of regression is 0.7769496898325645
 
 END RequestId: c507e216-eca6-4061-96cc-8f657b40b060
 
-REPORT RequestId: c507e216-eca6-4061-96cc-8f657b40b060	Duration: 3024.74 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: c507e216-eca6-4061-96cc-8f657b40b060	Duration: 3024.74 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 214b701b-cb96-4d59-a0a0-f4c8dca99ea1 Version: $LATEST
 
@@ -6596,7 +6596,7 @@ The R Square of regression is 0.7560747814092535
 
 END RequestId: 214b701b-cb96-4d59-a0a0-f4c8dca99ea1
 
-REPORT RequestId: 214b701b-cb96-4d59-a0a0-f4c8dca99ea1	Duration: 6119.08 ms	Billed Duration: 6200 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 214b701b-cb96-4d59-a0a0-f4c8dca99ea1	Duration: 6119.08 ms	Billed Duration: 6200 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: dabf1f8d-f308-4465-b3c8-7124c3d9fe6a Version: $LATEST
 
@@ -6622,7 +6622,7 @@ The R Square of regression is 0.6646204740533345
 
 END RequestId: dabf1f8d-f308-4465-b3c8-7124c3d9fe6a
 
-REPORT RequestId: dabf1f8d-f308-4465-b3c8-7124c3d9fe6a	Duration: 3024.19 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: dabf1f8d-f308-4465-b3c8-7124c3d9fe6a	Duration: 3024.19 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 
 START RequestId: 06c40f43-af52-49bc-8a3c-5e95d389f7ce Version: $LATEST
 
@@ -6648,5 +6648,5 @@ The R Square of regression is 0.648168819437591
 
 END RequestId: 06c40f43-af52-49bc-8a3c-5e95d389f7ce
 
-REPORT RequestId: 06c40f43-af52-49bc-8a3c-5e95d389f7ce	Duration: 3002.21 ms	Billed Duration: 3100 ms 	Memory Size: 1024 MB	Max Memory Used: 363 MB	
+REPORT RequestId: 06c40f43-af52-49bc-8a3c-5e95d389f7ce	Duration: 3002.21 ms	Billed Duration: 3100 ms 	Memory Size: 3008 MB	Max Memory Used: 363 MB	
 

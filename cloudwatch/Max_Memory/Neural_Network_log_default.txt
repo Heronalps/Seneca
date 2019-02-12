@@ -1,5 +1,5 @@
 {
-  "metric": 0.8330140014738393,
+  "metric": 0.7952837140751658,
   "event": {
     "parameters": [
       "activation",
@@ -54,23 +54,23 @@
   }
 }
 
-START RequestId: 08bcab80-9012-4f60-b78b-8cba645ad310 Version: $LATEST
+START RequestId: 0ede67b7-8043-40f7-ae71-ce742e26a20f Version: $LATEST
 =====Parameters=======
 {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_iter': 20, 'momentum': 0.9, 'nesterovs_momentum': True, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}
 /var/task/sklearn/neural_network/multilayer_perceptron.py:562: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (20) reached and the optimization hasn't converged yet.
   % self.max_iter, ConvergenceWarning)
-Accuracy Score : 0.8330140014738393
+Accuracy Score : 0.8274134119380987
               precision    recall  f1-score   support
 
-         41N       0.85      1.00      0.92      1407
-         64E       0.92      0.89      0.91      1317
-          80       0.65      0.95      0.77      1362
-         81W       0.99      0.44      0.61      1302
-         92E       0.93      0.86      0.90      1397
+         41N       0.94      0.99      0.97      1407
+         64E       1.00      0.82      0.90      1317
+          80       0.58      1.00      0.73      1362
+         81W       1.00      0.36      0.53      1302
+         92E       0.93      0.94      0.94      1397
 
    micro avg       0.83      0.83      0.83      6785
-   macro avg       0.87      0.83      0.82      6785
-weighted avg       0.87      0.83      0.82      6785
+   macro avg       0.89      0.82      0.81      6785
+weighted avg       0.89      0.83      0.82      6785
 
 Test dataset Distribution
 [['41N' 1407]
@@ -79,10 +79,10 @@ Test dataset Distribution
  ['81W' 1302]
  ['92E' 1397]]
 Prediction dataset Distribution
-[['41N' '1643']
- ['64E' '1277']
- ['80' '1994']
- ['81W' '583']
- ['92E' '1288']]
-END RequestId: 08bcab80-9012-4f60-b78b-8cba645ad310
-REPORT RequestId: 08bcab80-9012-4f60-b78b-8cba645ad310	Duration: 5930.08 ms	Billed Duration: 6000 ms 	Memory Size: 3008 MB	Max Memory Used: 304 MB	
+[['41N' '1484']
+ ['64E' '1076']
+ ['80' '2345']
+ ['81W' '467']
+ ['92E' '1413']]
+END RequestId: 0ede67b7-8043-40f7-ae71-ce742e26a20f
+REPORT RequestId: 0ede67b7-8043-40f7-ae71-ce742e26a20f	Duration: 2881.90 ms	Billed Duration: 2900 ms 	Memory Size: 3008 MB	Max Memory Used: 231 MB	

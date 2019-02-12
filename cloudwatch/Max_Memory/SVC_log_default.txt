@@ -36,7 +36,7 @@
   }
 }
 
-START RequestId: 8c1f36fc-84c5-4acc-8fc5-54661bec3be8 Version: $LATEST
+START RequestId: e2d6121a-d479-40a2-a31e-0573a354556a Version: $LATEST
 =====Parameters=======
 {'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}
 Downloading dataset from S3
@@ -69,5 +69,5 @@ Prediction dataset Distribution
  ['80' 16]
  ['81W' 11]
  ['92E' 6715]]
-END RequestId: 8c1f36fc-84c5-4acc-8fc5-54661bec3be8
-REPORT RequestId: 8c1f36fc-84c5-4acc-8fc5-54661bec3be8	Duration: 1136.12 ms	Billed Duration: 1200 ms 	Memory Size: 832 MB	Max Memory Used: 232 MB	
+END RequestId: e2d6121a-d479-40a2-a31e-0573a354556a
+REPORT RequestId: e2d6121a-d479-40a2-a31e-0573a354556a	Duration: 575.00 ms	Billed Duration: 600 ms 	Memory Size: 3008 MB	Max Memory Used: 201 MB	

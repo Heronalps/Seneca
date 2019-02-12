@@ -1,0 +1,48 @@
+{
+  "metric": 0.12342803385561674,
+  "event": {
+    "parameters": [
+      "base_score",
+      "booster",
+      "gamma",
+      "learning_rate",
+      "max_delta_step",
+      "max_depth",
+      "min_child_weight",
+      "n_estimators",
+      "n_jobs",
+      "objective",
+      "random_state",
+      "scale_pos_weight"
+    ],
+    "data": {
+      "base_score": 0.5,
+      "booster": "gbtree",
+      "gamma": 0,
+      "learning_rate": 0.1,
+      "max_delta_step": 0,
+      "max_depth": 3,
+      "min_child_weight": 1,
+      "n_estimators": 100,
+      "n_jobs": 1,
+      "objective": "reg:linear",
+      "random_state": 456,
+      "scale_pos_weight": 1
+    },
+    "dataset": "df_2017_downsampled.csv",
+    "test_size": 0.2
+  }
+}
+
+START RequestId: 4dea93a5-eef0-4784-8e50-4bf5de3320b0 Version: $LATEST
+=====Parameters=======
+{'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 456, 'scale_pos_weight': 1}
+Downloading Dataset from S3
+Mean Absolute Error : 0.12342803385561674
+====================
+(array([0, 1, 2, 3, 4]), array([1357, 1326, 1422, 1324, 1356]))
+(array([-1., -0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   2, 1293, 1331, 1562, 1278, 1318,    1]))
+====================
+Accuracy Score: 0.9540162122328666
+END RequestId: 4dea93a5-eef0-4784-8e50-4bf5de3320b0
+REPORT RequestId: 4dea93a5-eef0-4784-8e50-4bf5de3320b0	Duration: 2210.55 ms	Billed Duration: 2300 ms 	Memory Size: 3008 MB	Max Memory Used: 232 MB	

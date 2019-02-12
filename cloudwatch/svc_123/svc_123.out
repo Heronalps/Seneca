@@ -1,0 +1,741 @@
+=============Seneca==============
+The specified model is svc
+Config Path is at ./config/svc/config.py
+Lambda Path is at ./src/lambda_func/svc/svc.py
+Repeat invocation 13 times!
+Calling svc for 1 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]07273856e37447cbae6bb05b0d83ae70
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]169f0c0ea1d843bfb77d8452e3e812b8
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]18e982adc0e043d2a8b0528a901620b9
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]1fe476c4048c4c5fab4b13a7927bc209
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2c3462becc0940a0a6373cc700a90a7b
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]4bea5bea8ba943b8aee455330593ee1a
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]6763f65073b14e7bacf13f28dc6473aa
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]6c1bcfece8cd4040a4b9d29f326c881e
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]a4a7de7e1c684ca08aa42e206761e111
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c9077263bae145e5a97efc678bb59a93
+Done
+=====Time Stamp======
+1549867953.6057718
+===Async Tasks start===
+===Async Tasks end===
+118.87085700035095
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 2 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549868105.607441
+===Async Tasks start===
+===Async Tasks end===
+114.15814232826233
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 3 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549868253.1669395
+===Async Tasks start===
+===Async Tasks end===
+115.06270098686218
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 4 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549868401.412912
+===Async Tasks start===
+===Async Tasks end===
+116.91286587715149
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 5 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549868551.4987504
+===Async Tasks start===
+===Async Tasks end===
+115.50415062904358
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 6 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549868700.102076
+===Async Tasks start===
+===Async Tasks end===
+117.65557503700256
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 7 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549868850.819916
+===Async Tasks start===
+===Async Tasks end===
+115.57917881011963
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 8 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549868999.640765
+===Async Tasks start===
+===Async Tasks end===
+116.40646243095398
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 9 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549869149.0606563
+===Async Tasks start===
+===Async Tasks end===
+116.40461850166321
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 10 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549869298.6565118
+===Async Tasks start===
+===Async Tasks end===
+116.0241322517395
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 11 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549869448.0072603
+===Async Tasks start===
+===Async Tasks end===
+115.88492250442505
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 12 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549869597.3230667
+===Async Tasks start===
+===Async Tasks end===
+117.06328415870667
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 13 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549869747.6288695
+===Async Tasks start===
+===Async Tasks end===
+116.63303136825562
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@ip-172-31-29-184 v4.2.1 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1032-aws-x86_64-with-Ubuntu-18.04-bionic 2019-02-11 06:50:58
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fc36fbbd780
+- ** ---------- .> transport:   amqp://myuser:**@localhost:5672/myvhost
+- ** ---------- .> results:     redis://localhost/
+- *** --- * --- .> concurrency: 10 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+=============Seneca==============
+The specified model is svc
+Config Path is at ./config/svc/config.py
+Lambda Path is at ./src/lambda_func/svc/svc.py
+Repeat invocation 13 times!
+Calling svc for 1 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549869982.7257967
+===Async Tasks start===
+===Async Tasks end===
+116.10052847862244
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 2 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549870131.9661772
+===Async Tasks start===
+===Async Tasks end===
+116.42123627662659
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 3 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549870281.5532942
+===Async Tasks start===
+===Async Tasks end===
+117.00431394577026
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 4 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549870432.5190377
+===Async Tasks start===
+===Async Tasks end===
+116.09764432907104
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 5 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549870586.9885464
+===Async Tasks start===
+===Async Tasks end===
+117.4148850440979
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 6 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549870737.5854235
+===Async Tasks start===
+===Async Tasks end===
+116.2904896736145
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 7 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549870887.1034772
+===Async Tasks start===
+===Async Tasks end===
+116.5992534160614
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 8 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549871036.9019654
+===Async Tasks start===
+===Async Tasks end===
+116.94339799880981
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 9 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549871187.0372095
+===Async Tasks start===
+===Async Tasks end===
+115.88160634040833
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 10 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549871336.0891159
+===Async Tasks start===
+===Async Tasks end===
+116.85002899169922
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 11 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549871486.1521103
+===Async Tasks start===
+===Async Tasks end===
+116.65212488174438
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 12 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549871635.9088988
+===Async Tasks start===
+===Async Tasks end===
+116.52486944198608
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 13 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549871785.6100812
+===Async Tasks start===
+===Async Tasks end===
+116.75610661506653
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@ip-172-31-29-184 v4.2.1 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1032-aws-x86_64-with-Ubuntu-18.04-bionic 2019-02-11 07:26:01
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fe8ffb70780
+- ** ---------- .> transport:   amqp://myuser:**@localhost:5672/myvhost
+- ** ---------- .> results:     redis://localhost/
+- *** --- * --- .> concurrency: 10 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+=============Seneca==============
+The specified model is svc
+Config Path is at ./config/svc/config.py
+Lambda Path is at ./src/lambda_func/svc/svc.py
+Repeat invocation 4 times!
+Calling svc for 1 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]0d3c26138d564ef7a1ef6bbc2932ac19
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]2b91546420c846ebbb72ba218ccedc22
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]533d4224690f47bbb9d1c243b636c3e5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]97cc73b739f44c99af39b52e55453c12
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]c342d0292a4d429589808740e2212f4c
+Done
+=====Time Stamp======
+1549872470.0947182
+===Async Tasks start===
+===Async Tasks end===
+118.94925880432129
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 2 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]4548561e600c4eae80e13f02cf447c0b
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]4ff94c86f8fd462ba940fb1ed0fda3b5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]83845fb44772425092f80f8d119e742d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]8bddf937ff584ce495368d9cb308dbd1
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9bbeaefd91284d5d84b65150824fbb8f
+Done
+=====Time Stamp======
+1549872622.2032263
+===Async Tasks start===
+===Async Tasks end===
+118.11612606048584
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 3 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]4548561e600c4eae80e13f02cf447c0b
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]4ff94c86f8fd462ba940fb1ed0fda3b5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]83845fb44772425092f80f8d119e742d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]8bddf937ff584ce495368d9cb308dbd1
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9bbeaefd91284d5d84b65150824fbb8f
+Done
+=====Time Stamp======
+1549872773.6676817
+===Async Tasks start===
+===Async Tasks end===
+117.6850233078003
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling svc for 4 times!
+Run Hyperparameter Tuning on support vector classification
+[/aws/lambda/svc_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/svc_worker
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]44a686e6cf104647b0882055b73571a4
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]4548561e600c4eae80e13f02cf447c0b
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]4ff94c86f8fd462ba940fb1ed0fda3b5
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74298613528d49fa8ba59f1a533d5670
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]74dd6e4a8189427f9c3ee7c6fdd01d37
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]78eec1f9f4a24b31a573d94ce802e02d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]83845fb44772425092f80f8d119e742d
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]8bddf937ff584ce495368d9cb308dbd1
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9380b39f0dd24b128be3e99ec2c31585
+[/aws/lambda/svc_worker] Deleted stream: 2019/02/11/[$LATEST]9bbeaefd91284d5d84b65150824fbb8f
+Done
+=====Time Stamp======
+1549872924.555623
+===Async Tasks start===
+===Async Tasks end===
+119.45186734199524
+0.4081061164333088
+{'parameters': ['c', 'cache_size', 'coef0', 'decision_function_shape', 'degree', 'gamma', 'kernel', 'max_iter', 'probability', 'random_state', 'shrinking', 'tol', 'verbose'], 'data': {'c': 0.5, 'cache_size': 5.0, 'coef0': 1.0, 'decision_function_shape': 'ovo', 'degree': 4, 'gamma': 'auto', 'kernel': 'poly', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+

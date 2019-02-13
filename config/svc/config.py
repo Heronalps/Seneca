@@ -27,7 +27,7 @@ class Hyperparameter:
     VERBOSE = [False]
     MAX_ITER = [20]
     DECISION_FUNCTION_SHAPE = ['ovo', 'ovr'] # one-over-one(ovo), one-over-rest(ovr)
-    RANDOM_STATE = [456]
+    RANDOM_STATE = [123]
 
 class Config:
     # The Dataset filename 

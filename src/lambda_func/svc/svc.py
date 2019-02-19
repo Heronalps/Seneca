@@ -1,4 +1,4 @@
-import os, boto3
+import os, boto3, time
 import pandas as pd
 import numpy as np
 from sklearn.metrics import accuracy_score
@@ -31,6 +31,7 @@ directory_2017 = {
 }
 
 def lambda_handler(event, context={}):
+    ts = time.time()
     # Load parameters
     parameter_list = event['parameters']
     parameters = {}
@@ -70,4 +71,5 @@ def lambda_handler(event, context={}):
     print("Prediction dataset Distribution")
     print(np.asarray((unique, count)).T)
 
+    print ("Lambda time: {0}".format(time.time() - ts))
     return {'metric': accu_score, 'event': event}

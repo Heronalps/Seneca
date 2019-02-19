@@ -1,0 +1,39 @@
+START RequestId: 9af57a61-748a-483b-aa98-983d410dfe1a Version: $LATEST
+END RequestId: 9af57a61-748a-483b-aa98-983d410dfe1a
+REPORT RequestId: 9af57a61-748a-483b-aa98-983d410dfe1a	Duration: 28563.39 ms	Billed Duration: 28600 ms Memory Size: 128 MB	Max Memory Used: 31 MB
+
+START RequestId: 6fb44ff8-2615-451e-970d-d0dd77509763 Version: $LATEST
+END RequestId: 6fb44ff8-2615-451e-970d-d0dd77509763
+REPORT RequestId: 6fb44ff8-2615-451e-970d-d0dd77509763	Duration: 28341.90 ms	Billed Duration: 28400 ms Memory Size: 128 MB	Max Memory Used: 30 MB
+
+START RequestId: f35a1f25-2f47-4f74-999f-b59a9dba1d5b Version: $LATEST
+END RequestId: f35a1f25-2f47-4f74-999f-b59a9dba1d5b
+REPORT RequestId: f35a1f25-2f47-4f74-999f-b59a9dba1d5b	Duration: 27973.61 ms	Billed Duration: 28000 ms Memory Size: 128 MB	Max Memory Used: 31 MB
+
+START RequestId: a902d7d8-29a6-47a1-884e-eafa9898026a Version: $LATEST
+END RequestId: a902d7d8-29a6-47a1-884e-eafa9898026a
+REPORT RequestId: a902d7d8-29a6-47a1-884e-eafa9898026a	Duration: 29147.12 ms	Billed Duration: 29200 ms Memory Size: 128 MB	Max Memory Used: 64 MB	
+
+START RequestId: 2fe7be73-a642-4147-9f2b-c7a9a695f67a Version: $LATEST
+END RequestId: 2fe7be73-a642-4147-9f2b-c7a9a695f67a
+REPORT RequestId: 2fe7be73-a642-4147-9f2b-c7a9a695f67a	Duration: 29072.73 ms	Billed Duration: 29100 ms Memory Size: 128 MB	Max Memory Used: 64 MB	
+
+START RequestId: 69b11877-64d8-41cf-9cec-9d4470e58d58 Version: $LATEST
+END RequestId: 69b11877-64d8-41cf-9cec-9d4470e58d58
+REPORT RequestId: 69b11877-64d8-41cf-9cec-9d4470e58d58	Duration: 28982.38 ms	Billed Duration: 29000 ms 	Memory Size: 128 MB	Max Memory Used: 64 MB	
+
+START RequestId: 964f34e4-1304-4c3f-9871-b5fe16d9b9e3 Version: $LATEST
+END RequestId: 964f34e4-1304-4c3f-9871-b5fe16d9b9e3
+REPORT RequestId: 964f34e4-1304-4c3f-9871-b5fe16d9b9e3	Duration: 27758.14 ms	Billed Duration: 27800 ms 	Memory Size: 128 MB	Max Memory Used: 31 MB	
+
+START RequestId: 2fa8a01c-d74f-497d-aaee-1e678568895f Version: $LATEST
+END RequestId: 2fa8a01c-d74f-497d-aaee-1e678568895f
+REPORT RequestId: 2fa8a01c-d74f-497d-aaee-1e678568895f	Duration: 27845.51 ms	Billed Duration: 27900 ms 	Memory Size: 128 MB	Max Memory Used: 31 MB	
+
+START RequestId: f815cbc1-68cd-4821-bbb6-4ae39a31680d Version: $LATEST
+END RequestId: f815cbc1-68cd-4821-bbb6-4ae39a31680d
+REPORT RequestId: f815cbc1-68cd-4821-bbb6-4ae39a31680d	Duration: 27790.11 ms	Billed Duration: 27800 ms 	Memory Size: 128 MB	Max Memory Used: 31 MB	
+
+START RequestId: 1e5a1189-ae98-452c-ad26-3893dedbd9a3 Version: $LATEST
+END RequestId: 1e5a1189-ae98-452c-ad26-3893dedbd9a3
+REPORT RequestId: 1e5a1189-ae98-452c-ad26-3893dedbd9a3	Duration: 27888.63 ms	Billed Duration: 27900 ms 	Memory Size: 128 MB	Max Memory Used: 31 MB	

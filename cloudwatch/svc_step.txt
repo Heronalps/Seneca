@@ -1,0 +1,1763 @@
+START RequestId: 7704229b-750d-4c6c-8be8-c8ccb34875f6 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 7704229b-750d-4c6c-8be8-c8ccb34875f6
+REPORT RequestId: 7704229b-750d-4c6c-8be8-c8ccb34875f6	Duration: 7715.11 ms	Billed Duration: 7800 ms 	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+START RequestId: 97b00ef6-93df-4f4f-80a3-f7c340122797 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 97b00ef6-93df-4f4f-80a3-f7c340122797
+REPORT RequestId: 97b00ef6-93df-4f4f-80a3-f7c340122797	Duration: 4693.66 ms	Billed Duration: 4700 ms 	Memory Size: 192 MB	Max Memory Used: 192 MB	
+
+START RequestId: 2bdb4a8b-2158-4e91-a1db-2360498bbba6 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 2bdb4a8b-2158-4e91-a1db-2360498bbba6
+REPORT RequestId: 2bdb4a8b-2158-4e91-a1db-2360498bbba6	Duration: 3522.85 ms	Billed Duration: 3600 ms 	Memory Size: 256 MB	Max Memory Used: 186 MB	
+
+START RequestId: 03412c14-1b71-405f-a376-0c3831c5d9ca Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 03412c14-1b71-405f-a376-0c3831c5d9ca
+REPORT RequestId: 03412c14-1b71-405f-a376-0c3831c5d9ca	Duration: 3477.67 ms	Billed Duration: 3500 ms 	Memory Size: 256 MB	Max Memory Used: 188 MB	
+
+START RequestId: 4966bd11-3818-4dcf-9bb1-d820c4f8a448 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 4966bd11-3818-4dcf-9bb1-d820c4f8a448
+REPORT RequestId: 4966bd11-3818-4dcf-9bb1-d820c4f8a448	Duration: 3460.21 ms	Billed Duration: 3500 ms 	Memory Size: 256 MB	Max Memory Used: 188 MB	
+
+START RequestId: 7d09c663-c321-4189-b33f-fc1677653649 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 7d09c663-c321-4189-b33f-fc1677653649
+REPORT RequestId: 7d09c663-c321-4189-b33f-fc1677653649	Duration: 3516.31 ms	Billed Duration: 3600 ms 	Memory Size: 256 MB	Max Memory Used: 188 MB	
+
+START RequestId: be371efe-6bd9-48bb-96ea-b4b8a9d4da52 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: be371efe-6bd9-48bb-96ea-b4b8a9d4da52
+REPORT RequestId: be371efe-6bd9-48bb-96ea-b4b8a9d4da52	Duration: 2756.82 ms	Billed Duration: 2800 ms 	Memory Size: 320 MB	Max Memory Used: 186 MB	
+
+START RequestId: 2cb7e7e4-afa6-40ea-afb3-64d1f685ffba Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 2cb7e7e4-afa6-40ea-afb3-64d1f685ffba
+REPORT RequestId: 2cb7e7e4-afa6-40ea-afb3-64d1f685ffba	Duration: 2290.37 ms	Billed Duration: 2300 ms 	Memory Size: 384 MB	Max Memory Used: 186 MB	
+
+START RequestId: 95a8c595-6057-4e00-b301-e70e18eb63cc Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 95a8c595-6057-4e00-b301-e70e18eb63cc
+REPORT RequestId: 95a8c595-6057-4e00-b301-e70e18eb63cc	Duration: 1978.14 ms	Billed Duration: 2000 ms 	Memory Size: 448 MB	Max Memory Used: 186 MB	
+
+START RequestId: 44d47a92-aa2d-48b8-900f-a58b725afcdd Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 44d47a92-aa2d-48b8-900f-a58b725afcdd
+REPORT RequestId: 44d47a92-aa2d-48b8-900f-a58b725afcdd	Duration: 1710.13 ms	Billed Duration: 1800 ms 	Memory Size: 512 MB	Max Memory Used: 186 MB	
+
+START RequestId: 2334b3b7-680c-4ade-8669-d511da7e65bd Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 2334b3b7-680c-4ade-8669-d511da7e65bd
+REPORT RequestId: 2334b3b7-680c-4ade-8669-d511da7e65bd	Duration: 1545.48 ms	Billed Duration: 1600 ms 	Memory Size: 576 MB	Max Memory Used: 186 MB	
+
+START RequestId: 39a3b8b2-e2de-41c7-9e5f-da25bd0fc81f Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 39a3b8b2-e2de-41c7-9e5f-da25bd0fc81f
+REPORT RequestId: 39a3b8b2-e2de-41c7-9e5f-da25bd0fc81f	Duration: 1466.75 ms	Billed Duration: 1500 ms 	Memory Size: 640 MB	Max Memory Used: 187 MB	
+
+START RequestId: 60d51942-b06e-4a7b-94d9-fc0c9e147e93 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 60d51942-b06e-4a7b-94d9-fc0c9e147e93
+REPORT RequestId: 60d51942-b06e-4a7b-94d9-fc0c9e147e93	Duration: 1253.13 ms	Billed Duration: 1300 ms 	Memory Size: 704 MB	Max Memory Used: 186 MB	
+
+START RequestId: b47a4066-9c37-4e9c-91c2-d38452a6b217 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: b47a4066-9c37-4e9c-91c2-d38452a6b217
+REPORT RequestId: b47a4066-9c37-4e9c-91c2-d38452a6b217	Duration: 1194.68 ms	Billed Duration: 1200 ms 	Memory Size: 768 MB	Max Memory Used: 187 MB	
+
+START RequestId: f4dcafc4-7b49-4d8d-acdb-3973484bea3b Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: f4dcafc4-7b49-4d8d-acdb-3973484bea3b
+REPORT RequestId: f4dcafc4-7b49-4d8d-acdb-3973484bea3b	Duration: 1103.38 ms	Billed Duration: 1200 ms 	Memory Size: 832 MB	Max Memory Used: 187 MB	
+
+START RequestId: 510b7275-3422-4ebf-8267-bd3c9c62c3b9 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 510b7275-3422-4ebf-8267-bd3c9c62c3b9
+REPORT RequestId: 510b7275-3422-4ebf-8267-bd3c9c62c3b9	Duration: 995.39 ms	Billed Duration: 1000 ms 	Memory Size: 896 MB	Max Memory Used: 187 MB	
+
+START RequestId: 126ee53f-0397-4c6c-b3ac-5a3ae4fd6ab5 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 126ee53f-0397-4c6c-b3ac-5a3ae4fd6ab5
+REPORT RequestId: 126ee53f-0397-4c6c-b3ac-5a3ae4fd6ab5	Duration: 924.22 ms	Billed Duration: 1000 ms 	Memory Size: 960 MB	Max Memory Used: 187 MB	
+
+START RequestId: 59caaea3-ae4d-40a0-8991-b10c0b545424 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 59caaea3-ae4d-40a0-8991-b10c0b545424
+REPORT RequestId: 59caaea3-ae4d-40a0-8991-b10c0b545424	Duration: 881.29 ms	Billed Duration: 900 ms 	Memory Size: 1024 MB	Max Memory Used: 187 MB	
+
+START RequestId: 975c4d8a-c118-4f7a-bb12-44a71f9969d1 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 975c4d8a-c118-4f7a-bb12-44a71f9969d1
+REPORT RequestId: 975c4d8a-c118-4f7a-bb12-44a71f9969d1	Duration: 967.29 ms	Billed Duration: 1000 ms 	Memory Size: 1088 MB	Max Memory Used: 232 MB	
+
+START RequestId: 92544621-9eee-455f-a3ad-c72d52d60e51 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 92544621-9eee-455f-a3ad-c72d52d60e51
+REPORT RequestId: 92544621-9eee-455f-a3ad-c72d52d60e51	Duration: 813.17 ms	Billed Duration: 900 ms 	Memory Size: 1152 MB	Max Memory Used: 187 MB	
+
+START RequestId: 2c0a0bf3-5109-4887-bfbb-207841e47399 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 2c0a0bf3-5109-4887-bfbb-207841e47399
+REPORT RequestId: 2c0a0bf3-5109-4887-bfbb-207841e47399	Duration: 750.35 ms	Billed Duration: 800 ms 	Memory Size: 1216 MB	Max Memory Used: 187 MB	
+
+START RequestId: 1bace967-ea60-4784-a830-6cd1c01d1d20 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 1bace967-ea60-4784-a830-6cd1c01d1d20
+REPORT RequestId: 1bace967-ea60-4784-a830-6cd1c01d1d20	Duration: 709.96 ms	Billed Duration: 800 ms 	Memory Size: 1280 MB	Max Memory Used: 187 MB	
+
+START RequestId: 72be5c94-d043-426e-b0d6-994d7b796832 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 72be5c94-d043-426e-b0d6-994d7b796832
+REPORT RequestId: 72be5c94-d043-426e-b0d6-994d7b796832	Duration: 672.95 ms	Billed Duration: 700 ms 	Memory Size: 1344 MB	Max Memory Used: 187 MB	
+
+START RequestId: 82b32fe7-38ec-4363-b9d6-d7c93e18606a Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 82b32fe7-38ec-4363-b9d6-d7c93e18606a
+REPORT RequestId: 82b32fe7-38ec-4363-b9d6-d7c93e18606a	Duration: 687.72 ms	Billed Duration: 700 ms 	Memory Size: 1408 MB	Max Memory Used: 187 MB	
+
+START RequestId: 06948c49-3c44-490d-8e9a-553414e595f8 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 06948c49-3c44-490d-8e9a-553414e595f8
+REPORT RequestId: 06948c49-3c44-490d-8e9a-553414e595f8	Duration: 678.67 ms	Billed Duration: 700 ms 	Memory Size: 1472 MB	Max Memory Used: 187 MB	
+
+START RequestId: 947559f7-03ee-4f73-a531-83a959dfdfa5 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 947559f7-03ee-4f73-a531-83a959dfdfa5
+REPORT RequestId: 947559f7-03ee-4f73-a531-83a959dfdfa5	Duration: 678.66 ms	Billed Duration: 700 ms 	Memory Size: 1536 MB	Max Memory Used: 187 MB	
+
+START RequestId: 81f9438b-a80c-4df0-8ff0-668733aac7b7 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 81f9438b-a80c-4df0-8ff0-668733aac7b7
+REPORT RequestId: 81f9438b-a80c-4df0-8ff0-668733aac7b7	Duration: 779.96 ms	Billed Duration: 800 ms 	Memory Size: 1600 MB	Max Memory Used: 188 MB	
+
+START RequestId: f4a70911-3965-478d-9a03-1f002a214999 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: f4a70911-3965-478d-9a03-1f002a214999
+REPORT RequestId: f4a70911-3965-478d-9a03-1f002a214999	Duration: 654.21 ms	Billed Duration: 700 ms 	Memory Size: 1664 MB	Max Memory Used: 187 MB	
+
+START RequestId: 1673341a-cf94-4fc7-9ab1-9b8a0fd47be2 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 1673341a-cf94-4fc7-9ab1-9b8a0fd47be2
+REPORT RequestId: 1673341a-cf94-4fc7-9ab1-9b8a0fd47be2	Duration: 606.52 ms	Billed Duration: 700 ms 	Memory Size: 1728 MB	Max Memory Used: 232 MB	
+
+START RequestId: 6185286b-acee-4589-9ce0-f000a8fd62b5 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 6185286b-acee-4589-9ce0-f000a8fd62b5
+REPORT RequestId: 6185286b-acee-4589-9ce0-f000a8fd62b5	Duration: 563.27 ms	Billed Duration: 600 ms 	Memory Size: 1792 MB	Max Memory Used: 188 MB	
+
+START RequestId: cb543965-f701-4657-819b-a68f774c3eff Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: cb543965-f701-4657-819b-a68f774c3eff
+REPORT RequestId: cb543965-f701-4657-819b-a68f774c3eff	Duration: 584.79 ms	Billed Duration: 600 ms 	Memory Size: 1856 MB	Max Memory Used: 188 MB	
+
+START RequestId: a64e2ca3-2013-4071-bf5f-9b197796bf41 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: a64e2ca3-2013-4071-bf5f-9b197796bf41
+REPORT RequestId: a64e2ca3-2013-4071-bf5f-9b197796bf41	Duration: 563.68 ms	Billed Duration: 600 ms 	Memory Size: 1920 MB	Max Memory Used: 233 MB	
+
+START RequestId: 51adf9fe-bfef-4825-89f1-41c69211a029 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 51adf9fe-bfef-4825-89f1-41c69211a029
+REPORT RequestId: 51adf9fe-bfef-4825-89f1-41c69211a029	Duration: 654.78 ms	Billed Duration: 700 ms 	Memory Size: 1984 MB	Max Memory Used: 188 MB	
+
+START RequestId: 0d5603ae-34b1-4b29-8bbf-bf02d293e42f Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 0d5603ae-34b1-4b29-8bbf-bf02d293e42f
+REPORT RequestId: 0d5603ae-34b1-4b29-8bbf-bf02d293e42f	Duration: 600.19 ms	Billed Duration: 700 ms 	Memory Size: 2048 MB	Max Memory Used: 188 MB	
+
+START RequestId: 14e9025e-2205-4ac9-a513-032c245cea03 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 14e9025e-2205-4ac9-a513-032c245cea03
+REPORT RequestId: 14e9025e-2205-4ac9-a513-032c245cea03	Duration: 583.32 ms	Billed Duration: 600 ms 	Memory Size: 2112 MB	Max Memory Used: 233 MB	
+
+START RequestId: 74d41d43-c22c-49c3-b1bf-bd87074a6538 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 74d41d43-c22c-49c3-b1bf-bd87074a6538
+REPORT RequestId: 74d41d43-c22c-49c3-b1bf-bd87074a6538	Duration: 594.00 ms	Billed Duration: 600 ms 	Memory Size: 2176 MB	Max Memory Used: 188 MB	
+
+START RequestId: 9268e524-9e20-488f-8239-33f011fb5f1a Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 9268e524-9e20-488f-8239-33f011fb5f1a
+REPORT RequestId: 9268e524-9e20-488f-8239-33f011fb5f1a	Duration: 526.18 ms	Billed Duration: 600 ms 	Memory Size: 2240 MB	Max Memory Used: 233 MB	
+
+START RequestId: c1a7f77c-f53c-4866-baca-0aaff5ce477e Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: c1a7f77c-f53c-4866-baca-0aaff5ce477e
+REPORT RequestId: c1a7f77c-f53c-4866-baca-0aaff5ce477e	Duration: 573.16 ms	Billed Duration: 600 ms 	Memory Size: 2304 MB	Max Memory Used: 188 MB	
+
+START RequestId: 2396fb2d-c5ba-4b8b-8489-09e0326fb023 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 2396fb2d-c5ba-4b8b-8489-09e0326fb023
+REPORT RequestId: 2396fb2d-c5ba-4b8b-8489-09e0326fb023	Duration: 574.58 ms	Billed Duration: 600 ms 	Memory Size: 2368 MB	Max Memory Used: 188 MB	
+
+START RequestId: b73c756d-f6a8-4354-b57b-e4411eced6ee Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: b73c756d-f6a8-4354-b57b-e4411eced6ee
+REPORT RequestId: b73c756d-f6a8-4354-b57b-e4411eced6ee	Duration: 652.52 ms	Billed Duration: 700 ms 	Memory Size: 2432 MB	Max Memory Used: 233 MB	
+
+START RequestId: 61f6f73b-fdcc-4080-9793-6a2b29097436 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 61f6f73b-fdcc-4080-9793-6a2b29097436
+REPORT RequestId: 61f6f73b-fdcc-4080-9793-6a2b29097436	Duration: 583.99 ms	Billed Duration: 600 ms 	Memory Size: 2496 MB	Max Memory Used: 189 MB	
+
+START RequestId: a56e2eae-1a2e-4685-a8e6-0d4171838a92 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: a56e2eae-1a2e-4685-a8e6-0d4171838a92
+REPORT RequestId: a56e2eae-1a2e-4685-a8e6-0d4171838a92	Duration: 592.45 ms	Billed Duration: 600 ms 	Memory Size: 2560 MB	Max Memory Used: 188 MB	
+
+START RequestId: d313910a-0c32-439c-b542-23bbb8163991 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: d313910a-0c32-439c-b542-23bbb8163991
+REPORT RequestId: d313910a-0c32-439c-b542-23bbb8163991	Duration: 546.43 ms	Billed Duration: 600 ms 	Memory Size: 2624 MB	Max Memory Used: 233 MB	
+
+START RequestId: f31bb53e-02a7-44f0-ac64-20c8202a0828 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: f31bb53e-02a7-44f0-ac64-20c8202a0828
+REPORT RequestId: f31bb53e-02a7-44f0-ac64-20c8202a0828	Duration: 564.73 ms	Billed Duration: 600 ms 	Memory Size: 2688 MB	Max Memory Used: 189 MB	
+
+START RequestId: 480df05a-101f-4077-a591-7b21b61d72eb Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 480df05a-101f-4077-a591-7b21b61d72eb
+REPORT RequestId: 480df05a-101f-4077-a591-7b21b61d72eb	Duration: 573.44 ms	Billed Duration: 600 ms 	Memory Size: 2752 MB	Max Memory Used: 234 MB	
+
+START RequestId: 51f11e45-ce7b-466b-a831-c06054515a5c Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 51f11e45-ce7b-466b-a831-c06054515a5c
+REPORT RequestId: 51f11e45-ce7b-466b-a831-c06054515a5c	Duration: 1145.37 ms	Billed Duration: 1200 ms 	Memory Size: 2816 MB	Max Memory Used: 189 MB	
+
+START RequestId: 5b9f7ee7-704d-4f0b-b611-040e15a0321c Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 5b9f7ee7-704d-4f0b-b611-040e15a0321c
+REPORT RequestId: 5b9f7ee7-704d-4f0b-b611-040e15a0321c	Duration: 610.93 ms	Billed Duration: 700 ms 	Memory Size: 2880 MB	Max Memory Used: 234 MB	
+
+START RequestId: 9385e592-625a-4eca-8fea-f5b1ce7f5a35 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: 9385e592-625a-4eca-8fea-f5b1ce7f5a35
+REPORT RequestId: 9385e592-625a-4eca-8fea-f5b1ce7f5a35	Duration: 566.86 ms	Billed Duration: 600 ms 	Memory Size: 2944 MB	Max Memory Used: 189 MB	
+
+START RequestId: ebe26395-5f72-449f-bf92-59d39fb60c76 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 456, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.20854826823876196
+              precision    recall  f1-score   support
+
+         41N       1.00      0.02      0.03      1357
+         64E       1.00      0.00      0.00      1326
+          80       1.00      0.01      0.03      1422
+         81W       0.87      0.01      0.02      1324
+         92E       0.20      1.00      0.34      1356
+
+   micro avg       0.21      0.21      0.21      6785
+   macro avg       0.81      0.21      0.08      6785
+weighted avg       0.81      0.21      0.08      6785
+
+Test dataset Distribution
+[['41N' 1357]
+ ['64E' 1326]
+ ['80' 1422]
+ ['81W' 1324]
+ ['92E' 1356]]
+Prediction dataset Distribution
+[['41N' 24]
+ ['64E' 3]
+ ['80' 19]
+ ['81W' 15]
+ ['92E' 6724]]
+END RequestId: ebe26395-5f72-449f-bf92-59d39fb60c76
+REPORT RequestId: ebe26395-5f72-449f-bf92-59d39fb60c76	Duration: 865.70 ms	Billed Duration: 900 ms 	Memory Size: 3008 MB	Max Memory Used: 201 MB	

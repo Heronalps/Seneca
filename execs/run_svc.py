@@ -136,5 +136,5 @@ def grid_search_controller(config_path):
     # measurement.parse_log("/aws/lambda/svc_worker")
 
 if __name__ == "__main__":
-    path = "/Users/michaelzhang/Downloads/Seneca/config/svc/config.py"
+    path = "./config/svc/config.py"
     grid_search_controller(path)

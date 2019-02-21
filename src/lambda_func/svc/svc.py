@@ -43,8 +43,8 @@ def lambda_handler(event, context={}):
         parameters[key] = event['data'][key]
     print ('=====Parameters=======')
     print (parameters)
-    # df = read_csv_s3(event['dataset'])
-    df = pd.read_csv("./datasets/svc/df_2017_downsampled.csv")
+    df = read_csv_s3(event['dataset'])
+    # df = pd.read_csv("./datasets/svc/df_2017_downsampled.csv")
     
     # Scamble and subset data frame into train + validation(80%) and test(10%)
     y = df.block_Num

@@ -70,6 +70,8 @@ def delete_old_streams(log_group):
         # The AWS API gets overloaded if we go too fast.
         sleep(0.2)
 
+# This function is the invocation point of clean logs.
+# It takes i.e. "/aws/lambda/" + LAMBDA_NAME
 
 def clean_logs(prefix):
     for log_group in get_log_groups(prefix):

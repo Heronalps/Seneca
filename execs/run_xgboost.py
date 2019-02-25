@@ -82,63 +82,63 @@ def grid_search_controller(config_path):
     metrics = []
 
     
-    # from src.lambda_func.xgboost.XGBoost import lambda_handler
-    # from contextlib import redirect_stdout
+    from src.lambda_func.xgboost.XGBoost import lambda_handler
+    from contextlib import redirect_stdout
 
-    # with open('./xgboost_output.txt', 'w') as f:
-    #     with redirect_stdout(f):        
-    #         for payload in payload_list:
-    #             print ("======Payload========")
-    #             print (payload)
-    #             map_item = lambda_handler(payload)
-    #             metrics.append(map_item['metric'])
-    #             # Using MSE as metric => smaller than
-    #             if map_item['metric'] < min_metric:
-    #                 print ("======Update chosen model event==========")
-    #                 chosen_model_event = map_item['event']
-    #                 min_metric = map_item['metric']
+    with open('./xgboost_output.txt', 'w') as f:
+        with redirect_stdout(f):        
+            for payload in payload_list:
+                print ("======Payload========")
+                print (payload)
+                map_item = lambda_handler(payload)
+                metrics.append(map_item['metric'])
+                # Using MSE as metric => smaller than
+                if map_item['metric'] < min_metric:
+                    print ("======Update chosen model event==========")
+                    chosen_model_event = map_item['event']
+                    min_metric = map_item['metric']
             
-    #         print ("======Metric========")
-    #         print (min_metric)
-    #         print ("======Event========")
-    #         print (chosen_model_event)
-    #         print ("======Metric List========")
-    #         print (metrics)
+            print ("======Metric========")
+            print (min_metric)
+            print ("======Event========")
+            print (chosen_model_event)
+            print ("======Metric List========")
+            print (metrics)
 
-    start = time.time()
-    print ("=====Time Stamp======")
-    print (start)
-    job = group(invoke_lambda.s(
-                    function_name = LAMBDA_NAME,
-                    sync = True,
-                    payload = payload
-                    ) for payload in payload_list)
-    print("===Async Tasks start===")
-    result = job.apply_async()
-    result.save()
-    from celery.result import GroupResult
-    saved_result = GroupResult.restore(result.id)
+    # start = time.time()
+    # print ("=====Time Stamp======")
+    # print (start)
+    # job = group(invoke_lambda.s(
+    #                 function_name = LAMBDA_NAME,
+    #                 sync = True,
+    #                 payload = payload
+    #                 ) for payload in payload_list)
+    # print("===Async Tasks start===")
+    # result = job.apply_async()
+    # result.save()
+    # from celery.result import GroupResult
+    # saved_result = GroupResult.restore(result.id)
 
-    while not saved_result.ready():
-        time.sleep(0.1)
-    model_list = saved_result.get(timeout=None)
+    # while not saved_result.ready():
+    #     time.sleep(0.1)
+    # model_list = saved_result.get(timeout=None)
     
     
-    print("===Async Tasks end===")
-    print (time.time() - start)
+    # print("===Async Tasks end===")
+    # print (time.time() - start)
     
-    for item in model_list:
-        payload = item['Payload']
-        if payload['metric'] < min_metric:
-            chosen_model_event = payload['event']
-            min_metric = payload['metric']
+    # for item in model_list:
+    #     payload = item['Payload']
+    #     if payload['metric'] < min_metric:
+    #         chosen_model_event = payload['event']
+    #         min_metric = payload['metric']
     
-    print (min_metric)
-    print (chosen_model_event)
+    # print (min_metric)
+    # print (chosen_model_event)
 
-    from src.celery_lambda import measurement
-    measurement.parse_log("/aws/lambda/XGBoost_worker")
+    # from src.celery_lambda import measurement
+    # measurement.parse_log("/aws/lambda/XGBoost_worker")
 
 if __name__ == "__main__":
-    path = "/Users/michaelzhang/Downloads/Seneca/config/xgboost/config.py"
+    path = "./config/xgboost/config.py"
     grid_search_controller(path)

@@ -1,0 +1,52 @@
+======Payload========
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+=====Parameters=======
+{'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}
+Downloading Dataset from S3
+Mean Absolute Error : 0.11787186937465682
+====================
+(array([0, 1, 2, 3, 4]), array([1407, 1317, 1362, 1302, 1397]))
+(array([-1.,  0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   1, 1332, 1317, 1522, 1240, 1372,    1]))
+====================
+Accuracy Score: 0.9565217391304348
+======Update chosen model event==========
+======Payload========
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+=====Parameters=======
+{'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 2}
+Downloading Dataset from S3
+Mean Absolute Error : 0.13591481489825968
+====================
+(array([0, 1, 2, 3, 4]), array([1407, 1317, 1362, 1302, 1397]))
+(array([-1.,  0.,  1.,  2.,  3.,  4.,  5.], dtype=float32), array([   1, 1325, 1324, 1518, 1256, 1360,    1]))
+====================
+Accuracy Score: 0.9500368459837878
+======Payload========
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+=====Parameters=======
+{'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 1}
+Downloading Dataset from S3
+Mean Absolute Error : 1.932548548925775
+====================
+(array([0, 1, 2, 3, 4]), array([1407, 1317, 1362, 1302, 1397]))
+(array([-5., -4., -3., -2., -1.,  0.,  1.,  2.,  3.,  4.,  5.],
+      dtype=float32), array([ 950,  229,  128,  578,  693,  746, 1029, 1039,  195,  448,  750]))
+====================
+Accuracy Score: 0.07855563743551953
+======Payload========
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+=====Parameters=======
+{'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 100, 'n_jobs': 1, 'objective': 'rank:pairwise', 'random_state': 123, 'scale_pos_weight': 2}
+Downloading Dataset from S3
+Mean Absolute Error : 1.932548548925775
+====================
+(array([0, 1, 2, 3, 4]), array([1407, 1317, 1362, 1302, 1397]))
+(array([-5., -4., -3., -2., -1.,  0.,  1.,  2.,  3.,  4.,  5.],
+      dtype=float32), array([ 950,  229,  128,  578,  693,  746, 1029, 1039,  195,  448,  750]))
+====================
+Accuracy Score: 0.07855563743551953
+======Payload========
+{'parameters': ['base_score', 'booster', 'gamma', 'learning_rate', 'max_delta_step', 'max_depth', 'min_child_weight', 'n_estimators', 'n_jobs', 'objective', 'random_state', 'scale_pos_weight'], 'data': {'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+=====Parameters=======
+{'base_score': 0.5, 'booster': 'gbtree', 'gamma': 0, 'learning_rate': 0.1, 'max_delta_step': 0, 'max_depth': 3, 'min_child_weight': 0.1, 'n_estimators': 400, 'n_jobs': 1, 'objective': 'reg:linear', 'random_state': 123, 'scale_pos_weight': 1}
+Downloading Dataset from S3

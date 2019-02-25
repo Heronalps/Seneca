@@ -54,7 +54,7 @@ def create_event(config, PARAMETERS, CONFIG):
 '''
 
 def grid_search_controller(config_path):
-    
+    start = time.time()
     # Dynamic importing config file from config_path
     config = load(config_path)
     
@@ -99,7 +99,8 @@ def grid_search_controller(config_path):
     print (chosen_model_event)
     print ("======Metric List========")
     print (metrics)
-
+    print ("====Execution time====")
+    print (time.time() - start)
     # start = time.time()
     # print ("=====Time Stamp======")
     # print (start)

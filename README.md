@@ -50,6 +50,12 @@ pip install numpy==1.15.4
 pip install pystan
 pip install fbprophet
 ```
+* Ubuntu patching
+
+```
+sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev libssl-dev
+```
+
 * Auto packaging and deployment to Lambda
 ```
 cd ./src/lambda_func/prophet

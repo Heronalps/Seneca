@@ -30,7 +30,7 @@ seneca --help
 - Kill background celery workers ``` kill $(ps aux | grep '[c]elery' | awk '{print $2}') ```
 - List celery queue ``` sudo rabbitmqctl list_queues -p myvhost ```
 - Purge celery queue ``` sudo rabbitmqctl purge_queue celery -p myvhost ```
-
+- Invoke serial tuning ``` nohup python -u execs/run_xgboost.py > run_xgboost.txt & ```
 
 ## Container-Test
 - In another terminal at repo directory, run ``` python run_container_test.py ``` with 3 arguments, celery_async, lambda_async, invoke_time

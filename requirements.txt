@@ -2,3 +2,4 @@ celery[redis]
 boto3
 matplotlib
 sklearn
+pandas

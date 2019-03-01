@@ -1,0 +1,19 @@
+Default
+
+======Return average metric and event=======
+average_metric 0.29742817421625595
+
+
+=======Metric=======
+0.21988402552930122
+======Event=======
+{'parameters': ['cap', 'changepoint_prior_scale', 'country_holidays', 'floor', 'fourier_order', 'growth', 'holidays', 'holidays_prior_scale', 'interval_width', 'left_bound', 'right_bound', 'seasonality_mode', 'seasonality_prior_scale', 'dataset', 'forecast', 'horizon', 'initial', 'lambda_name', 'metric', 'period'], 'data': {'cap': 13, 'changepoint_prior_scale': 0.05, 'country_holidays': 'US', 'floor': 5, 'fourier_order': 15, 'growth': 'logistic', 'holidays': '{"holiday": "superbowl", "ds": ["2010-02-07", "2014-02-02", "2016-02-07"], "lower_window": 0,"upper_window": 1}', 'holidays_prior_scale': 10, 'interval_width': 0.5, 'left_bound': '2007-12-10', 'right_bound': '2016-01-20', 'seasonality_mode': 'additive', 'seasonality_prior_scale': 0.1, 'dataset': 'example_wp_log_peyton_manning.csv', 'forecast': '360', 'horizon': '365 days', 'initial': '2190 days', 'lambda_name': 'prophet_worker', 'metric': 'mse', 'period': '180days'}, 'forecast': 0}
+
+384 parameter settings
+
+Execution time = (384 settings / 8 celery workers) 
+                 * 45400 ms (unit lambda execution time)
+
+Compute charge = 1664MB / (1024MB/GB) * 45.4s * 1.667e-5 * 384
+
+Duration: 45312.57 ms	Billed Duration: 45400 ms Memory Size: 1664 MB	Max Memory Used: 297 MB	

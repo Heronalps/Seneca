@@ -1,0 +1,581 @@
+Support Vector Classification
+
+======Starting Point==========
+12
+update allocated memory to 768 MB
+Current compute charge = 13.200000000000001
+Total compute charge = 0.00022004400000000002
+update allocated memory to 832 MB
+Current compute charge = 13.65
+Total compute charge = 0.00044758950000000004
+update allocated memory to 896 MB
+Current compute charge = 13.2125
+Total compute charge = 0.000667841875
+update allocated memory to 960 MB
+Current compute charge = 12.65625
+Total compute charge = 0.0008788215625
+update allocated memory to 1024 MB
+Current compute charge = 12.9
+Total compute charge = 0.0010938645625
+update allocated memory to 1088 MB
+Current compute charge = 13.175
+Total compute charge = 0.0013134918125000002
+update allocated memory to 1152 MB
+Current compute charge = 13.162500000000001
+Total compute charge = 0.0015329106875000002
+update allocated memory to 1216 MB
+Current compute charge = 13.3
+Total compute charge = 0.0017546216875000003
+update allocated memory to 1280 MB
+Current compute charge = 13.375000000000002
+Total compute charge = 0.0019775829375000002
+update allocated memory to 1344 MB
+Current compute charge = 13.387500000000001
+Total compute charge = 0.0022007525625000004
+update allocated memory to 1408 MB
+Current compute charge = 13.75
+Total compute charge = 0.0024299650625000005
+update allocated memory to 1472 MB
+Current compute charge = 13.36875
+Total compute charge = 0.0026528221250000004
+update allocated memory to 1536 MB
+Current compute charge = 13.8
+Total compute charge = 0.002882868125
+update allocated memory to 1600 MB
+Current compute charge = 14.375000000000002
+Total compute charge = 0.003122499375
+update allocated memory to 1664 MB
+Current compute charge = 13.8125
+Total compute charge = 0.00335275375
+update allocated memory to 1728 MB
+Current compute charge = 13.837499999999999
+Total compute charge = 0.003583424875
+update allocated memory to 1792 MB
+Current compute charge = 14.349999999999998
+Total compute charge = 0.003822639375
+update allocated memory to 1856 MB
+Current compute charge = 14.318750000000001
+Total compute charge = 0.0040613329375
+update allocated memory to 1920 MB
+Current compute charge = 15.562500000000002
+Total compute charge = 0.0043207598125
+update allocated memory to 1984 MB
+Current compute charge = 15.112499999999999
+Total compute charge = 0.0045726851875
+update allocated memory to 2048 MB
+Current compute charge = 15.6
+Total compute charge = 0.0048327371875
+update allocated memory to 2112 MB
+Current compute charge = 16.29375
+Total compute charge = 0.005104354
+update allocated memory to 2176 MB
+Current compute charge = 19.55
+Total compute charge = 0.005430252500000001
+update allocated memory to 2240 MB
+Current compute charge = 16.84375
+Total compute charge = 0.005711037812500001
+update allocated memory to 2304 MB
+Current compute charge = 19.349999999999998
+Total compute charge = 0.006033602312500001
+update allocated memory to 2368 MB
+Current compute charge = 18.73125
+Total compute charge = 0.006345852250000001
+update allocated memory to 2432 MB
+Current compute charge = 19.95
+Total compute charge = 0.006678418750000001
+update allocated memory to 2496 MB
+Current compute charge = 19.74375
+Total compute charge = 0.007007547062500001
+update allocated memory to 2560 MB
+Current compute charge = 19.25
+Total compute charge = 0.007328444562500001
+update allocated memory to 2624 MB
+Current compute charge = 19.475
+Total compute charge = 0.0076530928125000015
+update allocated memory to 2688 MB
+Current compute charge = 19.950000000000003
+Total compute charge = 0.007985659312500002
+update allocated memory to 2752 MB
+Current compute charge = 18.8125
+Total compute charge = 0.008299263687500003
+update allocated memory to 2816 MB
+Current compute charge = 20.625
+Total compute charge = 0.008643082437500003
+update allocated memory to 2880 MB
+Current compute charge = 21.65625
+Total compute charge = 0.009004092125000003
+update allocated memory to 2944 MB
+Current compute charge = 20.7
+Total compute charge = 0.009349161125000003
+update allocated memory to 3008 MB
+Current compute charge = 22.03125
+Total compute charge = 0.009716422062500004
+update allocated memory to 768 MB
+The lambda function has been configured at 768 MB as allocated memory!
+The cost of optimizing lambda function is $0.009716422062500004 !
+
+
+Multivariate Regression
+
+======Starting Point==========
+4
+update allocated memory to 256 MB
+Current compute charge = 13.075000000000001
+Total compute charge = 0.00021796025000000004
+update allocated memory to 320 MB
+Current compute charge = 19.46875
+Total compute charge = 0.0005425043125000001
+update allocated memory to 384 MB
+Current compute charge = 19.8375
+Total compute charge = 0.0008731954375000002
+update allocated memory to 448 MB
+Current compute charge = 19.337500000000002
+Total compute charge = 0.0011955515625000003
+update allocated memory to 512 MB
+Current compute charge = 19.150000000000002
+Total compute charge = 0.0015147820625000005
+update allocated memory to 576 MB
+Current compute charge = 18.73125
+Total compute charge = 0.0018270320000000006
+update allocated memory to 640 MB
+Current compute charge = 18.875
+Total compute charge = 0.0021416782500000005
+update allocated memory to 704 MB
+Current compute charge = 18.975
+Total compute charge = 0.0024579915000000007
+update allocated memory to 768 MB
+Current compute charge = 19.275
+Total compute charge = 0.0027793057500000006
+update allocated memory to 832 MB
+Current compute charge = 19.012500000000003
+Total compute charge = 0.0030962441250000005
+update allocated memory to 896 MB
+Current compute charge = 18.900000000000002
+Total compute charge = 0.0034113071250000005
+update allocated memory to 960 MB
+Current compute charge = 12.65625
+Total compute charge = 0.0036222868125000006
+update allocated memory to 1024 MB
+Current compute charge = 12.700000000000001
+Total compute charge = 0.0038339958125000006
+update allocated memory to 1088 MB
+Current compute charge = 12.75
+Total compute charge = 0.0040465383125
+update allocated memory to 1152 MB
+Current compute charge = 12.487499999999999
+Total compute charge = 0.0042547049375
+update allocated memory to 1216 MB
+Current compute charge = 12.5875
+Total compute charge = 0.0044645385625
+update allocated memory to 1280 MB
+Current compute charge = 18.75
+Total compute charge = 0.004777101062500001
+update allocated memory to 1344 MB
+Current compute charge = 19.162499999999998
+Total compute charge = 0.0050965399375
+update allocated memory to 1408 MB
+Current compute charge = 13.337500000000002
+Total compute charge = 0.0053188760625
+update allocated memory to 1472 MB
+Current compute charge = 12.9375
+Total compute charge = 0.0055345441875000005
+update allocated memory to 1536 MB
+Current compute charge = 19.5
+Total compute charge = 0.005859609187500001
+update allocated memory to 1600 MB
+Current compute charge = 20.625
+Total compute charge = 0.0062034279375000004
+update allocated memory to 1664 MB
+Current compute charge = 13.8125
+Total compute charge = 0.0064336823125
+update allocated memory to 1728 MB
+Current compute charge = 20.08125
+Total compute charge = 0.0067684367500000005
+update allocated memory to 1792 MB
+Current compute charge = 14.875
+Total compute charge = 0.007016403000000001
+update allocated memory to 1856 MB
+Current compute charge = 15.40625
+Total compute charge = 0.007273225187500001
+update allocated memory to 1920 MB
+Current compute charge = 22.5
+Total compute charge = 0.007648300187500001
+update allocated memory to 1984 MB
+Current compute charge = 16.46875
+Total compute charge = 0.007922834250000002
+update allocated memory to 2048 MB
+Current compute charge = 16.8
+Total compute charge = 0.008202890250000002
+update allocated memory to 2112 MB
+Current compute charge = 24.13125
+Total compute charge = 0.008605158187500003
+update allocated memory to 2176 MB
+Current compute charge = 24.65
+Total compute charge = 0.009016073687500003
+update allocated memory to 2240 MB
+Current compute charge = 18.15625
+Total compute charge = 0.009318738375000003
+update allocated memory to 2304 MB
+Current compute charge = 18.900000000000002
+Total compute charge = 0.009633801375000004
+update allocated memory to 2368 MB
+Current compute charge = 27.2875
+Total compute charge = 0.010088684000000004
+update allocated memory to 2432 MB
+Current compute charge = 19.712500000000002
+Total compute charge = 0.010417291375000004
+update allocated memory to 2496 MB
+Current compute charge = 29.00625
+Total compute charge = 0.010900825562500004
+update allocated memory to 2560 MB
+Current compute charge = 20.75
+Total compute charge = 0.011246728062500004
+update allocated memory to 2624 MB
+Current compute charge = 30.2375
+Total compute charge = 0.011750787187500004
+update allocated memory to 2688 MB
+Current compute charge = 22.3125
+Total compute charge = 0.012122736562500003
+update allocated memory to 2752 MB
+Current compute charge = 22.575
+Total compute charge = 0.012499061812500004
+update allocated memory to 2816 MB
+Current compute charge = 32.45
+Total compute charge = 0.013040003312500003
+update allocated memory to 2880 MB
+Current compute charge = 33.1875
+Total compute charge = 0.013593238937500004
+update allocated memory to 2944 MB
+Current compute charge = 24.4375
+Total compute charge = 0.014000612062500004
+update allocated memory to 3008 MB
+Current compute charge = 24.96875
+Total compute charge = 0.014416841125000005
+update allocated memory to 1152 MB
+The lambda function has been configured at 1152 MB as allocated memory!
+The cost of optimizing lambda function is $0.014416841125000005 !
+
+Neural Network
+
+======Starting Point==========
+12
+update allocated memory to 768 MB
+Current compute charge = 15.899999999999999
+Total compute charge = 0.000265053
+update allocated memory to 832 MB
+Current compute charge = 15.19375
+Total compute charge = 0.0005183328125
+update allocated memory to 896 MB
+Current compute charge = 12.6875
+Total compute charge = 0.0007298334375
+update allocated memory to 960 MB
+Current compute charge = 13.6875
+Total compute charge = 0.0009580040625000001
+update allocated memory to 1024 MB
+Current compute charge = 14.1
+Total compute charge = 0.0011930510625
+update allocated memory to 1088 MB
+Current compute charge = 12.64375
+Total compute charge = 0.0014038223750000001
+update allocated memory to 1152 MB
+Current compute charge = 12.600000000000001
+Total compute charge = 0.0016138643750000002
+update allocated memory to 1216 MB
+Current compute charge = 13.5375
+Total compute charge = 0.0018395345000000003
+update allocated memory to 1280 MB
+Current compute charge = 13.625
+Total compute charge = 0.00206666325
+update allocated memory to 1344 MB
+Current compute charge = 16.931250000000002
+Total compute charge = 0.0023489071875000002
+update allocated memory to 1408 MB
+Current compute charge = 15.125
+Total compute charge = 0.0026010409375
+update allocated memory to 1472 MB
+Current compute charge = 14.231250000000001
+Total compute charge = 0.0028382758750000003
+update allocated memory to 1536 MB
+Current compute charge = 12.899999999999999
+Total compute charge = 0.003053318875
+update allocated memory to 1600 MB
+Current compute charge = 13.125
+Total compute charge = 0.0032721126250000003
+update allocated memory to 1664 MB
+Current compute charge = 13.975
+Total compute charge = 0.0035050758750000003
+update allocated memory to 1728 MB
+Current compute charge = 13.66875
+Total compute charge = 0.0037329339375000003
+update allocated memory to 1792 MB
+Current compute charge = 14.875
+Total compute charge = 0.003980900187500001
+update allocated memory to 1856 MB
+Current compute charge = 16.675
+Total compute charge = 0.004258872437500001
+update allocated memory to 1920 MB
+Current compute charge = 15.562500000000002
+Total compute charge = 0.0045182993125000015
+update allocated memory to 1984 MB
+Current compute charge = 16.08125
+Total compute charge = 0.004786373750000001
+update allocated memory to 2048 MB
+Current compute charge = 16.6
+Total compute charge = 0.0050630957500000014
+update allocated memory to 2112 MB
+Current compute charge = 14.64375
+Total compute charge = 0.005307207062500001
+update allocated memory to 2176 MB
+Current compute charge = 17.2125
+Total compute charge = 0.005594139437500001
+update allocated memory to 2240 MB
+Current compute charge = 17.9375
+Total compute charge = 0.005893157562500001
+update allocated memory to 2304 MB
+Current compute charge = 18.0
+Total compute charge = 0.0061932175625000006
+update allocated memory to 2368 MB
+Current compute charge = 16.418750000000003
+Total compute charge = 0.006466918125
+update allocated memory to 2432 MB
+Current compute charge = 18.7625
+Total compute charge = 0.006779689
+update allocated memory to 2496 MB
+Current compute charge = 19.74375
+Total compute charge = 0.0071088173125
+update allocated memory to 2560 MB
+Current compute charge = 21.750000000000004
+Total compute charge = 0.0074713898125
+update allocated memory to 2624 MB
+Current compute charge = 24.856250000000003
+Total compute charge = 0.0078857435
+update allocated memory to 2368 MB
+The lambda function has been configured at 2368 MB as allocated memory!
+The cost of optimizing lambda function is $0.0078857435 !
+
+XGBoost
+
+======Starting Point==========
+6
+update allocated memory to 384 MB
+Current compute charge = 3.1875
+Total compute charge = 5.3135625e-05
+update allocated memory to 448 MB
+Current compute charge = 3.19375
+Total compute charge = 0.00010637543750000001
+update allocated memory to 512 MB
+Current compute charge = 3.95
+Total compute charge = 0.0001722219375
+update allocated memory to 576 MB
+Current compute charge = 3.9937500000000004
+Total compute charge = 0.00023879775000000002
+update allocated memory to 640 MB
+Current compute charge = 4.1875
+Total compute charge = 0.00030860337500000003
+update allocated memory to 704 MB
+Current compute charge = 3.91875
+Total compute charge = 0.00037392893750000004
+update allocated memory to 768 MB
+Current compute charge = 3.9749999999999996
+Total compute charge = 0.00044019218750000007
+update allocated memory to 832 MB
+Current compute charge = 3.9
+Total compute charge = 0.0005052051875000001
+update allocated memory to 896 MB
+Current compute charge = 3.325
+Total compute charge = 0.0005606329375000001
+update allocated memory to 960 MB
+Current compute charge = 3.1875
+Total compute charge = 0.0006137685625000001
+update allocated memory to 1024 MB
+Current compute charge = 3.4
+Total compute charge = 0.0006704465625000001
+update allocated memory to 1088 MB
+Current compute charge = 3.71875
+Total compute charge = 0.0007324381250000001
+update allocated memory to 1152 MB
+Current compute charge = 3.7125000000000004
+Total compute charge = 0.0007943255000000001
+update allocated memory to 1216 MB
+Current compute charge = 3.5625
+Total compute charge = 0.0008537123750000001
+update allocated memory to 1280 MB
+Current compute charge = 3.75
+Total compute charge = 0.0009162248750000001
+update allocated memory to 1344 MB
+Current compute charge = 3.54375
+Total compute charge = 0.0009752991875000001
+update allocated memory to 1408 MB
+Current compute charge = 3.3
+Total compute charge = 0.0010303101875000001
+update allocated memory to 1472 MB
+Current compute charge = 3.3062500000000004
+Total compute charge = 0.0010854253750000001
+update allocated memory to 1536 MB
+Current compute charge = 3.9000000000000004
+Total compute charge = 0.0011504383750000002
+update allocated memory to 1600 MB
+Current compute charge = 4.0625
+Total compute charge = 0.0012181602500000001
+update allocated memory to 1664 MB
+Current compute charge = 4.2250000000000005
+Total compute charge = 0.0012885910000000002
+update allocated memory to 1728 MB
+Current compute charge = 4.21875
+Total compute charge = 0.0013589175625000002
+update allocated memory to 1792 MB
+Current compute charge = 3.325
+Total compute charge = 0.0014143453125000003
+update allocated memory to 1856 MB
+Current compute charge = 4.35
+Total compute charge = 0.0014868598125000003
+update allocated memory to 1920 MB
+Current compute charge = 4.6875
+Total compute charge = 0.0015650004375000004
+update allocated memory to 1984 MB
+Current compute charge = 4.84375
+Total compute charge = 0.0016457457500000004
+update allocated memory to 2048 MB
+Current compute charge = 4.6000000000000005
+Total compute charge = 0.0017224277500000004
+update allocated memory to 2112 MB
+Current compute charge = 3.91875
+Total compute charge = 0.0017877533125000003
+update allocated memory to 2176 MB
+Current compute charge = 5.3125
+Total compute charge = 0.0018763126875000003
+update allocated memory to 2240 MB
+Current compute charge = 4.59375
+Total compute charge = 0.0019528905000000003
+update allocated memory to 2304 MB
+Current compute charge = 4.95
+Total compute charge = 0.0020354070000000004
+update allocated memory to 2368 MB
+Current compute charge = 4.625
+Total compute charge = 0.0021125057500000002
+update allocated memory to 2432 MB
+Current compute charge = 4.0375
+Total compute charge = 0.0021798108750000003
+update allocated memory to 2496 MB
+Current compute charge = 4.14375
+Total compute charge = 0.0022488871875000005
+update allocated memory to 2560 MB
+Current compute charge = 5.25
+Total compute charge = 0.0023364046875000003
+update allocated memory to 2624 MB
+Current compute charge = 4.1000000000000005
+Total compute charge = 0.0024047516875
+update allocated memory to 2688 MB
+Current compute charge = 4.987500000000001
+Total compute charge = 0.0024878933125000004
+update allocated memory to 2752 MB
+Current compute charge = 4.3
+Total compute charge = 0.0025595743125000005
+update allocated memory to 2816 MB
+Current compute charge = 4.4
+Total compute charge = 0.0026329223125000005
+update allocated memory to 2880 MB
+Current compute charge = 5.90625
+Total compute charge = 0.0027313795000000005
+update allocated memory to 2944 MB
+Current compute charge = 5.75
+Total compute charge = 0.0028272320000000007
+update allocated memory to 3008 MB
+Current compute charge = 5.581250000000001
+Total compute charge = 0.0029202714375000005
+update allocated memory to 384 MB
+The lambda function has been configured at 384 MB as allocated memory!
+The cost of optimizing lambda function is $0.0029202714375000005 !
+
+
+Prophet
+
+======Starting Point==========
+3
+update allocated memory to 192 MB
+Current compute charge = 48.449999999999996
+Total compute charge = 0.0008076614999999999
+update allocated memory to 256 MB
+Current compute charge = 70.525
+Total compute charge = 0.0019833132500000003
+update allocated memory to 320 MB
+Current compute charge = 77.96875
+Total compute charge = 0.0032830523125000005
+update allocated memory to 384 MB
+Current compute charge = 60.224999999999994
+Total compute charge = 0.004287003062500001
+update allocated memory to 448 MB
+Current compute charge = 55.825
+Total compute charge = 0.0052176058125000015
+update allocated memory to 512 MB
+Current compute charge = 72.4
+Total compute charge = 0.006424513812500002
+update allocated memory to 576 MB
+Current compute charge = 70.0875
+Total compute charge = 0.007592872437500002
+update allocated memory to 640 MB
+Current compute charge = 78.1875
+Total compute charge = 0.008896258062500002
+update allocated memory to 704 MB
+Current compute charge = 81.95
+Total compute charge = 0.010262364562500003
+update allocated memory to 768 MB
+Current compute charge = 67.2
+Total compute charge = 0.011382588562500002
+update allocated memory to 832 MB
+Current compute charge = 70.28125
+Total compute charge = 0.012554177000000003
+update allocated memory to 896 MB
+Current compute charge = 67.025
+Total compute charge = 0.013671483750000003
+update allocated memory to 960 MB
+Current compute charge = 65.90625
+Total compute charge = 0.014770140937500002
+update allocated memory to 1024 MB
+Current compute charge = 69.0
+Total compute charge = 0.0159203709375
+update allocated memory to 1088 MB
+Current compute charge = 68.42500000000001
+Total compute charge = 0.0170610156875
+update allocated memory to 1152 MB
+Current compute charge = 73.35000000000001
+Total compute charge = 0.0182837601875
+update allocated memory to 1216 MB
+Current compute charge = 72.9125
+Total compute charge = 0.0194992115625
+update allocated memory to 1280 MB
+Current compute charge = 73.125
+Total compute charge = 0.0207182053125
+update allocated memory to 1344 MB
+Current compute charge = 73.7625
+Total compute charge = 0.021947826187500002
+update allocated memory to 1408 MB
+Current compute charge = 74.8
+Total compute charge = 0.023194742187500002
+update allocated memory to 1472 MB
+Current compute charge = 74.4625
+Total compute charge = 0.0244360320625
+update allocated memory to 1536 MB
+Current compute charge = 74.4
+Total compute charge = 0.0256762800625
+update allocated memory to 1600 MB
+Current compute charge = 74.84375
+Total compute charge = 0.026923925375
+update allocated memory to 1664 MB
+Current compute charge = 73.9375
+Total compute charge = 0.028156463500000003
+update allocated memory to 1728 MB
+Current compute charge = 75.09375
+Total compute charge = 0.029408276312500002
+update allocated memory to 1792 MB
+Current compute charge = 76.65
+Total compute charge = 0.030686031812500004
+update allocated memory to 1856 MB
+Current compute charge = 76.85
+Total compute charge = 0.031967121312500006
+update allocated memory to 1920 MB
+Current compute charge = 80.0625
+Total compute charge = 0.03330176318750001
+update allocated memory to 1664 MB
+The lambda function has been configured at 1664 MB as allocated memory!
+The cost of optimizing lambda function is $0.03330176318750001 !

@@ -1,0 +1,71 @@
+{
+  "metric": 0.2001947362209371,
+  "event": {
+    "parameters": [
+      "c",
+      "cache_size",
+      "coef0",
+      "decision_function_shape",
+      "degree",
+      "gamma",
+      "kernel",
+      "max_iter",
+      "probability",
+      "random_state",
+      "shrinking",
+      "tol",
+      "verbose"
+    ],
+    "data": {
+      "c": 1,
+      "cache_size": 5,
+      "coef0": 0,
+      "decision_function_shape": "ovr",
+      "degree": 3,
+      "gamma": "auto",
+      "kernel": "rbf",
+      "max_iter": 20,
+      "probability": false,
+      "random_state": 123,
+      "shrinking": true,
+      "tol": 0.001,
+      "verbose": false
+    },
+    "dataset": "df_2017_downsampled.csv",
+    "test_size": 0.999
+  }
+}
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.2001947362209371
+/var/task/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+              precision    recall  f1-score   support
+
+         41N       0.20      1.00      0.33      6776
+         64E       0.00      0.00      0.00      6779
+          80       1.00      0.00      0.00      6781
+         81W       0.00      0.00      0.00      6777
+         92E       0.00      0.00      0.00      6779
+
+   micro avg       0.20      0.20      0.20     33892
+   macro avg       0.24      0.20      0.07     33892
+weighted avg       0.24      0.20      0.07     33892
+
+Test dataset Distribution
+[['41N' 6776]
+ ['64E' 6779]
+ ['80' 6781]
+ ['81W' 6777]
+ ['92E' 6779]]
+Prediction dataset Distribution
+[['41N' 33883]
+ ['80' 9]]
+END RequestId: e7c62487-2c2a-4a98-b2f4-596f699cabab
+REPORT RequestId: e7c62487-2c2a-4a98-b2f4-596f699cabab	Duration: 3053.10 ms	Billed Duration: 3100 ms 	Memory Size: 832 MB	Max Memory Used: 195 MB	
+

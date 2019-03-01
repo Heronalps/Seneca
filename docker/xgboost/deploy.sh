@@ -13,7 +13,7 @@ functions=`aws lambda list-functions`
 exist=false
 
 for function in $functions; do
-    if [[ "$function" = *xgboost_worker* ]] ; then
+    if [[ "$function" = *XGBoost_worker* ]] ; then
         exist=true
     fi
 done
@@ -27,6 +27,6 @@ if [[ "$exist" == false ]] ; then
     --layers arn:aws:lambda:us-west-2:420165488524:layer:AWSLambda-Python36-SciPy1x:2
 fi
 if [[ "$exist" == true ]] ; then
-    aws lambda update-function-code --function-name xgboost_worker \
+    aws lambda update-function-code --function-name XGBoost_worker \
     --s3-bucket seneca-racelab --s3-key lambda_xgboost.zip
 fi

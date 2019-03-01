@@ -15,6 +15,7 @@ app.conf.update(
     result_serializer='json',
     timezone='Europe/Oslo',
     enable_utc=True,
+    broker_pool_limit=None
 )
 # app.conf.broker_heartbeat = 10
 

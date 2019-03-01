@@ -1,0 +1,85 @@
+update allocated memory to 3008 MB
+Function prophet_worker has been created!
+======Starting Point==========
+4
+update allocated memory to 256 MB
+Current compute charge = 46.375
+Total compute charge = 0.00077307125
+update allocated memory to 320 MB
+Current compute charge = 69.09375
+Total compute charge = 0.0019248640625
+update allocated memory to 384 MB
+Current compute charge = 72.075
+Total compute charge = 0.0031263543125000003
+update allocated memory to 448 MB
+Current compute charge = 73.98125
+Total compute charge = 0.004359621750000001
+update allocated memory to 512 MB
+Current compute charge = 47.4
+Total compute charge = 0.005149779750000001
+update allocated memory to 576 MB
+Current compute charge = 48.9375
+Total compute charge = 0.005965567875000001
+update allocated memory to 640 MB
+Current compute charge = 48.0625
+Total compute charge = 0.006766769750000001
+update allocated memory to 704 MB
+Current compute charge = 43.0375
+Total compute charge = 0.007484204875000001
+update allocated memory to 768 MB
+Current compute charge = 37.875
+Total compute charge = 0.008115581125
+update allocated memory to 832 MB
+Current compute charge = 38.837500000000006
+Total compute charge = 0.00876300225
+update allocated memory to 896 MB
+Current compute charge = 39.9
+Total compute charge = 0.00942813525
+update allocated memory to 960 MB
+Current compute charge = 40.96875
+Total compute charge = 0.010111084312500001
+update allocated memory to 1024 MB
+Current compute charge = 42.5
+Total compute charge = 0.010819559312500001
+update allocated memory to 1088 MB
+Current compute charge = 42.39375
+Total compute charge = 0.011526263125000002
+update allocated memory to 1152 MB
+Current compute charge = 41.625
+Total compute charge = 0.012220151875000002
+update allocated memory to 1216 MB
+Current compute charge = 42.5125
+Total compute charge = 0.012928835250000001
+update allocated memory to 1280 MB
+Current compute charge = 44.12500000000001
+Total compute charge = 0.013664399
+update allocated memory to 1344 MB
+Current compute charge = 42.525
+Total compute charge = 0.01437329075
+update allocated memory to 1408 MB
+Current compute charge = 42.487500000000004
+Total compute charge = 0.015081557375
+update allocated memory to 1472 MB
+Current compute charge = 41.831250000000004
+Total compute charge = 0.0157788843125
+update allocated memory to 1536 MB
+Current compute charge = 43.35
+Total compute charge = 0.016501528812500003
+update allocated memory to 1600 MB
+Current compute charge = 41.875
+Total compute charge = 0.0171995850625
+update allocated memory to 1664 MB
+Current compute charge = 43.0625
+Total compute charge = 0.017917436937500003
+update allocated memory to 1728 MB
+Current compute charge = 44.2125
+Total compute charge = 0.018654459312500003
+update allocated memory to 1792 MB
+Current compute charge = 46.2
+Total compute charge = 0.019424613312500002
+update allocated memory to 1856 MB
+Current compute charge = 46.94375
+Total compute charge = 0.020207165625000002
+update allocated memory to 1664 MB
+The lambda function has been configured at 1664 MB as allocated memory!
+The cost of optimizing lambda function is $0.020207165625000002 !

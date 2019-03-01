@@ -1,0 +1,86 @@
+{
+  "metric": 0.5543846720707443,
+  "event": {
+    "parameters": [
+      "activation",
+      "alpha",
+      "batch_size",
+      "beta_1",
+      "beta_2",
+      "early_stopping",
+      "epsilon",
+      "hidden_layer_sizes",
+      "learning_rate",
+      "learning_rate_init",
+      "max_iter",
+      "momentum",
+      "nesterovs_momentum",
+      "n_iter_no_change",
+      "power_t",
+      "random_state",
+      "shuffle",
+      "solver",
+      "tol",
+      "validation_fraction",
+      "verbose"
+    ],
+    "data": {
+      "activation": "relu",
+      "alpha": 0.0001,
+      "batch_size": "auto",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "early_stopping": false,
+      "epsilon": 1e-8,
+      "hidden_layer_sizes": [
+        100
+      ],
+      "learning_rate": "constant",
+      "learning_rate_init": 0.001,
+      "max_iter": 20,
+      "momentum": 0.9,
+      "nesterovs_momentum": true,
+      "n_iter_no_change": 10,
+      "power_t": 0.5,
+      "random_state": 123,
+      "shuffle": true,
+      "solver": "adam",
+      "tol": 0.0001,
+      "validation_fraction": 0.1,
+      "verbose": false
+    },
+    "dataset": "df_2017_downsampled.csv",
+    "test_size": 0.8
+  }
+}
+
+START RequestId: 9880431f-3bf5-4d5f-9573-689e84bd2b84 Version: $LATEST
+/var/task/sklearn/neural_network/multilayer_perceptron.py:562: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (20) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+Accuracy Score : 0.5543846720707443
+              precision    recall  f1-score   support
+
+         41N       0.84      0.02      0.04      5442
+         64E       0.95      0.83      0.89      5460
+          80       0.00      0.00      0.00      5390
+         81W       0.43      0.95      0.60      5384
+         92E       0.50      0.96      0.66      5464
+
+   micro avg       0.55      0.55      0.55     27140
+   macro avg       0.55      0.55      0.44     27140
+weighted avg       0.55      0.55      0.44     27140
+
+Test dataset Distribution
+[['41N' 5442]
+ ['64E' 5460]
+ ['80' 5390]
+ ['81W' 5384]
+ ['92E' 5464]]
+Prediction dataset Distribution
+[['41N' '128']
+ ['64E' '4793']
+ ['80' '1']
+ ['81W' '11780']
+ ['92E' '10438']]
+END RequestId: 9880431f-3bf5-4d5f-9573-689e84bd2b84
+REPORT RequestId: 9880431f-3bf5-4d5f-9573-689e84bd2b84	Duration: 2170.64 ms	Billed Duration: 2200 ms 	Memory Size: 2368 MB	Max Memory Used: 265 MB	

@@ -1,4 +1,4 @@
-import json, time, boto3, re
+import json, time, boto3, re, sys, os
 from datetime import datetime
 from src.celery_lambda.clean_logs import clean_logs
 
@@ -17,7 +17,7 @@ from src.celery_lambda.clean_logs import clean_logs
 
 # show_result() 
 # This function retrieve execution result from log retriever, print them to stdout 
-# and persist them to lcoal file sytem.
+# and persist them to local file sytem.
 
 def show_result(lambda_name, celery_async, lambda_async, host_execu_time):
 
@@ -90,6 +90,10 @@ def retrieve_result(lambda_name):
     # cost = compute charge + request charge
     cost = 0.00001667 * compute_charge
 
+    # Other metrics can be calculated here:
+    # Total / Average / Stdev of 
+    # 
+
     metrics = {
         "total_duration" : total_duration, 
         "total_billed_duration" : total_billed_duration,
@@ -107,9 +111,12 @@ def retrieve_result(lambda_name):
 # This function parses cloudwatch log to extract four metrics of lambda invocation
 
 def parse_log(log_group_name):
+    # Wait for last batch of log written into cloudwatch
+    time.sleep(30)
     group_response = []
     group_metrics = []
     log_client = boto3.client('logs')
+    messages = []
 
     response = log_client.describe_log_streams(
         logGroupName = log_group_name,
@@ -127,7 +134,9 @@ def parse_log(log_group_name):
     
         for event in logs['events']:
             message = event['message']
-
+            
+            messages.append(message)
+            
             if message.startswith('REPORT'):
                 
                 # Milliseconds
@@ -152,4 +161,10 @@ def parse_log(log_group_name):
                     result = temp_result.group(0)
                     group_response.append(result)
     
-    return group_response, group_metrics    
+    ts = round(time.time())
+
+    with open("./cloudwatch/log_" + str(ts) + ".txt", "w") as f:
+        for m in messages:
+            f.write("%s\n" % m)
+
+    return group_response, group_metrics

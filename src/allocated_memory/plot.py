@@ -16,14 +16,14 @@ def plot_curve(x_series, y_series, num):
     # print(x_point)
     # print(y_point)
 
-    _fig, _ax = plt.subplots()
+    fig, ax = plt.subplots()
     # plt.ylim(0, 140)    
     plt.grid(axis='y', alpha=0.75)
     plt.xlabel(x_series)
     plt.ylabel(y_series)
     plt.title("{0} VS {1}".format(x_series, "computing power"), fontsize=10)
     plt.plot(x_point, y_point, 'b-')
-    plt.show()
+    
 
 if __name__ == '__main__':
     plot_curve('memory_size', 'billed_duration', 4)

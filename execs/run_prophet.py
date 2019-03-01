@@ -3,6 +3,8 @@ import sys, os, re, importlib, time
 # Makes Seneca root directory available for importing
 sys.path.insert(0, "./")
 from helpers.parsers import parse_path
+from helpers.parsers import split_path
+from helpers.module_loader import load
 
 seneca_path = parse_path(os.getcwd(), "Seneca")
 package_path = seneca_path + "/venv/lib/python3.6/site-packages"
@@ -23,7 +25,7 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
     for parameter in PARAMETERS:
         parameter_lists.append(getattr(config.Hyperparameter, parameter))
     search_space = product(*parameter_lists)
-
+    
     payload_list = []
     for item in search_space:
         payload = {}
@@ -55,17 +57,16 @@ def create_event(config, PARAMETERS, CV_SETTINGS):
 '''
 
 def grid_search_controller(config_path):
+    # start = time.time()
     
     # Dynamic importing config file from config_path
-    path_prefix, filename = split_path(config_path)
-    sys.path.insert(0, path_prefix)
-    config = importlib.import_module(filename)
-    
+    config = load(config_path)
+
     # Dynamic loading lambda name
     LAMBDA_NAME = getattr(config.Cross_Validation, "LAMBDA_NAME")
     
     # Clean the log of specified lambda function
-    # clean_logs('/aws/lambda/' + LAMBDA_NAME)
+    clean_logs('/aws/lambda/' + LAMBDA_NAME)
 
     # Dynamic load parameters 
     PARAMETERS = []
@@ -79,18 +80,29 @@ def grid_search_controller(config_path):
 
     # Tune forecast horizon of the chosen model
     payload_list = create_event(config, PARAMETERS, CV_SETTINGS)
-
+    
     min_metric = float('inf')
     chosen_model_event = None
+    metrics = []
     
     # from src.lambda_func.prophet.prophet import grid_search_worker
-
     # for payload in payload_list:
     #     map_item = grid_search_worker(payload)
+        
+    #     metrics.append(map_item['average_metric'])
     #     if map_item['average_metric'] < min_metric:
     #         print ("======Update chosen model event==========")
     #         chosen_model_event = map_item['event']
     #         min_metric = map_item['average_metric']
+    
+    # print ("=======Metric=======")
+    # print (min_metric)
+    # print ("======Event=======")
+    # print (chosen_model_event)
+    # print ("======Metrics=======")
+    # print (metrics)
+    # print ("====Execution time====")
+    # print (time.time() - start)
     
     start = time.time()
     print ("=====Time Stamp======")
@@ -105,15 +117,23 @@ def grid_search_controller(config_path):
     result.save()
     from celery.result import GroupResult
     saved_result = GroupResult.restore(result.id)
-    model_list = saved_result.get()
+
+    while not saved_result.ready():
+        time.sleep(0.1)
+    model_list = saved_result.get(timeout=None)
+
     print("===Async Tasks end===")
-    
+    print (time.time() - start)
+
     for item in model_list:
         payload = item['Payload']
         if payload['average_metric'] < min_metric:
             chosen_model_event = payload['event']
             min_metric = payload['average_metric']
     
+    from src.celery_lambda import measurement
+    measurement.parse_log("/aws/lambda/prophet_worker")
+
     # Non-zero forecast period makes lambda upload graphs to s3
     chosen_model_event['forecast'] = getattr(config.Cross_Validation, "FORECAST")
     
@@ -126,13 +146,6 @@ def grid_search_controller(config_path):
     print (time.time() - start)
     print (response)
 
-def split_path(path):
-    # This regex captures filename after the last backslash
-    filename = re.search("(?!\/)(?:.(?!\/))*(?=\.\w*$)", path).group(0)
-    path_prefix = re.search("(.*\/)(?!.*\/)", path).group(0)
-    
-    return path_prefix, filename
-
 if __name__ == "__main__":
-    path = "/Users/michaelzhang/Downloads/Seneca/config/prophet/config.py"
+    path = "./config/prophet/config.py"
     grid_search_controller(path)

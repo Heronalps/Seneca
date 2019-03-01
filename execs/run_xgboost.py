@@ -3,6 +3,8 @@ import sys, os, re, importlib, time
 # Makes Seneca root directory available for importing
 sys.path.insert(0, "./")
 from helpers.parsers import parse_path
+from helpers.parsers import split_path
+from helpers.module_loader import load
 
 seneca_path = parse_path(os.getcwd(), "Seneca")
 package_path = seneca_path + "/venv/lib/python3.6/site-packages"
@@ -33,7 +35,8 @@ def create_event(config, PARAMETERS, CONFIG):
         for key, value in zip(PARAMETERS, list(item)):
             payload['data'][key.lower()] = value
         
-        payload['dataset'] = getattr(config.Config, 'DATASET')    
+        payload['dataset'] = getattr(config.Config, 'DATASET') 
+        payload['test_size'] = getattr(config.Config, 'TEST_SIZE')    
         payload_list.append(payload)
 
     return payload_list
@@ -51,11 +54,9 @@ def create_event(config, PARAMETERS, CONFIG):
 '''
 
 def grid_search_controller(config_path):
-    
+    # start = time.time()
     # Dynamic importing config file from config_path
-    path_prefix, filename = split_path(config_path)
-    sys.path.insert(0, path_prefix)
-    config = importlib.import_module(filename)
+    config = load(config_path)
     
     # Dynamic loading lambda name
     LAMBDA_NAME = getattr(config.Config, "LAMBDA_NAME")
@@ -78,55 +79,64 @@ def grid_search_controller(config_path):
 
     min_metric = float('inf')
     chosen_model_event = None
-    
-    from src.lambda_func.xgboost.XGBoost import lambda_handler
+    metrics = []
 
-    for payload in payload_list:
-        map_item = lambda_handler(payload)
-        if map_item['metric'] < min_metric:
-            print ("======Update chosen model event==========")
-            chosen_model_event = map_item['event']
-            min_metric = map_item['metric']
+    # from src.lambda_func.xgboost.XGBoost import lambda_handler
+    # for payload in payload_list:
+    #     print ("======Payload========")
+    #     print (payload)
+    #     map_item = lambda_handler(payload)
+    #     metrics.append(map_item['metric'])
+    #     # Using MSE as metric => smaller than
+    #     if map_item['metric'] < min_metric:
+    #         print ("======Update chosen model event==========")
+    #         chosen_model_event = map_item['event']
+    #         min_metric = map_item['metric']
     
-    # start = time.time()
-    # print ("=====Time Stamp======")
-    # print (start)
-    # job = group(invoke_lambda.s(
-    #                 function_name = LAMBDA_NAME,
-    #                 sync = True,
-    #                 payload = payload
-    #                 ) for payload in payload_list)
-    # print("===Async Tasks start===")
-    # result = job.apply_async()
-    # result.save()
-    # from celery.result import GroupResult
-    # saved_result = GroupResult.restore(result.id)
-
-    # while not saved_result.ready():
-    #     time.sleep(0.1)
-    # model_list = saved_result.get(timeout=None)
-    
-    
-    # print("===Async Tasks end===")
-    
-    # for item in model_list:
-    #     payload = item['Payload']
-    #     if payload['metric'] < min_metric:
-    #         chosen_model_event = payload['event']
-    #         min_metric = payload['metric']
-    
-    # print ("=======The Execution Time===========")
-    # print (time.time() - start)
+    # print ("======Metric========")
     # print (min_metric)
+    # print ("======Event========")
     # print (chosen_model_event)
+    # print ("======Metric List========")
+    # print (metrics)
+    # print ("====Execution time====")
+    # print (time.time() - start)
 
-def split_path(path):
-    # This regex captures filename after the last backslash
-    filename = re.search("(?!\/)(?:.(?!\/))*(?=\.\w*$)", path).group(0)
-    path_prefix = re.search("(.*\/)(?!.*\/)", path).group(0)
+
+    start = time.time()
+    print ("=====Time Stamp======")
+    print (start)
+    job = group(invoke_lambda.s(
+                    function_name = LAMBDA_NAME,
+                    sync = True,
+                    payload = payload
+                    ) for payload in payload_list)
+    print("===Async Tasks start===")
+    result = job.apply_async()
+    result.save()
+    from celery.result import GroupResult
+    saved_result = GroupResult.restore(result.id)
+
+    while not saved_result.ready():
+        time.sleep(0.1)
+    model_list = saved_result.get(timeout=None)
     
-    return path_prefix, filename
+    
+    print("===Async Tasks end===")
+    print (time.time() - start)
+    
+    for item in model_list:
+        payload = item['Payload']
+        if payload['metric'] < min_metric:
+            chosen_model_event = payload['event']
+            min_metric = payload['metric']
+    
+    print (min_metric)
+    print (chosen_model_event)
+
+    from src.celery_lambda import measurement
+    measurement.parse_log("/aws/lambda/XGBoost_worker")
 
 if __name__ == "__main__":
-    path = "/Users/michaelzhang/Downloads/Seneca/config/xgboost/config.py"
+    path = "./config/xgboost/config.py"
     grid_search_controller(path)

@@ -1,0 +1,72 @@
+{
+  "metric": 0.21768607221812822,
+  "event": {
+    "parameters": [
+      "c",
+      "cache_size",
+      "coef0",
+      "decision_function_shape",
+      "degree",
+      "gamma",
+      "kernel",
+      "max_iter",
+      "probability",
+      "random_state",
+      "shrinking",
+      "tol",
+      "verbose"
+    ],
+    "data": {
+      "c": 1,
+      "cache_size": 5,
+      "coef0": 0,
+      "decision_function_shape": "ovr",
+      "degree": 3,
+      "gamma": "auto",
+      "kernel": "rbf",
+      "max_iter": 20,
+      "probability": false,
+      "random_state": 123,
+      "shrinking": true,
+      "tol": 0.001,
+      "verbose": false
+    },
+    "dataset": "df_2017_downsampled.csv"
+  }
+}
+
+START RequestId: d2949b63-e861-45fd-98ba-667121c11766 Version: $LATEST
+=====Parameters=======
+{'C': 1, 'cache_size': 5, 'coef0': 0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto', 'kernel': 'rbf', 'max_iter': 20, 'probability': False, 'random_state': 123, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Downloading dataset from S3
+Start training SVC
+/var/task/sklearn/svm/base.py:244: ConvergenceWarning: Solver terminated early (max_iter=20).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+Finish training SVC
+Accuracy Score : 0.21768607221812822
+              precision    recall  f1-score   support
+
+         41N       0.79      0.03      0.06      1317
+         64E       0.80      0.00      0.01      1397
+          80       0.96      0.02      0.03      1302
+         81W       0.86      0.00      0.01      1362
+         92E       0.21      1.00      0.35      1407
+
+   micro avg       0.22      0.22      0.22      6785
+   macro avg       0.72      0.21      0.09      6785
+weighted avg       0.72      0.22      0.09      6785
+
+Test dataset Distribution
+[['41N' 1317]
+ ['64E' 1397]
+ ['80' 1302]
+ ['81W' 1362]
+ ['92E' 1407]]
+Prediction dataset Distribution
+[['41N' 56]
+ ['64E' 5]
+ ['80' 24]
+ ['81W' 7]
+ ['92E' 6693]]
+END RequestId: d2949b63-e861-45fd-98ba-667121c11766
+REPORT RequestId: d2949b63-e861-45fd-98ba-667121c11766	Duration: 603.65 ms	Billed Duration: 700 ms 	Memory Size: 2176 MB	Max Memory Used: 206 MB	

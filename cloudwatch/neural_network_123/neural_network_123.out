@@ -1,0 +1,854 @@
+=============Seneca==============
+The specified model is neural_network
+Config Path is at ./config/neural_network/config.py
+Lambda Path is at ./src/lambda_func/neural_network/neural_network.py
+Repeat invocation 30 times!
+Calling neural_network for 1 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]1ecf46e6c87147ee93f91a7729775588
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]262db4d0625447cab753d8b382be6cad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6f38684652944d3ea138807d070ad593
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]7623198b84a4407498cb8424c37fdb78
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8a0a19e40cc24145a22e19d77a286d6f
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8d9dbe6793ff48b3a84c895dec96d957
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b2bd507662d64b24bad994c2f1ebdb2e
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b5f058ee948d49df951c92432abbd3b3
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]bdff2db3dbf745538a61170e4d08c670
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]d404e06224d548a89447fffc0c78f349
+Done
+=====Time Stamp======
+1549840158.1598117
+===Async Tasks start===
+===Async Tasks end===
+111.39385986328125
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 2 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549840302.695214
+===Async Tasks start===
+===Async Tasks end===
+108.02126169204712
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 3 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549840443.9853754
+===Async Tasks start===
+===Async Tasks end===
+109.83522891998291
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 4 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549840586.846459
+===Async Tasks start===
+===Async Tasks end===
+108.63743925094604
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 5 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549840728.623272
+===Async Tasks start===
+===Async Tasks end===
+109.73079061508179
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 6 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549840871.40016
+===Async Tasks start===
+===Async Tasks end===
+110.42584371566772
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 7 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549841014.729893
+===Async Tasks start===
+===Async Tasks end===
+108.4874062538147
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 8 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549841156.3451316
+===Async Tasks start===
+===Async Tasks end===
+109.00814628601074
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 9 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549841298.3358843
+===Async Tasks start===
+===Async Tasks end===
+108.62786340713501
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 10 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549841440.2343736
+===Async Tasks start===
+===Async Tasks end===
+108.86610054969788
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 11 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549841582.2100186
+===Async Tasks start===
+===Async Tasks end===
+108.87561655044556
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 12 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549841724.094258
+===Async Tasks start===
+===Async Tasks end===
+109.29833793640137
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 13 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549841866.6813285
+===Async Tasks start===
+===Async Tasks end===
+109.43625164031982
+0.8331613854089904
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'identity', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 14 times!
+Run Hyperparameter Tuning on neural network
+[2019-02-11 00:38:58,848: INFO/MainProcess] Connected to amqp://myuser:**@127.0.0.1:5672/myvhost
+[2019-02-11 00:38:58,860: INFO/MainProcess] mingle: searching for neighbors
+[2019-02-11 00:38:59,881: INFO/MainProcess] mingle: all alone
+[2019-02-11 00:38:59,893: INFO/MainProcess] celery@ip-172-31-29-184 ready.
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@ip-172-31-29-184 v4.2.1 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1023-aws-x86_64-with-Ubuntu-18.04-bionic 2019-02-11 00:38:58
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fdab6e43828
+- ** ---------- .> transport:   amqp://myuser:**@localhost:5672/myvhost
+- ** ---------- .> results:     redis://localhost/
+- *** --- * --- .> concurrency: 10 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . proj.tasks.add
+  . proj.tasks.invoke_lambda
+  . proj.tasks.mul
+  . proj.tasks.xsum
+
+=============Seneca==============
+The specified model is neural_network
+Config Path is at ./config/neural_network/config.py
+Lambda Path is at ./src/lambda_func/neural_network/neural_network.py
+Repeat invocation 17 times!
+Calling neural_network for 1 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]14df917f065f4cd494b4ac2a20b16dad
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]3465c2e97875497d91053587b133e888
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]4a1770cbbd8c4dd58071ed8b605c7f51
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]4d12d8a6e2c54a868e54f81032af4564
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]6ae463103ef942aaa0f57b0b318ccdfb
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]71e284c7d5364378a9c5c211ebf7f2b8
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]8b394f81ef5d4c0f86983c9a620b167c
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]92bb6fffd4a8483384bf3efaefea5c58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]aadcb40275054cf98d588787ccd6e901
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]b8fc4436b8034af3a381c6d5efdfa722
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f4761af4e5254242870fe7cdb169b2e5
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/10/[$LATEST]f9db0cbbe63546b38703f849eb750127
+Done
+=====Time Stamp======
+1549845756.0065262
+===Async Tasks start===
+===Async Tasks end===
+123.02027988433838
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 20, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 2 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549845912.2428582
+===Async Tasks start===
+===Async Tasks end===
+121.52754735946655
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 3 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549846066.9336066
+===Async Tasks start===
+===Async Tasks end===
+120.89191937446594
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 20, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 4 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549846220.8680928
+===Async Tasks start===
+===Async Tasks end===
+119.6078131198883
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 5 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549846373.657151
+===Async Tasks start===
+===Async Tasks end===
+120.9977867603302
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 20, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 6 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549846527.856452
+===Async Tasks start===
+===Async Tasks end===
+120.82138681411743
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 7 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549846681.683263
+===Async Tasks start===
+===Async Tasks end===
+120.25344133377075
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'invscaling', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 8 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549846835.0570366
+===Async Tasks start===
+===Async Tasks end===
+121.1323971748352
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 20, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 9 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549846989.3512487
+===Async Tasks start===
+===Async Tasks end===
+121.17860722541809
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 10 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549847143.5152965
+===Async Tasks start===
+===Async Tasks end===
+120.30490684509277
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 11 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549847296.921935
+===Async Tasks start===
+===Async Tasks end===
+119.8327853679657
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'invscaling', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 12 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549847449.8824184
+===Async Tasks start===
+===Async Tasks end===
+122.08171820640564
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 20, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 13 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549847605.3493366
+===Async Tasks start===
+===Async Tasks end===
+121.20095038414001
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 14 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549847759.5981238
+===Async Tasks start===
+Traceback (most recent call last):
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/connection.py", line 599, in send_packed_command
+    self._sock.sendall(item)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Seneca/venv/bin/seneca", line 10, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 764, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/seneca/cli.py", line 55, in main
+    neural_network(config_path, run_neural_network)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/seneca/cli.py", line 86, in neural_network
+    click.echo(run_neural_network.grid_search_controller(config_path))
+  File "/home/ubuntu/Seneca/execs/run_neural_network.py", line 117, in grid_search_controller
+    while not saved_result.ready():
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 591, in ready
+    return all(result.ready() for result in self.results)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 591, in <genexpr>
+    return all(result.ready() for result in self.results)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 311, in ready
+    return self.state in self.backend.READY_STATES
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 471, in state
+    return self._get_task_meta()['status']
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 410, in _get_task_meta
+    return self._maybe_set_cache(self.backend.get_task_meta(self.id))
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 404, in _maybe_set_cache
+    self.on_ready(self)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/promises.py", line 163, in __call__
+    return self.throw()
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/promises.py", line 223, in throw
+    svpending.throw1(exc)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/synchronization.py", line 94, in throw
+    self.p.throw(*args, **kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/vine/promises.py", line 160, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/result.py", line 123, in _on_fulfilled
+    self.backend.remove_pending_result(self)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/backends/async.py", line 175, in remove_pending_result
+    self.on_result_fulfilled(result)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/backends/async.py", line 183, in on_result_fulfilled
+    self.result_consumer.cancel_for(result.id)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/celery/backends/redis.py", line 138, in cancel_for
+    self._pubsub.unsubscribe(key)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/client.py", line 3112, in unsubscribe
+    retval = self.execute_command('UNSUBSCRIBE', *args)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/client.py", line 3009, in execute_command
+    self._execute(connection, connection.send_command, *args)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/client.py", line 3013, in _execute
+    return command(*args)
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home/ubuntu/Seneca/venv/lib/python3.6/site-packages/redis/connection.py", line 612, in send_packed_command
+    (errno, errmsg))
+redis.exceptions.ConnectionError: Error 104 while writing to socket. Connection reset by peer.
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@ip-172-31-29-184 v4.2.1 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1023-aws-x86_64-with-Ubuntu-18.04-bionic 2019-02-11 00:41:42
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fde370d6710
+- ** ---------- .> transport:   amqp://myuser:**@localhost:5672/myvhost
+- ** ---------- .> results:     redis://localhost/
+- *** --- * --- .> concurrency: 10 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+=============Seneca==============
+The specified model is neural_network
+Config Path is at ./config/neural_network/config.py
+Lambda Path is at ./src/lambda_func/neural_network/neural_network.py
+Repeat invocation 4 times!
+Calling neural_network for 1 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]4dcd2e76b2684268b5d3d4b8e339ae16
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]a0504454654648b691afacd14abe5e1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c3821a3330ef431493b133624f5afd1d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]c39a2ca6e4884200a2671dd9afa22491
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f495a1af64834969af3a2a7018b7ad94
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549848481.7818625
+===Async Tasks start===
+===Async Tasks end===
+124.19464039802551
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 20, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 2 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]2452e09e8a20454384f79441569ef29e
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]2f51750316f6464da7f4224c5970e08d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]52e097a8b5a042cca6ea5d95190bb37f
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]6ef38eb9b04145f2b764924c911db290
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]d660ebc3f7254b059251ed0f1a830f58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549848639.105142
+===Async Tasks start===
+===Async Tasks end===
+121.89108443260193
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 3 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]2452e09e8a20454384f79441569ef29e
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]2f51750316f6464da7f4224c5970e08d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]52e097a8b5a042cca6ea5d95190bb37f
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]6ef38eb9b04145f2b764924c911db290
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]d660ebc3f7254b059251ed0f1a830f58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549848794.1911478
+===Async Tasks start===
+===Async Tasks end===
+122.01648092269897
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'invscaling', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.1, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+Calling neural_network for 4 times!
+Run Hyperparameter Tuning on neural network
+[/aws/lambda/neural_network_worker] Checking for old streams...
+ - Streams in group: /aws/lambda/neural_network_worker
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]2452e09e8a20454384f79441569ef29e
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]2f51750316f6464da7f4224c5970e08d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]52e097a8b5a042cca6ea5d95190bb37f
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]5e96bf2ea16c4d99aabbc186b0f41252
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]6ef38eb9b04145f2b764924c911db290
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]703a16a3f8104ffda121fe4aa1b3b731
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]8c437ed896544b66bb1b8e394a2d592d
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]9ecb1e157ecc487e8f74bb6eeae24437
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]d660ebc3f7254b059251ed0f1a830f58
+[/aws/lambda/neural_network_worker] Deleted stream: 2019/02/11/[$LATEST]f6d83766b78546fcb4d86d6072307391
+Done
+=====Time Stamp======
+1549848949.2923565
+===Async Tasks start===
+===Async Tasks end===
+121.38420677185059
+0.8412675018422991
+{'parameters': ['activation', 'alpha', 'batch_size', 'beta_1', 'beta_2', 'early_stopping', 'epsilon', 'hidden_layer_sizes', 'learning_rate', 'learning_rate_init', 'max_iter', 'momentum', 'n_iter_no_change', 'power_t', 'random_state', 'shuffle', 'solver', 'tol', 'validation_fraction', 'verbose'], 'data': {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': [100], 'learning_rate': 'constant', 'learning_rate_init': 0.0001, 'max_iter': 20, 'momentum': 0.9, 'n_iter_no_change': 10, 'power_t': 0.5, 'random_state': 123, 'shuffle': True, 'solver': 'adam', 'tol': 1e-05, 'validation_fraction': 0.1, 'verbose': False}, 'dataset': 'df_2017_downsampled.csv', 'test_size': 0.2}
+
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@ip-172-31-29-184 v4.2.1 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-1023-aws-x86_64-with-Ubuntu-18.04-bionic 2019-02-11 01:27:19
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fc0229487b8
+- ** ---------- .> transport:   amqp://myuser:**@localhost:5672/myvhost
+- ** ---------- .> results:     redis://localhost/
+- *** --- * --- .> concurrency: 10 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+

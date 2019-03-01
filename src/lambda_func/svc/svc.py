@@ -1,8 +1,9 @@
-import os, boto3
+import os, boto3, time
 import pandas as pd
 import numpy as np
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
 from sklearn import svm
 
 local_repo = os.path.join(os.path.sep, "tmp", os.path.basename('csv'))
@@ -30,6 +31,7 @@ directory_2017 = {
 }
 
 def lambda_handler(event, context={}):
+    ts = time.time()
     # Load parameters
     parameter_list = event['parameters']
     parameters = {}
@@ -41,25 +43,16 @@ def lambda_handler(event, context={}):
         parameters[key] = event['data'][key]
     print ('=====Parameters=======')
     print (parameters)
-    # df = read_csv_s3(event['dataset'])
-    # df = pd.read_csv("./datasets/svc/df_2017_reduced_scaler.csv")
-    df = pd.read_csv("./datasets/neural_network/df_2017_reduced.csv")
+    df = read_csv_s3(event['dataset'])
+    # df = pd.read_csv("./datasets/svc/df_2017_downsampled.csv")
     
     # Scamble and subset data frame into train + validation(80%) and test(10%)
-    df = df.sample(frac=1).reset_index(drop=True)
-    split_ratio = 0.8
-    print('Train and Test Split Ratio : ', split_ratio)
-    df_train = df[ : int(len(df) * split_ratio)]
-    df_test = df[int(len(df) * split_ratio) : ]
+    y = df.block_Num
+    X = df.drop(['block_Num'], axis=1).select_dtypes(exclude=['object'])
 
-    
+    feature_train, feature_test, target_train, target_test = train_test_split(X, y, random_state = parameters['random_state'], test_size=event['test_size'])
+
     solver = svm.SVC(**parameters)
-
-    # convert dataframe to ndarray, since kf.split returns nparray as index
-    feature_train = df_train.iloc[:, 0: -1].values
-    target_train = df_train.iloc[:, -1].values
-    feature_test = df_test.iloc[:, 0: -1].values
-    target_test = df_test.iloc[:, -1].values
 
     print ("Start training SVC")
     solver.fit(feature_train, target_train)
@@ -78,4 +71,5 @@ def lambda_handler(event, context={}):
     print("Prediction dataset Distribution")
     print(np.asarray((unique, count)).T)
 
+    print ("Lambda time: {0}".format(time.time() - ts))
     return {'metric': accu_score, 'event': event}

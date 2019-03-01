@@ -101,6 +101,7 @@ class Optimizer():
         prev_memory = collections.deque(maxlen = self.QUEUE_MAX_LEN)
         prev_compute_charge = collections.deque(maxlen = self.QUEUE_MAX_LEN)
         optimization_cost = 0.0
+        min_compute_charge = float('inf')
 
         # Search from starting point of lower bound to sweet spot
         for num in range (starting_point, 48, 1): 
@@ -112,11 +113,17 @@ class Optimizer():
             print ("Current compute charge = {0}".format(metrics['compute_charge']))
             print ("Total compute charge = {0}".format(optimization_cost))
 
+            # Keep the allocated memory from minimum compute charge 
+            if metrics['compute_charge'] < min_compute_charge:
+                min_compute_charge = metrics['compute_charge']
+                allocated_memory = num * 64
             prev_compute_charge.append(metrics['compute_charge'])
             prev_memory.append(num * 64)
             
+            # If the sweetspot is found, update the allocated memory
             if (self.isSweetspot(prev_compute_charge)):
-                allocated_memory = prev_memory.popleft()
+                if prev_memory[0] < min_compute_charge:
+                    allocated_memory = prev_memory.popleft() 
                 break
 
         self.update_config(self.fn_name, allocated_memory)
@@ -132,11 +139,13 @@ class Optimizer():
         
         flag = True
         prev = 0.0
+        # Verify if the whole list monotonically increase
         for ts in time_series:
             if ts <= prev:
                 flag = False
             else:
                 prev = ts
+        # Verify if the slope of list greater than SLOPE_INCREASE
         slope = (time_series[-1] - time_series[0]) / time_series.maxlen
         if slope < self.SLOPE_INCREASE:
             flag = False

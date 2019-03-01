@@ -1,0 +1,30 @@
+{
+  "metric": 11.445971625426504,
+  "event": {
+    "variable_files": "[\"pizero_02.csv\",\"pizero_02_2.csv\",\"pizero_04.csv\", \"pizero_04_2.csv\", \"pizero_05.csv\", \"pizero_05_2.csv\", \"pizero_06.csv\", \"pizero_06_2.csv\"]",
+    "target_file": "pizero_02_dht.csv"
+  }
+}
+
+START RequestId: 9528d513-7708-4565-8f83-7924d38bf0d3 Version: $LATEST
+The time range of data frame is from 2018-04-05 14:15:40.881123 to 2018-12-10 05:55:19.645121.
+The time range of data frame is from 2018-01-20 17:39:12.885521 to 2018-12-09 20:45:02.407413.
+The time range of data frame is from 2018-04-05 12:36:32.283359 to 2018-12-10 05:00:02.38413.
+The time range of data frame is from 2018-04-05 12:40:31.587824 to 2018-12-10 06:00:01.908253.
+The time range of data frame is from 2018-04-05 13:40:02.249632 to 2018-12-10 05:55:02.115349.
+The time range of data frame is from 2018-04-05 12:49:55.861198 to 2018-12-11 13:25:02.586674.
+The time range of data frame is from 2018-04-05 15:00:02.534103 to 2018-12-11 13:25:02.570243.
+The time range of data frame is from 2018-04-05 12:50:01.605368 to 2018-12-11 13:25:02.318192.
+The time range of data frame is from 2018-04-05 15:00:01.84754 to 2018-12-11 13:25:02.324951.
+==============================================================
+The coefficients of regression model is [ 0.60179532  0.63415238  0.02002492  0.04945693  0.05235352 -0.04260081
+ -0.17495369 -0.14327806]
+==============================================================
+The intercept of regression model is -33.27494343698396
+==============================================================
+The MSE of prediction is 11.445971625426504
+==============================================================
+The R Square of regression is 0.9030048964940391
+==============================================================
+END RequestId: 9528d513-7708-4565-8f83-7924d38bf0d3
+REPORT RequestId: 9528d513-7708-4565-8f83-7924d38bf0d3	Duration: 13040.89 ms	Billed Duration: 13100 ms 	Memory Size: 1472 MB	Max Memory Used: 329 MB	

@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   app:
-    image: lambda_prophet:0.1
+    image: lambda-prophet:0.1
     volumes:
       - type: bind
         source: "../../src/lambda_func/prophet"

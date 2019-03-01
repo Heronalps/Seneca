@@ -1,0 +1,61 @@
+=====Default MSE======
+11.445971625426504
+=====Highest MSE======
+43.75182238704884
+=====Lowest MSE======
+9.62091843948961
+
+
+
+Default - inclusion of all 8 time series
+
+======Payload========
+{'target_file': 'pizero_02_dht.csv', 'variable_files': '["pizero_02.csv", "pizero_02_2.csv", "pizero_04.csv", "pizero_04_2.csv", "pizero_05.csv", "pizero_05_2.csv", "pizero_06.csv", "pizero_06_2.csv"]'}
+==============================================================
+The coefficients of regression model is [ 0.60179532  0.63415238  0.02002492  0.04945693  0.05235352 -0.04260081
+ -0.17495369 -0.14327806]
+==============================================================
+The intercept of regression model is -33.27494343698396
+==============================================================
+The MSE of prediction is 11.445971625426504
+==============================================================
+The R Square of regression is 0.9030048964940391
+==============================================================
+
+Highest
+
+======Payload========
+{'target_file': 'pizero_02_dht.csv', 'variable_files': '["pizero_05.csv", "pizero_05_2.csv", "pizero_06.csv", "pizero_06_2.csv"]'}
+==============================================================
+The coefficients of regression model is [ 0.01073197 -0.09141798  0.5006654   0.59388477]
+==============================================================
+The intercept of regression model is -31.601699157884312
+==============================================================
+The MSE of prediction is 43.75182238704884
+==============================================================
+The R Square of regression is 0.6290411501708439
+==============================================================
+
+Typical Compute Charge
+
+Duration: 18054.58 ms	Billed Duration: 18100 ms 	Memory Size: 1088 MB	Max Memory Used: 281 MB	
+
+compute charge = 1088MB / 1024GB * 18.1s * 1.667e-5 * 255 = 0.08
+
+Lowest
+
+======Payload========
+{'target_file': 'pizero_02_dht.csv', 'variable_files': '["pizero_02.csv", "pizero_02_2.csv", "pizero_06.csv"]'}
+==============================================================
+The coefficients of regression model is [ 0.63835853  0.65582715 -0.32132513]
+==============================================================
+The intercept of regression model is -31.06175731445036
+==============================================================
+The MSE of prediction is 9.62091843948961
+==============================================================
+The R Square of regression is 0.9212953873656899
+==============================================================
+
+Typical Execution
+
+Duration: 18054.58 ms	Billed Duration: 18100 ms Memory Size: 1088 MB	Max Memory Used: 281 MB

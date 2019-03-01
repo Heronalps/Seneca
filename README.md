@@ -26,7 +26,7 @@ seneca --help
 - Start Redis Server, run ``` redis-server ```
 - Configure .aws/config & .aws/credentials
 - Direct to repo directory /Celery_Lambda, run ```nohup celery -A proj worker --concurrency=10 & ```
-- Invoke Seneca ``` nohup seneca -m <model> -c ./config/<model>/config.py -l ./src/lambda_func/<model>/<model>.py -r 30 & ```
+- Invoke Seneca ``` nohup seneca -m <model> -c ./config/<model>/config.py -r 30 & ```
 - Kill background celery workers ``` kill $(ps aux | grep '[c]elery' | awk '{print $2}') ```
 - List celery queue ``` sudo rabbitmqctl list_queues -p myvhost ```
 - Purge celery queue ``` sudo rabbitmqctl purge_queue celery -p myvhost ```

@@ -24,7 +24,7 @@ import click, subprocess
                                  help='The lambda package will be rebuilt if true')
 @click.option('--optimize', '-o', is_flag=True, default=False,
                                   help="The allocated memory will be optimized if true")
-@click.option('--repeat', '-r',  type = click.INT, help='The number of repetition')
+@click.option('--repeat', '-r',  type = click.INT, default=1, help='The number of repetition')
 
 def main(config_path, lambda_path, model, rebuild, optimize, repeat):
     click.echo("=============Seneca==============")

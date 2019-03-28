@@ -26,18 +26,20 @@ import click, subprocess
                                   help="The allocated memory will be optimized if true")
 @click.option('--repeat', '-r',  type = click.INT, default=1, help='The number of repetition')
 
-def main(config_path, lambda_path, model, rebuild, optimize, repeat):
+@click.option('--strategy', '-s', type = click.Choice(['grid', 'random', 'bayes', 'gene']))
+
+def main(config_path, lambda_path, model, rebuild, optimize, repeat, strategy):
     click.echo("=============Seneca==============")
     click.echo('The specified model is {0}'.format(model))
 
     # Both optimization or rebuild need deployment
-    if optimize or rebuild:
-            auto_deploy(model)
-            if optimize:
-                auto_optimize(model)
+    if rebuild:
+        auto_deploy(model)
+    elif optimize:
+        auto_optimize(model)
     else:
         click.echo('Config Path is at {0}'.format(config_path))
-        click.echo('Lambda Path is at {0}'.format(lambda_path))
+        # click.echo('Lambda Path is at {0}'.format(lambda_path))
         print ("Repeat invocation {0} times!".format(repeat))
 
         for n in range(repeat):
@@ -58,6 +60,7 @@ def main(config_path, lambda_path, model, rebuild, optimize, repeat):
                 svc(config_path, run_svc)
 
 def auto_deploy(model):
+    print ("Deploy {0} onto Lambda".format(model))
     my_env = os.environ.copy()
     p = subprocess.Popen(['docker-compose', "up", "--build"], 
                           env = my_env, 
@@ -65,6 +68,7 @@ def auto_deploy(model):
     p.wait()
 
 def auto_optimize(model):
+    print ("Optimize allocated memory of {0}".format(model))
     payload = getattr(getattr(pl, model), 'payload')
     optimizer = Optimizer(fn_name=model + '_worker', payload=payload)
     click.echo(optimizer.run())
@@ -79,7 +83,7 @@ def multi_regression(config_path, run_multi_regression):
 
 def xgboost(config_path, run_xgboost):
     click.echo("Run Hyperparameter Tuning on XGBoost")
-    run_xgboost.grid_search_controller(config_path)
+    click.echo(run_xgboost.grid_search_controller(config_path))
     
 def neural_network(config_path, run_neural_network):
     click.echo("Run Hyperparameter Tuning on neural network")

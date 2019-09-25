@@ -1,7 +1,7 @@
 # Seneca
 A framework of auto-packaging, deployment, optimization and hyperparameter-tuning for Serverless function
 
-Published at IEEE SCC 2019: 
+#### Published at IEEE SCC 2019: 
 
 [Seneca Paper Link](https://ieeexplore.ieee.org/document/8814572)
 

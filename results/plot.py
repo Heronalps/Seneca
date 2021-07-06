@@ -23,7 +23,7 @@ def parse(file_path, pattern="Accuracy Score"):
 
 def plot():
     xgboost_scores = parse("./results/XGBoost/xgboost_output.txt")
-    svc_scores = parse("./results/svc/svc_output.txt")
+    svc_scores = parse("./results/svc/svc_output_ec2.txt")
     neural_network_scores = parse("./results/neural_network/neural_network_output.txt")
     
     fig = plt.figure(figsize=[15,10])
@@ -34,7 +34,7 @@ def plot():
     plt.title("Box Plot of Accuracy Score", fontsize=20)
     ax.set_xticklabels(['xgboost', 'svc', 'neural network'], fontsize=20)
     fig.savefig('./graphs/box_plot_accuracy.png')
-    #plt.show()
+    plt.show()
 
     xgboost_mse = parse("./results/XGBoost/xgboost_output.txt", "Mean Absolute Error")
     prophet_mse = parse("./results/prophet/prophet_output.txt", "Metric mse")
@@ -48,9 +48,10 @@ def plot():
     plt.title("Box Plot of Mean Square Error", fontsize=20)
     ax.set_xticklabels(['xgboost', 'prophet', 'multivariate regression'], fontsize=20)
     fig.savefig("./graphs/box_plot_mse.png")
-    #plt.show()
+    plt.show()
 
 if __name__ == "__main__":
     # print (os.getcwd())
     scores = parse("./results/neural_network/neural_network_output.txt", "Accuracy Score")
     print (min(scores))
+    plot()
